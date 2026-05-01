@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroSilos | Data Brain</title>
     
-    <!-- Puxando o ícone da sua pasta assets na raiz -->
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
     
     <style>
@@ -26,9 +25,9 @@
         .app-iframe {
             border: 0;
             width: 100%;
-            height: calc(100vh + 45px); /* Compensa a faixa do Google */
+            height: calc(100vh + 28px); /* Compensa a faixa do Google calibrada */
             position: absolute;
-            top: -45px; /* Empurra a faixa do Google para fora da tela */
+            top: -28px; /* Empurra exatamente a faixa do Google para fora da tela */
             left: 0;
         }
     </style>
@@ -36,7 +35,6 @@
 <body>
 
     <div class="iframe-container">
-        <!-- O link do Apps Script agora está no local correto (src) -->
         <iframe class="app-iframe" src="https://script.google.com/macros/s/AKfycbxbcDWVER224t5074_FJYQPlRwzvJLb7QgD3fsEEKijXH5IlTR53vFBfCYRkc0epbNS2A/exec" allowfullscreen></iframe>
     </div>
 
