@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSilos | Data Brain</title>
+    
+    <!-- Puxando o ícone da sua pasta assets na raiz -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #0A0A0A; /* Cor de fundo da Data Brain */
+        }
+        .iframe-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .app-iframe {
+            border: 0;
+            width: 100%;
+            height: calc(100vh + 45px); /* Compensa a faixa do Google */
+            position: absolute;
+            top: -45px; /* Empurra a faixa do Google para fora da tela */
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <!-- O link do Apps Script agora está no local correto (src) -->
+        <iframe class="app-iframe" src="https://script.google.com/macros/s/AKfycbxbcDWVER224t5074_FJYQPlRwzvJLb7QgD3fsEEKijXH5IlTR53vFBfCYRkc0epbNS2A/exec" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
