@@ -25,9 +25,11 @@
         .app-iframe {
             border: 0;
             width: 100%;
-            height: calc(100vh + 28px); /* Compensa a faixa do Google calibrada */
+            /* Ajuste fino: Reduzido de 28px para 14px */
+            height: calc(100vh + 14px); 
             position: absolute;
-            top: -28px; /* Empurra exatamente a faixa do Google para fora da tela */
+            /* Ajuste fino: Puxa o site menos para cima */
+            top: -14px; 
             left: 0;
         }
     </style>
