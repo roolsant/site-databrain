@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeletro - Nova Senha</title>
+    <style>
+        body {
+            margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #f3f4f6; display: flex; align-items: center; justify-content: center;
+            height: 100vh; color: #1e293b;
+        }
+        .container {
+            background: #ffffff; padding: 40px; border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 400px;
+            text-align: center; border-top: 4px solid #29A992;
+        }
+        h2 { color: #29A992; margin-top: 0; margin-bottom: 10px; }
+        p { color: #475569; font-size: 14px; margin-bottom: 25px; line-height: 1.5; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #475569; }
+        input {
+            width: 100%; padding: 12px; border: 1px solid #94a3b8; border-radius: 6px;
+            background: #f8fafc; font-size: 14px; outline: none; box-sizing: border-box;
+        }
+        input:focus { border-color: #29A992; }
+        button {
+            width: 100%; padding: 12px; background: #29A992; color: #fff;
+            border: none; border-radius: 6px; font-size: 14px; font-weight: bold;
+            cursor: pointer; transition: background 0.2s; margin-top: 10px;
+        }
+        button:hover { background: #1F8A75; }
+        button:disabled { background: #94a3b8; cursor: not-allowed; }
+        #msg { margin-top: 15px; font-size: 13px; font-weight: bold; min-height: 20px; }
+        .success { color: #10b981; }
+        .error { color: #ef4444; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="box-form">
+    <h2>Criar Nova Senha</h2>
+    <p>Digite abaixo a sua nova senha de acesso para o Motor DAX do Skeletro.</p>
+    
+    <div class="input-group">
+        <label>Nova Senha</label>
+        <input type="password" id="senha" placeholder="Mínimo de 6 caracteres">
+    </div>
+    <div class="input-group">
+        <label>Confirmar Senha</label>
+        <input type="password" id="confirma-senha" placeholder="Repita a senha">
+    </div>
+
+    <button id="btn-salvar">Salvar Nova Senha</button>
+    <div id="msg"></div>
+</div>
+
+<div class="container hidden" id="box-erro">
+    <h2 style="color: #ef4444;">Link Inválido</h2>
+    <p>Este link de recuperação expirou ou está incorreto.<br>Por favor, solicite um novo link pela extensão.</p>
+</div>
+
+<div class="container hidden" id="box-sucesso">
+    <h2>Senha Alterada! 🎉</h2>
+    <p>Sua senha foi atualizada com sucesso no banco de dados.</p>
+    <p><b>Você já pode fechar esta página, abrir a extensão do Skeletro e fazer o login!</b></p>
+</div>
+
+<script>
+    // === CONFIGURAÇÕES SUPABASE ===
+    const SUPABASE_URL = 'https://boxlpfjicbaybwldcrqk.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJveGxwZmppY2JheWJ3bGRjcnFrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NTcwNTEsImV4cCI6MjA5MzMzMzA1MX0.Hrr6QAVwgEtATCb_MfzMm388V29tT39yKs-Sf5AZLWA'; //
+
+    // Extrair o Token da URL (O Supabase envia o token depois do '#')
+    const hash = window.location.hash.substring(1);
+    const params = new URLSearchParams(hash);
+    const accessToken = params.get('access_token');
+    const type = params.get('type');
+
+    // Validação inicial do Link
+    if (!accessToken || type !== 'recovery') {
+        document.getElementById('box-form').classList.add('hidden');
+        document.getElementById('box-erro').classList.remove('hidden');
+    }
+
+    const btn = document.getElementById('btn-salvar');
+    const msg = document.getElementById('msg');
+
+    btn.addEventListener('click', async () => {
+        const senha = document.getElementById('senha').value;
+        const confirma = document.getElementById('confirma-senha').value;
+
+        if (senha.length < 6) {
+            msg.className = 'error'; msg.textContent = 'A senha deve ter no mínimo 6 caracteres.'; return;
+        }
+        if (senha !== confirma) {
+            msg.className = 'error'; msg.textContent = 'As senhas não coincidem.'; return;
+        }
+
+        btn.disabled = true;
+        msg.className = '';
+        msg.style.color = '#475569';
+        msg.textContent = 'Atualizando senha no servidor...';
+
+        try {
+            // Chamada direta para a API REST do Supabase para alterar a senha
+            const response = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': SUPABASE_ANON_KEY,
+                    'Authorization': `Bearer ${accessToken}`
+                },
+                body: JSON.stringify({ password: senha })
+            });
+
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.msg || data.message || 'Erro ao atualizar senha.');
+            }
+
+            // Sucesso!
+            document.getElementById('box-form').classList.add('hidden');
+            document.getElementById('box-sucesso').classList.remove('hidden');
+
+        } catch (error) {
+            msg.className = 'error';
+            msg.textContent = error.message;
+            btn.disabled = false;
+        }
+    });
+</script>
+
+</body>
+</html>
