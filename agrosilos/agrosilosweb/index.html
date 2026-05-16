@@ -2,20 +2,24 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>AgroSilos | Data Brain</title>
-    
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-    
+
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #0A0A0A; /* Cor de fundo da Data Brain */
+            background-color: #042d1d;
+            font-family: 'Montserrat', Arial, sans-serif;
         }
+
+        /* ── IFRAME (desktop) ─────────────────────── */
         .iframe-container {
             width: 100%;
             height: 100vh;
@@ -25,20 +29,106 @@
         .app-iframe {
             border: 0;
             width: 100%;
-            /* Ajuste fino: Reduzido de 28px para 14px */
-            height: calc(100vh + 8px); 
+            height: calc(100vh + 8px);
             position: absolute;
-            /* Ajuste fino: Puxa o site menos para cima */
-            top: -8px; 
+            top: -8px;
             left: 0;
+        }
+
+        /* ── TELA DE REDIRECIONAMENTO MOBILE ─────── */
+        #mobile-redirect {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(160deg, #042d1d 0%, #0a4a2d 60%, #113829 100%);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 32px 24px;
+            text-align: center;
+            z-index: 9999;
+        }
+        #mobile-redirect .logo {
+            width: 140px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+        }
+        #mobile-redirect h1 {
+            color: #aedd3f;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0;
+        }
+        #mobile-redirect p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            max-width: 320px;
+            margin: 0;
+        }
+        #mobile-redirect .btn-open {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #aedd3f;
+            color: #042d1d;
+            font-weight: 800;
+            font-size: 1rem;
+            padding: 16px 32px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(174,221,63,0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        #mobile-redirect .btn-open:active {
+            transform: scale(0.97);
+            box-shadow: 0 4px 12px rgba(174,221,63,0.25);
+        }
+        #mobile-redirect .hint {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: -8px;
         }
     </style>
 </head>
 <body>
 
-    <div class="iframe-container">
-        <iframe class="app-iframe" src="https://script.google.com/macros/s/AKfycbynDxxUKSn89nemyFjg_LcalAMWNwt-AfGuALSqOZuc6C9EjWgqnKlAEuump-OX6yg/exec" allowfullscreen></iframe>
+    <!-- ── IFRAME (desktop e tablets largos) ── -->
+    <div class="iframe-container" id="desktop-container">
+        <iframe
+            id="app-iframe"
+            class="app-iframe"
+            src="https://script.google.com/macros/s/AKfycbynDxxUKSn89nemyFjg_LcalAMWNwt-AfGuALSqOZuc6C9EjWgqnKlAEuump-OX6yg/exec"
+            sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+            allow="fullscreen"
+            loading="lazy"
+        ></iframe>
     </div>
+
+    <!-- ── TELA MOBILE (fallback) ── -->
+    <div id="mobile-redirect">
+        <img class="logo" src="https://i.ibb.co/yJFQ5Lx/Agro-Silos.png" alt="AgroSilos">
+        <h1>AgroSilosWeb</h1>
+        <p>Para a melhor experiência no celular, acesse diretamente pelo navegador.</p>
+        <a class="btn-open" href="https://script.google.com/macros/s/AKfycbynDxxUKSn89nemyFjg_LcalAMWNwt-AfGuALSqOZuc6C9EjWgqnKlAEuump-OX6yg/exec" target="_blank">
+            &#x1F310; Abrir o Sistema
+        </a>
+        <p class="hint">Abre em nova aba no navegador</p>
+    </div>
+
+    <script>
+        // Detecta mobile (tela menor que 768px OU userAgent mobile)
+        const isMobile = window.innerWidth < 768 ||
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            document.getElementById('desktop-container').style.display = 'none';
+            document.getElementById('mobile-redirect').style.display = 'flex';
+        }
+    </script>
 
 </body>
 </html>
+
