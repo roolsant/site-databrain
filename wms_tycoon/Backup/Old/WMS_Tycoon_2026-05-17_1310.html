@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMS OS - Turnaround Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-panel: #1e293b;
+            --bg-card: #0f172a;
+            --bg-header: #0b1120;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-green: #4ade80;
+            --accent-red: #f87171;
+            --accent-orange: #fbbf24;
+            --border-color: #334155;
+            --hover-color: #334155;
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { background-color: var(--bg-main); color: var(--text-main); font-family: var(--font-mono); height: 100vh; width: 100vw; overflow: hidden; }
+
+        .hidden { display: none !important; }
+        
+        /* BOOT SEQUENCE */
+        .os-window { background-color: var(--bg-main); width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; }
+        .window-header { background-color: var(--bg-header); padding: 15px 30px; border-bottom: 2px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+        .window-header h1 { color: var(--accent-blue); font-size: 1.2rem; letter-spacing: 1px; }
+        .window-content { padding: 40px 20px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; align-items: center; }
+        #screen-market .window-content { padding-top: 15px; padding-bottom: 15px; }
+
+        .content-wrapper { width: 100%; max-width: 900px; }
+        .os-window-large .content-wrapper { max-width: 1300px; display: flex; flex-direction: column; height: 100%; }
+
+        .btn-group { display: flex; gap: 15px; margin-top: 20px; }
+        .btn { background: transparent; color: var(--text-main); border: 1px solid var(--border-color); padding: 12px 24px; cursor: pointer; border-radius: 4px; font-family: var(--font-mono); font-size: 1rem; transition: all 0.2s; text-align: center; }
+        .btn:hover { background: var(--border-color); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn.primary { border-color: var(--accent-blue); color: var(--accent-blue); font-weight: bold; }
+        .btn.primary:hover:not(:disabled) { background: rgba(56, 189, 248, 0.1); }
+        .btn.success { border-color: var(--accent-green); color: var(--accent-green); font-weight: bold; }
+        .btn.success:hover:not(:disabled) { background: rgba(74, 222, 128, 0.1); }
+        .btn.success.confirmed { background-color: rgba(74, 222, 128, 0.2); }
+        .btn.reject { border-color: var(--accent-red); color: var(--accent-red); font-weight: bold; }
+        .btn.reject:hover:not(:disabled) { background: rgba(248, 113, 113, 0.1); }
+        .btn-sm { padding: 8px 16px; font-size: 0.85rem; }
+
+        .slots-container { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; }
+        .save-slot { background-color: var(--bg-panel); border: 1px solid var(--border-color); padding: 12px 20px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; }
+        .save-slot.empty { opacity: 0.5; border-style: dashed; background-color: transparent; }
+        .slot-info h3 { color: var(--text-main); margin-bottom: 4px; font-size: 1.1rem; }
+        .slot-info p { color: var(--text-muted); font-size: 0.85rem; }
+        .slot-actions { display: flex; gap: 10px; }
+
+        .input-group { margin: 30px 0; }
+        .input-group label { display: block; margin-bottom: 10px; color: var(--text-muted); font-size: 1.1rem; }
+        .input-group input { width: 100%; padding: 15px; background-color: var(--bg-panel); border: 1px solid var(--border-color); color: var(--accent-green); font-family: var(--font-mono); font-size: 1.3rem; border-radius: 4px; outline: none; }
+        .input-group input:focus { border-color: var(--accent-blue); }
+
+        .market-header { display: flex; justify-content: space-between; align-items: center; background-color: var(--bg-panel); padding: 10px 20px; border: 1px solid var(--border-color); border-radius: 6px; margin-bottom: 15px; flex-shrink: 0; }
+        .market-header h2 { font-size: 1.1rem; color: var(--text-muted); }
+        .wallet-display { font-size: 1.4rem; color: var(--accent-green); font-weight: bold; }
+        .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex: 1; min-height: 0; }
+        .warehouse-card { background-color: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 6px; display: flex; flex-direction: column; }
+        .warehouse-card:hover { border-color: var(--accent-blue); box-shadow: 0 0 10px rgba(56, 189, 248, 0.1); }
+        .wh-header { padding: 15px; border-bottom: 1px solid var(--border-color); background-color: rgba(0,0,0,0.2); }
+        .wh-header h3 { color: var(--accent-blue); margin-bottom: 5px; font-size: 1.1rem;}
+        .wh-price { color: var(--accent-green); font-size: 1.3rem; font-weight: bold; }
+        .wh-details { padding: 15px; flex: 1; font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); overflow-y: auto; }
+        .wh-details strong { color: var(--text-main); font-size: 0.85rem; }
+        .wh-details ul { margin-left: 20px; margin-top: 6px; margin-bottom: 15px; }
+        .wh-details li { margin-bottom: 4px; }
+        .wh-details li.risk { color: var(--accent-red); }
+        .wh-details li.good { color: var(--accent-green); }
+        .wh-action { padding: 15px; border-top: 1px solid var(--border-color); display: flex; flex-shrink: 0; }
+        .wh-action .btn { padding: 10px 16px; font-size: 0.95rem; }
+
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); display: flex; justify-content: center; align-items: center; z-index: 9999; backdrop-filter: blur(2px); }
+        .modal-box { background: var(--bg-panel); border: 2px solid var(--accent-red); padding: 30px; border-radius: 6px; max-width: 550px; width: 90%; box-shadow: 0 0 30px rgba(248, 113, 113, 0.15); }
+        
+        #purchase-success { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 600px; background-color: var(--bg-panel); border: 2px solid var(--accent-green); color: var(--accent-green); padding: 20px; border-radius: 6px; text-align: center; font-size: 1.1rem; animation: fadeInBottom 0.4s ease-out; box-shadow: 0 10px 40px rgba(0,0,0,0.8); z-index: 100; }
+        @keyframes fadeInBottom { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+        /* DASHBOARD WMS */
+        #dashboard-view { height: 100vh; display: flex; flex-direction: column; }
+        .dash-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: var(--bg-header); border-bottom: 1px solid var(--border-color); flex-shrink: 0; z-index: 10; }
+        .dash-header h1 { color: var(--accent-blue); font-size: 1.2rem; margin-bottom: 2px; }
+        .dash-header p { color: var(--text-muted); font-size: 0.8rem; }
+        .stats-bar { display: flex; gap: 20px; align-items: center; }
+        .stat-box { border: 1px solid var(--border-color); padding: 5px 15px; border-radius: 4px; font-weight: bold; background: var(--bg-panel); }
+        .stat-box.cash { color: var(--accent-green); }
+
+        nav.top-nav { display: flex; background-color: var(--bg-header); border-bottom: 2px solid var(--border-color); padding: 0 20px; flex-shrink: 0; }
+        .nav-item { padding: 10px 20px; color: var(--text-muted); cursor: pointer; border-bottom: 3px solid transparent; font-weight: bold; font-size: 0.9rem; transition: all 0.2s; }
+        .nav-item:hover { background-color: var(--hover-color); color: var(--text-main); }
+        .nav-item.active { border-bottom-color: var(--accent-blue); color: var(--accent-blue); background-color: var(--bg-panel); }
+
+        main.content-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; background-color: var(--bg-main); transition: filter 0.3s; }
+        main.content-area.blurred { filter: blur(5px); pointer-events: none; }
+        .tab-content { display: none; flex: 1; overflow: hidden; }
+        .tab-content.active { display: flex; }
+        #tab-dashboard { grid-template-columns: 250px 1fr 250px; gap: 15px; padding: 15px; flex: 1; min-height: 0; }
+        #tab-dashboard.active { display: grid; }
+        .panel { background-color: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 6px; display: flex; flex-direction: column; overflow: hidden; min-height: 0; }
+        .panel-header { padding: 10px 15px; border-bottom: 1px solid var(--border-color); font-weight: bold; display: flex; justify-content: space-between; flex-shrink: 0; }
+        .panel-content { padding: 10px; flex: 1; overflow-y: auto; min-height: 0; display: flex; flex-direction: column; gap: 10px; }
+
+        /* MODAL DE CHOQUE DE REALIDADE (AUDITORIA) */
+        #modal-audit .modal-box { padding: 0; border-radius: 8px; max-width: 850px; max-height: 90vh; display: flex; flex-direction: column; border-width: 2px; }
+        .audit-header { background-color: #450a0a; padding: 20px; border-bottom: 2px solid var(--accent-red); text-align: center; }
+        .audit-header h2 { color: var(--accent-red); font-size: 1.4rem; letter-spacing: 1px; }
+        .audit-header p { color: #fca5a5; font-size: 0.9rem; margin-top: 5px; }
+        .audit-body { padding: 30px; overflow-y: auto; }
+        
+        .decision-block { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; padding: 20px; margin-bottom: 20px; }
+        .decision-block h3 { color: var(--accent-orange); margin-bottom: 10px; font-family: var(--font-mono); font-size: 1.1rem; }
+        .decision-block p { color: var(--text-main); font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px; }
+        
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .option-card { border: 2px solid var(--border-color); border-radius: 6px; padding: 15px; cursor: pointer; transition: all 0.2s; }
+        .option-card:hover { border-color: var(--accent-blue); background-color: rgba(56, 189, 248, 0.05); }
+        .option-card.selected { border-color: var(--accent-green); background-color: rgba(74, 222, 128, 0.1); }
+        .option-card h4 { color: var(--accent-blue); margin-bottom: 5px; font-size: 1rem; }
+        .option-card p { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+        
+        /* CAIXAS DE PROMESSA DINÂMICAS */
+        .promise-box { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; background: var(--bg-main); padding: 15px; border-radius: 4px; border: 1px solid var(--border-color); }
+        .promise-item { display: flex; gap: 10px; align-items: center; flex: 1; min-width: 200px; }
+        .promise-item label { color: var(--text-muted); font-size: 0.95rem; flex: 1; }
+        .promise-item input { width: 90px; padding: 8px; background: var(--bg-panel); border: 1px solid var(--border-color); color: var(--accent-green); font-family: var(--font-mono); font-size: 1rem; border-radius: 4px; outline: none; text-align: center; }
+        .promise-item input:focus { border-color: var(--accent-blue); }
+
+        .audit-footer { padding: 20px; border-top: 1px solid var(--border-color); background-color: var(--bg-header); display: flex; justify-content: flex-end; gap: 15px; }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-main); }
+        ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+        /* PASSO 3 — GAME LOOP CONTROLS */
+        .speed-controls { display: flex; gap: 5px; align-items: center; }
+        .speed-lbl { color: var(--text-muted); font-size: 0.72rem; margin-right: 4px; letter-spacing: 1px; }
+        .speed-btn { background: transparent; color: var(--text-muted); border: 1px solid var(--border-color); padding: 4px 10px; cursor: pointer; border-radius: 3px; font-family: var(--font-mono); font-size: 0.78rem; transition: all 0.2s; }
+        .speed-btn:hover { background: var(--border-color); color: var(--text-main); }
+        .speed-btn.active { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(56,189,248,0.1); font-weight: bold; }
+        .speed-btn.paused-active { border-color: var(--accent-orange); color: var(--accent-orange); background: rgba(251,191,36,0.1); font-weight: bold; }
+        #ui-hour { color: var(--text-muted); font-size: 0.8rem; }
+
+        /* PASSO 3 — ORDER CARDS */
+        .order-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 4px; padding: 9px 11px; font-size: 0.78rem; transition: border-color 0.2s; }
+        .order-card.urgent { border-color: var(--accent-orange); }
+        @keyframes pulseRed {
+            0%   { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.5); }
+            70%  { box-shadow: 0 0 0 8px rgba(248, 113, 113, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0); }
+        }
+        .order-card.critical { border-color: var(--accent-red) !important; animation: pulseRed 1.5s ease-out infinite; }
+        .order-card .oc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .order-card .oc-id { color: var(--accent-blue); font-weight: bold; font-size: 0.75rem; }
+        .order-card .oc-client { color: var(--text-muted); font-size: 0.72rem; }
+        .order-card .oc-cargo { color: var(--text-main); margin-bottom: 7px; font-size: 0.8rem; }
+        .sla-label { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.68rem; margin-bottom: 3px; }
+        .sla-bar { height: 3px; background: var(--border-color); border-radius: 2px; overflow: hidden; margin-bottom: 8px; }
+        .sla-fill { height: 100%; border-radius: 2px; transition: width 1s linear, background 1s; }
+        .order-card .oc-footer { display: flex; justify-content: space-between; align-items: center; }
+        .order-card .oc-value { color: var(--accent-green); font-weight: bold; }
+        .order-card .oc-penalty { color: var(--accent-red); font-size: 0.7rem; }
+        .order-empty { color: var(--text-muted); font-size: 0.82rem; text-align: center; padding: 25px 10px; opacity: 0.5; line-height: 1.6; }
+
+        /* PASSO 3 — STORAGE GRID (VISUAL RESTAURADO) */
+        .grid-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+            gap: 8px;
+            padding: 5px;
+            align-content: start;
+            overflow-y: auto;
+        }
+        .grid-cell {
+            aspect-ratio: 1;
+            border: 1px dashed var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--bg-card);
+            border-radius: 4px;
+            color: var(--text-muted);
+            font-size: 0.65rem;
+        }
+        .grid-cell.occupied {
+            border-style: solid;
+            background-color: rgba(56, 189, 248, 0.1);
+            border-color: var(--accent-blue);
+        }
+        .slot-id { font-weight: bold; color: var(--text-main); font-size: 0.7rem; margin-bottom: 3px; }
+        .slot-sub { font-size: 0.55rem; color: var(--text-muted); }
+
+        /* PASSO 3 — DRE */
+        .dre-table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
+        .dre-table td { padding: 5px 10px; border-bottom: 1px solid var(--border-color); color: var(--text-muted); }
+        .dre-table td:last-child { text-align: right; font-weight: bold; }
+        .dre-positive { color: var(--accent-green) !important; }
+        .dre-negative { color: var(--accent-red) !important; }
+        .dre-neutral { color: var(--accent-blue) !important; }
+        .dre-total td { border-top: 2px solid var(--border-color); background: rgba(0,0,0,0.15); color: var(--text-main) !important; font-weight: bold; }
+
+        /* TOAST NOTIFICATION */
+        #toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 99999; display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+        .toast { background: var(--bg-panel); border-left: 3px solid var(--accent-red); color: var(--text-main); padding: 10px 14px; border-radius: 4px; font-size: 0.8rem; max-width: 300px; box-shadow: 0 4px 20px rgba(0,0,0,0.6); opacity: 0; animation: toastIn 0.3s ease-out forwards, toastOut 0.4s ease-in 2.6s forwards; }
+        @keyframes toastIn  { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes toastOut { from { opacity: 1; } to { opacity: 0; transform: translateX(10px); } }
+
+    </style>
+</head>
+<body>
+
+    <div id="toast-container"></div>
+
+    <div id="modal-error" class="modal-overlay hidden" style="z-index: 10000;">
+        <div class="modal-box" style="max-width: 450px; text-align: center; border-color: var(--accent-orange);">
+            <h3 style="color: var(--accent-orange); margin-bottom: 15px; font-size: 1.3rem;">⚠️ AVISO DO SISTEMA</h3>
+            <p id="error-msg-text" style="color: var(--text-main); margin-bottom: 25px; line-height: 1.6; font-size: 1rem;"></p>
+            <button class="btn primary" onclick="document.getElementById('modal-error').classList.add('hidden')">Confirmar</button>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         VIEW 1: BOOT SEQUENCE & MERCADO (PASSO 1)
+         ========================================== -->
+    <div id="boot-view">
+        <div id="modal-delete" class="modal-overlay hidden">
+            <div class="modal-box">
+                <h3 style="color: var(--accent-red); margin-bottom: 15px; font-size: 1.3rem;">⚠️ AVISO DE ENCERRAMENTO (LIQUIDAÇÃO)</h3>
+                <p style="color: var(--text-main); margin-bottom: 25px; line-height: 1.6; font-size: 1rem;">
+                    Atenção, Gestor<br><br>
+                    Você solicitou o encerramento definitivo desta operação logística.<br>
+                    Esta ação configura a liquidação total dos ativos comerciais e a exclusão permanente dos dados do sistema.<br><br>
+                    <span style="color: var(--accent-red); font-weight: bold;">Esta operação não poderá ser desfeita.</span><br>
+                    Confirma a liquidação da empresa?
+                </p>
+                <div class="btn-group" style="justify-content: flex-end; margin-top: 0;">
+                    <button class="btn" onclick="closeDeleteModal()">Cancelar</button>
+                    <button class="btn reject" onclick="executeDelete()">[CONFIRMAR LIQUIDAÇÃO]</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen-menu" class="os-window">
+            <div class="window-header">
+                <h1>WMS_OS :: V6.0 - Turnaround Manager</h1>
+                <span>Sistema Central</span>
+            </div>
+            <div class="window-content">
+                <div class="content-wrapper">
+                    <h2 style="margin-bottom: 10px; color: var(--text-main); font-size: 1.8rem;">Seja bem-vindo.</h2>
+                    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 20px;">Inicie um novo projeto de reestruturação logística ou retome uma operação existente.</p>
+                    <div class="btn-group"><button class="btn primary" onclick="goToOverview()">[NOVO JOGO] Iniciar Operação</button></div>
+                    <h3 style="margin-top: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; font-size: 1.2rem; color: var(--text-main);">Jogos Salvos</h3>
+                    <div class="slots-container" id="save-slots"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen-overview" class="os-window hidden">
+            <div class="window-header"><h1>WMS_OS :: Briefing de Missão</h1></div>
+            <div class="window-content">
+                <div class="content-wrapper">
+                    <h2 style="color: var(--accent-orange); margin-bottom: 20px; font-size: 1.6rem;">Visão Geral da Situação</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 10px; font-size: 1.1rem; line-height: 1.6;">O mercado logístico entrou em colapso.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 10px; font-size: 1.1rem; line-height: 1.6;">Grandes empresas faliram por má gestão, e dezenas de armazéns foram a leilão.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 10px; font-size: 1.1rem; line-height: 1.6;">Você é um especialista em <strong>Turnaround (Recuperação de Empresas)</strong>.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">Um grupo de investidores acaba de depositar <strong style="color: var(--accent-green);">$500.000</strong> na sua conta corporativa.</p>
+                    <ul style="color: var(--text-main); margin-left: 20px; margin-bottom: 30px; line-height: 1.7; font-size: 1rem;">
+                        <li>Sua missão é comprar uma operação problemática no mercado.</li>
+                        <li>Você herdará a infraestrutura, mas também as <strong>dívidas, contratos atrasados e funcionários estressados</strong>.</li>
+                        <li>Você deve renegociar prazos, arrumar a casa e tornar a operação lucrativa novamente antes que o caixa zere.</li>
+                    </ul>
+                    <div class="btn-group" style="justify-content: flex-end;">
+                        <button class="btn" onclick="goToMenu()">Cancelar</button>
+                        <button class="btn primary" onclick="goToName()">Aceitar Missão ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen-name" class="os-window hidden">
+            <div class="window-header"><h1>WMS_OS :: Registro de Entidade</h1></div>
+            <div class="window-content">
+                <div class="content-wrapper">
+                    <h2 style="margin-bottom: 10px; font-size: 1.6rem;">Registro Comercial</h2>
+                    <p style="color: var(--text-muted); font-size: 1rem;">Defina o nome fantasia da sua nova operação logística corporativa.</p>
+                    <div class="input-group">
+                        <label>Nome do Armazém / Empresa:</label>
+                        <input type="text" id="company-name" placeholder="Ex: Galpão Alpha Logística" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="btn-group" style="justify-content: flex-end;">
+                        <button class="btn" onclick="goToOverview()">< Voltar</button>
+                        <button class="btn primary" onclick="goToMarket()">Acessar Mercado de Aquisições ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen-market" class="os-window os-window-large hidden">
+            <div class="window-header">
+                <h1>WMS_OS :: Mercado Imobiliário Logístico</h1>
+                <span id="market-company-name" style="color: var(--text-muted); font-size: 1rem;"></span>
+            </div>
+            <div class="window-content">
+                <div class="content-wrapper">
+                    <div class="market-header">
+                        <h2>Bolsa de Ativos: Armazéns Disponíveis</h2>
+                        <div>
+                            <span style="color: var(--text-muted); font-size: 0.9rem; margin-right: 10px;">SALDO EM CARTEIRA:</span>
+                            <span class="wallet-display" id="market-wallet">$500.000</span>
+                        </div>
+                    </div>
+
+                    <div class="market-grid">
+                        <div class="warehouse-card">
+                            <div class="wh-header">
+                                <h3>Galpão "Massa Falida"</h3>
+                                <div class="wh-price">$50.000</div>
+                            </div>
+                            <div class="wh-details">
+                                <strong>Infraestrutura:</strong> 30 Posições (Estrutura enferrujada)<br>
+                                <strong>Equipe:</strong> 2 Funcionários (Desmotivados)<br>
+                                <strong>Dívida Ativa Herdada:</strong> <span style="color: var(--accent-red);">-$15.000 (Atraso 60 dias)</span><br><br>
+                                <strong>Contratos Ativos (Herdados):</strong>
+                                <ul>
+                                    <li class="risk">2 Clientes retendo pagamento por atraso no SLA.</li>
+                                    <li>5 Fornecedores básicos.</li>
+                                    <li class="risk">1 Empilhadeira quebrada (Manutenção pendente).</li>
+                                </ul>
+                                <p style="font-style: italic; border-top: 1px dashed var(--border-color); padding-top: 8px;">"Sobra muito dinheiro em caixa, mas você terá que apagar incêndios desde o primeiro minuto."</p>
+                            </div>
+                            <div class="wh-action">
+                                <button class="btn primary" style="width: 100%;" onclick="buyWarehouse('Massa Falida', 50000)">Adquirir Ativo</button>
+                            </div>
+                        </div>
+
+                        <div class="warehouse-card">
+                            <div class="wh-header">
+                                <h3>Operação "Estagnada"</h3>
+                                <div class="wh-price">$250.000</div>
+                            </div>
+                            <div class="wh-details">
+                                <strong>Infraestrutura:</strong> 50 Posições (Layout padrão)<br>
+                                <strong>Equipe:</strong> 5 Funcionários (Operação rodando)<br>
+                                <strong>Dívida Ativa Herdada:</strong> <span style="color: var(--accent-orange);">-$5.000 (Negociável)</span><br><br>
+                                <strong>Contratos Ativos (Herdados):</strong>
+                                <ul>
+                                    <li class="good">3 Clientes pagando em dia.</li>
+                                    <li class="risk">2 Contratos B2B expirando amanhã (Risco de quebra de receita).</li>
+                                    <li>3 Fornecedores com prazos regulares.</li>
+                                </ul>
+                                <p style="font-style: italic; border-top: 1px dashed var(--border-color); padding-top: 8px;">"O meio-termo ideal. Requer ajustes operacionais imediatos para não sangrar dinheiro."</p>
+                            </div>
+                            <div class="wh-action">
+                                <button class="btn primary" style="width: 100%;" onclick="buyWarehouse('Estagnada', 250000)">Adquirir Ativo</button>
+                            </div>
+                        </div>
+
+                        <div class="warehouse-card">
+                            <div class="wh-header">
+                                <h3>Hub "Premium"</h3>
+                                <div class="wh-price">$450.000</div>
+                            </div>
+                            <div class="wh-details">
+                                <strong>Infraestrutura:</strong> 80 Posições (Piso Epóxi, Esteiras)<br>
+                                <strong>Equipe:</strong> 10 Funcionários (Alta Performance)<br>
+                                <strong>Dívida Ativa Herdada:</strong> <span style="color: var(--accent-green);">$0 (Auditoria Limpa)</span><br><br>
+                                <strong>Contratos Ativos (Herdados):</strong>
+                                <ul>
+                                    <li class="good">5 Clientes VIP com contratos longos.</li>
+                                    <li class="good">7 Fornecedores com SLA impecável.</li>
+                                    <li>Equipamentos novos sob garantia.</li>
+                                </ul>
+                                <p style="font-style: italic; border-top: 1px dashed var(--border-color); padding-top: 8px;">"A operação roda sozinha, mas a compra consome 90% do seu caixa. Qualquer imprevisto pode te falir."</p>
+                            </div>
+                            <div class="wh-action">
+                                <button class="btn primary" style="width: 100%;" onclick="buyWarehouse('Premium', 450000)">Adquirir Ativo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="purchase-success" class="hidden">
+                        <strong>COMPRA EFETUADA COM SUCESSO!</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-main); display: block; margin-top: 5px;">Transferência de escritura concluída. Gerando chaves de acesso ao painel...</span>
+                        <button class="btn success btn-sm" style="margin-top: 15px;" onclick="loadDashboardFromMarket()">Gerenciar Armazém</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+         VIEW 2: DASHBOARD WMS & MODAL DE CRISES
+         ========================================== -->
+    <div id="dashboard-view" class="hidden">
+        
+        <!-- O CHOQUE DE REALIDADE (MODAL AUDITORIA) -->
+        <div id="modal-audit" class="modal-overlay hidden">
+            <div class="modal-box">
+                <div class="audit-header">
+                    <h2>⚠️ RELATÓRIO DE AUDITORIA: ALERTA CRÍTICO</h2>
+                    <p>De: Departamento Jurídico e Operações | Para: Novo CEO</p>
+                </div>
+                <div class="audit-body">
+                    <p style="color: var(--text-main); margin-bottom: 10px; line-height: 1.6;">Gestor, a transferência do armazém <strong id="txt-company"></strong> foi concluída.</p>
+                    <p style="color: var(--text-main); margin-bottom: 10px; line-height: 1.6;">O sistema operacional está temporariamente travado.</p>
+                    <p style="color: var(--text-main); margin-bottom: 25px; line-height: 1.6;">Você precisa tomar decisões executivas imediatas sobre os passivos herdados antes de iniciar a operação.</p>
+
+                    <!-- A. INFRAESTRUTURA -->
+                    <div class="decision-block" id="block-infra" style="display: none;">
+                        <h3>[A] Plano de Expansão (Infraestrutura)</h3>
+                        <p>O conselho exige um plano de crescimento estrutural. Prometa o prazo e a quantidade de posições que o armazém terá a mais.</p>
+                        <div class="promise-box">
+                            <div class="promise-item"><label>Prazo (Dias no jogo):</label><input type="number" id="input-infra-days" min="1" max="60" value="15"></div>
+                            <div class="promise-item"><label>Posições a Expandir:</label><input type="number" id="input-infra-slots" min="10" max="100" step="10" value="20"></div>
+                            <button class="btn primary btn-sm" id="btn-infra-confirm" onclick="confirmPromise('infra')" style="width:100%; margin-top:10px;">Registrar Plano Diretor</button>
+                        </div>
+                    </div>
+
+                    <!-- B. EQUIPE DESMOTIVADA -->
+                    <div class="decision-block" id="block-team" style="display: none;">
+                        <h3>[B] Equipe Desmotivada (RH)</h3>
+                        <p id="txt-rh-reason" style="color: var(--accent-red); font-weight: bold; margin-bottom: 5px;"></p>
+                        <p id="txt-rh-desc"></p>
+                        <div class="promise-box">
+                            <div class="promise-item"><label>Prazo p/ resolução (Dias):</label><input type="number" id="input-rh-days" min="1" max="30" value="7"></div>
+                            <div class="promise-item" id="rh-dynamic-input-container"></div>
+                            <button class="btn primary btn-sm" id="btn-team-confirm" onclick="confirmPromise('team')" style="width:100%; margin-top:10px;">Firmar Compromisso</button>
+                        </div>
+                    </div>
+
+                    <!-- C. DÍVIDA ATIVA -->
+                    <div class="decision-block" id="block-debt" style="display: none;">
+                        <h3>[C] Dívida Ativa Herdada: <span id="txt-debt-value" style="color: var(--accent-red);"></span></h3>
+                        <p>Fornecedores estão ameaçando suspender o abastecimento devido a faturas em aberto deixadas pela antiga gestão.</p>
+                        <div class="options-grid">
+                            <div class="option-card" id="opt-debt-cash" onclick="selectAuditOption('debt', 'cash')">
+                                <h4>Pagar à Vista (10% Desc.)</h4><p>Desconta imediatamente do seu caixa, mas limpa o nome da empresa.</p>
+                            </div>
+                            <div class="option-card" id="opt-debt-parcel" onclick="selectAuditOption('debt', 'parcel')">
+                                <h4>Renegociar (12 Parcelas)</h4><p>Preserva seu caixa inicial, mas adiciona juros à sua DRE.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- D. CLIENTES SLA -->
+                    <div class="decision-block" id="block-sla" style="display: none;">
+                        <h3>[D] 2 Clientes retendo pagamento por atraso no SLA</h3>
+                        <p>Você precisa renegociar o limite de SLA com esses clientes e garantir cumprimento sob risco de quebra de contrato.</p>
+                        <div class="promise-box">
+                            <div class="promise-item"><label>Novo SLA Prometido (Horas):</label><input type="number" id="input-sla-hours" min="1" max="72" value="24"></div>
+                            <button class="btn primary btn-sm" id="btn-sla-confirm" onclick="confirmPromise('sla')">Assinar Acordo</button>
+                        </div>
+                    </div>
+
+                    <!-- E. EMPILHADEIRA -->
+                    <div class="decision-block" id="block-forklift" style="display: none;">
+                        <h3>[E] 1 Empilhadeira quebrada (Manutenção pendente)</h3>
+                        <p>A empilhadeira principal está com o motor fundido. Sem ela, nosso limite de armazenagem fica restrito.</p>
+                        <div class="options-grid">
+                            <div class="option-card" id="opt-fix-now" onclick="selectAuditOption('forklift', 'fix')">
+                                <h4>Comprar Peça ($2.500)</h4><p>Paga o conserto agora e recupera a capacidade total do armazém.</p>
+                            </div>
+                            <div class="option-card" id="opt-fix-later" onclick="selectAuditOption('forklift', 'ignore')">
+                                <h4>Adiar Manutenção</h4><p>Economiza dinheiro hoje, mas perdemos 10 posições no grid.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- F. CONTRATOS B2B EXPIRANDO -->
+                    <div class="decision-block" id="block-b2b" style="display: none;">
+                        <h3>[F] 2 Contratos B2B Expirando</h3>
+                        <p>Os clientes exigem garantias mais rígidas para renovarem devido à má qualidade dos últimos serviços.</p>
+                        <div class="promise-box">
+                            <div class="promise-item"><label>SLA Contratual (Horas):</label><input type="number" id="input-b2b-sla" min="1" max="48" value="12"></div>
+                            <div class="promise-item"><label>Desc. Tabela (%):</label><input type="number" id="input-b2b-desc" min="0" max="30" value="5"></div>
+                            <button class="btn primary btn-sm" id="btn-b2b-confirm" onclick="confirmPromise('b2b')" style="width:100%; margin-top:10px;">Assinar Renovação de Risco</button>
+                        </div>
+                    </div>
+
+                    <!-- G. GARGALO FINANCEIRO -->
+                    <div class="decision-block" id="block-premium" style="display: none;">
+                        <h3>[G] Análise de Gargalo Financeiro</h3>
+                        <p>A operação roda sozinha, mas a compra consumiu 90% do seu caixa. Qual será sua estratégia para evitar a quebra na primeira semana?</p>
+                        <div class="options-grid">
+                            <div class="option-card" id="opt-prem-prazos" onclick="selectAuditOption('premium', 'prazos')">
+                                <h4>Renegociar Prazos (Fornec.)</h4><p>Alivia a saída de caixa, mas aumenta o custo de Inbound em 5%.</p>
+                            </div>
+                            <div class="option-card" id="opt-prem-precos" onclick="selectAuditOption('premium', 'precos')">
+                                <h4>Repassar Preços (Clientes)</h4><p>Aumenta a receita, mas corremos risco de perder 1 contrato na renovação.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="audit-footer">
+                    <span id="audit-warning" style="color: var(--accent-red); margin-right: auto; align-self: center;">Selecione e confirme todas as opções acima.</span>
+                    <button class="btn success" style="font-size: 1rem; padding: 10px 25px;" onclick="confirmAuditAndStart()">Assinar Termos e Iniciar Jogo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN DASHBOARD UI -->
+        <header class="dash-header">
+            <div class="header-title"><h1 id="ui-company-name">WMS_OS v6.0</h1><p>Sistema Central Logístico</p></div>
+            <div class="stats-bar">
+                <div class="stat-box" id="ui-day">DIA: 1</div>
+                <div class="stat-box cash" id="ui-cash">CAIXA: $0.00</div>
+                <div class="stat-box" id="ui-space">ESPAÇO: 0/0</div>
+                <div class="controls">
+                    <div class="speed-controls">
+                        <span class="speed-lbl">VELOCIDADE:</span>
+                        <button class="speed-btn paused-active" id="btn-pause" onclick="togglePause()">&#9646;&#9646; PAUSAR</button>
+                        <button class="speed-btn active" id="btn-1x" onclick="setGameSpeed(1)">1x</button>
+                        <button class="speed-btn" id="btn-2x" onclick="setGameSpeed(2)">2x</button>
+                        <button class="speed-btn" id="btn-4x" onclick="setGameSpeed(4)">4x</button>
+                        <button class="speed-btn" id="btn-exit" onclick="saveAndExit()" style="border-color:var(--accent-red);color:var(--accent-red);margin-left:8px;">&#10005; SAIR</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="top-nav">
+            <div class="nav-item active" onclick="switchTab('dashboard')" id="nav-dashboard">[1] Visão Geral (Doca)</div>
+            <div class="nav-item" onclick="switchTab('rh')" id="nav-rh">[2] Equipe (RH)</div>
+            <div class="nav-item" onclick="switchTab('contratos')" id="nav-contratos">[3] Contratos B2B</div>
+            <div class="nav-item" onclick="switchTab('perfil')" id="nav-perfil">[4] Perfil do Gestor</div>
+        </nav>
+
+        <main class="content-area blurred" id="main-app">
+            <div id="tab-dashboard" class="tab-content active">
+
+                <!-- COLUNA ESQUERDA: INBOUND QUEUE -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span>📥 INBOUND QUEUE</span>
+                        <span id="inbound-count" style="color:var(--text-muted);font-size:0.78rem;">0 pendentes</span>
+                    </div>
+                    <div class="panel-content" id="inbound-list">
+                        <div class="order-empty">Aguardando<br>chegada de cargas...</div>
+                    </div>
+                </div>
+
+                <!-- COLUNA CENTRAL: DRE + GRID -->
+                <div style="display:flex;flex-direction:column;gap:15px;min-height:0;overflow:hidden;">
+                    <div class="panel" style="flex-shrink:0;">
+                        <div class="panel-header">
+                            <span>📊 DRE — RESULTADO OPERACIONAL</span>
+                            <span id="dre-day-lbl" style="color:var(--text-muted);font-size:0.78rem;">Dia 1 | 08:00h</span>
+                        </div>
+                        <div class="panel-content" style="padding:8px 12px;">
+                            <table class="dre-table">
+                                <tr><td>Receita (Expedições)</td><td id="dre-revenue" class="dre-positive">$0</td></tr>
+                                <tr><td>Despesas Fixas (Diárias)</td><td id="dre-costs" class="dre-negative">-$0</td></tr>
+                                <tr class="dre-total"><td>Resultado do Dia</td><td id="dre-result" class="dre-neutral">$0</td></tr>
+                                <tr class="dre-total"><td>Caixa Atual</td><td id="dre-cash" class="dre-positive">$0</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel" style="flex:1;">
+                        <div class="panel-header">
+                            <span>&#127981; STORAGE GRID</span>
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <span id="grid-status" style="color:var(--text-muted);font-size:0.78rem;">0/0</span>
+                                <button onclick="buyStorageSlot()" style="font-size:0.68rem;padding:2px 8px;background:transparent;border:1px solid var(--accent-green);color:var(--accent-green);cursor:pointer;font-family:var(--font-mono);border-radius:3px;">+ Comprar ($500)</button>
+                            </div>
+                        </div>
+                        <div class="panel-content">
+                            <div class="grid-wrap" id="storage-grid"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUNA DIREITA: OUTBOUND ORDERS -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span>📤 OUTBOUND ORDERS</span>
+                        <span id="outbound-count" style="color:var(--text-muted);font-size:0.78rem;">0 prontos</span>
+                    </div>
+                    <div class="panel-content" id="outbound-list">
+                        <div class="order-empty">Nenhum pedido<br>aguardando expedição.</div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="tab-rh" class="tab-content" style="overflow:auto;"><div id="rh-panel-content" style="padding:30px;"></div></div>
+            <div id="tab-contratos" class="tab-content" style="padding: 40px; color: var(--text-muted);">Módulo Comercial (Em espera do Game Loop)</div>
+            <div id="tab-perfil" class="tab-content" style="overflow:auto;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:30px;width:100%;box-sizing:border-box;">
+
+                    <!-- COLUNA ESQUERDA: RADAR + BARRAS -->
+                    <div>
+                        <h2 style="color:var(--accent-blue);margin-bottom:4px;font-size:1.1rem;">&#128200; Radar de Gestão</h2>
+                        <p id="profile-header-info" style="color:var(--text-muted);font-size:0.8rem;margin-bottom:20px;"></p>
+                        <canvas id="radarChart" width="220" height="220" style="margin:0 auto 20px auto;display:block;"></canvas>
+                        <div id="profile-bars"></div>
+                    </div>
+
+                    <!-- COLUNA DIREITA: COMPROMISSOS -->
+                    <div>
+                        <h3 style="color:var(--accent-orange);font-size:0.92rem;border-bottom:1px solid var(--border-color);padding-bottom:8px;margin-bottom:16px;">&#128203; COMPROMISSOS FIRMADOS (AUDITORIA)</h3>
+                        <div id="profile-commitments"></div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showError(message) {
+            document.getElementById('error-msg-text').innerText = message;
+            document.getElementById('modal-error').classList.remove('hidden');
+        }
+
+        // ==========================================
+        // PASSO 1 - MERCADO E SAVES
+        // ==========================================
+        let newCompanyName = "";
+        let playerWallet = 500000;
+        let deleteTargetIndex = -1;
+
+        function hideAllBootScreens() { document.querySelectorAll('#boot-view .os-window').forEach(el => el.classList.add('hidden')); }
+        function goToMenu() { hideAllBootScreens(); renderSaveSlots(); document.getElementById('screen-menu').classList.remove('hidden'); }
+        function goToOverview() { hideAllBootScreens(); document.getElementById('screen-overview').classList.remove('hidden'); }
+        function goToName() { hideAllBootScreens(); document.getElementById('company-name').value = ""; document.getElementById('screen-name').classList.remove('hidden'); document.getElementById('company-name').focus(); }
+        function goToMarket() {
+            const input = document.getElementById('company-name').value.trim();
+            if (input === "") { showError("O sistema exige um Nome de Registro para prosseguir."); return; }
+            newCompanyName = input;
+            document.getElementById('market-company-name').innerText = "Licenciado para: " + newCompanyName;
+            hideAllBootScreens(); document.getElementById('screen-market').classList.remove('hidden');
+        }
+        
+        function buyWarehouse(type, price) {
+            document.querySelectorAll('.wh-action').forEach(el => el.style.visibility = 'hidden');
+            playerWallet -= price;
+            document.getElementById('market-wallet').innerText = `$${playerWallet.toLocaleString('pt-BR')}`;
+            document.getElementById('purchase-success').classList.remove('hidden');
+            
+            // Registra um save com auditCompleted = false
+            saveGameSession(newCompanyName, type, playerWallet, false, 0);
+        }
+
+        function renderSaveSlots() {
+            const container = document.getElementById('save-slots');
+            container.innerHTML = '';
+            let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+            
+            for (let i = 0; i < 4; i++) {
+                if (saves[i]) {
+                    const save = saves[i];
+                    // UX: Exibe o status da Auditoria diretamente no botão/save
+                    let statusHtml = save.auditCompleted 
+                        ? `<span style="color: var(--accent-green);">Ativa</span>` 
+                        : `<span style="color: var(--accent-orange);">Auditoria Pendente</span>`;
+                        
+                    container.innerHTML += `
+                        <div class="save-slot">
+                            <div class="slot-info">
+                                <h3>${save.name}</h3>
+                                <p>Operação: ${save.type} | Caixa: $${save.cash.toLocaleString('pt-BR')} | Status: ${statusHtml}</p>
+                            </div>
+                            <div class="slot-actions">
+                                <button class="btn success btn-sm" onclick="loadDashboardFromSave(${i})">Continuar Operação</button>
+                                <button class="btn reject btn-sm" onclick="confirmDelete(${i})">Encerrar Operação</button>
+                            </div>
+                        </div>`;
+                } else {
+                    container.innerHTML += `
+                        <div class="save-slot empty">
+                            <div class="slot-info">
+                                <h3 style="color: var(--text-muted);">[Slot ${i+1} Vazio]</h3>
+                                <p>Nenhum dado salvo.</p>
+                            </div>
+                            <button class="btn btn-sm" disabled>Carregar</button>
+                        </div>`;
+                }
+            }
+        }
+
+        function saveGameSession(companyName, warehouseType, remainingCash, auditStatus = false, maxSpace = 0) {
+            let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+            const newSave = { 
+                name: companyName, 
+                type: warehouseType, 
+                cash: remainingCash, 
+                auditCompleted: auditStatus, 
+                maxSpace: maxSpace, 
+                date: new Date().toLocaleString('pt-BR') 
+            };
+            saves.unshift(newSave);
+            if (saves.length > 4) saves.pop();
+            localStorage.setItem('wms_saves', JSON.stringify(saves));
+        }
+
+        // SALVA O ESTADO ATUAL PELO INDEX PARA GARANTIR PRECISÃO ABSOLUTA
+        function updateCurrentSaveSession(newCash, newMaxSpace, auditStatus) {
+            let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+            if (gameState.saveIndex >= 0 && gameState.saveIndex < saves.length) {
+                saves[gameState.saveIndex].cash = newCash;
+                saves[gameState.saveIndex].maxSpace = newMaxSpace;
+                saves[gameState.saveIndex].auditCompleted = auditStatus;
+                localStorage.setItem('wms_saves', JSON.stringify(saves));
+            }
+        }
+
+        function confirmDelete(index) { deleteTargetIndex = index; document.getElementById('modal-delete').classList.remove('hidden'); }
+        function closeDeleteModal() { deleteTargetIndex = -1; document.getElementById('modal-delete').classList.add('hidden'); }
+        function executeDelete() {
+            if (deleteTargetIndex > -1) {
+                let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+                saves.splice(deleteTargetIndex, 1);
+                localStorage.setItem('wms_saves', JSON.stringify(saves));
+                closeDeleteModal(); renderSaveSlots();
+            }
+        }
+
+        // ==========================================
+        // PASSO 2 - O CHOQUE DE REALIDADE E CARREGAMENTO
+        // ==========================================
+        let gameState = { 
+            saveIndex: -1, // Adicionado para rastrear qual slot estamos jogando
+            companyName: "", type: "", cash: 0, baseDebt: 0, maxSpace: 0, 
+            rhProblemType: "", 
+            choices: { debt: null, sla: null, team: null, forklift: null, infra: null, b2b: null, premium: null }
+        };
+
+        const rhReasonsList = [
+            { id: "salary", title: "Motivo: Salário Defasado", desc: "Defina quando e de quanto será o aumento salarial. Falhar significa perda de funcionários." },
+            { id: "overwork", title: "Motivo: Excesso de Carga de Trabalho", desc: "Defina quando e quantos novos funcionários você irá contratar para aliviar o turno." },
+            { id: "resources", title: "Motivo: Falta de Recursos Operacionais", desc: "Defina quando e qual será a verba ($) para compra de novos equipamentos." }
+        ];
+
+        function loadDashboardFromMarket() { 
+            let saves = JSON.parse(localStorage.getItem('wms_saves')); 
+            initDashboardState(saves[0], 0); // O slot recém criado sempre vai para a posição 0
+        }
+        
+        function loadDashboardFromSave(index) { 
+            let saves = JSON.parse(localStorage.getItem('wms_saves')); 
+            initDashboardState(saves[index], index); 
+        }
+
+        function initDashboardState(saveData, index) {
+            gameState.saveIndex = index;
+            gameState.companyName = saveData.name;
+            gameState.type = saveData.type;
+            gameState.cash = saveData.cash;
+            
+            if(saveData.maxSpace) gameState.maxSpace = saveData.maxSpace;
+            
+            document.getElementById('boot-view').classList.add('hidden');
+            document.getElementById('dashboard-view').classList.remove('hidden');
+            
+            document.getElementById('txt-company').innerText = gameState.companyName;
+            document.getElementById('ui-company-name').innerText = gameState.companyName;
+
+            // LÓGICA DE AUDITORIA BLINDADA (com migração de saves antigos)
+            // auditCompleted === true  → campo explícito (salvo após assinar)
+            // maxSpace > 0            → save antigo sem o campo, mas auditoria já foi feita
+            //                           (maxSpace só é gravado no localStorage após confirmAuditAndStart)
+            const auditJaConcluida = saveData.auditCompleted === true || (saveData.maxSpace > 0);
+
+            if (auditJaConcluida) {
+                // Migração silenciosa: corrige o campo em saves antigos para evitar re-verificação futura
+                if (saveData.auditCompleted !== true) {
+                    let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+                    if (index >= 0 && index < saves.length) {
+                        saves[index].auditCompleted = true;
+                        localStorage.setItem('wms_saves', JSON.stringify(saves));
+                    }
+                }
+                document.getElementById('modal-audit').classList.add('hidden');
+                document.getElementById('main-app').classList.remove('blurred');
+                
+                document.getElementById('ui-cash').innerText = `CAIXA: $${gameState.cash.toLocaleString('pt-BR')}`;
+                document.getElementById('ui-space').innerText = `ESPAÇO: 0/${gameState.maxSpace}`;
+
+                // PASSO 3 — Reinicia o motor ao retomar save
+                startGameLoop();
+            } else {
+                // Jogo novo ou save que o jogador saiu ANTES de assinar a auditoria.
+                setupAuditReport();
+                document.getElementById('modal-audit').classList.remove('hidden');
+                document.getElementById('main-app').classList.add('blurred');
+            }
+        }
+
+        function setupAuditReport() {
+            document.querySelectorAll('.decision-block').forEach(el => el.style.display = 'none');
+            Object.keys(gameState.choices).forEach(k => gameState.choices[k] = null);
+            
+            document.getElementById('ui-cash').innerText = `CAIXA: $${gameState.cash.toLocaleString('pt-BR')}`;
+
+            if (gameState.type === "Massa Falida") {
+                gameState.baseDebt = 15000;
+                gameState.maxSpace = 30;
+                ['block-debt', 'block-sla', 'block-forklift', 'block-team', 'block-infra'].forEach(id => document.getElementById(id).style.display = 'block');
+                
+                let randomRh = rhReasonsList[Math.floor(Math.random() * rhReasonsList.length)];
+                gameState.rhProblemType = randomRh.id;
+                document.getElementById('txt-rh-reason').innerText = randomRh.title;
+                document.getElementById('txt-rh-desc').innerText = randomRh.desc;
+                
+                let rhInputHtml = "";
+                if (randomRh.id === "salary") rhInputHtml = `<label>Aumento (%):</label><input type="number" id="input-rh-val" min="5" max="50" value="10">`;
+                if (randomRh.id === "overwork") rhInputHtml = `<label>Contratações (Qtd):</label><input type="number" id="input-rh-val" min="1" max="10" value="2">`;
+                if (randomRh.id === "resources") rhInputHtml = `<label>Verba ($):</label><input type="number" id="input-rh-val" min="500" max="5000" step="500" value="1000">`;
+                document.getElementById('rh-dynamic-input-container').innerHTML = rhInputHtml;
+                
+                gameState.choices.b2b = 'ok'; gameState.choices.premium = 'ok';
+
+            } else if (gameState.type === "Estagnada") {
+                gameState.baseDebt = 5000;
+                gameState.maxSpace = 50;
+                ['block-debt', 'block-b2b', 'block-infra'].forEach(id => document.getElementById(id).style.display = 'block');
+                
+                gameState.choices.sla = 'ok'; gameState.choices.team = 'ok'; gameState.choices.forklift = 'ok'; gameState.choices.premium = 'ok';
+
+            } else if (gameState.type === "Premium") {
+                gameState.baseDebt = 0;
+                gameState.maxSpace = 80;
+                document.getElementById('block-premium').style.display = 'block';
+                
+                gameState.choices.debt = 'ok'; gameState.choices.sla = 'ok'; gameState.choices.team = 'ok'; 
+                gameState.choices.forklift = 'ok'; gameState.choices.infra = 'ok'; gameState.choices.b2b = 'ok';
+            }
+
+            if (gameState.baseDebt > 0) {
+                document.getElementById('txt-debt-value').innerText = `-$${gameState.baseDebt.toLocaleString('pt-BR')}`;
+            }
+            validateAudit();
+        }
+
+        // ==========================================
+        // CAPTURA DAS DECISÕES E VALIDAÇÃO
+        // ==========================================
+        function selectAuditOption(category, choice) {
+            gameState.choices[category] = choice;
+            if (category === 'debt') { document.getElementById('opt-debt-cash').classList.remove('selected'); document.getElementById('opt-debt-parcel').classList.remove('selected'); document.getElementById(`opt-debt-${choice}`).classList.add('selected'); }
+            if (category === 'forklift') { document.getElementById('opt-fix-now').classList.remove('selected'); document.getElementById('opt-fix-later').classList.remove('selected'); document.getElementById(`opt-fix-${choice==='fix'?'now':'later'}`).classList.add('selected'); }
+            if (category === 'premium') { document.getElementById('opt-prem-prazos').classList.remove('selected'); document.getElementById('opt-prem-precos').classList.remove('selected'); document.getElementById(`opt-prem-${choice}`).classList.add('selected'); }
+            validateAudit();
+        }
+
+        function confirmPromise(category) {
+            let btn = document.getElementById(`btn-${category}-confirm`);
+            
+            if (category === 'infra') {
+                gameState.choices.infra = { days: parseInt(document.getElementById('input-infra-days').value), slots: parseInt(document.getElementById('input-infra-slots').value) };
+                btn.innerText = "Plano Registrado";
+            }
+            if (category === 'sla') {
+                gameState.choices.sla = { hours: parseInt(document.getElementById('input-sla-hours').value) };
+                btn.innerText = "Acordo Firmado";
+            }
+            if (category === 'team') {
+                gameState.choices.team = { days: parseInt(document.getElementById('input-rh-days').value), value: parseInt(document.getElementById('input-rh-val').value) };
+                btn.innerText = "Compromisso Assumido";
+            }
+            if (category === 'b2b') {
+                gameState.choices.b2b = { sla: parseInt(document.getElementById('input-b2b-sla').value), discount: parseInt(document.getElementById('input-b2b-desc').value) };
+                btn.innerText = "Renovação Assinada";
+            }
+            
+            btn.classList.add('success', 'confirmed');
+            btn.classList.remove('primary');
+            validateAudit();
+        }
+
+        function validateAudit() {
+            let isReady = Object.values(gameState.choices).every(val => val !== null);
+            let warnEl = document.getElementById('audit-warning');
+            
+            if (isReady) {
+                warnEl.innerText = "Tudo pronto. O sistema pode ser destravado.";
+                warnEl.style.color = "var(--accent-green)";
+            } else {
+                warnEl.innerText = "Selecione e confirme TODAS as opções pendentes acima antes de assinar.";
+                warnEl.style.color = "var(--accent-red)";
+            }
+        }
+
+        function confirmAuditAndStart() {
+            let isReady = Object.values(gameState.choices).every(val => val !== null);
+            if (!isReady) {
+                showError("Atenção: É necessário tomar todas as ações e confirmar as decisões pendentes no relatório antes de iniciar o jogo.");
+                return;
+            }
+
+            if (gameState.choices.debt === 'cash') {
+                let valorPago = gameState.baseDebt * 0.90;
+                gameState.cash -= valorPago;
+            }
+
+            if (gameState.type === "Massa Falida") {
+                if (gameState.choices.forklift === 'fix') gameState.cash -= 2500;
+                else if (gameState.choices.forklift === 'ignore') gameState.maxSpace -= 10;
+            }
+
+            // ATUALIZAÇÃO BLINDADA DO SAVE
+            updateCurrentSaveSession(gameState.cash, gameState.maxSpace, true);
+
+            document.getElementById('modal-audit').classList.add('hidden');
+            document.getElementById('main-app').classList.remove('blurred');
+            
+            document.getElementById('ui-cash').innerText = `CAIXA: $${gameState.cash.toLocaleString('pt-BR')}`;
+            document.getElementById('ui-space').innerText = `ESPAÇO: 0/${gameState.maxSpace}`;
+
+            // Snapshot do caixa no momento da assinatura (base para Saúde Financeira)
+            gameState.startCash = gameState.cash;
+
+            // PASSO 3 — Inicia o motor do jogo após auditoria concluída
+            startGameLoop();
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('#dashboard-view .tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('#dashboard-view .nav-item').forEach(el => el.classList.remove('active'));
+            document.getElementById('tab-' + tabId).classList.add('active');
+            document.getElementById('nav-' + tabId).classList.add('active');
+            if (tabId === 'perfil') renderProfile();
+            if (tabId === 'rh') renderRH();
+        }
+
+        // ==========================================
+        // MÓDULO RH — Aba [2] Equipe
+        // ==========================================
+
+        function renderRH() {
+            const el = document.getElementById('rh-panel-content');
+            if (!el) return;
+            const ch   = gameState.choices || {};
+            const team = (ch.team && typeof ch.team === 'object' && ch.team.days) ? ch.team : null;
+
+            if (!team) {
+                // Nenhuma pendência de RH (perfil sem esse compromisso)
+                el.innerHTML = `
+                    <h2 style="color:var(--accent-blue);margin-bottom:6px;font-size:1.1rem;">&#128101; Gestão de Pessoal e Clima Organizacional</h2>
+                    <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:28px;">${gameState.companyName} &nbsp;|&nbsp; ${gameState.type} &nbsp;|&nbsp; Dia ${gl ? gl.day : '--'}</p>
+                    <div style="background:var(--bg-panel);border:1px solid var(--accent-green);border-left:4px solid var(--accent-green);border-radius:6px;padding:20px 24px;max-width:520px;">
+                        <span style="color:var(--accent-green);font-size:1rem;font-weight:bold;">&#10004; Clima Organizacional Estável</span>
+                        <p style="color:var(--text-muted);margin-top:8px;font-size:0.85rem;">Nenhuma ação de RH pendente para este perfil.</p>
+                    </div>`;
+                return;
+            }
+
+            if (team.resolved) {
+                // Já resolvido
+                el.innerHTML = `
+                    <h2 style="color:var(--accent-blue);margin-bottom:6px;font-size:1.1rem;">&#128101; Gestão de Pessoal e Clima Organizacional</h2>
+                    <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:28px;">${gameState.companyName} &nbsp;|&nbsp; ${gameState.type} &nbsp;|&nbsp; Dia ${gl ? gl.day : '--'}</p>
+                    <div style="background:var(--bg-panel);border:1px solid var(--accent-green);border-left:4px solid var(--accent-green);border-radius:6px;padding:20px 24px;max-width:520px;">
+                        <span style="color:var(--accent-green);font-size:1rem;font-weight:bold;">&#10004; Promessa Cumprida — Clima Organizacional Restaurado</span>
+                        <p style="color:var(--text-muted);margin-top:8px;font-size:0.85rem;">A ação de RH foi executada com sucesso. Equipe motivada e operando normalmente.</p>
+                    </div>`;
+                return;
+            }
+
+            // Pendente: calcula custo e exibe card de ação
+            const prob  = gameState.rhProblemType || 'resources';
+            const val   = team.value || 0;
+            const dLeft = team.days - (gl ? gl.day : 1);
+
+            const probLabels = { salary: 'Salário Defasado', overwork: 'Excesso de Carga de Trabalho', resources: 'Falta de Recursos Operacionais' };
+            const probDesc   = { salary: `Aumento salarial prometido: ${val}%`, overwork: `Contratações prometidas: ${val} pessoa(s)`, resources: `Verba operacional prometida: $${val}` };
+
+            let cost;
+            if (prob === 'salary')    cost = val * 150;
+            else if (prob === 'overwork') cost = val * 800;
+            else                      cost = val;
+
+            const urgColor  = dLeft < 0 ? 'var(--accent-red)' : (dLeft <= 2 ? 'var(--accent-orange)' : 'var(--accent-blue)');
+            const prazoTxt  = dLeft < 0 ? `&#9888; PRAZO VENCIDO (Dia ${team.days})` : (dLeft === 0 ? `&#9888; Vence HOJE` : `Prazo: Dia ${team.days} (Faltam ${dLeft} dias)`);
+
+            el.innerHTML = `
+                <h2 style="color:var(--accent-blue);margin-bottom:6px;font-size:1.1rem;">&#128101; Gestão de Pessoal e Clima Organizacional</h2>
+                <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:28px;">${gameState.companyName} &nbsp;|&nbsp; ${gameState.type} &nbsp;|&nbsp; Dia ${gl ? gl.day : '--'}</p>
+
+                <div style="background:var(--bg-panel);border:1px solid ${urgColor};border-left:4px solid ${urgColor};border-radius:6px;padding:24px 28px;max-width:560px;">
+                    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+                        <div>
+                            <span style="color:var(--accent-orange);font-size:0.75rem;font-weight:bold;letter-spacing:1px;">AÇÃO PENDENTE</span>
+                            <h3 style="color:var(--text-main);font-size:1rem;margin-top:4px;">${probLabels[prob] || prob}</h3>
+                        </div>
+                        <span style="color:${urgColor};font-size:0.8rem;font-weight:bold;white-space:nowrap;">${prazoTxt}</span>
+                    </div>
+
+                    <div style="background:var(--bg-card);border-radius:4px;padding:12px 16px;margin-bottom:16px;">
+                        <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:6px;">Promessa firmada na Auditoria:</p>
+                        <p style="color:var(--text-main);font-size:0.9rem;font-weight:bold;">${probDesc[prob]}</p>
+                    </div>
+
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <div>
+                            <span style="color:var(--text-muted);font-size:0.78rem;">Custo de execução:</span>
+                            <span style="color:var(--accent-orange);font-size:1.1rem;font-weight:bold;margin-left:8px;">$${cost.toLocaleString('pt-BR')}</span>
+                        </div>
+                        <button onclick="resolveHRPromise(${cost})" style="background:var(--accent-green);color:#000;border:none;padding:10px 20px;border-radius:4px;font-family:var(--font-mono);font-weight:bold;font-size:0.85rem;cursor:pointer;">&#9654; Executar Ação de RH</button>
+                    </div>
+                </div>`;
+        }
+
+        function resolveHRPromise(cost) {
+            if (gameState.cash < cost) {
+                showError(`Caixa insuficiente para executar a ação de RH. Custo necessário: $${cost.toLocaleString('pt-BR')}. Caixa atual: $${gameState.cash.toLocaleString('pt-BR')}.`);
+                return;
+            }
+            gameState.cash   -= cost;
+            if (gl) gl.dayCosts += cost;
+            gameState.choices.team.resolved = true;
+            if (gl) gl.credibility = Math.min(100, gl.credibility + 10);
+            updateCurrentSaveSession(gameState.cash, gameState.maxSpace, true);
+            showToast(`✅ Ação de RH executada! Custo: -$${cost.toLocaleString('pt-BR')}. Credibilidade +10 → ${gl ? gl.credibility : '--'}/100.`);
+            renderRH();
+            renderProfile();
+        }
+
+        function renderProfile() {
+            const ch = gameState.choices || {};
+            const day = gl ? gl.day : 1;
+
+            // — Cabeçalho —
+            const hdrEl = document.getElementById('profile-header-info');
+            if (hdrEl) hdrEl.textContent = `${gameState.companyName}  |  ${gameState.type}  |  Dia ${day}`;
+
+            // — BARRAS DE PROGRESS (Radar) —
+            const baseSpace = { 'Massa Falida': 30, 'Estagnada': 50, 'Premium': 80 }[gameState.type] || 30;
+            const lideranca     = gl ? gl.credibility : 100;
+            const confiabilidade = 100;
+            const saudeFin       = gameState.startCash > 0 ? Math.min(100, Math.round((gameState.cash / gameState.startCash) * 100)) : 100;
+            const visaoCrescimento = Math.min(100, Math.round((gameState.maxSpace / baseSpace) * 100));
+
+            const bars = [
+                { label: 'Liderança',          value: lideranca,        color: '#38bdf8' },
+                { label: 'Confiabilidade',       value: confiabilidade,   color: '#4ade80' },
+                { label: 'Saúde Financeira',    value: saudeFin,         color: saudeFin > 60 ? '#4ade80' : saudeFin > 30 ? '#fbbf24' : '#f87171' },
+                { label: 'Visão de Crescimento', value: visaoCrescimento, color: '#a78bfa' },
+            ];
+            // — RADAR CHART (Chart.js) —
+            const canvas = document.getElementById('radarChart');
+            if (canvas) {
+                const radarData = [lideranca, confiabilidade, saudeFin, visaoCrescimento];
+                if (_radarChart) {
+                    // Atualiza dados sem recriar
+                    _radarChart.data.datasets[0].data = radarData;
+                    _radarChart.update();
+                } else {
+                    _radarChart = new Chart(canvas, {
+                        type: 'radar',
+                        data: {
+                            labels: ['Liderança', 'Confiabilidade', 'Saúde Financeira', 'Visão de Crescimento'],
+                            datasets: [{
+                                label: 'Gestor',
+                                data: radarData,
+                                backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                                borderColor: '#38bdf8',
+                                pointBackgroundColor: '#38bdf8',
+                                pointRadius: 4,
+                                borderWidth: 2
+                            }]
+                        },
+                        options: {
+                            responsive: false,
+                            scales: {
+                                r: {
+                                    min: 0, max: 100,
+                                    ticks: { stepSize: 25, color: '#94a3b8', backdropColor: 'transparent', font: { size: 9 } },
+                                    grid: { color: '#334155' },
+                                    angleLines: { color: '#334155' },
+                                    pointLabels: { color: '#e2e8f0', font: { size: 10, family: "'Courier New', monospace" } }
+                                }
+                            },
+                            plugins: { legend: { display: false } }
+                        }
+                    });
+                }
+            }
+
+            // — BARRAS DE PROGRESSO (abaixo do radar) —
+            const barsEl = document.getElementById('profile-bars');
+            if (barsEl) {
+                barsEl.innerHTML = bars.map(b => `
+                    <div style="margin-bottom:14px;">
+                        <div style="display:flex;justify-content:space-between;font-size:0.78rem;color:var(--text-muted);margin-bottom:4px;">
+                            <span>${b.label}</span><span style="color:${b.color};font-weight:bold;">${b.value}%</span>
+                        </div>
+                        <div style="height:6px;background:var(--border-color);border-radius:3px;overflow:hidden;">
+                            <div style="width:${b.value}%;height:100%;background:${b.color};border-radius:3px;transition:width 0.6s ease;"></div>
+                        </div>
+                    </div>`).join('');
+            }
+
+            // — COMPROMISSOS DINÂMICOS (defensivo — compatível com saves legados) —
+            const rows = [];
+
+            // [A] Infraestrutura
+            if (ch.infra && typeof ch.infra === 'object' && ch.infra.days) {
+                const dLeft = ch.infra.days - day;
+                const done  = gameState.maxSpace >= ((({ 'Massa Falida': 30, 'Estagnada': 50, 'Premium': 80 })[gameState.type] || 0) + (ch.infra.slots || 0));
+                const statusTxt = done ? '✔ Concluído' : (dLeft < 0 ? '⚠ VENCIDO' : (dLeft === 0 ? 'Vence HOJE' : `Faltam ${dLeft} dias`));
+                const color     = done ? 'var(--accent-green)' : (dLeft < 0 ? 'var(--accent-red)' : (dLeft <= 2 ? 'var(--accent-orange)' : 'var(--text-muted)'));
+                rows.push({ label: `Expansão de Infra. (+${ch.infra.slots} posições)`, status: statusTxt, color });
+            }
+
+            // [B] Equipe (RH)
+            if (ch.team && typeof ch.team === 'object' && ch.team.days) {
+                const dLeft     = ch.team.days - day;
+                const resolved  = ch.team.resolved === true;
+                const statusTxt = resolved ? '✔ Promessa Cumprida' : (dLeft < 0 ? '⚠ VENCIDO' : (dLeft === 0 ? 'Vence HOJE' : `Faltam ${dLeft} dias`));
+                const color     = resolved ? 'var(--accent-green)' : (dLeft < 0 ? 'var(--accent-red)' : (dLeft <= 2 ? 'var(--accent-orange)' : 'var(--text-muted)'));
+                rows.push({ label: 'Resolução de RH', status: statusTxt, color });
+            }
+
+
+            // [C] Dívida Herdada
+            if (ch.debt && ch.debt !== 'ok') {
+                if (ch.debt === 'cash') {
+                    rows.push({ label: 'Liquidação de Dívida Herdada', status: '✔ Paga à Vista', color: 'var(--accent-green)' });
+                } else {
+                    const parcelas  = Math.min(day, 12);
+                    const statusTxt = parcelas >= 12 ? '✔ Quitada' : `Parcela ${parcelas}/12`;
+                    const color     = parcelas >= 12 ? 'var(--accent-green)' : 'var(--accent-orange)';
+                    rows.push({ label: 'Dívida Parcelada em 12x', status: statusTxt, color });
+                }
+            }
+
+            // [D] SLA de Clientes
+            if (ch.sla && typeof ch.sla === 'object' && ch.sla.hours) {
+                const avgSla    = gl.fulfilledOrders > 0 ? (gl.totalSlaHoursUsed / gl.fulfilledOrders).toFixed(1) : '--';
+                const overMeta  = avgSla !== '--' && parseFloat(avgSla) > ch.sla.hours;
+                const statusTxt = `Meta: ${ch.sla.hours}h | Média: ${avgSla}h`;
+                const color     = overMeta ? 'var(--accent-red)' : 'var(--accent-green)';
+                rows.push({ label: 'SLA de Atendimento Renegociado', status: statusTxt, color });
+            }
+
+            // [E] Empilhadeira
+            if (ch.forklift && ch.forklift !== 'ok') {
+                if (ch.forklift === 'fix') {
+                    rows.push({ label: 'Manutenção da Empilhadeira', status: '✔ Consertada', color: 'var(--accent-green)' });
+                } else {
+                    rows.push({ label: 'Manutenção da Empilhadeira', status: '✘ Adiada (-10 posições)', color: 'var(--accent-red)' });
+                }
+            }
+
+            // [F] B2B
+            if (ch.b2b && typeof ch.b2b === 'object') {
+                rows.push({ label: 'Contrato B2B Renovado', status: `SLA: ${ch.b2b.sla}h | Desc: ${ch.b2b.discount}%`, color: 'var(--text-muted)' });
+            }
+
+            // [G] Premium
+            if (ch.premium && ch.premium !== 'ok') {
+                const strat = ch.premium === 'prazos' ? 'Prazos Renegociados' : 'Preços Repassados';
+                rows.push({ label: 'Estratégia Financeira Adotada', status: `✔ ${strat}`, color: 'var(--accent-green)' });
+            }
+
+            const commEl = document.getElementById('profile-commitments');
+            if (commEl) {
+                commEl.innerHTML = rows.length === 0
+                    ? `<p style="color:var(--text-muted);font-size:0.9rem;">Nenhum compromisso registrado para este perfil.</p>`
+                    : rows.map(r => `
+                        <div style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid ${r.color};border-radius:4px;padding:11px 14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+                            <span style="color:var(--text-main);font-size:0.85rem;">${r.label}</span>
+                            <span style="color:${r.color};font-size:0.85rem;font-weight:bold;white-space:nowrap;">${r.status}</span>
+                        </div>`).join('');
+            }
+        }
+
+        // ==========================================
+        // PASSO 3 — MOTOR DO JOGO
+        // ==========================================
+
+        // Dicionário unificado de tipos de carga — visual + economia dinâmica (label, cor, custo entrada, custo/dia, receita)
+        const CARGO_TYPES = {
+            'ALIM': { label: 'ALIMENTOS', color: '#4ade80', inCost: 15,  storeCost: 8,  rev: 80  },
+            'ELET': { label: 'ELETRÔN.',  color: '#38bdf8', inCost: 30,  storeCost: 5,  rev: 200 },
+            'TEXT': { label: 'TÊXTIL',    color: '#a78bfa', inCost: 10,  storeCost: 1,  rev: 60  },
+            'AUTO': { label: 'AUTOMOTIV', color: '#fbbf24', inCost: 25,  storeCost: 3,  rev: 120 },
+            'FARM': { label: 'FARMACÊUT', color: '#fb7185', inCost: 20,  storeCost: 4,  rev: 150 },
+            'HIGI': { label: 'HIGIENE',   color: '#6ee7b7', inCost: 12,  storeCost: 2,  rev: 70  },
+            'TECH': { label: 'HIGH-TECH', color: '#38bdf8', inCost: 40,  storeCost: 10, rev: 300 },
+            'MODA': { label: 'MODA',      color: '#f472b6', inCost: 20,  storeCost: 2,  rev: 100 },
+            'ECOM': { label: 'E-COMMERC', color: '#fbbf24', inCost: 18,  storeCost: 3,  rev: 90  },
+            'COSM': { label: 'COSMÉTIC.', color: '#fb923c', inCost: 15,  storeCost: 2,  rev: 80  },
+        };
+
+        const WH_PROFILES = {
+            'Massa Falida': {
+                dailyCost: 1800, penalty: 200,
+                slaHoursInbound: 24, slaHoursOutbound: 24,
+                inboundChance: 0.15, outboundChance: 0.10,
+                clients: ['Transportes Silva', 'Log Express', 'Carga Rápida Sul'],
+                cargos: ['ALIM', 'ELET', 'TEXT']
+            },
+            'Estagnada': {
+                dailyCost: 3200, penalty: 350,
+                slaHoursInbound: 18, slaHoursOutbound: 18,
+                inboundChance: 0.30, outboundChance: 0.25,
+                clients: ['Grupo Mercantil', 'ViaLog Brasil', 'TransPrime', 'CargoPrime'],
+                cargos: ['AUTO', 'FARM', 'ALIM', 'HIGI']
+            },
+            'Premium': {
+                dailyCost: 7200, penalty: 500,
+                slaHoursInbound: 12, slaHoursOutbound: 12,
+                inboundChance: 0.50, outboundChance: 0.45,
+                clients: ['Amazon Logística', 'Mercado Livre BR', 'Via Varejo', 'Magazine Log', 'B2W Supply'],
+                cargos: ['TECH', 'MODA', 'ECOM', 'COSM', 'ELET']
+            }
+        };
+
+        // Estado do Game Loop
+        let gl = {
+            day: 1, hour: 8, speed: 1, paused: false,
+            timer: null, orderCounter: 1,
+            inbound: [], storage: [], outbound: [],
+            dayRevenue: 0, dayCosts: 0, lastOrderHour: -99,
+            credibility: 100,            // 0-100: Liderança no Radar
+            warnedChoices: new Set(),     // previne avisos duplicados
+            punishedChoices: new Set(),   // previne punições duplicadas
+            totalOrders: 0,               // total de pedidos gerados
+            missedSLAs: 0,                // SLAs perdidos (inbound + outbound)
+            fulfilledOrders: 0,           // pedidos cumpridos dentro do prazo
+            totalSlaHoursUsed: 0          // horas de SLA acumuladas (para média)
+        };
+        let _radarChart = null; // instância global do Chart.js
+
+        function startGameLoop() {
+            if (gl.timer) clearTimeout(gl.timer);
+            gl.day = 1; gl.hour = 8; gl.paused = false;
+            gl.inbound = []; gl.storage = []; gl.outbound = [];
+            gl.dayRevenue = 0; gl.dayCosts = 0; gl.lastOrderHour = -99;
+            gl.credibility = 100;
+            gl.warnedChoices = new Set();
+            gl.punishedChoices = new Set();
+            gl.totalOrders = 0;
+            gl.missedSLAs = 0;
+            gl.fulfilledOrders = 0;
+            gl.totalSlaHoursUsed = 0;
+            if (_radarChart) { _radarChart.destroy(); _radarChart = null; }
+            preloadStorage(); // Estoque herdado: armazém não começa vazio
+            buildStorageGrid();
+            updateSpeedButtons();
+            renderDashboard();
+            scheduleNextTick();
+        }
+
+        // Pré-preenche o storage com estoque herdado proporcional ao perfil
+        function preloadStorage() {
+            const prof = WH_PROFILES[gameState.type];
+            if (!prof) return;
+            const targetSlots = { 'Massa Falida': 15, 'Estagnada': 35, 'Premium': 64 };
+            const count = Math.min(targetSlots[gameState.type] || 0, gameState.maxSpace);
+            for (let i = 0; i < count; i++) {
+                const gi = Math.floor(Math.random() * prof.cargos.length);
+                const cargoType = prof.cargos[gi];
+                const ct = CARGO_TYPES[cargoType];
+                gl.storage.push({
+                    id: 'STR-' + String(gl.orderCounter++).padStart(3,'0'),
+                    type: cargoType,
+                    cargo: ct ? ct.label : cargoType,
+                    vol: 1,
+                    client: 'Estoque Herdado'
+                });
+            }
+        }
+
+        function scheduleNextTick() {
+            if (gl.timer) clearTimeout(gl.timer);
+            if (!gl.paused) {
+                gl.timer = setTimeout(gameTick, Math.floor(5000 / gl.speed));
+            }
+        }
+
+        function gameTick() {
+            gl.hour++;
+            if (gl.hour >= 24) { gl.hour = 0; processDayEnd(); }
+            processHourEvents();
+            checkSLAExpiry();  // varredura em tempo real (Bug da Meia-Noite corrigido)
+            renderDashboard();
+            scheduleNextTick();
+        }
+
+        // Verifica SLAs expirados a cada tick — inbound: 2 fases; outbound: remoção direta
+        function checkSLAExpiry() {
+            const prof = WH_PROFILES[gameState.type];
+            if (!prof) return;
+
+            // INBOUND: fase 1 = reagenda (+50% custo); fase 2 = cancela de vez
+            gl.inbound = gl.inbound.filter(o => {
+                if (getHoursLeft(o) <= 0) {
+                    if (o.reagendado) {
+                        // 2ª expiração: cancela com multa
+                        gameState.cash -= prof.penalty;
+                        gl.missedSLAs++;
+                        showToast(`⚠️ FALHA CRÍTICA: Carga de ${o.cargo} cancelada após reagendamento. Multa de -$${prof.penalty} aplicada.`);
+                        return false; // remove do array
+                    } else {
+                        // 1ª expiração: reagenda mais caro
+                        gameState.cash -= prof.penalty;
+                        o.inCost = Math.round((o.inCost || (CARGO_TYPES[o.type] ? CARGO_TYPES[o.type].inCost : 0)) * 1.5);
+                        o.deadline = getAbsHour() + o.sla;
+                        o.reagendado = true;
+                        gl.missedSLAs++;
+                        showToast(`⚠️ SLA Estourado! Frete de ${o.cargo} reagendado 50% mais caro.`);
+                        return true; // mantém no array
+                    }
+                }
+                return true;
+            });
+
+            // OUTBOUND: remove com multa e toast
+            gl.outbound = gl.outbound.filter(o => {
+                if (getHoursLeft(o) <= 0) {
+                    gameState.cash -= prof.penalty;
+                    gl.missedSLAs++;
+                    showToast(`⚠️ FALHA DE SLA [${o.id}]: ${o.cargo} cancelado. Multa de -$${prof.penalty.toLocaleString('pt-BR')} aplicada.`);
+                    return false;
+                }
+                return true;
+            });
+        }
+
+        function processDayEnd() {
+            const prof = WH_PROFILES[gameState.type];
+            if (!prof) return;
+            const ch = gameState.choices || {};
+
+            // Custo fixo do dia (salários, aluguel, etc.)
+            gameState.cash -= prof.dailyCost;
+            gl.day++;
+            gl.dayRevenue = 0;
+            gl.dayCosts = prof.dailyCost;
+
+            // [2c] PARCELA DE DÍVIDA HERDADA (choices.debt === 'parcel', primeiros 12 dias)
+            if (ch.debt === 'parcel' && gameState.baseDebt > 0 && gl.day <= 12) {
+                const installment = Math.ceil(gameState.baseDebt / 12);
+                gameState.cash -= installment;
+                gl.dayCosts += installment;
+            }
+
+            // Custo de armazenagem diário por tipo de produto (dinâmico)
+            const storageCostToday = gl.storage.reduce((total, item) => {
+                const ct = CARGO_TYPES[item.type];
+                return total + (ct ? ct.storeCost * item.vol : 0);
+            }, 0);
+            gameState.cash -= storageCostToday;
+            gl.dayCosts += storageCostToday;
+
+            if (gameState.cash <= 0) {
+                gameState.cash = 0;
+                setGameSpeed(0);
+                showError('⚠️ ALERTA CRÍTICO: Caixa zerado! A operação entrou em colapso financeiro. Renegociação urgente necessária.');
+            }
+
+            // [1] AVISOS PRÉVIOS — 2 dias antes do vencimento das promessas
+            if (ch.infra && typeof ch.infra === 'object') {
+                if (gl.day === ch.infra.days - 2 && !gl.warnedChoices.has('infra')) {
+                    gl.warnedChoices.add('infra');
+                    showError(`⏰ AVISO: Faltam 2 dias para o prazo da expansão de infraestrutura (Dia ${ch.infra.days}). Execute a expansão antes do vencimento!`);
+                }
+            }
+            if (ch.team && typeof ch.team === 'object') {
+                if (gl.day === ch.team.days - 2 && !gl.warnedChoices.has('team')) {
+                    gl.warnedChoices.add('team');
+                    showError(`⏰ AVISO: Faltam 2 dias para o prazo do compromisso de RH (Dia ${ch.team.days}). Acesse a aba Equipe e execute a ação prometida!`);
+                }
+            }
+
+            // [2a] PUNIÇÃO: INFRAESTRUTURA — credibilidade cai se prazo venceu sem expansão
+            if (ch.infra && typeof ch.infra === 'object' && gl.day > ch.infra.days) {
+                const targetSlots = { 'Massa Falida': 30, 'Estagnada': 50, 'Premium': 80 };
+                const requiredSpace = (targetSlots[gameState.type] || 0) + ch.infra.slots;
+                if (gameState.maxSpace < requiredSpace && !gl.punishedChoices.has('infra')) {
+                    gl.punishedChoices.add('infra');
+                    gl.credibility = Math.max(0, gl.credibility - 20);
+                    showError(`🔴 QUEBRA DE COMPROMISSO: O prazo de expansão de infraestrutura venceu no Dia ${ch.infra.days}. Credibilidade do Gestor caiu para ${gl.credibility}/100. Consequências futuras no Radar de Desempenho.`);
+                }
+            }
+
+            // [2b] PUNIÇÃO: EQUIPE — funcionário pede demissão APENAS se prazo venceu E promessa NÃO foi cumprida
+            if (ch.team && typeof ch.team === 'object' && gl.day > ch.team.days && !ch.team.resolved) {
+                if (!gl.punishedChoices.has('team')) {
+                    gl.punishedChoices.add('team');
+                    const reduction = 5;
+                    const usedNow = gl.storage.reduce((s, i) => s + i.vol, 0);
+                    if (gameState.maxSpace - reduction > usedNow) {
+                        gameState.maxSpace = Math.max(usedNow, gameState.maxSpace - reduction);
+                        buildStorageGrid();
+                    }
+                    gl.credibility = Math.max(0, gl.credibility - 15);
+                    showError(`🔴 DEMISSÃO VOLUNTÁRIA: O prazo de resolução do problema de RH venceu. Um funcionário pediu demissão — capacidade operacional reduzida em ${reduction} posições. Credibilidade: ${gl.credibility}/100.`);
+                }
+            }
+
+            updateCurrentSaveSession(gameState.cash, gameState.maxSpace, true);
+        }
+
+        function getAbsHour() { return (gl.day - 1) * 24 + gl.hour; }
+        function getHoursLeft(order) { return Math.max(0, order.deadline - getAbsHour()); }
+
+        function processHourEvents() {
+            const prof = WH_PROFILES[gameState.type];
+            if (!prof) return;
+            const usedSpace = gl.storage.reduce((s, i) => s + i.vol, 0);
+
+            // — INBOUND: chegada estocástica por probabilidade do perfil —
+            if (Math.random() < prof.inboundChance && gl.inbound.length < 12 && usedSpace < gameState.maxSpace) {
+                const ci = Math.floor(Math.random() * prof.clients.length);
+                const gi = Math.floor(Math.random() * prof.cargos.length);
+                const vol = Math.floor(Math.random() * 4) + 1; // 1 a 4 paletes
+                const cargoType = prof.cargos[gi];
+                const ct = CARGO_TYPES[cargoType];
+                gl.inbound.push({
+                    id: 'IN-' + String(gl.orderCounter++).padStart(3,'0'),
+                    client: prof.clients[ci],
+                    type: cargoType,
+                    cargo: ct ? ct.label : cargoType,
+                    inCost: ct ? ct.inCost : 0,  // inCost no pedido para reagendamento dinâmico
+                    vol, penalty: prof.penalty,
+                    sla: prof.slaHoursInbound, deadline: getAbsHour() + prof.slaHoursInbound
+                });
+                gl.totalOrders++;
+            }
+
+            // — OUTBOUND: demanda estocástica — apenas tipos disponíveis em storage ou inbound
+            if (Math.random() < prof.outboundChance && gl.outbound.length < 12) {
+                const availableTypes = prof.cargos.filter(t =>
+                    gl.storage.some(s => s.type === t) || gl.inbound.some(ib => ib.type === t)
+                );
+                if (availableTypes.length > 0) {
+                    const cargoType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+                    // SLA dinâmico: usa o prometido pelo jogador na auditoria
+                    const ch = gameState.choices || {};
+                    let outboundSla = prof.slaHoursOutbound;
+                    if (gameState.type === 'Massa Falida' && ch.sla && typeof ch.sla === 'object') {
+                        outboundSla = ch.sla.hours;
+                    } else if (gameState.type === 'Estagnada' && ch.b2b && typeof ch.b2b === 'object') {
+                        outboundSla = ch.b2b.sla;
+                    }
+                    gl.outbound.push({
+                        id: 'OUT-' + String(gl.orderCounter++).padStart(3,'0'),
+                        type: cargoType,
+                        cargo: CARGO_TYPES[cargoType] ? CARGO_TYPES[cargoType].label : cargoType,
+                        client: prof.clients[Math.floor(Math.random() * prof.clients.length)],
+                        vol: 1,
+                        penalty: prof.penalty,
+                        sla: outboundSla,
+                        deadline: getAbsHour() + outboundSla
+                    });
+                }
+            }
+        }
+
+        function receiveOrder(orderId) {
+            const o = gl.inbound.find(x => x.id === orderId);
+            if (!o) return;
+            // Usa o inCost dinâmico do pedido (pode ter sido majorado por reagendamento)
+            const inCost = o.inCost !== undefined ? o.inCost : (CARGO_TYPES[o.type] ? CARGO_TYPES[o.type].inCost : 0);
+            if (gameState.cash < inCost) {
+                showError(`Caixa insuficiente para receber esta carga. Custo de entrada: $${inCost}${o.reagendado ? ' (majorado por reagendamento)' : ''}`);
+                return;
+            }
+            const used = gl.storage.reduce((s, i) => s + i.vol, 0);
+            if (used + o.vol > gameState.maxSpace) { showError('Espaço insuficiente no armazém para este carregamento.'); return; }
+            gameState.cash -= inCost;
+            gl.dayCosts += inCost;
+            gl.totalSlaHoursUsed += (o.sla - getHoursLeft(o));
+            gl.fulfilledOrders++;
+            const sid = 'STR-' + String(gl.orderCounter++).padStart(3,'0');
+            gl.storage.push({ id: sid, type: o.type, cargo: o.cargo, vol: o.vol, client: o.client });
+            gl.inbound = gl.inbound.filter(x => x.id !== orderId);
+            renderDashboard();
+        }
+
+        function expediteOrder(orderId) {
+            const o = gl.outbound.find(x => x.id === orderId);
+            if (!o) return;
+            // Busca qualquer item do tipo correto no estoque (modelo v2.1)
+            const storageItem = gl.storage.find(x => x.type === o.type);
+            if (!storageItem) {
+                showError(`Sem estoque de ${o.cargo} para expedir este pedido. Receba um caminhão deste tipo primeiro.`);
+                return;
+            }
+            // Receita dinâmica pelo tipo de produto
+            const ct = CARGO_TYPES[o.type];
+            const revenue = ct ? ct.rev : 0;
+            gameState.cash += revenue;
+            gl.dayRevenue += revenue;
+            gl.totalSlaHoursUsed += (o.sla - getHoursLeft(o));
+            gl.fulfilledOrders++;
+            gl.storage = gl.storage.filter(x => x.id !== storageItem.id);
+            gl.outbound = gl.outbound.filter(x => x.id !== orderId);
+            renderDashboard();
+        }
+
+        function setGameSpeed(speed) {
+            gl.speed = speed;
+            gl.paused = (speed === 0);
+            updateSpeedButtons();
+            scheduleNextTick();
+        }
+
+        function togglePause() {
+            if (gl.paused) { setGameSpeed(gl._lastSpeed || 1); }
+            else { gl._lastSpeed = gl.speed; setGameSpeed(0); }
+        }
+
+        function updateSpeedButtons() {
+            ['btn-pause','btn-1x','btn-2x','btn-4x'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) { el.classList.remove('active','paused-active'); }
+            });
+            const pauseBtn = document.getElementById('btn-pause');
+            if (gl.paused) {
+                pauseBtn.classList.add('paused-active');
+                pauseBtn.innerHTML = '&#9654; RETOMAR';
+            } else {
+                pauseBtn.innerHTML = '&#9646;&#9646; PAUSAR';
+                const map = {1:'btn-1x', 2:'btn-2x', 4:'btn-4x'};
+                if (map[gl.speed]) document.getElementById(map[gl.speed]).classList.add('active');
+            }
+        }
+
+        // Toast notification (canto inferior direito, some em 3s)
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            container.appendChild(toast);
+            setTimeout(() => { if (toast.parentNode) toast.parentNode.removeChild(toast); }, 3000);
+        }
+
+        // Salvar e voltar ao menu principal
+        function saveAndExit() {
+            setGameSpeed(0);
+            updateCurrentSaveSession(gameState.cash, gameState.maxSpace, true);
+            document.getElementById('dashboard-view').classList.add('hidden');
+            document.getElementById('boot-view').classList.remove('hidden');
+            renderSaveSlots();
+            goToMenu();
+        }
+
+        // Compra emergencial de posição de armazém ($500 / slot)
+        function buyStorageSlot() {
+            if (gameState.cash < 500) { showError('Caixa insuficiente. Custo por posição: $500.'); return; }
+            gameState.cash -= 500;
+            gl.dayCosts += 500;
+            gameState.maxSpace += 1;
+            buildStorageGrid();
+            renderDashboard();
+        }
+
+        function buildStorageGrid() {
+            const grid = document.getElementById('storage-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            for (let i = 0; i < gameState.maxSpace; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'grid-cell';
+                cell.id = 'gc-' + i;
+                grid.appendChild(cell);
+            }
+        }
+
+        function renderDashboard() {
+            const prof = WH_PROFILES[gameState.type];
+            // Header
+            const hh = String(gl.hour).padStart(2,'0');
+            document.getElementById('ui-day').innerText = `DIA: ${gl.day}`;
+            document.getElementById('ui-cash').innerText = `CAIXA: $${gameState.cash.toLocaleString('pt-BR')}`;
+            document.getElementById('ui-space').innerText = `ESPAÇO: ${gl.storage.reduce((s,i)=>s+i.vol,0)}/${gameState.maxSpace}`;
+            // DRE
+            const result = gl.dayRevenue - gl.dayCosts;
+            document.getElementById('dre-day-lbl').innerText = `Dia ${gl.day} | ${hh}:00h`;
+            document.getElementById('dre-revenue').innerText = `$${gl.dayRevenue.toLocaleString('pt-BR')}`;
+            document.getElementById('dre-costs').innerText = `-$${gl.dayCosts.toLocaleString('pt-BR')}`;
+            const resEl = document.getElementById('dre-result');
+            resEl.innerText = `${result >= 0 ? '+' : ''}$${result.toLocaleString('pt-BR')}`;
+            resEl.className = result >= 0 ? 'dre-positive' : 'dre-negative';
+            document.getElementById('dre-cash').innerText = `$${gameState.cash.toLocaleString('pt-BR')}`;
+            // Grid — tipo colorido por categoria (modelo v2.1)
+            const occupied = [];
+            gl.storage.forEach(item => {
+                const ct = CARGO_TYPES[item.type];
+                for(let i = 0; i < item.vol; i++) occupied.push({
+                    id: item.id, type: item.type,
+                    label: ct ? ct.label : item.cargo,
+                    color: ct ? ct.color : '#38bdf8'
+                });
+            });
+            for (let i = 0; i < gameState.maxSpace; i++) {
+                const cell = document.getElementById('gc-' + i);
+                if (!cell) continue;
+                if (i < occupied.length) {
+                    const p = occupied[i];
+                    cell.className = 'grid-cell occupied';
+                    cell.title = p.label;
+                    cell.style.borderColor = p.color;
+                    cell.style.backgroundColor = p.color + '1a';
+                    cell.innerHTML = `<div class="slot-id" style="color:${p.color}">${p.label}</div><div class="slot-sub">#${p.id.split('-')[1]}</div>`;
+                } else {
+                    cell.className = 'grid-cell';
+                    cell.title = 'Vazio';
+                    cell.style.borderColor = '';
+                    cell.style.backgroundColor = '';
+                    cell.innerHTML = 'VAZIO';
+                }
+            }
+            document.getElementById('grid-status').innerText = `${occupied.length}/${gameState.maxSpace}`;
+            // Inbound
+            const inEl = document.getElementById('inbound-list');
+            document.getElementById('inbound-count').innerText = gl.inbound.length + ' pendentes';
+            if (gl.inbound.length === 0) {
+                inEl.innerHTML = '<div class="order-empty">Aguardando<br>chegada de cargas...</div>';
+            } else {
+                inEl.innerHTML = gl.inbound.map(o => {
+                    const ct = CARGO_TYPES[o.type] || {};
+                    const left = getHoursLeft(o);
+                    const pct = Math.max(0, Math.min(100, (left / o.sla) * 100));
+                    const slaColor = pct > 50 ? '#4ade80' : pct > 25 ? '#fbbf24' : '#f87171';
+                    const urgent = pct < 30 ? 'urgent' : '';
+                    const critical = left <= 3 ? 'critical' : '';
+                    const typeColor = ct.color || '#38bdf8';
+                    return `<div class="order-card ${urgent} ${critical}">
+                        <div class="oc-top"><span class="oc-id">${o.id}</span><span class="oc-client">${o.client}</span></div>
+                        <div class="oc-cargo" style="color:${typeColor}">${o.cargo}</div>
+                        <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:6px;">
+                            <span style="color:var(--accent-red);">Entrada: -$${ct.inCost || 0}</span>
+                            <span style="color:var(--accent-green);">Receita: +$${ct.rev || 0}</span>
+                            <span style="color:var(--text-muted);">Armaz: -$${ct.storeCost || 0}/dia</span>
+                        </div>
+                        <div class="sla-label"><span>SLA Entrada</span><span>${left}h restantes</span></div>
+                        <div class="sla-bar"><div class="sla-fill" style="width:${pct}%;background:${slaColor}"></div></div>
+                        <div class="oc-footer">
+                            <span class="oc-penalty">Multa: $${o.penalty.toLocaleString('pt-BR')}</span>
+                            <button class="btn success btn-sm" onclick="receiveOrder('${o.id}')">Receber ▶</button>
+                        </div>
+                    </div>`;
+                }).join('');
+            }
+            // Outbound
+            const outEl = document.getElementById('outbound-list');
+            document.getElementById('outbound-count').innerText = gl.outbound.length + ' prontos';
+            if (gl.outbound.length === 0) {
+                outEl.innerHTML = '<div class="order-empty">Nenhum pedido<br>aguardando expedição.</div>';
+            } else {
+                outEl.innerHTML = gl.outbound.map(o => {
+                    const ct = CARGO_TYPES[o.type] || {};
+                    const left = getHoursLeft(o);
+                    const pct = Math.max(0, Math.min(100, (left / o.sla) * 100));
+                    const slaColor = pct > 50 ? '#4ade80' : pct > 25 ? '#fbbf24' : '#f87171';
+                    const urgent = pct < 30 ? 'urgent' : '';
+                    const critical = left <= 3 ? 'critical' : '';
+                    const hasStock = gl.storage.some(s => s.type === o.type);
+                    const typeColor = ct.color || '#38bdf8';
+                    const stockBadge = hasStock
+                        ? `<span style="color:#4ade80;font-size:0.68rem;">✔ EM ESTOQUE</span>`
+                        : `<span style="color:#f87171;font-size:0.68rem;">✘ SEM ESTOQUE</span>`;
+                    const btnStyle = hasStock ? '' : 'opacity:0.4;cursor:not-allowed;';
+                    return `<div class="order-card ${urgent} ${critical}">
+                        <div class="oc-top"><span class="oc-id">${o.id}</span><span class="oc-client">${o.client}</span></div>
+                        <div class="oc-cargo" style="color:${typeColor}">${o.cargo}</div>
+                        <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:6px;">
+                            <span style="color:var(--accent-green);">Receita: +$${ct.rev || 0}</span>
+                            <span style="color:var(--text-muted);">Armaz: -$${ct.storeCost || 0}/dia</span>
+                        </div>
+                        <div class="sla-label"><span>SLA Entrega</span><span>${left}h restantes</span></div>
+                        <div class="sla-bar"><div class="sla-fill" style="width:${pct}%;background:${slaColor}"></div></div>
+                        <div class="oc-footer">
+                            ${stockBadge}
+                            <button class="btn primary btn-sm" onclick="expediteOrder('${o.id}')" style="${btnStyle}">Expedir ▶</button>
+                        </div>
+                    </div>`;
+                }).join('');
+            }
+        }
+
+        // ==========================================
+        // MIGRAÇÃO DE SAVES LEGADOS (executa 1x ao carregar)
+        // Corrige saves antigos que não tinham auditCompleted/maxSpace gravados
+        // ==========================================
+        function migrateLegacySaves() {
+            const maxSpaceByType = { 'Massa Falida': 30, 'Estagnada': 50, 'Premium': 80 };
+            let saves = JSON.parse(localStorage.getItem('wms_saves')) || [];
+            let needsSave = false;
+
+            saves.forEach(function(save) {
+                // Se tem tipo válido mas auditCompleted não está marcado como true
+                if (save.type && maxSpaceByType[save.type] && save.auditCompleted !== true) {
+                    save.auditCompleted = true;
+                    // Se maxSpace não foi gravado, infere pelo tipo
+                    if (!save.maxSpace || save.maxSpace === 0) {
+                        save.maxSpace = maxSpaceByType[save.type];
+                    }
+                    needsSave = true;
+                }
+            });
+
+            if (needsSave) {
+                localStorage.setItem('wms_saves', JSON.stringify(saves));
+            }
+        }
+
+        migrateLegacySaves();
+        renderSaveSlots();
+    </script>
+</body>
+</html>
