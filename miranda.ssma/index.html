@@ -11,18 +11,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Splash Screen (Capa) -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-image"></div>
+    <div class="splash-content-wrapper">
+      <div class="splash-content">
+        <div class="splash-logos">
+          <img src="assets/Logo_Santa_Verginia.jpeg" alt="Logo Santa Verginia">
+          <div class="splash-logo-divider"></div>
+          <img src="assets/Logo_Miranda_SSMA.png" alt="Logo Miranda SSMA">
+        </div>
+        <h1>Relatório de Auditorias</h1>
+        <p class="splash-desc">Somos uma consultoria especializada em Saúde, Segurança do Trabalho e Meio Ambiente com foco em transformar ambientes laborais em espaços mais seguros, humanos e em total conformidade com a legislação.</p>
+        <p class="splash-desc">Comandada por Bruno do Nascimento Miranda, Técnico em Segurança do Trabalho com mais de 12 anos de experiência.</p>
+        <div class="splash-stats">
+          <p>Foram avaliadas <strong>8 empresas</strong> prestadoras de serviço operando nas instalações da <strong>Santa Verginia</strong>.</p>
+        </div>
+        <button class="splash-btn" onclick="enterDashboard()">Acessar Dashboard</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Layout Container -->
   <div class="app-container">
-    
     <!-- Top Navigation Bar -->
     <header class="top-nav-bar no-print">
-      <div class="top-nav-title-text">
-        <span class="brand-title-main">Miranda SSMA</span>
-        <span class="brand-title-sub">Auditoria de Terceiros &bull; Santa Verginia</span>
+      <div class="top-nav-title-text" onclick="goHome()" style="cursor: pointer; display: flex; align-items: center; gap: 12px; transition: opacity 0.2s;" title="Voltar para a Capa Inicial" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ffffff;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <div style="display: flex; flex-direction: column;">
+          <span class="brand-title-main" style="line-height: 1;">Miranda SSMA</span>
+          <span class="brand-title-sub" style="margin-left: 0; line-height: 1.2; margin-top: 4px; font-size: 13px;">Auditoria de Terceiros &bull; Santa Verginia</span>
+        </div>
       </div>
       
       <div class="nav-tabs">
         <button class="nav-tab-btn active" id="btn-tab-dashboard" onclick="switchTab('dashboard')">Visão Geral</button>
+        <button class="nav-tab-btn" id="btn-tab-strategic" onclick="switchTab('strategic')">Análise Estratégica</button>
         <button class="nav-tab-btn" id="btn-tab-companies" onclick="switchTab('companies')">Análise por Empresa</button>
       </div>
       
@@ -99,6 +123,16 @@
             <div class="stat-info">
               <h3>Média Estrutural</h3>
               <p class="stat-value" style="color: #d4a359;" id="stat-avg-estrutural">0%</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper" style="background-color: rgba(23, 117, 66, 0.1);">
+              <svg class="icon" style="fill: #177542;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/></svg>
+            </div>
+            <div class="stat-info">
+              <h3>Média Comport.</h3>
+              <p class="stat-value" style="color: #177542;" id="stat-avg-comportamental">0%</p>
             </div>
           </div>
 
@@ -219,6 +253,20 @@
         </div>
       </section>
       
+      <!-- TAB 3: ANÁLISE ESTRATÉGICA -->
+      <section id="tab-strategic" class="tab-panel">
+        <div id="strategic-analysis-render">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- TAB 4: AJUDA & METODOLOGIA -->
+      <section id="tab-help" class="tab-panel">
+        <div id="help-render">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </section>
+
       <!-- Footer Copyright -->
       <footer class="main-footer no-print">
         <p>&copy; 2026 Miranda SSMA. Relatório preparado para Santa Verginia.</p>
@@ -226,611 +274,13 @@
     </main>
   </div>
 
+  <!-- Botão Flutuante de Ajuda -->
+  <button class="floating-help-btn no-print" onclick="switchTab('help')" title="Dúvidas e Metodologia?">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+  </button>
+
   <!-- Load script files -->
   <script src="data.js"></script>
-  <script>
-    // App State
-    let currentCompanyIndex = 0;
-    let activeTab = 'dashboard';
-
-    // Initialize Dashboard
-    window.onload = function() {
-      if (typeof AUDIT_DATA === 'undefined') {
-        console.error("data.js not loaded!");
-        return;
-      }
-      
-      renderDashboard();
-      populateCompanyDropdown();
-      renderCompanyDetail(currentCompanyIndex);
-    };
-
-    // Tab switcher
-    function switchTab(tabName) {
-      activeTab = tabName;
-      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
-      document.querySelectorAll('.nav-tab-btn').forEach(btn => btn.classList.remove('active'));
-      
-      document.getElementById(`tab-${tabName}`).classList.add('active');
-      
-      const printTitle = document.querySelector('.print-main-title');
-      if (tabName === 'dashboard') {
-        document.getElementById('btn-tab-dashboard').classList.add('active');
-        const titleText = "Visão Geral de SSMA";
-        document.getElementById('main-title').innerText = titleText;
-        if (printTitle) printTitle.innerText = titleText;
-      } else {
-        document.getElementById('btn-tab-companies').classList.add('active');
-        const company = AUDIT_DATA[currentCompanyIndex];
-        const titleText = "Auditoria Individual - " + company.name;
-        document.getElementById('main-title').innerText = titleText;
-        if (printTitle) printTitle.innerText = titleText;
-      }
-    }
-
-    // Populate dropdown selection of companies
-    function populateCompanyDropdown() {
-      const select = document.getElementById('company-select');
-      if (!select) return;
-      select.innerHTML = "";
-      
-      AUDIT_DATA.forEach((company, idx) => {
-        const option = document.createElement('option');
-        option.value = idx;
-        option.text = `${company.name} (${company.scores.global}%)`;
-        select.appendChild(option);
-      });
-    }
-
-    // Select specific company
-    function selectCompany(index) {
-      currentCompanyIndex = index;
-      renderCompanyDetail(index);
-      switchTab('companies');
-      
-      // Update dropdown selection if it exists
-      const dropdown = document.getElementById('company-select');
-      if (dropdown) {
-        dropdown.value = index;
-      }
-    }
-
-    // Carousel navigation
-    function navigateCarousel(direction) {
-      let newIdx = currentCompanyIndex + direction;
-      if (newIdx < 0) newIdx = AUDIT_DATA.length - 1;
-      if (newIdx >= AUDIT_DATA.length) newIdx = 0;
-      
-      selectCompany(newIdx);
-    }
-
-    // Render Dashboard Tab Content
-    function renderDashboard() {
-      // Set stats
-      document.getElementById('stat-total-companies').innerText = AUDIT_DATA.length;
-      
-      let sumDoc = 0, sumEst = 0, sumComp = 0, critCount = 0;
-      AUDIT_DATA.forEach(c => {
-        sumDoc += c.scores.documental;
-        sumEst += c.scores.estrutural;
-        sumComp += c.scores.comportamental;
-        if (c.criticidade === "Crítico") critCount++;
-      });
-      
-      const avgDoc = Math.round(sumDoc / AUDIT_DATA.length);
-      const avgEst = Math.round(sumEst / AUDIT_DATA.length);
-      
-      document.getElementById('stat-avg-documental').innerText = avgDoc + "%";
-      document.getElementById('stat-avg-estrutural').innerText = avgEst + "%";
-      document.getElementById('stat-critical-count').innerText = critCount;
-
-      // Comparative Table
-      const tableBody = document.getElementById('comparative-table-body');
-      tableBody.innerHTML = "";
-      
-      AUDIT_DATA.forEach((c, idx) => {
-        const row = document.createElement('tr');
-        
-        let criticBadge = `<span class="badge-pill bg-critico">Crítico</span>`;
-        if (c.criticidade === "Grave") criticBadge = `<span class="badge-pill bg-grave">Grave</span>`;
-        else if (c.criticidade === "Moderado") criticBadge = `<span class="badge-pill bg-moderado">Moderado</span>`;
-        else if (c.criticidade === "Regular") criticBadge = `<span class="badge-pill bg-ok">Regular</span>`;
-        
-        row.innerHTML = `
-          <td><strong>${c.name}</strong><br><small class="text-muted">${c.razaoSocial}</small></td>
-          <td>${c.ramo}</td>
-          <td>
-            <div class="percentage-bar-container">
-              <div class="percentage-bar" style="width: ${c.scores.documental}%; background-color: #1b2c59;"></div>
-              <span>${c.scores.documental}%</span>
-            </div>
-          </td>
-          <td>
-            <div class="percentage-bar-container">
-              <div class="percentage-bar" style="width: ${c.scores.estrutural}%; background-color: #d4a359;"></div>
-              <span>${c.scores.estrutural}%</span>
-            </div>
-          </td>
-          <td>
-            <div class="percentage-bar-container">
-              <div class="percentage-bar" style="width: ${c.scores.comportamental}%; background-color: #177542;"></div>
-              <span>${c.scores.comportamental}%</span>
-            </div>
-          </td>
-          <td>
-            <div class="global-progress-wrapper">
-              <span class="global-score-text">${c.scores.global}%</span>
-              <div class="global-bar-outer">
-                <div class="global-bar-inner" style="width: ${c.scores.global}%;"></div>
-              </div>
-            </div>
-          </td>
-          <td>${criticBadge}</td>
-          <td class="no-print">
-            <button class="action-view-btn" onclick="selectCompany(${idx})">Ver Detalhes</button>
-          </td>
-        `;
-        tableBody.appendChild(row);
-      });
-
-      // Render Bar Comparison Chart (SVG inside JS)
-      const chartContainer = document.getElementById('bar-chart');
-      chartContainer.innerHTML = "";
-      
-      let svgContent = `
-        <svg viewBox="0 0 800 350" class="comparison-svg-chart">
-          <!-- Grid Lines -->
-          <line x1="50" y1="50" x2="780" y2="50" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-          <line x1="50" y1="125" x2="780" y2="125" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-          <line x1="50" y1="200" x2="780" y2="200" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-          <line x1="50" y1="275" x2="780" y2="275" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-          <line x1="50" y1="300" x2="780" y2="300" stroke="#ccc" stroke-width="1.5" />
-          
-          <!-- Y-Axis Labels -->
-          <text x="40" y="55" class="chart-axis-text" text-anchor="end">100%</text>
-          <text x="40" y="130" class="chart-axis-text" text-anchor="end">70%</text>
-          <text x="40" y="205" class="chart-axis-text" text-anchor="end">40%</text>
-          <text x="40" y="280" class="chart-axis-text" text-anchor="end">10%</text>
-      `;
-
-      const startX = 75;
-      const spacingX = 85;
-      const chartHeight = 250; // max height corresponding to 100%
-      const baseLineY = 300; // Y coordinate of base line
-
-      AUDIT_DATA.forEach((c, idx) => {
-        const currentX = startX + (idx * spacingX);
-        
-        // Documental bar
-        const docH = (c.scores.documental / 100) * chartHeight;
-        const docY = baseLineY - docH;
-        
-        // Estrutural bar
-        const estH = (c.scores.estrutural / 100) * chartHeight;
-        const estY = baseLineY - estH;
-        
-        // Comportamental bar
-        const compH = (c.scores.comportamental / 100) * chartHeight;
-        const compY = baseLineY - compH;
-
-        // Group for hover effect and click
-        svgContent += `
-          <g class="chart-bar-group" onclick="selectCompany(${idx})">
-            <!-- Doc Bar -->
-            <rect x="${currentX}" y="${docY}" width="16" height="${docH}" fill="#1b2c59" rx="3" class="chart-rect" />
-            <!-- Doc Value Label -->
-            <text x="${currentX + 8}" y="${docY - 6}" font-size="8px" font-weight="700" fill="#1b2c59" text-anchor="middle">${c.scores.documental}%</text>
-
-            <!-- Est Bar -->
-            <rect x="${currentX + 18}" y="${estY}" width="16" height="${estH}" fill="#d4a359" rx="3" class="chart-rect" />
-            <!-- Est Value Label -->
-            <text x="${currentX + 26}" y="${estY - 6}" font-size="8px" font-weight="700" fill="#d4a359" text-anchor="middle">${c.scores.estrutural}%</text>
-
-            <!-- Comp Bar -->
-            <rect x="${currentX + 36}" y="${compY}" width="16" height="${compH}" fill="#177542" rx="3" class="chart-rect" />
-            <!-- Comp Value Label -->
-            <text x="${currentX + 44}" y="${compY - 6}" font-size="8px" font-weight="700" fill="#177542" text-anchor="middle">${c.scores.comportamental}%</text>
-            
-            <!-- Company Short Name -->
-            <text x="${currentX + 26}" y="322" class="chart-label-text" text-anchor="middle">${c.name.split(' ')[0]}</text>
-            
-            <title>${c.name}\nDocumental: ${c.scores.documental}%\nEstrutural: ${c.scores.estrutural}%\nComportamental: ${c.scores.comportamental}%</title>
-          </g>
-        `;
-      });
-
-      svgContent += `</svg>`;
-      chartContainer.innerHTML = svgContent;
-
-      // Render Global Compliance Ranking Chart (Horizontal bars)
-      const rankingContainer = document.getElementById('ranking-chart');
-      if (rankingContainer) {
-        rankingContainer.innerHTML = "";
-        
-        // Sort data for ranking without modifying the original array
-        const rankedData = [...AUDIT_DATA].sort((a, b) => b.scores.global - a.scores.global);
-        
-        let rankingSvg = `
-          <svg viewBox="0 0 800 380" class="ranking-svg-chart">
-            <!-- Grid Lines -->
-            <line x1="180" y1="20" x2="180" y2="350" stroke="#ccc" stroke-width="1.5" />
-            <line x1="315" y1="20" x2="315" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-            <line x1="450" y1="20" x2="450" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-            <line x1="585" y1="20" x2="585" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-            <line x1="720" y1="20" x2="720" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-            
-            <text x="180" y="370" class="chart-axis-text" text-anchor="middle">0%</text>
-            <text x="315" y="370" class="chart-axis-text" text-anchor="middle">25%</text>
-            <text x="450" y="370" class="chart-axis-text" text-anchor="middle">50%</text>
-            <text x="585" y="370" class="chart-axis-text" text-anchor="middle">75%</text>
-            <text x="720" y="370" class="chart-axis-text" text-anchor="middle">100%</text>
-        `;
-        
-        const rowHeight = 40;
-        const chartLeftX = 180;
-        const chartWidth = 540; // max length corresponding to 100%
-        const startY = 30;
-        
-        rankedData.forEach((c, idx) => {
-          const currentY = startY + (idx * rowHeight);
-          const barW = (c.scores.global / 100) * chartWidth;
-          
-          let color = "#177542"; // Green
-          if (c.criticidade === "Crítico") color = "#d9534f"; // Red
-          else if (c.criticidade === "Grave") color = "#d4a359"; // Yellow
-          else if (c.criticidade === "Moderado") color = "#1b2c59"; // Navy
-          
-          // Get the original index to allow clicking to details
-          const originalIdx = AUDIT_DATA.findIndex(item => item.id === c.id);
-          
-          rankingSvg += `
-            <g class="chart-bar-group" onclick="selectCompany(${originalIdx})">
-              <!-- Company Name -->
-              <text x="${chartLeftX - 15}" y="${currentY + 14}" class="chart-label-text" text-anchor="end" font-size="11px" font-weight="600" fill="#1f2937">${c.name}</text>
-              
-              <!-- Background bar -->
-              <rect x="${chartLeftX}" y="${currentY}" width="${chartWidth}" height="18" fill="#f3f4f6" rx="4" />
-              
-              <!-- Fill bar -->
-              <rect x="${chartLeftX}" y="${currentY}" width="${barW}" height="18" fill="${color}" rx="4" class="chart-rect" />
-              
-              <!-- Value Text -->
-              <text x="${chartLeftX + barW + 10}" y="${currentY + 14}" class="chart-val-text" font-size="11px" font-weight="700" fill="#1f2937">${c.scores.global}%</text>
-              
-              <title>${c.name}: ${c.scores.global}% (${c.criticidade})</title>
-            </g>
-          `;
-        });
-        
-        rankingSvg += `</svg>`;
-        rankingContainer.innerHTML = rankingSvg;
-      }
-
-      // Criticality Distribution Lists
-      const overviewList = document.getElementById('criticality-overview-list');
-      overviewList.innerHTML = "";
-      
-      const counts = { "Crítico": 0, "Grave": 0, "Moderado": 0, "Regular": 0 };
-      AUDIT_DATA.forEach(c => { counts[c.criticidade] = (counts[c.criticidade] || 0) + 1; });
-      
-      const levels = [
-        { name: "Crítico", count: counts["Crítico"], color: "#d9534f", bg: "rgba(217, 83, 79, 0.15)", desc: "Exige paralisação imediata ou ações corretivas nas próximas 24h por risco grave de acidentes." },
-        { name: "Grave", count: counts["Grave"], color: "#f0ad4e", bg: "rgba(240, 173, 78, 0.15)", desc: "Desconformidades importantes de PGR/PCMSO, ASO ou EPI. Correção recomendada em até 15 dias." },
-        { name: "Moderado", count: counts["Moderado"], color: "#5bc0de", bg: "rgba(91, 192, 222, 0.15)", desc: "Falhas administrativas, de sinalização ou organização de canteiros. Correção em até 30 dias." },
-        { name: "Regular", count: counts["Regular"], color: "#177542", bg: "rgba(23, 117, 66, 0.15)", desc: "Alto índice de conformidade com poucas ou nenhuma recomendação corretiva pendente." }
-      ];
-
-      levels.forEach(lvl => {
-        const item = document.createElement('div');
-        item.className = "criticality-item";
-        item.style.borderLeftColor = lvl.color;
-        item.innerHTML = `
-          <div class="crit-header">
-            <span class="crit-title" style="color: ${lvl.color};">${lvl.name}</span>
-            <span class="crit-badge-count" style="background-color: ${lvl.color};">${lvl.count}</span>
-          </div>
-          <p class="crit-desc">${lvl.desc}</p>
-        `;
-        overviewList.appendChild(item);
-      });
-    }
-
-    // Render Company Detail Sheet
-    function renderCompanyDetail(index) {
-      const company = AUDIT_DATA[index];
-      
-      // Update Index indicator
-      document.getElementById('current-carousel-index').innerText = index + 1;
-      document.getElementById('total-carousel-companies').innerText = AUDIT_DATA.length;
-      
-      const container = document.getElementById('company-detail-card-render');
-      container.innerHTML = "";
-      
-      // Check status strings for rendering checkmarks
-      const statusIcon = (status) => {
-        if (status === 'conforme') return `<svg class="chk-icon conf" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
-        if (status === 'nao_conforme') return `<svg class="chk-icon nconf" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>`;
-        return `<svg class="chk-icon pend" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>`;
-      };
-
-      const statusClass = (status) => {
-        if (status === 'conforme') return 'status-conforme';
-        if (status === 'nao_conforme') return 'status-nconforme';
-        return 'status-pendente';
-      };
-      
-      const statusLabel = (status) => {
-        if (status === 'conforme') return 'Conforme';
-        if (status === 'nao_conforme') return 'Não Conforme';
-        return 'Pendente';
-      };
-
-      let criticBadge = `<span class="badge-pill bg-critico">Crítico</span>`;
-      if (company.criticidade === "Grave") criticBadge = `<span class="badge-pill bg-grave">Grave</span>`;
-      else if (company.criticidade === "Moderado") criticBadge = `<span class="badge-pill bg-moderado">Moderado</span>`;
-      else if (company.criticidade === "Regular") criticBadge = `<span class="badge-pill bg-ok">Regular</span>`;
-
-      // Build action plan rows
-      let actionPlanRows = "";
-      company.planoAcao.forEach(act => {
-        let actClass = "text-yellow";
-        if (act.criticidade === "Crítico") actClass = "text-red";
-        else if (act.criticidade === "Grave") actClass = "text-orange";
-        
-        actionPlanRows += `
-          <tr>
-            <td>${act.acao}</td>
-            <td><strong class="${actClass}">${act.criticidade}</strong></td>
-            <td>${act.prazo}</td>
-          </tr>
-        `;
-      });
-      
-      if (company.planoAcao.length === 0) {
-        actionPlanRows = `<tr><td colspan="3" class="text-center text-muted">Nenhuma ação corretiva necessária. Todos os critérios estão conformes.</td></tr>`;
-      }
-
-      // Gauge calculations
-      const strokeDash = (score) => {
-        const radius = 35;
-        const circumference = 2 * Math.PI * radius;
-        return (score / 100) * circumference;
-      };
-
-      const scoreColor = (score) => {
-        if (score >= 80) return "#177542"; // green
-        if (score >= 50) return "#d4a359"; // yellow
-        return "#d9534f"; // red
-      };
-
-      container.innerHTML = `
-        <!-- Header Info -->
-        <div class="company-card-header">
-          <div class="company-title-block">
-            <div class="company-badge-row">
-              <span class="company-date-badge">Auditoria em: ${company.dataAuditoria}</span>
-              ${criticBadge}
-            </div>
-            <h1>${company.name}</h1>
-            <p class="company-sub-info"><strong>Razão Social:</strong> ${company.razaoSocial} &bull; <strong>Ramo:</strong> ${company.ramo}</p>
-            <p class="company-sub-info"><strong>Responsável Empresa:</strong> ${company.responsavel} &bull; <strong>Técnico Miranda:</strong> ${company.responsavelMiranda}</p>
-          </div>
-          
-          <!-- Gauges -->
-          <div class="gauges-flex">
-            <!-- Gauge 1: Global -->
-            <div class="gauge-container">
-              <svg viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="35" class="gauge-base"></circle>
-                <circle cx="50" cy="50" r="35" class="gauge-fill" 
-                        stroke="${scoreColor(company.scores.global)}" 
-                        stroke-dasharray="${strokeDash(company.scores.global)} 220"
-                        transform="rotate(-90 50 50)"></circle>
-                <text x="50" y="55" class="gauge-text" fill="${scoreColor(company.scores.global)}">${company.scores.global}%</text>
-              </svg>
-              <span class="gauge-label">Conformidade Global</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Compliance Gauges Grid -->
-        <div class="compliance-gauges-grid">
-          <div class="compliance-sub-gauge">
-            <span class="sub-gauge-label">Documental</span>
-            <div class="sub-gauge-bar-outer">
-              <div class="sub-gauge-bar-inner" style="width: ${company.scores.documental}%; background-color: #1b2c59;"></div>
-            </div>
-            <span class="sub-gauge-value">${company.scores.documental}%</span>
-          </div>
-          <div class="compliance-sub-gauge">
-            <span class="sub-gauge-label">Estrutural</span>
-            <div class="sub-gauge-bar-outer">
-              <div class="sub-gauge-bar-inner" style="width: ${company.scores.estrutural}%; background-color: #d4a359;"></div>
-            </div>
-            <span class="sub-gauge-value">${company.scores.estrutural}%</span>
-          </div>
-          <div class="compliance-sub-gauge">
-            <span class="sub-gauge-label">Comportamental</span>
-            <div class="sub-gauge-bar-outer">
-              <div class="sub-gauge-bar-inner" style="width: ${company.scores.comportamental}%; background-color: #177542;"></div>
-            </div>
-            <span class="sub-gauge-value">${company.scores.comportamental}%</span>
-          </div>
-        </div>
-
-        <!-- Detailed Checklists Section -->
-        <div class="detail-section-title">
-          <h2>Checklist Detalhado de SSMA</h2>
-          <p class="section-desc">Avaliação individual de cada critério normativo</p>
-        </div>
-        
-        <div class="checklists-grid">
-          <!-- 1. DOCUMENTAL -->
-          <div class="checklist-card">
-            <div class="chk-card-header">
-              <svg class="icon icon-blue" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-              <h3>1. Auditoria Documental</h3>
-            </div>
-            <ul class="chk-list">
-              <li class="${statusClass(company.checklist.documental.registro.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.registro.status)}
-                  <span class="chk-item-name">Funcionários Registrados</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.registro.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.aso.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.aso.status)}
-                  <span class="chk-item-name">ASOs Ocupacionais</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.aso.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.pgr.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.pgr.status)}
-                  <span class="chk-item-name">PGR e PCMSO</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.pgr.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.treinamentos.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.treinamentos.status)}
-                  <span class="chk-item-name">Treinamentos Normativos</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.treinamentos.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.fichas_epi.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.fichas_epi.status)}
-                  <span class="chk-item-name">Fichas de EPI</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.fichas_epi.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.os.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.os.status)}
-                  <span class="chk-item-name">Ordens de Serviço (OS)</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.os.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.documental.integracao.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.documental.integracao.status)}
-                  <span class="chk-item-name">Treinamento Integração</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.documental.integracao.desc}</p>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- 2. ESTRUTURAL -->
-          <div class="checklist-card">
-            <div class="chk-card-header">
-              <svg class="icon icon-yellow" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4-4h-4v-2h4v2zm0-4h-4V9h4v2z"/></svg>
-              <h3>2. Condições Estruturais</h3>
-            </div>
-            <ul class="chk-list">
-              <li class="${statusClass(company.checklist.estrutural.banheiro.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.estrutural.banheiro.status)}
-                  <span class="chk-item-name">Instalações Sanitárias</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.estrutural.banheiro.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.estrutural.refeicao.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.estrutural.refeicao.status)}
-                  <span class="chk-item-name">Local de Refeições/Vivência</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.estrutural.refeicao.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.estrutural.epi_fornecimento.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.estrutural.epi_fornecimento.status)}
-                  <span class="chk-item-name">Fornecimento de EPI</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.estrutural.epi_fornecimento.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.estrutural.seguranca_geral.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.estrutural.seguranca_geral.status)}
-                  <span class="chk-item-name">Condições de Segurança</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.estrutural.seguranca_geral.desc}</p>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- 3. COMPORTAMENTO -->
-          <div class="checklist-card">
-            <div class="chk-card-header">
-              <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/></svg>
-              <h3>3. Comportamento Seguro</h3>
-            </div>
-            <ul class="chk-list">
-              <li class="${statusClass(company.checklist.comportamento.comportamento_seguro.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.comportamento.comportamento_seguro.status)}
-                  <span class="chk-item-name">Postura e Comportamento</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.comportamento.comportamento_seguro.desc}</p>
-              </li>
-              <li class="${statusClass(company.checklist.comportamento.uso_epi.status)}">
-                <div class="chk-item-header">
-                  ${statusIcon(company.checklist.comportamento.uso_epi.status)}
-                  <span class="chk-item-name">Uso Efetivo de EPI</span>
-                </div>
-                <p class="chk-item-desc">${company.checklist.comportamento.uso_epi.desc}</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Diagnosis & Text Blocks -->
-        <div class="company-text-blocks">
-          <div class="text-block-card">
-            <h3>Diagnóstico e Constatações Técnicas</h3>
-            <div class="block-content">
-              <p>${company.diagnostico}</p>
-            </div>
-          </div>
-          
-          <div class="text-block-card">
-            <h3>Conclusão do Engenheiro de Segurança</h3>
-            <div class="block-content highlighted">
-              <p>${company.conclusao}</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Action Plan Section -->
-        <div class="detail-section-title">
-          <h2>Plano de Ação Corretiva Recomendado</h2>
-          <p class="section-desc">Prazos e priorização baseados no grau de criticidade (Normas Regulamentadoras)</p>
-        </div>
-        
-        <div class="dashboard-card table-box">
-          <table class="action-plan-table">
-            <thead>
-              <tr>
-                <th>Ação Corretiva / Recomendação Técnica</th>
-                <th>Criticidade</th>
-                <th>Prazo Estimado</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${actionPlanRows}
-            </tbody>
-          </table>
-        </div>
-      `;
-    }
-
-    // PDF Print automation
-    function printReport() {
-      window.print();
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
