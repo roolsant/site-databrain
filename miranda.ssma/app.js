@@ -983,7 +983,7 @@ function renderCompanyDetail(index) {
       </div>
       
       <div class="text-block-card">
-        <h3>Conclusão do Engenheiro de Segurança</h3>
+        <h3>Conclusão do Técnico de Segurança do Trabalho</h3>
         <div class="block-content highlighted">
           <p>${latestVisit.conclusao}</p>
         </div>
@@ -1017,8 +1017,9 @@ function renderCompanyDetail(index) {
 
 function printReport() {
   const originalTitle = document.title;
-  if (activeTab === 'dashboard') {
-    document.title = "Visão Geral - Relatório de Auditorias SSMA";
+  if (activeTab === 'dashboard' || activeTab === 'help') {
+    printFullReport();
+    return;
   } else if (activeTab === 'strategic') {
     document.title = "Análise Estratégica - Relatório de Auditorias SSMA";
   } else if (activeTab === 'companies') {
@@ -1029,6 +1030,28 @@ function printReport() {
   window.print();
   
   setTimeout(() => { document.title = originalTitle; }, 500);
+}
+
+function printCapa() {
+  printFullReport();
+}
+
+function printFullReport() {
+  const originalTitle = document.title;
+  const printTitleEl = document.querySelector('.print-main-title');
+  const originalPrintTitle = printTitleEl.innerText;
+  
+  document.title = "Relatório Executivo de Auditorias SSMA";
+  printTitleEl.innerText = "Visão Geral de SSMA";
+  
+  document.body.classList.add('printing-full');
+  window.print();
+  document.body.classList.remove('printing-full');
+  
+  setTimeout(() => { 
+    document.title = originalTitle; 
+    printTitleEl.innerText = originalPrintTitle;
+  }, 500);
 }
 
 // ==========================================
@@ -1051,7 +1074,7 @@ function renderHelpPage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
         </div>
         <h3>1. Os 3 Pilares da Avaliação</h3>
-        <p>Durante a visita técnica, o Engenheiro Auditor avalia a empresa em três grandes frentes. A pontuação em cada pilar vai de 0% a 100%.</p>
+        <p>Durante a visita técnica, o Técnico de Segurança do Trabalho avalia a empresa em três grandes frentes. A pontuação em cada pilar vai de 0% a 100%.</p>
         <div class="help-badge-list">
           <div class="help-badge-item" style="border-color: #1b2c59;">
             <div style="flex: 1;">
@@ -1080,7 +1103,11 @@ function renderHelpPage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
         </div>
         <h3>2. O Cálculo da Nota Global</h3>
-        <p>A <strong>Taxa de Conformidade Global (%)</strong> não é uma simples média. Ela é uma média aritmética baseada nos pesos das conformidades e inconformidades levantadas no Checklist técnico, refletindo o grau real de aderência às NRs.</p>
+        <p>A <strong>Nota de cada Pilar</strong> é calculada rigorosamente com base no preenchimento do checklist pelo auditor em campo, utilizando a seguinte fórmula matemática para garantir total isenção:</p>
+        <div class="formula-box">
+          Nota = Itens Conformes / (Itens Conformes + Itens Não Conformes) * 100
+        </div>
+        <p class="formula-note"><em>Nota: Itens marcados como "Não Avaliado" ou "N/A" são excluídos do divisor, garantindo que a empresa não seja prejudicada nem beneficiada por itens que não se aplicam à sua realidade. A <strong>Nota Global</strong> é a média aritmética simples dos três pilares.</em></p>
         <div class="help-badge-list" style="margin-top: 10px;">
           <div class="help-badge-item" style="border-color: #177542;">
             <div>

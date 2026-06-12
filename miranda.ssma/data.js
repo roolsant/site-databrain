@@ -1,7 +1,7 @@
 const AUDIT_DATA = [
   {
-    "id": "carpintaria_ganso",
-    "name": "Carpintaria Ganso",
+    "id": "edivaldo",
+    "name": "Edivaldo",
     "razaoSocial": "E.F Goncalves & Cia Ltda",
     "responsavel": "Edivaldo Ferreira Goncalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
@@ -87,7 +87,8 @@ const AUDIT_DATA = [
             "acao": "Paralisar atividades de corte/perfuração até que os colaboradores passem a usar as perneiras e luvas de couro.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Agendar exames periódicos de ASO e Espirometria antes do vencimento em 27/06/2026.",
@@ -114,10 +115,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 50,
-          "estrutural": 0,
-          "comportamental": 0,
-          "global": 16
+          "documental": 43,
+          "estrutural": 25,
+          "comportamental": 100,
+          "global": 56
         },
         "checklist": {
           "documental": {
@@ -170,11 +171,11 @@ const AUDIT_DATA = [
           },
           "comportamento": {
             "comportamento_seguro": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Postura reativa e trabalho sem os cuidados de proteção individual básicos."
             },
             "uso_epi": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Flagrado conduzindo trator sem abafador de ruídos."
             }
           }
@@ -190,7 +191,8 @@ const AUDIT_DATA = [
             "acao": "Paralisar atividades de corte/perfuração até que os colaboradores passem a usar as perneiras e luvas de couro.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Agendar exames periódicos de ASO e Espirometria antes do vencimento em 27/06/2026.",
@@ -214,7 +216,8 @@ const AUDIT_DATA = [
             "acao": "Advertência e re-treinamento sobre EPI (abafador)",
             "criticidade": "Grave",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           }
         ],
         "diagnostico": "Flagrante de não conformidade no uso de EPIs. Queda no índice comportamental.",
@@ -304,25 +307,29 @@ const AUDIT_DATA = [
             "acao": "Relocar imediatamente a área de vivência (alimentação/descanso) para local isolado dos depósitos de defensivos agrícolas.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Restabelecer água corrente no sanitário, consertar a descarga e abastecer com papel higiênico e sabonete.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Renovar e revisar PGR e PCMSO expirados em 30/04/2026 junto à assessoria de SST.",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Regularizar ASO vencido de Marcos Antônio e providenciar os exames toxicológicos obrigatórios.",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Fornecer kits novos de EPI químico e estabelecer controle rígido de substituição periódica de filtros de carvão.",
@@ -349,10 +356,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 25,
-          "estrutural": 10,
-          "comportamental": 30,
-          "global": 22
+          "documental": 29,
+          "estrutural": 0,
+          "comportamental": 50,
+          "global": 26
         },
         "checklist": {
           "documental": {
@@ -419,25 +426,29 @@ const AUDIT_DATA = [
             "acao": "Relocar imediatamente a área de vivência (alimentação/descanso) para local isolado dos depósitos de defensivos agrícolas.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Restabelecer água corrente no sanitário, consertar a descarga e abastecer com papel higiênico e sabonete.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Renovar e revisar PGR e PCMSO expirados em 30/04/2026 junto à assessoria de SST.",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Regularizar ASO vencido de Marcos Antônio e providenciar os exames toxicológicos obrigatórios.",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Fornecer kits novos de EPI químico e estabelecer controle rígido de substituição periódica de filtros de carvão.",
@@ -495,11 +506,11 @@ const AUDIT_DATA = [
               "desc": "PGR válido até abril/2028 e PCMSO válido até abril/2027 assinados."
             },
             "treinamentos": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Ausência de treinamentos práticos de segurança em construção (NR-18)."
             },
             "fichas_epi": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Modelos existem no PGR, mas não foram colhidas as assinaturas de entrega."
             },
             "os": {
@@ -507,7 +518,7 @@ const AUDIT_DATA = [
               "desc": "Ordens de Serviço estruturadas conforme a NR-01."
             },
             "integracao": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem integração comportamental registrada para os operários."
             }
           },
@@ -545,25 +556,29 @@ const AUDIT_DATA = [
             "acao": "Paralisar imediatamente as atividades de alvenaria até que todos estejam utilizando capacete, óculos e luvas.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Distribuir e registrar formalmente a entrega de todos os EPIs através das fichas com assinatura dos colaboradores.",
             "criticidade": "Grave",
             "prazo": "3 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Realizar Diálogo Diário de Segurança (DDS) sobre uso obrigatório de EPI e conscientização sobre queda de objetos.",
             "criticidade": "Moderado",
             "prazo": "5 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Aplicar advertências formais na recusa do uso de EPIs, conforme previsto no Art. 158 da CLT.",
             "criticidade": "Moderado",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Elaborar a Análise Preliminar de Risco (APR) específica para a obra civil.",
@@ -578,10 +593,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 60,
-          "estrutural": 70,
-          "comportamental": 10,
-          "global": 47
+          "documental": 100,
+          "estrutural": 50,
+          "comportamental": 0,
+          "global": 50
         },
         "checklist": {
           "documental": {
@@ -598,11 +613,11 @@ const AUDIT_DATA = [
               "desc": "PGR válido até abril/2028 e PCMSO válido até abril/2027 assinados."
             },
             "treinamentos": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Ausência de treinamentos práticos de segurança em construção (NR-18)."
             },
             "fichas_epi": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Modelos existem no PGR, mas não foram colhidas as assinaturas de entrega."
             },
             "os": {
@@ -610,7 +625,7 @@ const AUDIT_DATA = [
               "desc": "Ordens de Serviço estruturadas conforme a NR-01."
             },
             "integracao": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem integração comportamental registrada para os operários."
             }
           },
@@ -648,25 +663,29 @@ const AUDIT_DATA = [
             "acao": "Paralisar imediatamente as atividades de alvenaria até que todos estejam utilizando capacete, óculos e luvas.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Distribuir e registrar formalmente a entrega de todos os EPIs através das fichas com assinatura dos colaboradores.",
             "criticidade": "Grave",
             "prazo": "3 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Realizar Diálogo Diário de Segurança (DDS) sobre uso obrigatório de EPI e conscientização sobre queda de objetos.",
             "criticidade": "Moderado",
             "prazo": "5 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Aplicar advertências formais na recusa do uso de EPIs, conforme previsto no Art. 158 da CLT.",
             "criticidade": "Moderado",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Elaborar a Análise Preliminar de Risco (APR) específica para a obra civil.",
@@ -681,8 +700,8 @@ const AUDIT_DATA = [
     ]
   },
   {
-    "id": "ms_restaurante",
-    "name": "MS Restaurante",
+    "id": "restaurante",
+    "name": "Restaurante",
     "razaoSocial": "MSV SILVA ME (CNPJ 29.854.674/0001-35)",
     "responsavel": "Edivaldo Ferreira Goncalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
@@ -692,10 +711,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "19/05/2026",
         "scores": {
-          "documental": 10,
-          "estrutural": 75,
-          "comportamental": 80,
-          "global": 55
+          "documental": 0,
+          "estrutural": 50,
+          "comportamental": 100,
+          "global": 50
         },
         "checklist": {
           "documental": {
@@ -820,31 +839,31 @@ const AUDIT_DATA = [
         "checklist": {
           "documental": {
             "registro": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Nenhum livro de registro ou dado enviado para análise."
             },
             "aso": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Nenhum prontuário médico ou ASO apresentado."
             },
             "pgr": {
               "status": "nao_conforme",
-              "desc": "Ausência de PGR e PCMSO válidos para a atividade florestal."
+              "desc": "Somente não tem OS e o PCMSO venceu 01/2026"
             },
             "treinamentos": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem comprovação de curso de motosserra (NR-31.12) ou EPIs."
             },
             "fichas_epi": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Ausência total de fichas de fornecimento de EPI."
             },
             "os": {
               "status": "nao_conforme",
-              "desc": "Ausência de OS emitidas."
+              "desc": "Somente não tem OS"
             },
             "integracao": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem registro de integração."
             }
           },
@@ -882,19 +901,22 @@ const AUDIT_DATA = [
             "acao": "Paralisar imediatamente as atividades de extração florestal até reestruturação básica de segurança.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Roçar o mato ao redor da área de vivência, efetuar limpeza profunda da mesa e restabelecer água/insumos no banheiro.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Acondicionar e armazenar galões de combustível inflamável de forma segura e sinalizada fora da mata nativa.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Implantar placas de sinalização de segurança perimetral ('Queda de Árvores', 'Tratores em Operação') no canteiro florestal.",
@@ -906,7 +928,8 @@ const AUDIT_DATA = [
             "acao": "Estruturar e enviar toda a documentação legal básica de SST (PGR, PCMSO, ASOs, Registros).",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           }
         ],
         "diagnostico": "Cenário preocupante de total descumprimento dos requisitos mínimos de segurança e dignidade. A área de vivência está abandonada e imunda, forçando necessidades e refeições no chão. O armazenamento inadequado de galões de gasolina diretamente no chão da floresta nativa cria risco iminente de contaminação do solo e incêndios florestais catastróficos.",
@@ -915,39 +938,39 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 0,
-          "estrutural": 10,
+          "documental": 71,
+          "estrutural": 0,
           "comportamental": 0,
-          "global": 3
+          "global": 24
         },
         "checklist": {
           "documental": {
             "registro": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Nenhum livro de registro ou dado enviado para análise."
             },
             "aso": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Nenhum prontuário médico ou ASO apresentado."
             },
             "pgr": {
               "status": "nao_conforme",
-              "desc": "Ausência de PGR e PCMSO válidos para a atividade florestal."
+              "desc": "Somente não tem OS e o PCMSO venceu 01/2026"
             },
             "treinamentos": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem comprovação de curso de motosserra (NR-31.12) ou EPIs."
             },
             "fichas_epi": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Ausência total de fichas de fornecimento de EPI."
             },
             "os": {
               "status": "nao_conforme",
-              "desc": "Ausência de OS emitidas."
+              "desc": "Somente não tem OS"
             },
             "integracao": {
-              "status": "nao_conforme",
+              "status": "conforme",
               "desc": "Sem registro de integração."
             }
           },
@@ -985,19 +1008,22 @@ const AUDIT_DATA = [
             "acao": "Paralisar imediatamente as atividades de extração florestal até reestruturação básica de segurança.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Roçar o mato ao redor da área de vivência, efetuar limpeza profunda da mesa e restabelecer água/insumos no banheiro.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Acondicionar e armazenar galões de combustível inflamável de forma segura e sinalizada fora da mata nativa.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Implantar placas de sinalização de segurança perimetral ('Queda de Árvores', 'Tratores em Operação') no canteiro florestal.",
@@ -1009,13 +1035,15 @@ const AUDIT_DATA = [
             "acao": "Estruturar e enviar toda a documentação legal básica de SST (PGR, PCMSO, ASOs, Registros).",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Paralisação das operações por falta de EPIs",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           }
         ],
         "diagnostico": "Grave irregularidade: Limpeza técnica operada em total estado de falta de Equipamentos de Proteção Individual.",
@@ -1111,7 +1139,8 @@ const AUDIT_DATA = [
             "acao": "Exigir o uso contínuo de perneiras de proteção para evitar picadas de animais peçonhentos na mata.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Providenciar treinamento de tratorista NR-31.12 and Primeiros Socorros para o funcionário Amarildo.",
@@ -1132,10 +1161,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 80,
-          "estrutural": 10,
+          "documental": 71,
+          "estrutural": 25,
           "comportamental": 50,
-          "global": 47
+          "global": 49
         },
         "checklist": {
           "documental": {
@@ -1208,7 +1237,8 @@ const AUDIT_DATA = [
             "acao": "Exigir o uso contínuo de perneiras de proteção para evitar picadas de animais peçonhentos na mata.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Providenciar treinamento de tratorista NR-31.12 and Primeiros Socorros para o funcionário Amarildo.",
@@ -1310,43 +1340,50 @@ const AUDIT_DATA = [
             "acao": "Suspender preventivamente as atividades de tratamento de mudas até fornecimento/uso de EPIs impermeáveis e respiratórios.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Remover todos os defensivos agrícolas e venenos de formiga de dentro do banheiro da área de vivência.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Limpar, desinfectar e ativar o banheiro para uso dos trabalhadores, provendo água, sabão e papel.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Disponibilizar banheiros químicos móveis nos talhões de plantio distantes da base.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Exigir uso de óculos de proteção para toda a equipe de plantio e protetor auricular para o tratorista Leonardo.",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Organizar os tambores de óleo na vivência e construir cercado sinalizado para resíduos e galões vazios.",
             "criticidade": "Grave",
             "prazo": "3 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Estruturar toda a documentação de SST (PGR, PCMSO, ASOs, Registros e OS).",
             "criticidade": "Grave",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Andamento",
+            "dataConclusao": "26/05/2026"
           }
         ],
         "diagnostico": "Cenário gravíssimo com alto risco ocupacional e ambiental. O banheiro da área de vivência estava sendo usado para estocar veneno e iscas químicas, gerando risco iminente de contaminação da água e alimentos. O manuseio de agrotóxicos no tratamento de mudas é executado com zero proteção individual. Leonardo (tratorista) opera maquinário pesado sem qualquer proteção auditiva ou visual.",
@@ -1356,9 +1393,9 @@ const AUDIT_DATA = [
         "dataAuditoria": "26/05/2026",
         "scores": {
           "documental": 0,
-          "estrutural": 60,
-          "comportamental": 90,
-          "global": 50
+          "estrutural": 25,
+          "comportamental": 100,
+          "global": 42
         },
         "checklist": {
           "documental": {
@@ -1425,37 +1462,43 @@ const AUDIT_DATA = [
             "acao": "Suspender preventivamente as atividades...",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Concluído"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Remover todos os defensivos agrícolas e venenos...",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Concluído"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Limpar, desinfectar e ativar o banheiro...",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Concluído"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Disponibilizar banheiros químicos móveis...",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Exigir uso de óculos de proteção para toda a equipe...",
             "criticidade": "Crítico",
             "prazo": "Imediato",
-            "status": "Concluído"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Organizar os tambores de óleo na vivência...",
             "criticidade": "Grave",
             "prazo": "3 dias",
-            "status": "Concluído"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Estruturar toda a documentação de SST...",
@@ -1467,13 +1510,15 @@ const AUDIT_DATA = [
             "acao": "Concluir deslocamento da estrutura de vivência...",
             "criticidade": "Grave",
             "prazo": "Imediato",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           },
           {
             "acao": "Monitorar cronograma de mudança da área...",
             "criticidade": "Moderado",
             "prazo": "15 dias",
-            "status": "Pendente"
+            "status": "Concluído",
+            "dataConclusao": "26/05/2026"
           }
         ],
         "diagnostico": "Evolução exemplar na cultura de segurança. Sanou-se com sucesso o armazenamento irregular de químicos e houve mudança comportamental drástica das equipes no uso de EPIs. O foco atual é a logística de transporte das áreas de vivência móveis.",
@@ -1482,8 +1527,8 @@ const AUDIT_DATA = [
     ]
   },
   {
-    "id": "rvc_carvao_black",
-    "name": "RVC Carvão Black",
+    "id": "viana",
+    "name": "Viana",
     "razaoSocial": "DS Carvão Black Ltda",
     "responsavel": "Ronaldo Viana",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
@@ -1608,10 +1653,10 @@ const AUDIT_DATA = [
       {
         "dataAuditoria": "26/05/2026",
         "scores": {
-          "documental": 20,
-          "estrutural": 50,
-          "comportamental": 70,
-          "global": 47
+          "documental": 14,
+          "estrutural": 25,
+          "comportamental": 100,
+          "global": 46
         },
         "checklist": {
           "documental": {
@@ -1723,9 +1768,3 @@ const AUDIT_DATA = [
     ]
   }
 ];
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = AUDIT_DATA;
-} else {
-  window.AUDIT_DATA = AUDIT_DATA;
-}
