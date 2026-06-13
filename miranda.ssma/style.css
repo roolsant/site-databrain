@@ -1438,6 +1438,20 @@ button, select {
     print-color-adjust: exact !important;
   }
   
+  /* Force animated charts to end state in print */
+  [style*="--target-offset"] {
+    stroke-dashoffset: var(--target-offset) !important;
+    animation: none !important;
+  }
+  [style*="--target-width"] {
+    width: var(--target-width) !important;
+    animation: none !important;
+  }
+  .chart-text-anim {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  
   /* Hide interactive/navigation elements */
   .no-print, 
   .top-nav-bar, 
@@ -1478,15 +1492,24 @@ button, select {
     flex-direction: column !important;
   }
 
-  body.printing-full #tab-dashboard,
-  body.printing-full #tab-help {
-    display: block !important;
-  }
-
   /* Prevent titles from detaching from charts/tables by preventing page breaks inside the cards */
   .dashboard-card {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+  }
+
+  /* Prevent section titles from being orphaned at the bottom of a page */
+  .detail-section-title {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  body.printing-full #tab-dashboard,
+  body.printing-full #tab-help,
+  body.printing-full #tab-strategic {
+    display: block !important;
   }
 
   body.printing-full #tab-help {
@@ -1500,10 +1523,14 @@ button, select {
 
   body.printing-full #tab-dashboard {
     order: 3 !important;
+    page-break-after: always;
+  }
+
+  body.printing-full #tab-strategic {
+    order: 4 !important;
     page-break-after: auto;
   }
 
-  body.printing-full #tab-strategic,
   body.printing-full #tab-companies {
     display: none !important;
   }

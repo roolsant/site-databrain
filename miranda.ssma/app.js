@@ -368,7 +368,7 @@ function renderStrategicAnalysis() {
             <path d="M 20 130 A 100 100 0 0 1 220 130" fill="none" stroke="#f0f0f0" stroke-width="20" stroke-linecap="round" />
             <!-- Foreground Arc -->
             <path d="M 20 130 A 100 100 0 0 1 220 130" fill="none" stroke="${gaugeColor}" stroke-width="20" stroke-linecap="round" 
-                  stroke-dasharray="${circumference}" stroke-dashoffset="${circumference}" 
+                  stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" 
                   style="animation: gaugeFill 1.5s ease-out forwards; animation-delay: 0.2s; --target-offset: ${offset};" />
             
             <text x="120" y="115" font-size="32px" font-weight="bold" fill="${gaugeColor}" text-anchor="middle" class="chart-text-anim">${avgGlobal}%</text>
@@ -399,7 +399,7 @@ function renderStrategicAnalysis() {
           <div style="margin-bottom: 12px; display: flex; align-items: center; width: 100%;">
             <div style="width: 70px; font-size: 11px; font-weight: bold; color: #555;">${ct.label}</div>
             <div style="flex: 1; background: #f0f0f0; height: 14px; border-radius: 4px; margin: 0 10px; overflow: hidden;">
-              <div style="width: 0%; height: 100%; background: ${ct.color}; animation: growWidth 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; animation-delay: ${idx * 0.15}s; --target-width: ${widthPct}%;"></div>
+              <div style="width: ${widthPct}%; height: 100%; background: ${ct.color}; animation: growWidth 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; animation-delay: ${idx * 0.15}s; --target-width: ${widthPct}%;"></div>
             </div>
             <div style="width: 20px; font-size: 11px; font-weight: bold; text-align: right;">${ct.count}</div>
           </div>
