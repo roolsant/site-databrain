@@ -222,6 +222,91 @@ const AUDIT_DATA = [
         ],
         "diagnostico": "Flagrante de não conformidade no uso de EPIs. Queda no índice comportamental.",
         "conclusao": "Necessária advertência formal aos colaboradores pela recusa do uso de abafadores de ruído."
+      },
+      {
+        "dataAuditoria": "26/06/2026",
+        "scores": {
+          "documental": 13,
+          "estrutural": 8,
+          "comportamental": 40,
+          "global": 61
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registro de David da Silva Gonçalves regularizado."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "ASO vencendo em 27/06/2026; Paulo Sergio com espirometria apontando anomalias leves."
+            },
+            "pgr": {
+              "status": "nao_conforme",
+              "desc": "PGR e PCMSO vencidos/vencendo em Junho 2026."
+            },
+            "treinamentos": {
+              "status": "nao_conforme",
+              "desc": "Edivaldo tem NR-12/31; outros colaboradores sem NR-06 ou integração."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas assinadas e atualizadas em 01/05/2026."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Ordens de Serviço de David e Paulo assinadas em 28/05/2026."
+            },
+            "integracao": {
+              "status": "nao_conforme",
+              "desc": "Sem certificados de integração NR-31 nos prontuários."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Atualizado em 26/06/2026 (Vide DOCX)"
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Ausência completa de sanitário ou lavatório local na frente operacional."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "EPIs em dia conforme termos de fornecimento."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Atualizado em 26/06/2026 (Vide DOCX)"
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Atualizado em 26/06/2026 (Vide DOCX)"
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Atualizado em 26/06/2026 (Vide DOCX)"
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Implantação imediata de estrutura móvel ou fixa para área de vivência (NR-24)",
+            "criticidade": "Crítico",
+            "prazo": "Urgente",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Manutenção/Substituição da capa de proteção do cardan da furadeira",
+            "criticidade": "Crítico",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          }
+        ],
+        "diagnostico": "Flagrante de não conformidade no uso de EPIs. Queda no índice comportamental.",
+        "conclusao": "Necessária advertência formal aos colaboradores pela recusa do uso de abafadores de ruído."
       }
     ]
   },
@@ -1764,6 +1849,106 @@ const AUDIT_DATA = [
         ],
         "diagnostico": "Ótimo comportamento operacional na conservação da limpeza e armazenamento de combustível. Contudo, há graves falhas administrativas (novos funcionários sem OS/fichas de EPI e ausência de ASOs de todos). A principal desconformidade de segurança é o consumo de marmitas azedas por estocagem de 7h sob calor, expondo os trabalhadores a intoxicações.",
         "conclusao": "A frente possui bons hábitos práticos de organização, exigindo melhorias pontuais no mobiliário de vivência, na conservação alimentar e na regularização de prontuários médicos."
+      }
+    ]
+  },
+  {
+    "id": "luiz",
+    "name": "Luiz Guimenez",
+    "razaoSocial": "J dos Santos Guimenez",
+    "responsavel": "Luiz Carlos Gonçalves Guimenezes",
+    "responsavelMiranda": "Cássia Francine Zacarim Lima",
+    "ramo": "Corte e Processamento de Madeira",
+    "criticidade": "Crítico",
+    "visitas": [
+      {
+        "dataAuditoria": "19/06/2026",
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registro de Sebastião realizado."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "Falta ASO para a equipe."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Elaboradas."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Vigente."
+            },
+            "treinamentos": {
+              "status": "nao_conforme",
+              "desc": "Treinamento de uso de motosserras pendente."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS de Sebastião elaborada."
+            },
+            "integracao": {
+              "status": "nao_conforme",
+              "desc": "Pendente"
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Área padrão."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Área padrão."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Equipamentos pendentes de aquisição."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Falha na fiscalização diária."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "nao_conforme",
+              "desc": "Negligência quanto ao uso de EPIs."
+            },
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "Trabalho com motosserras sem EPIs."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Aquisição de EPIs anticorte e viseiras",
+            "criticidade": "Crítico",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Regularização Documental (ASO)",
+            "criticidade": "Grave",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Monitoramento Operacional Diário",
+            "criticidade": "Grave",
+            "prazo": "Diário",
+            "status": "Pendente"
+          }
+        ],
+        "scores": {
+          "documental": 17,
+          "estrutural": 15,
+          "comportamental": 0,
+          "global": 32
+        }
       }
     ]
   }

@@ -1447,6 +1447,10 @@ button, select {
     width: var(--target-width) !important;
     animation: none !important;
   }
+  .chart-rect {
+    transform: scaleY(1) !important;
+    animation: none !important;
+  }
   .chart-text-anim {
     opacity: 1 !important;
     animation: none !important;
@@ -1504,6 +1508,17 @@ button, select {
     break-after: avoid !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+  }
+
+  /* Prevent Raio-X grid from separating from its title */
+  .raiox-title {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+  
+  .raiox-grid {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
   }
 
   body.printing-full #tab-dashboard,

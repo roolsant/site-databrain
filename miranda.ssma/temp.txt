@@ -1,0 +1,61 @@
+function renderStrategicAnalysis() {
+  const container = document.getElementById('strategic-analysis-render');
+  if(!container) return;
+
+  let maxVisits = 1;
+  let totalLatestGlobal = 0;
+  let criticidadeCounts = { 'Regular': 0, 'Moderado': 0, 'Grave': 0, 'Crítico': 0 };
+
+  AUDIT_DATA.forEach(c => {
+    if (c.visitas.length > maxVisits) maxVisits = c.visitas.length;
+    
+    // For the Gauge and Distribution
+    const latestScore = c.visitas[c.visitas.length - 1].scores.global;
+    totalLatestGlobal += latestScore;
+
+    if (latestScore >= 80) criticidadeCounts['Regular']++;
+    else if (latestScore >= 60) criticidadeCounts['Moderado']++;
+    else if (latestScore >= 40) criticidadeCounts['Grave']++;
+    else criticidadeCounts['Crítico']++;
+  });
+
+  const avgGlobal = Math.round(totalLatestGlobal / AUDIT_DATA.length);
+
+  // Health Gauge Math
+  const circumference = 314.16; // pi * r (r=100)
+  const offset = circumference * (1 - (avgGlobal / 100));
+  let gaugeColor = "#177542";
+  if(avgGlobal < 40) gaugeColor = "#d9534f";
+  else if(avgGlobal < 60) gaugeColor = "#d4a359";
+  else if(avgGlobal < 80) gaugeColor = "#1b2c59";
+
+  let topChartsHtml = `
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 32px;">
+      <!-- Gauge Chart -->
+      <div class="dashboard-card chart-box" style="margin-bottom: 0;">
+        <div class="card-header">
+          <h2>Saúde Global (Média Atual)</h2>
+          <span class="sub-title">Média das notas gerais da última visita de todas as empresas</span>
+        </div>
+        <div class="bar-chart-container" style="padding: 20px 0; text-align: center; height: 180px;">
+          <svg viewBox="0 0 240 140" style="max-height: 160px; overflow: visible;">
+            <!-- Background Arc -->
+            <path d="M 20 130 A 100 100 0 0 1 220 130" fill="none" stroke="#f0f0f0" stroke-width="20" stroke-linecap="round" />
+            <!-- Foreground Arc -->
+            <path d="M 20 130 A 100 100 0 0 1 220 130" fill="none" stroke="${gaugeColor}" stroke-width="20" stroke-linecap="round" 
+                  stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" 
+                  style="animation: gaugeFill 1.5s ease-out forwards; animation-delay: 0.2s; --target-offset: ${offset};" />
+            
+            <text x="120" y="115" font-size="32px" font-weight="bold" fill="${gaugeColor}" text-anchor="middle" class="chart-text-anim">${avgGlobal}%</text>
+            <text x="120" y="135" font-size="12px" fill="#6b7280" text-anchor="middle" class="chart-text-anim">Média Consolidada</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Distribution Bars -->
+      <div class="dashboard-card chart-box" style="margin-bottom: 0;">
+        <div class="card-header">
+          <h2>Distribuição de Criticidade</h2>
+          <span class="sub-title">Status atual das ${AUDIT_DATA.length} prestadoras avaliadas</span>
+        </div>
+        <div class="bar-chart-container

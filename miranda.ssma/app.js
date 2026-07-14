@@ -187,7 +187,7 @@ function renderDashboard() {
   chartContainer.innerHTML = "";
   
   let svgContent = `
-    <svg viewBox="0 0 800 350" class="comparison-svg-chart">
+    <svg viewBox="0 0 800 350" class="comparison-svg-chart" width="100%">
       <!-- Grid Lines -->
       <line x1="50" y1="50" x2="780" y2="50" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
       <line x1="50" y1="125" x2="780" y2="125" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
@@ -249,7 +249,7 @@ function renderDashboard() {
     const rankedData = [...AUDIT_DATA].sort((a, b) => getLatestScore(b).global - getLatestScore(a).global);
     
     let rankingSvg = `
-      <svg viewBox="0 0 800 380" class="ranking-svg-chart">
+      <svg viewBox="0 0 800 380" class="ranking-svg-chart" width="100%">
         <line x1="180" y1="20" x2="180" y2="350" stroke="#ccc" stroke-width="1.5" />
         <line x1="315" y1="20" x2="315" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
         <line x1="450" y1="20" x2="450" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
@@ -363,7 +363,7 @@ function renderStrategicAnalysis() {
           <span class="sub-title">Média das notas gerais da última visita de todas as empresas</span>
         </div>
         <div class="bar-chart-container" style="padding: 20px 0; text-align: center; height: 180px;">
-          <svg viewBox="0 0 240 140" style="max-height: 160px; overflow: visible;">
+          <svg viewBox="0 0 240 140" width="100%" style="max-height: 160px; overflow: visible;">
             <!-- Background Arc -->
             <path d="M 20 130 A 100 100 0 0 1 220 130" fill="none" stroke="#f0f0f0" stroke-width="20" stroke-linecap="round" />
             <!-- Foreground Arc -->
@@ -431,7 +431,7 @@ function renderStrategicAnalysis() {
         <span class="sub-title">Desempenho Geral (Nota Global) ao longo das visitas</span>
       </div>
       <div class="bar-chart-container" style="padding: 20px;">
-        <svg viewBox="0 0 800 250" class="line-svg-chart" style="max-height: 300px; overflow: visible;">
+        <svg viewBox="0 0 800 250" class="line-svg-chart" width="100%" style="max-height: 300px; overflow: visible;">
           <!-- Grid lines -->
           <line x1="50" y1="20" x2="780" y2="20" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
           <line x1="50" y1="110" x2="780" y2="110" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
@@ -583,11 +583,12 @@ function renderStrategicAnalysis() {
   // NOVO: Raio-X de Competências (Fortalezas, Fraquezas e Gaps)
   // ==========================================
   let raioxHtml = `
-    <div class="detail-section-title" style="margin-top: 40px; margin-bottom: 20px;">
-      <h2>Raio-X de Competências por Prestador</h2>
-      <p class="section-desc">Análise de Fortalezas, Fraquezas e Mapeamento de Pendências do Plano de Ação (Última Visita)</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; margin-bottom: 40px;">
+    <div style="page-break-inside: avoid;">
+      <div class="detail-section-title raiox-title" style="margin-top: 40px; margin-bottom: 20px;">
+        <h2>Raio-X de Competências por Prestador</h2>
+        <p class="section-desc">Análise de Fortalezas, Fraquezas e Mapeamento de Pendências do Plano de Ação (Última Visita)</p>
+      </div>
+      <div class="raiox-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; margin-bottom: 40px;">
   `;
 
   AUDIT_DATA.forEach((c, idx) => {
@@ -652,7 +653,7 @@ function renderStrategicAnalysis() {
     `;
   });
 
-  raioxHtml += `</div>`;
+  raioxHtml += `</div></div>`;
   html += raioxHtml;
 
   container.innerHTML = html;
@@ -737,7 +738,7 @@ function renderCompanyDetail(index) {
   if(company.visitas.length >= 1) {
     const width = 800;
     const height = 250;
-    barChartSvg += `<svg viewBox="0 0 ${width} ${height}" class="line-svg-chart" style="max-height: 250px; overflow: visible;">`;
+    barChartSvg += `<svg viewBox="0 0 ${width} ${height}" class="line-svg-chart" width="100%" style="max-height: 250px; overflow: visible;">`;
     barChartSvg += `<line x1="50" y1="20" x2="${width-20}" y2="20" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />`;
     barChartSvg += `<line x1="50" y1="110" x2="${width-20}" y2="110" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />`;
     barChartSvg += `<line x1="50" y1="200" x2="${width-20}" y2="200" stroke="#ccc" stroke-width="1.5" />`;
