@@ -52,6 +52,7 @@
         <button class="nav-tab-btn active" id="btn-tab-dashboard" onclick="switchTab('dashboard')">Visão Geral</button>
         <button class="nav-tab-btn" id="btn-tab-strategic" onclick="switchTab('strategic')">Análise Estratégica</button>
         <button class="nav-tab-btn" id="btn-tab-companies" onclick="switchTab('companies')">Análise por Empresa</button>
+        <button class="nav-tab-btn" id="btn-tab-fazenda" onclick="switchTab('fazenda')">Fazenda S. Verginia</button>
       </div>
       
       <div class="nav-actions">
@@ -172,7 +173,7 @@
             </div>
             
             <!-- Global Compliance Ranking Box -->
-            <div class="dashboard-card ranking-box" style="margin-top: 32px; page-break-inside: avoid;">
+            <div class="dashboard-card ranking-box" style="margin-top: 32px;">
               <div class="card-header">
                 <h2>Ranking de Conformidade Global por Empresa</h2>
                 <span class="sub-title">Índice de atendimento geral das NRs</span>
@@ -196,10 +197,10 @@
         </div>
 
         <!-- Global Summary Table -->
-        <div class="dashboard-card table-box" style="page-break-inside: avoid;">
+        <div class="dashboard-card table-box">
           <div class="card-header">
             <h2>Quadro Comparativo de Conformidade</h2>
-            <span class="sub-title">Visão geral das 9 prestadoras de serviços da Santa Verginia</span>
+            <span class="sub-title">Visão geral das 8 prestadoras de serviços da Santa Verginia</span>
           </div>
           <div class="responsive-table-wrapper">
             <table class="comparative-table">
@@ -275,6 +276,11 @@
       <footer class="main-footer no-print">
         <p>&copy; 2026 Miranda SSMA. Relatório preparado para Santa Verginia.</p>
       </footer>
+      <!-- FAZENDA TAB -->
+      <div id="tab-fazenda" class="tab-panel">
+        <div id="fazenda-container"></div>
+      </div>
+
     </main>
   </div>
 

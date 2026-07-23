@@ -1546,7 +1546,8 @@ button, select {
     page-break-after: auto;
   }
 
-  body.printing-full #tab-companies {
+  body.printing-full #tab-companies,
+  body.printing-full #tab-fazenda {
     display: none !important;
   }
   
@@ -1730,3 +1731,36 @@ button, select {
     border: 1px solid #eee !important;
   }
 }
+
+/* Added for Company Details Grid */
+.company-charts-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.chk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .company-charts-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media print {
+  .company-charts-row {
+    grid-template-columns: 1.5fr 1fr !important;
+    page-break-inside: avoid;
+  }
+  .chk-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    page-break-inside: avoid;
+  }
+}
+

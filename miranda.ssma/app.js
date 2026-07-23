@@ -1,6 +1,7 @@
 // App State
 let currentCompanyIndex = 0;
 let activeTab = 'dashboard';
+let CONTRACTORS = [];
 
 // Initialize Dashboard
 window.onload = function() {
@@ -8,15 +9,20 @@ window.onload = function() {
     console.error("data.js not loaded!");
     return;
   }
+  CONTRACTORS = AUDIT_DATA.filter(c => c.id !== 'fazenda_verginia');
   
   // Show Splash screen and wait for user to click
   // The enter button handles hiding it.
 
+  // Initialize Views
   renderDashboard();
   renderStrategicAnalysis();
   populateCompanyDropdown();
   renderCompanyDetail(currentCompanyIndex);
-  renderHelpPage();
+  renderFazenda(); // Initialize fazenda
+  
+  // Set default tab
+  switchTab('dashboard');
 };
 
 function enterDashboard() {
@@ -56,8 +62,13 @@ function switchTab(tabName) {
     if (printTitle) printTitle.innerText = titleText;
   } else if (tabName === 'companies') {
     document.getElementById('btn-tab-companies').classList.add('active');
-    const company = AUDIT_DATA[currentCompanyIndex];
+    const company = CONTRACTORS[currentCompanyIndex];
     const titleText = "Auditoria Individual - " + company.name;
+    document.getElementById('main-title').innerText = titleText;
+    if (printTitle) printTitle.innerText = titleText;
+  } else if (tabName === 'fazenda') {
+    document.getElementById('btn-tab-fazenda').classList.add('active');
+    const titleText = "Auditoria - Fazenda Santa Verginia";
     document.getElementById('main-title').innerText = titleText;
     if (printTitle) printTitle.innerText = titleText;
   } else if (tabName === 'help') {
@@ -73,7 +84,7 @@ function populateCompanyDropdown() {
   if (!select) return;
   select.innerHTML = "";
   
-  AUDIT_DATA.forEach((company, idx) => {
+  CONTRACTORS.forEach((company, idx) => {
     const lastVisit = company.visitas[company.visitas.length - 1];
     const option = document.createElement('option');
     option.value = idx;
@@ -98,8 +109,8 @@ function selectCompany(index) {
 // Carousel navigation
 function navigateCarousel(direction) {
   let newIdx = currentCompanyIndex + direction;
-  if (newIdx < 0) newIdx = AUDIT_DATA.length - 1;
-  if (newIdx >= AUDIT_DATA.length) newIdx = 0;
+  if (newIdx < 0) newIdx = CONTRACTORS.length - 1;
+  if (newIdx >= CONTRACTORS.length) newIdx = 0;
   
   selectCompany(newIdx);
 }
@@ -112,10 +123,10 @@ function getLatestScore(company) {
 // Render Dashboard Tab Content
 function renderDashboard() {
   // Set stats
-  document.getElementById('stat-total-companies').innerText = AUDIT_DATA.length;
+  document.getElementById('stat-total-companies').innerText = CONTRACTORS.length;
   
   let sumDoc = 0, sumEst = 0, sumComp = 0, critCount = 0;
-  AUDIT_DATA.forEach(c => {
+  CONTRACTORS.forEach(c => {
     const scores = getLatestScore(c);
     sumDoc += scores.documental;
     sumEst += scores.estrutural;
@@ -123,9 +134,9 @@ function renderDashboard() {
     if (c.criticidade === "Crítico") critCount++;
   });
   
-  const avgDoc = Math.round(sumDoc / AUDIT_DATA.length);
-  const avgEst = Math.round(sumEst / AUDIT_DATA.length);
-  const avgComp = Math.round(sumComp / AUDIT_DATA.length);
+  const avgDoc = Math.round(sumDoc / CONTRACTORS.length);
+  const avgEst = Math.round(sumEst / CONTRACTORS.length);
+  const avgComp = Math.round(sumComp / CONTRACTORS.length);
   
   document.getElementById('stat-avg-documental').innerText = avgDoc + "%";
   document.getElementById('stat-avg-estrutural').innerText = avgEst + "%";
@@ -136,7 +147,7 @@ function renderDashboard() {
   const tableBody = document.getElementById('comparative-table-body');
   tableBody.innerHTML = "";
   
-  AUDIT_DATA.forEach((c, idx) => {
+  CONTRACTORS.forEach((c, idx) => {
     const scores = getLatestScore(c);
     const row = document.createElement('tr');
     
@@ -207,7 +218,7 @@ function renderDashboard() {
   const chartHeight = 250; 
   const baseLineY = 300; 
 
-  AUDIT_DATA.forEach((c, idx) => {
+  CONTRACTORS.forEach((c, idx) => {
     const scores = getLatestScore(c);
     const currentX = startX + (idx * spacingX);
     
@@ -246,21 +257,21 @@ function renderDashboard() {
   if (rankingContainer) {
     rankingContainer.innerHTML = "";
     
-    const rankedData = [...AUDIT_DATA].sort((a, b) => getLatestScore(b).global - getLatestScore(a).global);
+    const rankedData = [...CONTRACTORS].sort((a, b) => getLatestScore(b).global - getLatestScore(a).global);
     
     let rankingSvg = `
-      <svg viewBox="0 0 800 380" class="ranking-svg-chart" width="100%">
-        <line x1="180" y1="20" x2="180" y2="350" stroke="#ccc" stroke-width="1.5" />
-        <line x1="315" y1="20" x2="315" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-        <line x1="450" y1="20" x2="450" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-        <line x1="585" y1="20" x2="585" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
-        <line x1="720" y1="20" x2="720" y2="350" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
+      <svg viewBox="0 0 800 420" class="ranking-svg-chart" width="100%">
+        <line x1="180" y1="20" x2="180" y2="380" stroke="#ccc" stroke-width="1.5" />
+        <line x1="315" y1="20" x2="315" y2="380" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
+        <line x1="450" y1="20" x2="450" y2="380" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
+        <line x1="585" y1="20" x2="585" y2="380" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
+        <line x1="720" y1="20" x2="720" y2="380" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />
         
-        <text x="180" y="370" class="chart-axis-text" text-anchor="middle">0%</text>
-        <text x="315" y="370" class="chart-axis-text" text-anchor="middle">25%</text>
-        <text x="450" y="370" class="chart-axis-text" text-anchor="middle">50%</text>
-        <text x="585" y="370" class="chart-axis-text" text-anchor="middle">75%</text>
-        <text x="720" y="370" class="chart-axis-text" text-anchor="middle">100%</text>
+        <text x="180" y="400" class="chart-axis-text" text-anchor="middle">0%</text>
+        <text x="315" y="400" class="chart-axis-text" text-anchor="middle">25%</text>
+        <text x="450" y="400" class="chart-axis-text" text-anchor="middle">50%</text>
+        <text x="585" y="400" class="chart-axis-text" text-anchor="middle">75%</text>
+        <text x="720" y="400" class="chart-axis-text" text-anchor="middle">100%</text>
     `;
     
     const rowHeight = 40;
@@ -278,7 +289,7 @@ function renderDashboard() {
       else if (scores.global < 60) color = "#d4a359"; // Yellow (Grave)
       else if (scores.global < 80) color = "#1b2c59"; // Navy (Moderado)
       
-      const originalIdx = AUDIT_DATA.findIndex(item => item.id === c.id);
+      const originalIdx = CONTRACTORS.findIndex(item => item.id === c.id);
       
       rankingSvg += `
         <g class="chart-bar-group" onclick="selectCompany(${originalIdx})">
@@ -299,7 +310,7 @@ function renderDashboard() {
   overviewList.innerHTML = "";
   
   const counts = { "Crítico": 0, "Grave": 0, "Moderado": 0, "Regular": 0 };
-  AUDIT_DATA.forEach(c => { counts[c.criticidade] = (counts[c.criticidade] || 0) + 1; });
+  CONTRACTORS.forEach(c => { counts[c.criticidade] = (counts[c.criticidade] || 0) + 1; });
   
   const levels = [
     { name: "Crítico", count: counts["Crítico"], color: "#d9534f", bg: "rgba(217, 83, 79, 0.15)", desc: "Exige paralisação imediata ou ações corretivas nas próximas 24h por risco grave de acidentes." },
@@ -331,7 +342,7 @@ function renderStrategicAnalysis() {
   let totalLatestGlobal = 0;
   let criticidadeCounts = { 'Regular': 0, 'Moderado': 0, 'Grave': 0, 'Crítico': 0 };
 
-  AUDIT_DATA.forEach(c => {
+  CONTRACTORS.forEach(c => {
     if (c.visitas.length > maxVisits) maxVisits = c.visitas.length;
     
     // For the Gauge and Distribution
@@ -344,7 +355,7 @@ function renderStrategicAnalysis() {
     else criticidadeCounts['Crítico']++;
   });
 
-  const avgGlobal = Math.round(totalLatestGlobal / AUDIT_DATA.length);
+  const avgGlobal = Math.round(totalLatestGlobal / CONTRACTORS.length);
 
   // Health Gauge Math
   const circumference = 314.16; // pi * r (r=100)
@@ -381,7 +392,7 @@ function renderStrategicAnalysis() {
       <div class="dashboard-card chart-box" style="margin-bottom: 0;">
         <div class="card-header">
           <h2>Distribuição de Criticidade</h2>
-          <span class="sub-title">Status atual das ${AUDIT_DATA.length} prestadoras avaliadas</span>
+          <span class="sub-title">Status atual das ${CONTRACTORS.length} prestadoras avaliadas</span>
         </div>
         <div class="bar-chart-container" style="padding: 20px; display: flex; flex-direction: column; justify-content: center; height: 180px;">
   `;
@@ -394,7 +405,7 @@ function renderStrategicAnalysis() {
   ];
 
   critTypes.forEach((ct, idx) => {
-    const widthPct = (ct.count / AUDIT_DATA.length) * 100;
+    const widthPct = (ct.count / CONTRACTORS.length) * 100;
     topChartsHtml += `
           <div style="margin-bottom: 12px; display: flex; align-items: center; width: 100%;">
             <div style="width: 70px; font-size: 11px; font-weight: bold; color: #555;">${ct.label}</div>
@@ -412,23 +423,20 @@ function renderStrategicAnalysis() {
     </div>
   `;
 
-  const evolutionList = AUDIT_DATA.map(c => {
-    const firstScore = c.visitas[0].scores.global;
+  const evolutionList = CONTRACTORS.map(c => {
+const firstScore = c.visitas[0].scores.global;
     const lastScore = c.visitas[c.visitas.length - 1].scores.global;
     const diff = lastScore - firstScore;
     const visits = c.visitas.length;
     return { c_obj: c, name: c.name, diff, firstScore, lastScore, visits };
   }).sort((a,b) => b.diff - a.diff);
 
-  // Grouped Bar Chart for Global Evolution
-  const colors = ['#1b2c59', '#d4a359', '#177542', '#d9534f', '#5bc0de', '#f0ad4e', '#6f42c1', '#fd7e14'];
-  const visitColors = ['#1b2c59', '#d4a359', '#177542', '#d9534f']; // Colors for 1st, 2nd, 3rd, 4th visit
-  
+  // Monthly Grouped Bar Chart for Global Evolution
   let barChartHtml = `
     <div class="dashboard-card chart-box" style="margin-bottom: 32px;">
       <div class="card-header">
-        <h2>Evolução Global - Comparativo das Empresas</h2>
-        <span class="sub-title">Desempenho Geral (Nota Global) ao longo das visitas</span>
+        <h2>Evolução Global - Comparativo das Empresas (Mensal)</h2>
+        <span class="sub-title">Desempenho da Última Visita de Maio vs Última Visita de Junho</span>
       </div>
       <div class="bar-chart-container" style="padding: 20px;">
         <svg viewBox="0 0 800 250" class="line-svg-chart" width="100%" style="max-height: 300px; overflow: visible;">
@@ -442,69 +450,78 @@ function renderStrategicAnalysis() {
           <text x="40" y="205" class="chart-axis-text" text-anchor="end">0%</text>
   `;
 
-  let legendHtml = `<div class="chart-legend" style="flex-wrap: wrap; justify-content: center; margin-top: 15px; gap: 15px;">`;
-  for(let v=0; v<maxVisits; v++) {
-    legendHtml += `<span class="legend-item" style="font-size: 11px;"><span class="legend-color" style="background:${visitColors[v % visitColors.length]}; width:12px; height:12px; border-radius:3px;"></span> ${v+1}ª Visita</span>`;
-  }
+  let legendHtml = `
+    <div class="chart-legend" style="flex-wrap: wrap; justify-content: center; margin-top: 15px; gap: 15px;">
+      <span class="legend-item" style="font-size: 11px;"><span class="legend-color" style="background:#1b2c59; width:12px; height:12px; border-radius:3px;"></span> Maio/26</span>
+      <span class="legend-item" style="font-size: 11px;"><span class="legend-color" style="background:#177542; width:12px; height:12px; border-radius:3px;"></span> Junho/26</span>
+    </div>
+  `;
 
-  const numCompanies = AUDIT_DATA.length;
+  const numCompanies = CONTRACTORS.length;
   const groupWidth = 700 / numCompanies;
-  const barWidth = Math.min(18, (groupWidth - 10) / maxVisits);
 
-  AUDIT_DATA.forEach((c, idx) => {
+  CONTRACTORS.forEach((c, idx) => {
+    // Determine Maio and Junho scores
+    let maioVisits = c.visitas.filter(v => v.dataAuditoria.includes('/05/'));
+    let junhoVisits = c.visitas.filter(v => v.dataAuditoria.includes('/06/'));
+    
+    let monthlyData = [];
+    if (maioVisits.length > 0) {
+      monthlyData.push({ label: 'Maio', score: maioVisits[maioVisits.length - 1].scores.global, color: '#1b2c59' });
+    }
+    if (junhoVisits.length > 0) {
+      monthlyData.push({ label: 'Junho', score: junhoVisits[junhoVisits.length - 1].scores.global, color: '#177542' });
+    }
+    if (monthlyData.length === 0) {
+      monthlyData.push({ label: 'Última', score: c.visitas[c.visitas.length-1].scores.global, color: '#d4a359' });
+    }
+
     const groupX = 70 + (idx * groupWidth);
     
     // Add company label at the bottom
     let compName = c.name.split(' ')[0];
-    barChartHtml += `<text x="${groupX + groupWidth/2}" y="220" class="chart-label-text" font-size="10px" text-anchor="middle" font-weight="bold">${compName}</text>`;
+    barChartHtml += `<text x="${groupX + groupWidth/2}" y="220" class="chart-label-text" font-size="11px" text-anchor="middle" font-weight="bold">${compName}</text>`;
     
-    c.visitas.forEach((v, v_idx) => {
-      const score = v.scores.global;
-      const barH = Math.max(2, (score / 100) * 180);
+    const barW = Math.min(28, (groupWidth - 15) / monthlyData.length);
+    const totalBarsW = monthlyData.length * barW;
+    const startBarX = groupX + (groupWidth - totalBarsW) / 2;
+
+    monthlyData.forEach((md, m_idx) => {
+      const barH = Math.max(2, (md.score / 100) * 180);
       const barY = 200 - barH;
-      const barColor = visitColors[v_idx % visitColors.length];
+      const barX = startBarX + (m_idx * barW);
+      const animDelay = (idx * 0.1) + (m_idx * 0.1);
       
-      const totalBarsW = c.visitas.length * barWidth;
-      const startBarX = groupX + (groupWidth - totalBarsW) / 2;
-      const barX = startBarX + (v_idx * barWidth);
+      barChartHtml += `<rect x="${barX}" y="${barY}" width="${barW - 2}" height="${barH}" fill="${md.color}" rx="2" class="chart-rect" style="animation-delay: ${animDelay}s" />`;
+      barChartHtml += `<text x="${barX + (barW-2)/2}" y="${barY - 6}" font-size="11px" font-weight="bold" fill="${md.color}" text-anchor="middle" class="chart-text-anim" style="animation-delay: ${animDelay + 0.3}s">${md.score}%</text>`;
       
-      const animDelay = (idx * 0.1) + (v_idx * 0.1);
-      
-      let textY = barY - 6;
-      let arrowY = barY - 24; // Increased gap to prevent overlap
-      if(c.visitas.length > 1 && v_idx % 2 !== 0) {
-        textY -= 16; 
-        arrowY -= 16;
-      }
+      if (m_idx === 1 && monthlyData.length === 2) {
+         const diff = md.score - monthlyData[0].score;
+         let badgeColor = "#d4a359";
+         let diffStr = `→ (0%)`;
+         if (diff > 0) { badgeColor = "#177542"; diffStr = `↑ (+${diff}%)`; }
+         else if (diff < 0) { badgeColor = "#d9534f"; diffStr = `↓ (${diff}%)`; }
 
-      let arrowHtml = "";
-      if (v_idx > 0) {
-        const prevScore = c.visitas[v_idx - 1].scores.global;
-        const diff = score - prevScore;
-        let badgeColor = "#d4a359";
-        let diffStr = `→ (0%)`;
-        if (diff > 0) { badgeColor = "#177542"; diffStr = `↑ (+${diff}%)`; }
-        else if (diff < 0) { badgeColor = "#d9534f"; diffStr = `↓ (${diff}%)`; }
-
-        // Dynamic width based on string length
-        let badgeW = 38 + (Math.abs(diff).toString().length * 5); 
-        let badgeX = barX + (barWidth-2)/2 - badgeW/2;
-
-        arrowHtml = `
+         let badgeW = 34 + (Math.abs(diff).toString().length * 4); 
+         let badgeX = barX + (barW-2)/2 - badgeW/2;
+         let arrowY = barY - 24;
+         
+         barChartHtml += `
           <g class="chart-text-anim" style="animation-delay: ${animDelay + 0.4}s">
-            <rect x="${badgeX}" y="${arrowY - 10}" width="${badgeW}" height="14" fill="${badgeColor}" rx="4" />
-            <text x="${barX + (barWidth-2)/2}" y="${arrowY}" font-size="9px" font-weight="bold" fill="#ffffff" text-anchor="middle">${diffStr}</text>
+            <rect x="${badgeX}" y="${arrowY - 9}" width="${badgeW}" height="12" fill="${badgeColor}" rx="3" />
+            <text x="${barX + (barW-2)/2}" y="${arrowY}" font-size="8px" font-weight="bold" fill="#ffffff" text-anchor="middle">${diffStr}</text>
           </g>
-        `;
+         `;
       }
-      
-      barChartHtml += `<rect x="${barX}" y="${barY}" width="${barWidth - 2}" height="${barH}" fill="${barColor}" rx="2" class="chart-rect" style="animation-delay: ${animDelay}s" />`;
-      barChartHtml += `<text x="${barX + (barWidth-2)/2}" y="${textY}" font-size="10px" font-weight="bold" fill="${barColor}" text-anchor="middle" class="chart-text-anim" style="animation-delay: ${animDelay + 0.3}s">${score}%</text>`;
-      barChartHtml += arrowHtml;
     });
   });
 
-  barChartHtml += `</svg></div>${legendHtml}</div></div>`;
+  barChartHtml += `
+        </svg>
+        ${legendHtml}
+      </div>
+    </div>
+  `;
 
   let thVisits = "";
   for(let v=0; v<maxVisits; v++) {
@@ -591,7 +608,7 @@ function renderStrategicAnalysis() {
       <div class="raiox-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; margin-bottom: 40px;">
   `;
 
-  AUDIT_DATA.forEach((c, idx) => {
+  CONTRACTORS.forEach((c, idx) => {
     const latestVisit = c.visitas[c.visitas.length - 1];
     const s = latestVisit.scores;
     const scoresArr = [
@@ -660,15 +677,7 @@ function renderStrategicAnalysis() {
 }
 
 // Render Company Detail Sheet
-function renderCompanyDetail(index) {
-  const company = AUDIT_DATA[index];
-  
-  document.getElementById('current-carousel-index').innerText = index + 1;
-  document.getElementById('total-carousel-companies').innerText = AUDIT_DATA.length;
-  
-  const container = document.getElementById('company-detail-card-render');
-  container.innerHTML = "";
-  
+function buildCompanyHtml(company, isFazenda) {
   const statusIcon = (status) => {
     if (status === 'conforme') return `<svg class="chk-icon conf" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
     if (status === 'nao_conforme') return `<svg class="chk-icon nconf" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>`;
@@ -686,13 +695,9 @@ function renderCompanyDetail(index) {
   else if (company.criticidade === "Moderado") criticBadge = `<span class="badge-pill bg-moderado">Moderado</span>`;
   else if (company.criticidade === "Regular") criticBadge = `<span class="badge-pill bg-ok">Regular</span>`;
 
-  // All visit dates formatted as array string [10/05, 19/05]
   const datesArrayStr = "[ " + company.visitas.map(v => v.dataAuditoria.substring(0,5)).join(" , ") + " ]";
-  
   const latestVisit = company.visitas[company.visitas.length - 1];
 
-  // Action Plan Comparative Board
-  // We collect all unique actions and map their status over visits
   const actionMap = new Map();
   company.visitas.forEach((visita, v_idx) => {
     visita.planoAcao.forEach(act => {
@@ -733,93 +738,69 @@ function renderCompanyDetail(index) {
     actionPlanRows = `<tr><td colspan="${2 + company.visitas.length}" class="text-center text-muted">Nenhuma ação corretiva necessária.</td></tr>`;
   }
 
-  // Draw Bar Chart for Evolution (Criteria on X axis, visits as bars)
-  let barChartSvg = "";
+  let lineChartSvg = "";
   if(company.visitas.length >= 1) {
-    const width = 800;
-    const height = 250;
-    barChartSvg += `<svg viewBox="0 0 ${width} ${height}" class="line-svg-chart" width="100%" style="max-height: 250px; overflow: visible;">`;
-    barChartSvg += `<line x1="50" y1="20" x2="${width-20}" y2="20" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />`;
-    barChartSvg += `<line x1="50" y1="110" x2="${width-20}" y2="110" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4" />`;
-    barChartSvg += `<line x1="50" y1="200" x2="${width-20}" y2="200" stroke="#ccc" stroke-width="1.5" />`;
-    barChartSvg += `<text x="40" y="25" class="chart-axis-text" text-anchor="end">100%</text>`;
-    barChartSvg += `<text x="40" y="115" class="chart-axis-text" text-anchor="end">50%</text>`;
-    barChartSvg += `<text x="40" y="205" class="chart-axis-text" text-anchor="end">0%</text>`;
-    
+    let tableRows = "";
     const criteria = [
-      { key: 'documental', label: 'Documental' },
-      { key: 'estrutural', label: 'Estrutural' },
-      { key: 'comportamental', label: 'Comportamental' },
-      { key: 'global', label: 'Global' }
+      { key: 'documental', label: 'Documental', color: '#1b2c59' },
+      { key: 'estrutural', label: 'Estrutural', color: '#d4a359' },
+      { key: 'comportamental', label: 'Comportamento', color: '#177542' },
+      { key: 'global', label: 'Conformidade Global', color: '#d9534f' }
     ];
-    
-    const numCriteria = criteria.length;
-    const groupWidth = (width - 100) / numCriteria;
-    const numVisits = company.visitas.length;
-    const barW = Math.min(30, (groupWidth - 20) / numVisits);
-    const visitColors = ['#1b2c59', '#d4a359', '#177542', '#d9534f']; // Colors for 1st, 2nd, etc
 
-    criteria.forEach((crit, c_idx) => {
-      const groupX = 80 + (c_idx * groupWidth);
-      
-      barChartSvg += `<text x="${groupX + groupWidth/2}" y="225" class="chart-axis-text" font-weight="bold" text-anchor="middle">${crit.label}</text>`;
-      
-      company.visitas.forEach((v, v_idx) => {
-        const score = v.scores[crit.key];
-        const barH = Math.max(2, (score / 100) * 180);
-        const barY = 200 - barH;
-        const barColor = visitColors[v_idx % visitColors.length];
-        
-        const totalBarsW = numVisits * barW;
-        const startBarX = groupX + (groupWidth - totalBarsW) / 2;
-        const barX = startBarX + (v_idx * barW);
-        
-        const animDelay = (c_idx * 0.1) + (v_idx * 0.1);
-
-        let textY = barY - 6;
-        let arrowY = barY - 24;
-        if(numVisits > 1 && v_idx % 2 !== 0) {
-          textY -= 16;
-          arrowY -= 16;
-        }
-
-        let arrowHtml = "";
-        if (v_idx > 0) {
-          const prevScore = company.visitas[v_idx - 1].scores[crit.key];
-          const diff = score - prevScore;
-          let badgeColor = "#d4a359";
-          let diffStr = `→ (0%)`;
-          if (diff > 0) { badgeColor = "#177542"; diffStr = `↑ (+${diff}%)`; }
-          else if (diff < 0) { badgeColor = "#d9534f"; diffStr = `↓ (${diff}%)`; }
-
-          let badgeW = 38 + (Math.abs(diff).toString().length * 5); 
-          let badgeX = barX + (barW-2)/2 - badgeW/2;
-
-          arrowHtml = `
-            <g class="chart-text-anim" style="animation-delay: ${animDelay + 0.4}s">
-              <rect x="${badgeX}" y="${arrowY - 10}" width="${badgeW}" height="14" fill="${badgeColor}" rx="4" />
-              <text x="${barX + (barW-2)/2}" y="${arrowY}" font-size="9px" font-weight="bold" fill="#ffffff" text-anchor="middle">${diffStr}</text>
-            </g>
-          `;
-        }
-        
-        barChartSvg += `<rect x="${barX}" y="${barY}" width="${barW - 2}" height="${barH}" fill="${barColor}" rx="2" class="chart-rect" style="animation-delay: ${animDelay}s" />`;
-        barChartSvg += `<text x="${barX + (barW-2)/2}" y="${textY}" font-size="10px" font-weight="bold" fill="${barColor}" text-anchor="middle" class="chart-text-anim" style="animation-delay: ${animDelay + 0.3}s">${score}%</text>`;
-        barChartSvg += arrowHtml;
-      });
+    let thVisits = "";
+    company.visitas.forEach((v, i) => {
+      thVisits += `<th style="text-align:center;">${i+1}ª Visita <br><small>(${v.dataAuditoria.substring(0,5)})</small></th>`;
     });
 
-    barChartSvg += `</svg>`;
-  }
+    criteria.forEach(crit => {
+      let tds = "";
+      company.visitas.forEach((v, v_idx) => {
+         const score = v.scores[crit.key];
+         let colorClass = "text-red";
+         if (score >= 80) colorClass = "text-green";
+         else if (score >= 50) colorClass = "text-orange";
+         
+         let diffHtml = "";
+         if (v_idx > 0) {
+           const prevScore = company.visitas[v_idx-1].scores[crit.key];
+           const diff = score - prevScore;
+           if (diff > 0) diffHtml = `<span style="font-size:11px;color:#177542;margin-left:6px;font-weight:bold;">▲ +${diff}%</span>`;
+           else if (diff < 0) diffHtml = `<span style="font-size:11px;color:#d9534f;margin-left:6px;font-weight:bold;">▼ ${diff}%</span>`;
+           else diffHtml = `<span style="font-size:11px;color:gray;margin-left:6px;font-weight:bold;">-</span>`;
+         }
+         tds += `<td style="text-align:center;"><strong><span class="${colorClass}">${score}%</span></strong>${diffHtml}</td>`;
+      });
+      tableRows += `
+        <tr>
+          <td>
+            <span style="display:inline-block; width:12px; height:12px; background:${crit.color}; border-radius:3px; margin-right:8px; vertical-align:middle;"></span>
+            <strong>${crit.label}</strong>
+          </td>
+          ${tds}
+        </tr>
+      `;
+    });
 
-  let dynamicLegendHtml = `<div class="chart-legend" style="justify-content: center; margin-top:10px; flex-wrap:wrap; gap:10px;">`;
-  const visitColorsForLegend = ['#1b2c59', '#d4a359', '#177542', '#d9534f'];
-  for(let i = 0; i < company.visitas.length; i++) {
-    dynamicLegendHtml += `<span class="legend-item"><span class="legend-color" style="background:${visitColorsForLegend[i % visitColorsForLegend.length]}; border-radius:2px;"></span> ${i + 1}ª Visita</span>`;
+    lineChartSvg = `
+      <div style="overflow-x: auto; padding: 10px;">
+        <table class="action-table">
+          <thead>
+            <tr>
+              <th style="text-align: left;">Critério de Avaliação</th>
+              ${thVisits}
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      </div>
+    `;
   }
-  dynamicLegendHtml += `</div>`;
+  let dynamicLegendHtml = "";
 
-  container.innerHTML = `
+  let html = `
     <!-- Header Info -->
     <div class="company-card-header">
       <div class="company-title-block">
@@ -831,189 +812,218 @@ function renderCompanyDetail(index) {
         <p class="company-sub-info"><strong>Razão Social:</strong> ${company.razaoSocial} &bull; <strong>Ramo:</strong> ${company.ramo}</p>
         <p class="company-sub-info"><strong>Responsável Empresa:</strong> ${company.responsavel} &bull; <strong>Técnico Miranda:</strong> ${company.responsavelMiranda}</p>
       </div>
+      <div class="company-score-block">
+        <div class="score-circle">
+          <span class="score-label">SAÚDE GLOBAL</span>
+          <span class="score-value">${latestVisit.scores.global}%</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Line Chart Evolution -->
-    <div class="dashboard-card chart-box" style="margin: 20px 0;">
-      <div class="card-header">
-        <h2>Evolução de Critérios por Visita</h2>
-        <span class="sub-title">Comparativo Histórico de Atendimento</span>
+    <div class="company-charts-row">
+      <!-- Evolution Chart -->
+      <div class="dashboard-card chart-box">
+        <div class="card-header">
+          <h2>Evolução de Critérios por Visita</h2>
+          <span class="sub-title">Comparativo Histórico de Atendimento (Gráfico de Linha)</span>
+        </div>
+        <div class="bar-chart-container" style="padding: 10px;">
+          ${lineChartSvg}
+          ${dynamicLegendHtml}
+        </div>
       </div>
-      <div class="bar-chart-container" style="padding: 10px;">
-        ${barChartSvg}
-      </div>
-      ${dynamicLegendHtml}
-    </div>
 
-    <!-- Detailed Checklists Section (Based on LATEST Visit) -->
-    <div class="detail-section-title">
-      <h2>Checklist Detalhado (Última Visita: ${latestVisit.dataAuditoria})</h2>
-      <p class="section-desc">Avaliação individual de cada critério normativo baseada na constatação mais recente.</p>
-    </div>
+  ${(() => {
+    let diagnosisHtml = "";
+    const pendentes = latestVisit.planoAcao.filter(a => a.status === 'Pendente');
+    const concluidos = latestVisit.planoAcao.filter(a => a.status === 'Concluído');
     
-    <div class="checklists-grid">
-      <!-- 1. DOCUMENTAL -->
-      <div class="checklist-card">
-        <div class="chk-card-header">
-          <svg class="icon icon-blue" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-          <h3>1. Auditoria Documental</h3>
+    if (pendentes.length === 0) {
+      diagnosisHtml = `<p><strong>Diagnóstico:</strong> A empresa não possui ações corretivas pendentes no momento. Desempenho excelente e em conformidade com as exigências de SSMA.</p>`;
+    } else {
+      diagnosisHtml = `<p><strong>Avanços:</strong> Foram concluídas ${concluidos.length} ações corretivas nas visitas passadas.</p>
+                       <p><strong>Pontos de Atenção:</strong> A empresa ainda possui <strong>${pendentes.length} ações pendentes</strong>, sendo que ${pendentes.filter(p => p.criticidade === 'Crítico' || p.criticidade === 'Grave').length} possuem criticidade alta (Grave/Crítico). É necessário focar na resolução prioritária destas ações.</p>`;
+    }
+    return `
+      <!-- General Diagnosis -->
+      <div class="dashboard-card diagnosis-box">
+        <div class="card-header">
+          <h2>Diagnóstico e Constatações Técnicas</h2>
+          <span class="sub-title">Avaliação resumida (Última Visita: ${latestVisit.dataAuditoria.substring(0,5)})</span>
         </div>
-        <ul class="chk-list">
-          <li class="${statusClass(latestVisit.checklist.documental.registro.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.registro.status)}
-              <span class="chk-item-name">Funcionários Registrados</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.registro.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.aso.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.aso.status)}
-              <span class="chk-item-name">ASOs Ocupacionais</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.aso.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.pgr.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.pgr.status)}
-              <span class="chk-item-name">PGR e PCMSO</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.pgr.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.treinamentos.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.treinamentos.status)}
-              <span class="chk-item-name">Treinamentos Normativos</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.treinamentos.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.fichas_epi.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.fichas_epi.status)}
-              <span class="chk-item-name">Fichas de EPI</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.fichas_epi.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.os.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.os.status)}
-              <span class="chk-item-name">Ordens de Serviço (OS)</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.os.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.documental.integracao.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.documental.integracao.status)}
-              <span class="chk-item-name">Treinamento Integração</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.documental.integracao.desc}</p>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- 2. ESTRUTURAL -->
-      <div class="checklist-card">
-        <div class="chk-card-header">
-          <svg class="icon icon-yellow" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4-4h-4v-2h4v2zm0-4h-4V9h4v2z"/></svg>
-          <h3>2. Condições Estruturais</h3>
+        <div class="diagnosis-content">
+          ${diagnosisHtml}
         </div>
-        <ul class="chk-list">
-          <li class="${statusClass(latestVisit.checklist.estrutural.banheiro.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.estrutural.banheiro.status)}
-              <span class="chk-item-name">Instalações Sanitárias</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.estrutural.banheiro.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.estrutural.refeicao.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.estrutural.refeicao.status)}
-              <span class="chk-item-name">Local de Refeições/Vivência</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.estrutural.refeicao.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.estrutural.epi_fornecimento.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.estrutural.epi_fornecimento.status)}
-              <span class="chk-item-name">Fornecimento de EPI</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.estrutural.epi_fornecimento.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.estrutural.seguranca_geral.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.estrutural.seguranca_geral.status)}
-              <span class="chk-item-name">Condições de Segurança</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.estrutural.seguranca_geral.desc}</p>
-          </li>
-        </ul>
       </div>
-      
-      <!-- 3. COMPORTAMENTO -->
-      <div class="checklist-card">
-        <div class="chk-card-header">
-          <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/></svg>
-          <h3>3. Comportamento Seguro</h3>
-        </div>
-        <ul class="chk-list">
-          <li class="${statusClass(latestVisit.checklist.comportamento.comportamento_seguro.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.comportamento.comportamento_seguro.status)}
-              <span class="chk-item-name">Postura e Comportamento</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.comportamento.comportamento_seguro.desc}</p>
-          </li>
-          <li class="${statusClass(latestVisit.checklist.comportamento.uso_epi.status)}">
-            <div class="chk-item-header">
-              ${statusIcon(latestVisit.checklist.comportamento.uso_epi.status)}
-              <span class="chk-item-name">Uso Efetivo de EPI</span>
-            </div>
-            <p class="chk-item-desc">${latestVisit.checklist.comportamento.uso_epi.desc}</p>
-          </li>
-        </ul>
-      </div>
+    `;
+  })()}
     </div>
 
-    <!-- Diagnosis & Text Blocks -->
-    <div class="company-text-blocks">
-      <div class="text-block-card">
-        <h3>Diagnóstico e Constatações Técnicas (Última Visita)</h3>
-        <div class="block-content">
-          <p>${latestVisit.diagnostico}</p>
-        </div>
-      </div>
+    <!-- The Details Grid (Checklist & Action Plan) -->
+    <div class="details-grid">
       
-      <div class="text-block-card">
-        <h3>Conclusão do Técnico de Segurança do Trabalho</h3>
-        <div class="block-content highlighted">
-          <p>${latestVisit.conclusao}</p>
+      <!-- Checklist -->
+      <div class="dashboard-card checklist-box">
+        <div class="card-header">
+          <h2>Checklist Detalhado (Última Visita)</h2>
+        </div>
+        <div class="chk-grid">
+          <!-- 1. DOCUMENTAL -->
+          <div class="checklist-card">
+            <div class="chk-card-header">
+              <svg class="icon icon-blue" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              <h3>1. Gestão Documental</h3>
+            </div>
+            <ul class="chk-list">
+              <li class="${statusClass(latestVisit.checklist.documental.registro.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.registro.status)}
+                  <span class="chk-item-name">Registro de Empregados</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.registro.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.aso.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.aso.status)}
+                  <span class="chk-item-name">ASO Atualizado</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.aso.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.pgr.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.pgr.status)}
+                  <span class="chk-item-name">PGR / PCMSO</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.pgr.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.treinamentos.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.treinamentos.status)}
+                  <span class="chk-item-name">Treinamentos Normativos</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.treinamentos.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.fichas_epi.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.fichas_epi.status)}
+                  <span class="chk-item-name">Fichas de EPI</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.fichas_epi.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.os.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.os.status)}
+                  <span class="chk-item-name">Ordem de Serviço (OS)</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.os.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.documental.integracao.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.documental.integracao.status)}
+                  <span class="chk-item-name">Treinamento de Integração</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.documental.integracao.desc}</p>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- 2. ESTRUTURAL -->
+          <div class="checklist-card">
+            <div class="chk-card-header">
+              <svg class="icon icon-orange" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.83L19.17 20H4.83L12 5.83zM11 16h2v2h-2v-2zm0-7h2v5h-2V9z"/></svg>
+              <h3>2. Condições Estruturais</h3>
+            </div>
+            <ul class="chk-list">
+              <li class="${statusClass(latestVisit.checklist.estrutural.banheiro.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.estrutural.banheiro.status)}
+                  <span class="chk-item-name">Instalações Sanitárias</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.estrutural.banheiro.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.estrutural.refeicao.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.estrutural.refeicao.status)}
+                  <span class="chk-item-name">Local de Refeições/Vivência</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.estrutural.refeicao.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.estrutural.epi_fornecimento.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.estrutural.epi_fornecimento.status)}
+                  <span class="chk-item-name">Fornecimento de EPI</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.estrutural.epi_fornecimento.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.estrutural.seguranca_geral.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.estrutural.seguranca_geral.status)}
+                  <span class="chk-item-name">Condições de Segurança</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.estrutural.seguranca_geral.desc}</p>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- 3. COMPORTAMENTO -->
+          <div class="checklist-card">
+            <div class="chk-card-header">
+              <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/></svg>
+              <h3>3. Comportamento Seguro</h3>
+            </div>
+            <ul class="chk-list">
+              <li class="${statusClass(latestVisit.checklist.comportamento.comportamento_seguro.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.comportamento.comportamento_seguro.status)}
+                  <span class="chk-item-name">Postura e Comportamento</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.comportamento.comportamento_seguro.desc}</p>
+              </li>
+              <li class="${statusClass(latestVisit.checklist.comportamento.uso_epi.status)}">
+                <div class="chk-item-header">
+                  ${statusIcon(latestVisit.checklist.comportamento.uso_epi.status)}
+                  <span class="chk-item-name">Uso Efetivo de EPI</span>
+                </div>
+                <p class="chk-item-desc">${latestVisit.checklist.comportamento.uso_epi.desc}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Action Plan Section -->
-    <div class="detail-section-title">
-      <h2>Quadro Comparativo de Planos de Ação</h2>
-      <p class="section-desc">Evolução e status das medidas corretivas ao longo das visitas.</p>
-    </div>
-    
-    <div class="dashboard-card table-box">
-      <div class="responsive-table-wrapper">
-        <table class="action-plan-table">
-          <thead>
-            <tr>
-              <th>Ação Corretiva / Recomendação Técnica</th>
-              <th>Criticidade</th>
-              ${thVisits}
-            </tr>
-          </thead>
-          <tbody>
-            ${actionPlanRows}
-          </tbody>
-        </table>
+      <!-- Action Plan -->
+      <div class="dashboard-card action-plan-box">
+        <div class="card-header">
+          <h2>Matriz de Plano de Ação</h2>
+          <span class="sub-title">Acompanhamento das ações mapeadas ao longo do tempo</span>
+        </div>
+        <div style="overflow-x: auto; padding: 10px;">
+          <table class="action-table">
+            <thead>
+              <tr>
+                <th>Ação / Adequação</th>
+                <th>Criticidade</th>
+                ${thVisits}
+              </tr>
+            </thead>
+            <tbody>
+              ${actionPlanRows}
+            </tbody>
+          </table>
+        </div>
       </div>
+
     </div>
   `;
+  return html;
+}
+
+function renderCompanyDetail(index) {
+  const company = CONTRACTORS[index];
+  document.getElementById('current-carousel-index').innerText = index + 1;
+  document.getElementById('total-carousel-companies').innerText = CONTRACTORS.length;
+  const container = document.getElementById('company-detail-card-render');
+  container.innerHTML = buildCompanyHtml(company, false);
 }
 
 function printReport() {
@@ -1024,7 +1034,7 @@ function printReport() {
   } else if (activeTab === 'strategic') {
     document.title = "Análise Estratégica - Relatório de Auditorias SSMA";
   } else if (activeTab === 'companies') {
-    const company = AUDIT_DATA[currentCompanyIndex];
+    const company = CONTRACTORS[currentCompanyIndex];
     document.title = "Análise " + company.name + " - Relatório SSMA";
   }
   
@@ -1176,4 +1186,9 @@ function renderHelpPage() {
       </div>
     </div>
   `;
+}
+function renderFazenda() {
+  const fazenda = AUDIT_DATA.find(c => c.id === 'fazenda_verginia');
+  const container = document.getElementById('fazenda-container');
+  container.innerHTML = buildCompanyHtml(fazenda, true);
 }
