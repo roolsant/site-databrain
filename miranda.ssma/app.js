@@ -20,6 +20,7 @@ window.onload = function() {
   populateCompanyDropdown();
   renderCompanyDetail(currentCompanyIndex);
   renderFazenda(); // Initialize fazenda
+  renderHelpPage(); // Initialize help page
   
   // Set default tab
   switchTab('dashboard');
@@ -699,12 +700,24 @@ function buildCompanyHtml(company, isFazenda) {
   const latestVisit = company.visitas[company.visitas.length - 1];
 
   const actionMap = new Map();
-  company.visitas.forEach((visita, v_idx) => {
+  // First, gather all unique actions
+  company.visitas.forEach((visita) => {
     visita.planoAcao.forEach(act => {
       if(!actionMap.has(act.acao)) {
         actionMap.set(act.acao, { criticidade: act.criticidade, statuses: Array(company.visitas.length).fill('-') });
       }
-      actionMap.get(act.acao).statuses[v_idx] = act.status;
+    });
+  });
+  
+  // Then, fill statuses and carry over from previous visit
+  actionMap.forEach((val, acao) => {
+    let currentStatus = '-';
+    company.visitas.forEach((visita, v_idx) => {
+       const foundAct = visita.planoAcao.find(a => a.acao === acao);
+       if (foundAct) {
+         currentStatus = foundAct.status;
+       }
+       val.statuses[v_idx] = currentStatus;
     });
   });
 
@@ -800,6 +813,11 @@ function buildCompanyHtml(company, isFazenda) {
   }
   let dynamicLegendHtml = "";
 
+  let globalScore = latestVisit.scores.global;
+  let scoreClass = "score-critical";
+  if (globalScore >= 80) scoreClass = "score-excellent";
+  else if (globalScore >= 50) scoreClass = "score-warning";
+
   let html = `
     <!-- Header Info -->
     <div class="company-card-header">
@@ -813,9 +831,9 @@ function buildCompanyHtml(company, isFazenda) {
         <p class="company-sub-info"><strong>Responsável Empresa:</strong> ${company.responsavel} &bull; <strong>Técnico Miranda:</strong> ${company.responsavelMiranda}</p>
       </div>
       <div class="company-score-block">
-        <div class="score-circle">
+        <div class="score-circle ${scoreClass}">
           <span class="score-label">SAÚDE GLOBAL</span>
-          <span class="score-value">${latestVisit.scores.global}%</span>
+          <span class="score-value">${globalScore}%</span>
         </div>
       </div>
     </div>

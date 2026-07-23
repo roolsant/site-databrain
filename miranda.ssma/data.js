@@ -2833,7 +2833,7 @@ const AUDIT_DATA = [
           "documental": 17,
           "estrutural": 15,
           "comportamental": 0,
-          "global": 32
+          "global": 11
         },
         "checklist": {
           "documental": {
@@ -3010,7 +3010,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3076,7 +3076,11 @@ const AUDIT_DATA = [
           {
             "acao": "Limpeza e organização da área (Figueira do Córrego)",
             "criticidade": "Grave",
-            "prazo": "Imediato",
+            "status": "Concluído"
+          },
+          {
+            "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+            "criticidade": "Grave",
             "status": "Concluído"
           }
         ]
@@ -3087,7 +3091,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3153,7 +3157,11 @@ const AUDIT_DATA = [
           {
             "acao": "Limpeza e organização da área (Figueira do Córrego)",
             "criticidade": "Grave",
-            "prazo": "Imediato",
+            "status": "Concluído"
+          },
+          {
+            "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+            "criticidade": "Grave",
             "status": "Concluído"
           }
         ]
@@ -3164,7 +3172,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3228,9 +3236,13 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
+            "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+            "criticidade": "Moderado",
+            "status": "Concluído"
+          },
+          {
+            "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+            "criticidade": "Moderado",
             "status": "Concluído"
           }
         ]
@@ -3241,7 +3253,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3305,9 +3317,13 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
+            "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+            "criticidade": "Moderado",
+            "status": "Concluído"
+          },
+          {
+            "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+            "criticidade": "Moderado",
             "status": "Concluído"
           }
         ]
@@ -3318,7 +3334,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3382,10 +3398,9 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
-            "status": "Concluído"
+            "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+            "criticidade": "Crítico",
+            "status": "Pendente"
           }
         ]
       },
@@ -3395,7 +3410,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3459,10 +3474,9 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
-            "status": "Concluído"
+            "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+            "criticidade": "Crítico",
+            "status": "Pendente"
           }
         ]
       },
@@ -3472,7 +3486,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3536,10 +3550,9 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
-            "status": "Concluído"
+            "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+            "criticidade": "Crítico",
+            "status": "Pendente"
           }
         ]
       },
@@ -3549,7 +3562,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3613,10 +3626,14 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
-            "status": "Concluído"
+            "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
           }
         ]
       },
@@ -3626,7 +3643,7 @@ const AUDIT_DATA = [
           "documental": 30,
           "estrutural": 15,
           "comportamental": 40,
-          "global": 85
+          "global": 28
         },
         "checklist": {
           "documental": {
@@ -3690,10 +3707,14 @@ const AUDIT_DATA = [
         },
         "planoAcao": [
           {
-            "acao": "Limpeza e organização da área (Figueira do Córrego)",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
-            "status": "Concluído"
+            "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
           }
         ]
       }

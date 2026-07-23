@@ -1764,3 +1764,58 @@ button, select {
   }
 }
 
+/* Saúde Global Highlight */
+.company-score-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15px;
+}
+.score-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1b2c59, #28448a);
+  color: white;
+  box-shadow: 0 8px 24px rgba(27, 44, 89, 0.3);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+.score-circle:hover {
+  transform: translateY(-5px);
+}
+.score-circle.score-excellent {
+  background: linear-gradient(135deg, #177542, #219958);
+  box-shadow: 0 8px 24px rgba(23, 117, 66, 0.3);
+}
+.score-circle.score-warning {
+  background: linear-gradient(135deg, #d4a359, #e8b668);
+  box-shadow: 0 8px 24px rgba(212, 163, 89, 0.3);
+}
+.score-circle.score-critical {
+  background: linear-gradient(135deg, #d9534f, #f26864);
+  box-shadow: 0 8px 24px rgba(217, 83, 79, 0.3);
+}
+.score-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.score-value {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
