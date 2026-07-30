@@ -1,5 +1,6 @@
 // App State
 let currentCompanyIndex = 0;
+let currentFazendaSectorIndex = 0;
 let activeTab = 'dashboard';
 let CONTRACTORS = [];
 
@@ -117,6 +118,33 @@ function navigateCarousel(direction) {
 }
 
 // Helper to get latest scores
+
+function getMonthFromDate(dStr) {
+  const parts = dStr.split('/');
+  return parseInt(parts[1], 10);
+}
+function getLatestVisitOfCurrentMonth(company) {
+  return company.visitas[company.visitas.length - 1];
+}
+function getLatestVisitOfPreviousMonth(company) {
+  if (company.visitas.length < 2) return null;
+  const currentMonth = getMonthFromDate(company.visitas[company.visitas.length - 1].dataAuditoria);
+  for (let i = company.visitas.length - 2; i >= 0; i--) {
+    const m = getMonthFromDate(company.visitas[i].dataAuditoria);
+    if (m !== currentMonth) {
+      return company.visitas[i];
+    }
+  }
+  return company.visitas[0]; // fallback
+}
+function renderTrend(current, previous) {
+  if (!previous) return '';
+  const diff = current - previous;
+  if (diff > 0) return `<span style="color: #177542; font-size: 12px; font-weight: bold;">▲ +${diff}% vs mês ant.</span>`;
+  if (diff < 0) return `<span style="color: #d9534f; font-size: 12px; font-weight: bold;">▼ ${diff}% vs mês ant.</span>`;
+  return `<span style="color: #888; font-size: 12px; font-weight: bold;">— Igual ao mês ant.</span>`;
+}
+
 function getLatestScore(company) {
   return company.visitas[company.visitas.length - 1].scores;
 }
@@ -127,12 +155,23 @@ function renderDashboard() {
   document.getElementById('stat-total-companies').innerText = CONTRACTORS.length;
   
   let sumDoc = 0, sumEst = 0, sumComp = 0, critCount = 0;
+  let prevSumDoc = 0, prevSumEst = 0, prevSumComp = 0;
+  let validPrev = 0;
+  
   CONTRACTORS.forEach(c => {
-    const scores = getLatestScore(c);
-    sumDoc += scores.documental;
-    sumEst += scores.estrutural;
-    sumComp += scores.comportamental;
+    const curr = getLatestVisitOfCurrentMonth(c).scores;
+    sumDoc += curr.documental;
+    sumEst += curr.estrutural;
+    sumComp += curr.comportamental;
     if (c.criticidade === "Crítico") critCount++;
+    
+    const prev = getLatestVisitOfPreviousMonth(c);
+    if (prev) {
+      validPrev++;
+      prevSumDoc += prev.scores.documental;
+      prevSumEst += prev.scores.estrutural;
+      prevSumComp += prev.scores.comportamental;
+    }
   });
   
   const avgDoc = Math.round(sumDoc / CONTRACTORS.length);
@@ -143,6 +182,21 @@ function renderDashboard() {
   document.getElementById('stat-avg-estrutural').innerText = avgEst + "%";
   document.getElementById('stat-avg-comportamental').innerText = avgComp + "%";
   document.getElementById('stat-critical-count').innerText = critCount;
+  
+  if (validPrev > 0) {
+    const pAvgDoc = Math.round(prevSumDoc / validPrev);
+    const pAvgEst = Math.round(prevSumEst / validPrev);
+    const pAvgComp = Math.round(prevSumComp / validPrev);
+    
+    const dTrend = document.getElementById('trend-avg-documental');
+    if(dTrend) dTrend.innerHTML = renderTrend(avgDoc, pAvgDoc);
+    
+    const eTrend = document.getElementById('trend-avg-estrutural');
+    if(eTrend) eTrend.innerHTML = renderTrend(avgEst, pAvgEst);
+    
+    const cTrend = document.getElementById('trend-avg-comportamental');
+    if(cTrend) cTrend.innerHTML = renderTrend(avgComp, pAvgComp);
+  }
 
   // Comparative Table
   const tableBody = document.getElementById('comparative-table-body');
@@ -460,19 +514,35 @@ const firstScore = c.visitas[0].scores.global;
 
   const numCompanies = CONTRACTORS.length;
   const groupWidth = 700 / numCompanies;
+  
+  const monthNames = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
   CONTRACTORS.forEach((c, idx) => {
-    // Determine Maio and Junho scores
-    let maioVisits = c.visitas.filter(v => v.dataAuditoria.includes('/05/'));
-    let junhoVisits = c.visitas.filter(v => v.dataAuditoria.includes('/06/'));
+    // Group by month
+    let visitsByMonth = {};
+    c.visitas.forEach(v => {
+      let m = getMonthFromDate(v.dataAuditoria);
+      if(!visitsByMonth[m]) visitsByMonth[m] = [];
+      visitsByMonth[m].push(v);
+    });
     
     let monthlyData = [];
-    if (maioVisits.length > 0) {
-      monthlyData.push({ label: 'Maio', score: maioVisits[maioVisits.length - 1].scores.global, color: '#1b2c59' });
-    }
-    if (junhoVisits.length > 0) {
-      monthlyData.push({ label: 'Junho', score: junhoVisits[junhoVisits.length - 1].scores.global, color: '#177542' });
-    }
+    let colors = ['#1b2c59', '#177542', '#d4a359', '#d9534f'];
+    
+    // Sort months
+    let months = Object.keys(visitsByMonth).map(Number).sort((a,b) => a - b);
+    // Take only the last 2 months for the chart
+    months = months.slice(-2);
+    
+    months.forEach((m, i) => {
+      let visits = visitsByMonth[m];
+      monthlyData.push({
+        label: monthNames[m - 1],
+        score: visits[visits.length - 1].scores.global,
+        color: colors[i % colors.length]
+      });
+    });
+
     if (monthlyData.length === 0) {
       monthlyData.push({ label: 'Última', score: c.visitas[c.visitas.length-1].scores.global, color: '#d4a359' });
     }
@@ -831,9 +901,12 @@ function buildCompanyHtml(company, isFazenda) {
         <p class="company-sub-info"><strong>Responsável Empresa:</strong> ${company.responsavel} &bull; <strong>Técnico Miranda:</strong> ${company.responsavelMiranda}</p>
       </div>
       <div class="company-score-block">
-        <div class="score-circle ${scoreClass}">
-          <span class="score-label">SAÚDE GLOBAL</span>
-          <span class="score-value">${globalScore}%</span>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+          <div class="score-circle ${scoreClass}">
+            <span class="score-label">SAÚDE GLOBAL</span>
+            <span class="score-value">${globalScore}%</span>
+          </div>
+          ${renderTrend(globalScore, getLatestVisitOfPreviousMonth(company)?.scores?.global)}
         </div>
       </div>
     </div>
@@ -1207,6 +1280,41 @@ function renderHelpPage() {
 }
 function renderFazenda() {
   const fazenda = AUDIT_DATA.find(c => c.id === 'fazenda_verginia');
+  if (!fazenda) return;
   const container = document.getElementById('fazenda-container');
-  container.innerHTML = buildCompanyHtml(fazenda, true);
+  
+  if (fazenda.setores) {
+    const sector = fazenda.setores[currentFazendaSectorIndex];
+    let html = `<div style="margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 15px;">
+      <label for="fazenda-sector-select" style="font-weight: 600; color: #1b2c59;">Selecione o Setor da Fazenda:</label>
+      <select id="fazenda-sector-select" onchange="currentFazendaSectorIndex = this.value; renderFazenda();" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-family: inherit; font-size: 14px; flex: 1;">`;
+    
+    fazenda.setores.forEach((s, i) => {
+      let suffix = (s.visitas && s.visitas.length > 0) ? "" : " (Aguardando Relatório)";
+      html += `<option value="${i}" ${i == currentFazendaSectorIndex ? 'selected' : ''}>${s.name}${suffix}</option>`;
+    });
+    
+    html += `</select></div>`;
+    
+    if (sector.visitas && sector.visitas.length > 0) {
+      // Create a fake company object out of the sector to reuse buildCompanyHtml
+      const fakeCompany = {
+        ...fazenda,
+        name: "Fazenda S. Verginia - " + sector.name,
+        visitas: sector.visitas
+      };
+      html += buildCompanyHtml(fakeCompany, true);
+    } else {
+      html += `
+        <div class="dashboard-card" style="text-align: center; padding: 60px 20px;">
+          <svg style="width: 64px; height: 64px; fill: #d4a359; margin-bottom: 20px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          <h2 style="color: #1b2c59; margin-bottom: 10px;">Aguardando Relatório Mensal</h2>
+          <p style="color: #666; font-size: 16px;">Os dados consolidados para o setor <strong>${sector.name}</strong> serão mapeados assim que a próxima avaliação setorial for finalizada e o documento for processado pelo sistema.</p>
+        </div>
+      `;
+    }
+    container.innerHTML = html;
+  } else {
+    container.innerHTML = buildCompanyHtml(fazenda, true);
+  }
 }

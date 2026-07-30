@@ -6,7 +6,7 @@ const AUDIT_DATA = [
     "responsavel": "Edivaldo Ferreira Goncalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Construção e Manutenção de Cercas",
-    "criticidade": "Crítico",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "19/05/2026",
@@ -82,82 +82,17 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
-          }
-        ]
-      },
-      {
-        "dataAuditoria": "26/05/2026",
-        "scores": {
-          "estrutural": 40,
-          "documental": 100,
-          "comportamental": 100,
-          "global": 80
-        },
-        "checklist": {
-          "documental": {
-            "registro": {
-              "status": "conforme",
-              "desc": "Verificado no documento."
-            },
-            "aso": {
-              "status": "conforme",
-              "desc": "Verificado no documento."
-            },
-            "pgr": {
-              "status": "conforme",
-              "desc": "Verificado no documento."
-            },
-            "treinamentos": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            },
-            "fichas_epi": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            },
-            "os": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            },
-            "integracao": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            }
           },
-          "estrutural": {
-            "refeicao": {
-              "status": "nao_conforme",
-              "desc": "Inspeção estrutural."
-            },
-            "banheiro": {
-              "status": "nao_conforme",
-              "desc": "Inspeção estrutural."
-            },
-            "epi_fornecimento": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            },
-            "seguranca_geral": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            }
-          },
-          "comportamento": {
-            "uso_epi": {
-              "status": "conforme",
-              "desc": "Inspeção comportamental."
-            },
-            "comportamento_seguro": {
-              "status": "pendente",
-              "desc": "Não avaliado na visita."
-            }
-          }
-        },
-        "planoAcao": [
           {
-            "acao": "Revisar uso de EPIs e documentação pendente.",
-            "criticidade": "Grave",
-            "prazo": "Imediato",
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -235,6 +170,107 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "26/05/2026",
+        "scores": {
+          "estrutural": 40,
+          "documental": 100,
+          "comportamental": 100,
+          "global": 80
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no documento."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no documento."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no documento."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            },
+            "fichas_epi": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            },
+            "os": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            },
+            "integracao": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            },
+            "seguranca_geral": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Revisar uso de EPIs e documentação pendente.",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -313,6 +349,18 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -390,6 +438,18 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       }
@@ -402,7 +462,7 @@ const AUDIT_DATA = [
     "responsavel": "Otávio Luiz / J.R. de Oliveira",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Silvicultura, Limpeza de Aceiros e Terraplenagem",
-    "criticidade": "Crítico",
+    "criticidade": "Grave",
     "visitas": [
       {
         "dataAuditoria": "12/05/2026",
@@ -477,6 +537,36 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: ASO",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: PGR",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -555,6 +645,36 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: ASO",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: PGR",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -632,6 +752,36 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: ASO",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: PGR",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       }
@@ -644,7 +794,7 @@ const AUDIT_DATA = [
     "responsavel": "Gersy Gomes Ferreira Filho",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Construção Civil (Nova Sala de Reunião)",
-    "criticidade": "Grave",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "12/05/2026",
@@ -1040,7 +1190,7 @@ const AUDIT_DATA = [
     "responsavel": "Edivaldo Ferreira Goncalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Cozinha Industrial e Refeitório",
-    "criticidade": "Crítico",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "01/01/2026",
@@ -1146,6 +1296,36 @@ const AUDIT_DATA = [
             "criticidade": "Moderado",
             "prazo": "5 dias",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Treinamentos",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Ordem de Serviço",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Integração",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Banheiro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -1223,6 +1403,18 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -1299,6 +1491,12 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -1389,7 +1587,7 @@ const AUDIT_DATA = [
     "responsavel": "Mauro Honorato da Silva",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Manejo e Retirada Florestal de Madeira",
-    "criticidade": "Crítico",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "01/01/2026",
@@ -1493,6 +1691,42 @@ const AUDIT_DATA = [
             "prazo": "15 dias",
             "status": "Concluído",
             "dataConclusao": "26/05/2026"
+          },
+          {
+            "acao": "Adequar / Regularizar: Ordem de Serviço",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Fornecimento de EPI",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Comportamento Seguro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Uso de EPI",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -1569,6 +1803,18 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -1647,6 +1893,12 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -1724,6 +1976,12 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       }
@@ -1736,7 +1994,7 @@ const AUDIT_DATA = [
     "responsavel": "Michel Ferreira Gonçalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Construção e Manutenção de Cercas",
-    "criticidade": "Grave",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "01/01/2026",
@@ -1831,6 +2089,30 @@ const AUDIT_DATA = [
             "criticidade": "Moderado",
             "prazo": "15 dias",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Treinamentos",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Uso de EPI",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -1907,6 +2189,18 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -1985,6 +2279,12 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       }
@@ -1997,7 +2297,7 @@ const AUDIT_DATA = [
     "responsavel": "Edivaldo Ferreira Goncalves",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Silvicultura (Plantio e Tratamento de Mudas)",
-    "criticidade": "Crítico",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "12/05/2026",
@@ -2547,7 +2847,7 @@ const AUDIT_DATA = [
     "responsavel": "Ronaldo Viana",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Carvoaria (Corte e Movimentação de Madeira)",
-    "criticidade": "Grave",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "01/01/2026",
@@ -2659,6 +2959,30 @@ const AUDIT_DATA = [
             "criticidade": "Moderado",
             "prazo": "10 dias",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Treinamentos",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Ordem de Serviço",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Integração",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -2735,6 +3059,18 @@ const AUDIT_DATA = [
             "acao": "Revisar uso de EPIs e documentação pendente.",
             "criticidade": "Grave",
             "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Registro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -2813,6 +3149,12 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       }
@@ -2825,7 +3167,7 @@ const AUDIT_DATA = [
     "responsavel": "Luiz Carlos Gonçalves Guimenezes",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Corte e Processamento de Madeira",
-    "criticidade": "Crítico",
+    "criticidade": "Regular",
     "visitas": [
       {
         "dataAuditoria": "19/05/2026",
@@ -2912,6 +3254,42 @@ const AUDIT_DATA = [
             "acao": "Monitoramento Operacional Diário",
             "criticidade": "Grave",
             "prazo": "Diário",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Treinamentos",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Integração",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Fornecimento de EPI",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Comportamento Seguro",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Uso de EPI",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -3002,7 +3380,7 @@ const AUDIT_DATA = [
     "responsavel": "Anderson Henrique Zacarin",
     "responsavelMiranda": "Cássia Francine Zacarim Lima",
     "ramo": "Agronegócio / Administrativo",
-    "criticidade": "Moderado",
+    "criticidade": "Crítico",
     "visitas": [
       {
         "dataAuditoria": "28/05/2026",
@@ -3082,6 +3460,18 @@ const AUDIT_DATA = [
             "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
             "criticidade": "Grave",
             "status": "Concluído"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -3163,6 +3553,18 @@ const AUDIT_DATA = [
             "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
             "criticidade": "Grave",
             "status": "Concluído"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -3244,6 +3646,18 @@ const AUDIT_DATA = [
             "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
             "criticidade": "Moderado",
             "status": "Concluído"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
           }
         ]
       },
@@ -3325,81 +3739,17 @@ const AUDIT_DATA = [
             "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
             "criticidade": "Moderado",
             "status": "Concluído"
-          }
-        ]
-      },
-      {
-        "dataAuditoria": "15/06/2026",
-        "scores": {
-          "documental": 30,
-          "estrutural": 15,
-          "comportamental": 40,
-          "global": 28
-        },
-        "checklist": {
-          "documental": {
-            "registro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "aso": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "fichas_epi": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "pgr": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "treinamentos": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "os": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "integracao": {
-              "status": "conforme",
-              "desc": "Conforme"
-            }
           },
-          "estrutural": {
-            "refeicao": {
-              "status": "nao_conforme",
-              "desc": "Alimentação/Condições Térmicas inadequadas."
-            },
-            "banheiro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "epi_fornecimento": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "seguranca_geral": {
-              "status": "nao_conforme",
-              "desc": "Local em desordem, resíduos químicos no solo."
-            }
-          },
-          "comportamento": {
-            "comportamento_seguro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "uso_epi": {
-              "status": "conforme",
-              "desc": "Conforme"
-            }
-          }
-        },
-        "planoAcao": [
           {
-            "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
-            "criticidade": "Crítico",
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -3476,6 +3826,106 @@ const AUDIT_DATA = [
           {
             "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
             "criticidade": "Crítico",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "15/06/2026",
+        "scores": {
+          "documental": 30,
+          "estrutural": 15,
+          "comportamental": 40,
+          "global": 28
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Conforme"
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Alimentação/Condições Térmicas inadequadas."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Local em desordem, resíduos químicos no solo."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Conforme"
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+            "criticidade": "Crítico",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -3553,86 +4003,17 @@ const AUDIT_DATA = [
             "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
             "criticidade": "Crítico",
             "status": "Pendente"
-          }
-        ]
-      },
-      {
-        "dataAuditoria": "26/06/2026",
-        "scores": {
-          "documental": 30,
-          "estrutural": 15,
-          "comportamental": 40,
-          "global": 28
-        },
-        "checklist": {
-          "documental": {
-            "registro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "aso": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "fichas_epi": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "pgr": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "treinamentos": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "os": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "integracao": {
-              "status": "conforme",
-              "desc": "Conforme"
-            }
           },
-          "estrutural": {
-            "refeicao": {
-              "status": "nao_conforme",
-              "desc": "Alimentação/Condições Térmicas inadequadas."
-            },
-            "banheiro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "epi_fornecimento": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "seguranca_geral": {
-              "status": "nao_conforme",
-              "desc": "Local em desordem, resíduos químicos no solo."
-            }
-          },
-          "comportamento": {
-            "comportamento_seguro": {
-              "status": "conforme",
-              "desc": "Conforme"
-            },
-            "uso_epi": {
-              "status": "conforme",
-              "desc": "Conforme"
-            }
-          }
-        },
-        "planoAcao": [
           {
-            "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+            "acao": "Adequar / Regularizar: Área de Refeição",
             "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           },
           {
-            "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+            "acao": "Adequar / Regularizar: Segurança Geral",
             "criticidade": "Moderado",
+            "prazo": "15 dias",
             "status": "Pendente"
           }
         ]
@@ -3715,6 +4096,4276 @@ const AUDIT_DATA = [
             "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
             "criticidade": "Moderado",
             "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "26/06/2026",
+        "scores": {
+          "documental": 30,
+          "estrutural": 15,
+          "comportamental": 40,
+          "global": 28
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Conforme"
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Alimentação/Condições Térmicas inadequadas."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Local em desordem, resíduos químicos no solo."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Conforme"
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Conforme"
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+            "criticidade": "Moderado",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Área de Refeição",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Adequar / Regularizar: Segurança Geral",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      }
+    ],
+    "setores": [
+      {
+        "name": "Área de Vivência",
+        "visitas": []
+      },
+      {
+        "name": "Plantio",
+        "visitas": []
+      },
+      {
+        "name": "Aplicação Defensivo Agrícola",
+        "visitas": []
+      },
+      {
+        "name": "Oficina Mecânica",
+        "visitas": [
+          {
+            "dataAuditoria": "28/05/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "02/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "17/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fábrica de Sal",
+        "visitas": []
+      },
+      {
+        "name": "Borracharia",
+        "visitas": []
+      },
+      {
+        "name": "Autoclave",
+        "visitas": []
+      },
+      {
+        "name": "Lavador",
+        "visitas": [
+          {
+            "dataAuditoria": "28/05/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "02/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "17/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Corte",
+        "visitas": [
+          {
+            "dataAuditoria": "28/05/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "02/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "17/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pecuária / Retiros / Currais",
+        "visitas": []
+      },
+      {
+        "name": "Posto de Combustível",
+        "visitas": [
+          {
+            "dataAuditoria": "28/05/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "02/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "17/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "TIP",
+        "visitas": [
+          {
+            "dataAuditoria": "28/05/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "02/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza e organização da área (Figueira do Córrego)",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Organização e Limpeza: Recolhimento imediato de todas as embalagens, lonas e ferramentas.",
+                "criticidade": "Grave",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "08/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Limpeza: Recolher o arame espalhado na base da árvore.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Logística: Organizar e preparar o material para ser transportado ao Banheiro 16:40.",
+                "criticidade": "Moderado",
+                "status": "Concluído"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "15/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "17/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Orientação de Segurança: Orientar a equipe sobre a proibição de improvisar locais de descanso.",
+                "criticidade": "Crítico",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          },
+          {
+            "dataAuditoria": "26/06/2026",
+            "scores": {
+              "documental": 30,
+              "estrutural": 15,
+              "comportamental": 40,
+              "global": 28
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Alimentação/Condições Térmicas inadequadas."
+                },
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Local em desordem, resíduos químicos no solo."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Conforme"
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Manutenção: Realizar reparo no trinco/porta do banheiro.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Investigação: Identificar os colaboradores que estão utilizando a unidade.",
+                "criticidade": "Moderado",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Área de Refeição",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Adequar / Regularizar: Segurança Geral",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
           }
         ]
       }
