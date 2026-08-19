@@ -1,1 +1,527 @@
-left 0 0 0 45720 7218680 RELAT Ó RIO MENSAL Junho de 2026 0 0 RELAT Ó RIO MENSAL Junho de 2026 1270 7208520 0 0 RELATÓRIO MENSAL DE SSMA Responsável : Cássia Francine Zacarim Lima Empresa : Gomes e Gusmão Construtora Ltda Nome Fantasia : Nível Gomes Construtora Referente : junho 2026 RESPONSÁV EIS DA EMPRESA Gersy Gomes Ferreira Filho INTRODUÇÃO A auditoria visa verificar a conformidade das operações, o uso de equipamentos de proteção e o cumprimento das normas de segurança, garantindo um ambiente de trabalho seguro e a preservação ambiental. 1ª VISITA AUDITÓRIA DATA: 21 /05/2026 DIA DA SEMANA: QUINTA -FEIRA OBJETIVO DA AUDITORIA O objetivo desta inspeção foi avaliar as condições de segurança, saúde ocupacional e aspectos ambientais durante a execução das atividades desenvolvidas pela empresa, com foco no comportamento seguro dos colaboradores e na integridade dos equipamentos utilizados. Quadro de Evolução das Pendências Pendência ( Maio ) Ação Definida ( Maio ) Status ( Junho ) Observações Uso de EPIs Fornecimento, fiscalização e treinamento Adequado Constatado o uso correto de EPIs na maioria das visitas de junho. Registros Trabalhistas Correção de divergências entre RH e SST Adequado Regularização total do quadro de funcionários. Documentação (PGR/ASO/Treinamentos) Apresentação de evidências e certificados Pendente Falta anexar registros reais de treinamentos e fichas de EPI assinadas. Sinalização Instalação de placas e organização Adequado Placas instaladas e ambiente organizado. Entrega de SUDRAT Divulgação das diretrizes de segurança Adequado Documento entregue aos funcionários. Detalhamento da Situação em Junho O que foi devidamente adequado: Postura Operacional: A empresa corrigiu a falha crítica de maio. Em junho, os colaboradores foram flagrados utilizando os equipamentos de proteção de forma consistente. Documentação Trabalhista: O quadro de pessoal foi regularizado, garantindo a conformidade legal. Organização e Sinalização: O canteiro de obras e a frente de serviço apresentam-se organizados e com a sinalização de segurança necessária. Conscientização: A entrega do SUDRAT aos colaboradores foi realizada, demonstrando um avanço na comunicação de segurança. O que permanece pendente e novos prazos: Registros de SST: Permanecem pendentes os registros físicos (listas de presença, certificados de treinamentos NR-18/NR-35 e fichas de EPI assinadas). Novo Prazo: 10 dias para a entrega da pasta documental completa, contendo as evidências assinadas e registradas. BASE LEGAL E REFERÊNCIAS NORMATIVAS NR 01: Disposições Gerais e Gerenciamento de Riscos Ocupacionais (GRO). NR 06: Equipamentos de Proteção Individual (EPI). NR 18: Segurança e Saúde no Trabalho na Indústria da Construção. METODOLOGIA DA AUDITORIA A auditoria foi realizada por meio de inspeção visual, observação das atividades operacionais e verificação do uso de Equipamentos de Proteção Individual (EPIs) pelos colaboradores. DESCRIÇÃO DAS ATIVIDADES AUDITADAS Foram acompanhadas as atividades operacionais rotineiras, observando o desempenho dos colaboradores Luiz Roberto e Felipe. AVALIAÇÃO DOS EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL (EPIs) Durante a visita, foi constatado que os colaboradores Luiz Roberto e Gabriel realizavam suas atividades utilizando os seguintes EPIs: óculos de segurança, capacete e luvas. Os equipamentos estavam sendo utilizados de forma correta e adequada à atividade desempenhada. DOCUMENTAÇÃO DE SEGURANÇA DO TRABALHO Conforme Programas Legais: A empresa possui o PGR (Programa de Gerenciamento de Riscos) elaborado em 27/04/2026 com validade até abril de 2028, e o PCMSO (Programa de Controle Médico de Saúde Ocupacional) elaborado em abril de 2026 com validade até abril de 2027 . Ambos os programas estão assinados por profissionais habilitados e com as respectivas identificações técnicas. Certificados: Consta o certificado de registro de especialidade em Medicina do Trabalho do médico coordenador do PCMSO junto ao Conselho Regional de Medicina de Mato Grosso do Sul (RQE nº 4818), conferindo legitimidade técnica à emissão do programa. Modelos de Fichas de EPI, Ordens de Serviço (APR) e Permissões de Trabalho: O PGR traz em seus anexos os modelos oficiais estruturados que a empresa adota para o controle diário, incluindo o modelo do Recibo de Entrega de EPIs , o modelo de Análise Preliminar de Risco (APR) e os campos para a Autorização de Trabalho de Risco (ATR) / Permissão de Trabalho . Não Conforme (Pendências e Necessidades de Atualização) Validades Vencidas / Prazos de Execução Expirados na ART: A ART estipulava a previsão de término das atividades de elaboração do PGR e LTCAT para o dia 28/05/2026 . Como a data atual é 25/06/2026 , o prazo informado ao conselho já expirou e o profissional responsável precisa proceder a baixa da referida ART, caso o serviço tenha sido concluído. Ausência de Evidências Físicas de Cumprimento Prático: Embora os modelos existam nos anexos, não foram anexados os registros populados com dados reais que comprovem a execução do plano de ação, tais como: os comprovantes de realizações dos Treinamentos Iniciais da NR 18 (Carga horária de 8h) e NR 35 que estavam previstos para início imediato em Abril/Maio de 2026, as Fichas de EPI preenchidas e assinadas pelos 4 funcionários listados no RH, e os comprovantes de exames (ASO) clínicos e complementares (como a Audiometria obrigatória para o Pedreiro e o Motorista). Tabela Resumo de Situação Documental de SST A tabela abaixo consolida a avaliação detalhada exigida para a verificação documental: Documento de SST Avaliado Status de Conformidade Situação Encontrada / Registro de Pendências e Atualizações Registro de trabalho Não Conforme Há divergências entre o RH e a Engenharia de Segurança. O cargo ativo de Analista de Recursos não possui mapeamento de riscos. Diversos cargos descritos nos programas de SST possuem "00" expostos e não constam no registro de empregados. ASO (Atestado de Saúde Ocupacional) Não Conforme Ausência dos comprovantes de aptidão física dos funcionários contratados. O PCMSO exige exames específicos como Audiometria para Pedreiro e Motorista, e exames de Raio-X de Tórax/Espirometria para Pedreiro, mas as vias emitidas não foram apresentadas. Treinamentos Não Conforme O cronograma do Plano de Ação previa a execução de treinamentos obrigatórios da NR 18 (8h), NR 06 (EPIs) e NR 35 (Trabalho em Altura) entre Abril e Maio de 2026. Não foram apresentadas as listas de presença ou certificados correspondentes. Integrações Não Conforme Integrado ao item de treinamentos. O treinamento inicial de integração da NR 18 não possui registros de execução anexados para os colaboradores listados na folha. Fichas de EPI Não Conforme A empresa possui o modelo do documento anexado ao PGR, porém não apresentou as fichas preenchidas com os números de Certificado de Aprovação (CA) válidos e assinadas pelos empregados ativos. Ordens de serviço Parcialmente Conforme A empresa adota o preenchimento de análises de risco por atividade (modelo de APR presente no anexo do PGR), atendendo os quesitos estruturais, mas faltam os registros de execução das frentes de trabalho diárias. Programas legais (PGR e PCMSO) Não Conforme Apesar de emitidos e vigentes (Validades: PCMSO até 04/2027; PGR até 04/2028), tornam-se irregularidades legais devido à incompatibilidade de cargos (Analista de Recursos sem mapeamento) e à omissão de riscos específicos na prática. Inspeções Parcialmente Conforme Há previsão no plano de ação para que o Designado da CIPA realize e arquive relatórios de inspeções diárias no canteiro de obras a partir de Abril de 2026. Faltam os relatórios físicos armazenados em arquivo. Certificados Não Conforme O certificado do CRM do médico está correto, mas a ART CREA-MS nº 1320260055936 está com o endereço da obra incorreto (Sarandi-PR) , gerando vício formal nos laudos de Inocência-MS. Além disso, o prazo de previsão de término da ART expirou em 28/05/2026. Permissões de trabalho Parcialmente Conforme O modelo de Autorização de Trabalho de Risco (ATR) está estruturado e anexo ao programa base, necessitando apenas garantir a correta abertura em campo para atividades acima de 2 metros ou elétricas. COMPORTAMENTO E SEGURANÇA DOS COLABORADORES Os colaboradores Luiz Roberto e Gabriel demonstraram postura segura e atenção aos riscos, cumprindo as orientações de segurança estabelecidas. CONCLUSÃO A auditoria de junho demonstrou um grau de conformidade satisfatório nas atividades observadas. Destaca-se o uso adequado dos EPIs por parte da equipe. Recomenda-se a continuidade das ações de conscientização e monitoramento constante. REGISTRO FOTOGRÁFICO 2 ª VISITA AUDITÓRIA DATA: 12 /0 6 /2026 DIA DA SEMANA: SEXT A-FEIRA DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS A auditoria concentrou-se na fiscalização da execução de atividades de cobertura em canteiro de obras localizado na sede . O foco principal da inspeção foi a observação do comportamento seguro dos colaboradores Felipe e Roberto durante a manipulação e instalação de telhas. Durante a atividade, identificou-se um desvio de conduta relevante, onde os colaboradores executavam o serviço sem a proteção ocular e manual, embora os equipamentos estivessem disponíveis nas proximidades do posto de trabalho. A irregularidade foi documentada por meio d e fotografia , sendo a situação imediatamente corrigida mediante orientação pedagógica sobre o risco ocupacional e a necessidade de uso rigoroso dos EPIs. CONDIÇÕES OPERACIONAIS DAS MÁQUINAS E EQUIPAMENTOS As condições operacionais foram avaliadas sob o aspecto da disponibilidade de recursos e segurança no ambiente de trabalho: Disponibilidade de EPIs: Constatou-se que a empresa provê os EPIs necessários (luvas e óculos de segurança), que se encontravam em boas condições de conservação e próximos à área de operação. Gestão da Falha: A falha observada não foi de ausência de equipamento, mas de disciplina operacional e conscientização. Sinalização e Organização: O ambiente de trabalho apresenta necessidades de maior rigor na gestão de campo. A disponibilidade dos materiais próximos aos operários está adequada, porém, o uso constante deve ser fiscalizado pelo Encarregado de Obra para evitar reincidências de descumprimento das Normas de Segurança ( NRs ). Estruturas de Apoio: As estruturas de apoio (andaimes e escoramentos) visíveis no registro fotográfico devem ser objeto de inspeção diária por parte do designado da CIPA para assegurar a estabilidade conforme os requisitos da NR-18. Observação: Ao inserir este texto, lembre-se de que a conformidade técnica exige que essas observações sejam seguidas de planos de ação concretos, como a aplicação de advertência formal ou reforço de treinamento para os colaboradores citados, caso a empresa possua tal política de consequências. CONCLUSÃO A auditoria realizada evidenciou um cenário que demanda atenção imediata da gestão de segurança. Embora a empresa possua a estrutura normativa básica e a disponibilidade física dos Equipamentos de Proteção Individual (EPIs), constatou-se uma falha crítica na cultura de segurança operacional, exemplificada pela execução de atividades em altura sem a proteção ocular e manual pelos colaboradores Felipe e Roberto, conforme registrado n a foto. É imperativo que a empresa transite do estágio de "posse dos equipamentos" para o de "uso obrigatório e consciente". A conformidade técnica não se limita ao fornecimento, mas depende da fiscalização contínua e do cumprimento rigoroso das orientações do PGR e das normas setoriais. Recomenda-se a imediata intensificação das ações educativas (treinamentos práticos), o fortalecimento da vigilância por parte do designado da CIPA e a formalização das medidas disciplinares cabíveis para casos de reincidência. O objetivo é garantir que a segurança deixe de ser uma ação pontual e passe a ser um valor intrínseco à execução de cada tarefa no canteiro de obras, mitigando os riscos de acidentes e eventuais sanções legais. 3 ª VISITA AUDITÓRIA DATA: 26/0 6 /2026 DIA DA SEMANA: SEXT A-FEIRA DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS Durante a vistoria realizada na frente de trabalho, foram observad a s as condições operacionais e o comportamento de segurança da equipe: Uso de Equipamentos de Proteção Individual (EPIs): Foi constatado que a maioria dos colaboradores está utilizando corretamente todos os EPIs fornecidos pela empresa, demonstrando adesão aos protocolos de segurança estabelecidos. Ponto de Atenção (Não Conformidade): Identificou-se uma exceção no cumprimento desta norma: o colaborador Gersy não estava utilizando os equipamentos de proteção obrigatórios durante a execução de suas atividades, o que representa um desvio de segurança em relação ao restante do grupo. Ação Necessária: O colaborador foi devidamente orientado sobre a obrigatoriedade e a importância do uso dos EPIs para a preservação de sua integridade física. A liderança deve reforçar a fiscalização e aplicar as medidas educativas cabíveis para garantir a regularização imediata desta situação. 4 ª VISITA AUDITÓRIA DATA: 30 /0 6 /2026 DIA DA SEMANA: T ERÇ A-FEIRA DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS Durante a auditoria realizada nas instalações da Casa da Colônia 2 , foram verificadas as atividades operacionais e a regularidade documental da equipe composta pelos colaboradores João, Felipe e André Ribeiro da Silva . Identificação de Irregularidade Trabalhista: Constatou-se a presença do Sr. André Ribeiro da Silva exercendo atividades laborais sem o devido registro em carteira/contrato de trabalho. Ação Corretiva Imediata: Diante da irregularidade, foi orientado ao Sr. Gersy a formalização imediata do vínculo empregatício do referido colaborador. Como medida de mitigação de risco trabalhista e previdenciário, foi determinada a interrupção imediata de qualquer atividade laboral por parte do Sr. André Ribeiro da Silva até que a situação seja devidamente regularizada junto aos órgãos competentes. Segurança e Conformidade: Ressalta-se que a empresa foi notificada de que a execução de serviços por colaboradores sem registro é uma prática que fere a legislação vigente, expondo a contratante a passivos jurídicos e impedindo a cobertura de seguro em caso de eventuais acidentes de trabalho. Plano de Ação Pendência Ação Definida Responsável Status Regularização Documental Efetuar o registro imediato do colaborador André Ribeiro da Silva. Gersy Pendente Controle de Acesso Impedir o retorno do colaborador às atividades operacionais sem a devida comprovação de vínculo. Gersy Imediato CONCLUSÃO A regularização documental do colaborador André Ribeiro da Silva , destacamos a postura proativa do Sr. Gersy , que atendeu prontamente à notificação técnica realizada pela equipe de segurança e procedeu com o devido registro do funcionário no dia subsequente à inspeção. Esta ação demonstra o compromisso da gestão em sanar as irregularidades apontadas e garantir a segurança jurídica da operação. Quanto aos demais pontos de segurança, reforçamos que a manutenção do uso de EPIs por toda a equipe (incluindo o monitoramento do proprietário Gersy ) permanece como prioridade para a continuidade das atividades sem interrupções. A empresa segue orientada a manter a documentação de todos os funcionários atualizada e disponível para conferência em futuras vistorias. Boas Práticas e Pontos Positivos Durante a visita técnica, destacaram-se os seguintes pontos positivos: Evolução da Cultura de Segurança: A empresa migrou de uma postura reativa para um comportamento seguro. A observação dos colaboradores Felipe e Luiz Roberto utilizando todos os EPIs de forma sistemática atesta a eficácia das orientações pedagógicas. Gestão de Mudanças: O pronto atendimento às exigências de regularização trabalhista e documental demonstra que a gestão está comprometida com o processo de melhoria contínua. Padronização Operacional: A instalação de placas de sinalização e a organização do canteiro indicam que a construtora está adotando padrões profissionais de gestão, reduzindo riscos de acidentes para trabalhadores e visitantes. Bruno do Nascimento Miranda Téc. de Seg. do Trabalho Cássia Francine Zacarim Téc. de Seg. do Trabalho Gersy Gomes Ferreira Filho Responsável (Terceiro) SESTR Santa Vergínia
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+
+
+
+
+
+
+RELATÓRIO MENSAL DE SSMA
+
+
+
+Responsável: Cássia Francine Zacarim Lima
+
+
+
+Empresa: Gomes e Gusmão Construtora Ltda
+
+Nome Fantasia: Nível Gomes Construtora
+
+Referente:        junho 2026
+
+
+
+RESPONSÁVEIS DA EMPRESA
+
+Gersy Gomes Ferreira Filho
+
+
+
+
+
+INTRODUÇÃO
+
+A auditoria visa verificar a conformidade das operações, o uso de equipamentos de proteção e o cumprimento das normas de segurança, garantindo um ambiente de trabalho seguro e a preservação ambiental.
+
+
+
+1ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+21/05/2026
+
+DIA DA SEMANA:   
+
+QUINTA-FEIRA
+
+
+
+OBJETIVO DA AUDITORIA
+
+O objetivo desta inspeção foi avaliar as condições de segurança, saúde ocupacional e aspectos ambientais durante a execução das atividades desenvolvidas pela empresa, com foco no comportamento seguro dos colaboradores e na integridade dos equipamentos utilizados.
+
+Quadro de Evolução das Pendências
+
+Pendência (Maio)
+
+Ação Definida (Maio)
+
+Status (Junho)
+
+Observações
+
+Uso de EPIs
+
+Fornecimento, fiscalização e treinamento 
+
+Adequado
+
+Constatado o uso correto de EPIs na maioria das visitas de junho. 
+
+Registros Trabalhistas
+
+Correção de divergências entre RH e SST 
+
+Adequado
+
+Regularização total do quadro de funcionários. 
+
+Documentação (PGR/ASO/Treinamentos)
+
+Apresentação de evidências e certificados 
+
+Pendente
+
+Falta anexar registros reais de treinamentos e fichas de EPI assinadas. 
+
+Sinalização
+
+Instalação de placas e organização 
+
+Adequado
+
+Placas instaladas e ambiente organizado. 
+
+Entrega de SUDRAT
+
+Divulgação das diretrizes de segurança 
+
+Adequado
+
+Documento entregue aos funcionários. 
+
+Detalhamento da Situação em Junho
+
+O que foi devidamente adequado:
+
+Postura Operacional: A empresa corrigiu a falha crítica de maio. Em junho, os colaboradores foram flagrados utilizando os equipamentos de proteção de forma consistente. 
+
+Documentação Trabalhista: O quadro de pessoal foi regularizado, garantindo a conformidade legal. 
+
+Organização e Sinalização: O canteiro de obras e a frente de serviço apresentam-se organizados e com a sinalização de segurança necessária. 
+
+Conscientização: A entrega do SUDRAT aos colaboradores foi realizada, demonstrando um avanço na comunicação de segurança. 
+
+O que permanece pendente e novos prazos:
+
+Registros de SST: Permanecem pendentes os registros físicos (listas de presença, certificados de treinamentos NR-18/NR-35 e fichas de EPI assinadas).
+
+Novo Prazo: 10 dias para a entrega da pasta documental completa, contendo as evidências assinadas e registradas.
+
+
+
+
+
+ BASE LEGAL E REFERÊNCIAS NORMATIVAS
+
+NR 01: Disposições Gerais e Gerenciamento de Riscos Ocupacionais (GRO).
+
+NR 06: Equipamentos de Proteção Individual (EPI).
+
+NR 18: Segurança e Saúde no Trabalho na Indústria da Construção.
+
+
+
+
+
+METODOLOGIA DA AUDITORIA
+
+A auditoria foi realizada por meio de inspeção visual, observação das atividades operacionais e verificação do uso de Equipamentos de Proteção Individual (EPIs) pelos colaboradores.
+
+
+
+ DESCRIÇÃO DAS ATIVIDADES AUDITADAS
+
+Foram acompanhadas as atividades operacionais rotineiras, observando o desempenho dos colaboradores Luiz Roberto e Felipe. 
+
+AVALIAÇÃO DOS EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL (EPIs)
+
+Durante a visita, foi constatado que os colaboradores Luiz Roberto e Gabriel realizavam suas atividades utilizando os seguintes EPIs: óculos de segurança, capacete e luvas. Os equipamentos estavam sendo utilizados de forma correta e adequada à atividade desempenhada. 
+
+
+
+DOCUMENTAÇÃO DE SEGURANÇA DO TRABALHO
+
+Conforme
+
+Programas Legais: A empresa possui o PGR (Programa de Gerenciamento de Riscos) elaborado em 27/04/2026 com validade até abril de 2028, e o PCMSO (Programa de Controle Médico de Saúde Ocupacional) elaborado em abril de 2026 com validade até abril de 2027. Ambos os programas estão assinados por profissionais habilitados e com as respectivas identificações técnicas. 
+
+Certificados: Consta o certificado de registro de especialidade em Medicina do Trabalho do médico coordenador do PCMSO junto ao Conselho Regional de Medicina de Mato Grosso do Sul (RQE nº 4818), conferindo legitimidade técnica à emissão do programa. 
+
+Modelos de Fichas de EPI, Ordens de Serviço (APR) e Permissões de Trabalho: O PGR traz em seus anexos os modelos oficiais estruturados que a empresa adota para o controle diário, incluindo o modelo do Recibo de Entrega de EPIs, o modelo de Análise Preliminar de Risco (APR) e os campos para a Autorização de Trabalho de Risco (ATR) / Permissão de Trabalho. 
+
+Não Conforme (Pendências e Necessidades de Atualização)
+
+Validades Vencidas / Prazos de Execução Expirados na ART: A ART estipulava a previsão de término das atividades de elaboração do PGR e LTCAT para o dia 28/05/2026. Como a data atual é 25/06/2026, o prazo informado ao conselho já expirou e o profissional responsável precisa proceder a baixa da referida ART, caso o serviço tenha sido concluído. 
+
+Ausência de Evidências Físicas de Cumprimento Prático: Embora os modelos existam nos anexos, não foram anexados os registros populados com dados reais que comprovem a execução do plano de ação, tais como: os comprovantes de realizações dos Treinamentos Iniciais da NR 18 (Carga horária de 8h) e NR 35 que estavam previstos para início imediato em Abril/Maio de 2026, as Fichas de EPI preenchidas e assinadas pelos 4 funcionários listados no RH, e os comprovantes de exames (ASO) clínicos e complementares (como a Audiometria obrigatória para o Pedreiro e o Motorista). 
+
+Tabela Resumo de Situação Documental de SST
+
+A tabela abaixo consolida a avaliação detalhada exigida para a verificação documental:
+
+Documento de SST Avaliado
+
+Status de Conformidade
+
+Situação Encontrada / Registro de Pendências e Atualizações
+
+Registro de trabalho
+
+Não Conforme
+
+Há divergências entre o RH e a Engenharia de Segurança. O cargo ativo de Analista de Recursos não possui mapeamento de riscos. Diversos cargos descritos nos programas de SST possuem "00" expostos e não constam no registro de empregados. 
+
+ASO (Atestado de Saúde Ocupacional)
+
+Não Conforme
+
+Ausência dos comprovantes de aptidão física dos funcionários contratados. O PCMSO exige exames específicos como Audiometria para Pedreiro e Motorista, e exames de Raio-X de Tórax/Espirometria para Pedreiro, mas as vias emitidas não foram apresentadas. 
+
+Treinamentos
+
+Não Conforme
+
+O cronograma do Plano de Ação previa a execução de treinamentos obrigatórios da NR 18 (8h), NR 06 (EPIs) e NR 35 (Trabalho em Altura) entre Abril e Maio de 2026. Não foram apresentadas as listas de presença ou certificados correspondentes. 
+
+Integrações
+
+Não Conforme
+
+Integrado ao item de treinamentos. O treinamento inicial de integração da NR 18 não possui registros de execução anexados para os colaboradores listados na folha. 
+
+Fichas de EPI
+
+Não Conforme
+
+A empresa possui o modelo do documento anexado ao PGR, porém não apresentou as fichas preenchidas com os números de Certificado de Aprovação (CA) válidos e assinadas pelos empregados ativos. 
+
+Ordens de serviço
+
+Parcialmente Conforme
+
+A empresa adota o preenchimento de análises de risco por atividade (modelo de APR presente no anexo do PGR), atendendo os quesitos estruturais, mas faltam os registros de execução das frentes de trabalho diárias. 
+
+Programas legais (PGR e PCMSO)
+
+Não Conforme
+
+Apesar de emitidos e vigentes (Validades: PCMSO até 04/2027; PGR até 04/2028), tornam-se irregularidades legais devido à incompatibilidade de cargos (Analista de Recursos sem mapeamento) e à omissão de riscos específicos na prática. 
+
+Inspeções
+
+Parcialmente Conforme
+
+Há previsão no plano de ação para que o Designado da CIPA realize e arquive relatórios de inspeções diárias no canteiro de obras a partir de Abril de 2026. Faltam os relatórios físicos armazenados em arquivo. 
+
+Certificados
+
+Não Conforme
+
+O certificado do CRM do médico está correto, mas a ART CREA-MS nº 1320260055936 está com o endereço da obra incorreto (Sarandi-PR), gerando vício formal nos laudos de Inocência-MS. Além disso, o prazo de previsão de término da ART expirou em 28/05/2026. 
+
+Permissões de trabalho
+
+Parcialmente Conforme
+
+O modelo de Autorização de Trabalho de Risco (ATR) está estruturado e anexo ao programa base, necessitando apenas garantir a correta abertura em campo para atividades acima de 2 metros ou elétricas. 
+
+
+
+COMPORTAMENTO E SEGURANÇA DOS COLABORADORES
+
+Os colaboradores Luiz Roberto e Gabriel demonstraram postura segura e atenção aos riscos, cumprindo as orientações de segurança estabelecidas. 
+
+CONCLUSÃO
+
+A auditoria de junho demonstrou um grau de conformidade satisfatório nas atividades observadas. Destaca-se o uso adequado dos EPIs por parte da equipe. Recomenda-se a continuidade das ações de conscientização e monitoramento constante.
+
+
+
+
+
+
+
+REGISTRO FOTOGRÁFICO
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+                                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+12/06/2026
+
+DIA DA SEMANA:   
+
+SEXTA-FEIRA
+
+DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS
+
+A auditoria concentrou-se na fiscalização da execução de atividades de cobertura em canteiro de obras localizado na sede. O foco principal da inspeção foi a observação do comportamento seguro dos colaboradores Felipe e Roberto durante a manipulação e instalação de telhas. Durante a atividade, identificou-se um desvio de conduta relevante, onde os colaboradores executavam o serviço sem a proteção ocular e manual, embora os equipamentos estivessem disponíveis nas proximidades do posto de trabalho. A irregularidade foi documentada por meio de fotografia, sendo a situação imediatamente corrigida mediante orientação pedagógica sobre o risco ocupacional e a necessidade de uso rigoroso dos EPIs.
+
+
+
+CONDIÇÕES OPERACIONAIS DAS MÁQUINAS E EQUIPAMENTOS
+
+As condições operacionais foram avaliadas sob o aspecto da disponibilidade de recursos e segurança no ambiente de trabalho:
+
+Disponibilidade de EPIs: Constatou-se que a empresa provê os EPIs necessários (luvas e óculos de segurança), que se encontravam em boas condições de conservação e próximos à área de operação.
+
+Gestão da Falha: A falha observada não foi de ausência de equipamento, mas de disciplina operacional e conscientização.
+
+Sinalização e Organização: O ambiente de trabalho apresenta necessidades de maior rigor na gestão de campo. A disponibilidade dos materiais próximos aos operários está adequada, porém, o uso constante deve ser fiscalizado pelo Encarregado de Obra para evitar reincidências de descumprimento das Normas de Segurança (NRs).
+
+Estruturas de Apoio: As estruturas de apoio (andaimes e escoramentos) visíveis no registro fotográfico devem ser objeto de inspeção diária por parte do designado da CIPA para assegurar a estabilidade conforme os requisitos da NR-18.
+
+Observação: Ao inserir este texto, lembre-se de que a conformidade técnica exige que essas observações sejam seguidas de planos de ação concretos, como a aplicação de advertência formal ou reforço de treinamento para os colaboradores citados, caso a empresa possua tal política de consequências.
+
+
+
+CONCLUSÃO
+
+A auditoria realizada evidenciou um cenário que demanda atenção imediata da gestão de segurança. Embora a empresa possua a estrutura normativa básica e a disponibilidade física dos Equipamentos de Proteção Individual (EPIs), constatou-se uma falha crítica na cultura de segurança operacional, exemplificada pela execução de atividades em altura sem a proteção ocular e manual pelos colaboradores Felipe e Roberto, conforme registrado na foto.
+
+É imperativo que a empresa transite do estágio de "posse dos equipamentos" para o de "uso obrigatório e consciente". A conformidade técnica não se limita ao fornecimento, mas depende da fiscalização contínua e do cumprimento rigoroso das orientações do PGR e das normas setoriais.
+
+Recomenda-se a imediata intensificação das ações educativas (treinamentos práticos), o fortalecimento da vigilância por parte do designado da CIPA e a formalização das medidas disciplinares cabíveis para casos de reincidência. O objetivo é garantir que a segurança deixe de ser uma ação pontual e passe a ser um valor intrínseco à execução de cada tarefa no canteiro de obras, mitigando os riscos de acidentes e eventuais sanções legais.	
+
+	
+
+	
+
+
+
+3ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+26/06/2026
+
+DIA DA SEMANA:   
+
+SEXTA-FEIRA
+
+DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS
+
+	Durante a vistoria realizada na frente de trabalho, foram observadas as condições operacionais e o comportamento de segurança da equipe:
+
+	Uso de Equipamentos de Proteção Individual (EPIs): Foi constatado que a maioria dos colaboradores está utilizando corretamente todos os EPIs fornecidos pela empresa, demonstrando adesão aos protocolos de segurança estabelecidos. 
+
+	Ponto de Atenção (Não Conformidade): Identificou-se uma exceção no cumprimento desta norma: o colaborador Gersy não estava utilizando os equipamentos de proteção obrigatórios durante a execução de suas atividades, o que representa um desvio de segurança em relação ao restante do grupo. 
+
+	Ação Necessária: O colaborador foi devidamente orientado sobre a obrigatoriedade e a importância do uso dos EPIs para a preservação de sua integridade física. A liderança deve reforçar a fiscalização e aplicar as medidas educativas cabíveis para garantir a regularização imediata desta situação. 
+
+	  
+
+	
+
+
+
+
+
+4ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+30/06/2026
+
+DIA DA SEMANA:   
+
+TERÇA-FEIRA
+
+DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS
+
+	Durante a auditoria realizada nas instalações da Casa da Colônia 2, foram verificadas as atividades operacionais 
+
+	e a regularidade documental da equipe composta pelos colaboradores João, Felipe e André Ribeiro da Silva.
+
+	Identificação de Irregularidade Trabalhista: Constatou-se a presença do Sr. André Ribeiro da Silva exercendo atividades laborais sem o devido registro em carteira/contrato de trabalho.
+
+	Ação Corretiva Imediata: Diante da irregularidade, foi orientado ao Sr. Gersy a formalização imediata do vínculo empregatício do referido colaborador. Como medida de mitigação de risco trabalhista e previdenciário, foi determinada a interrupção imediata de qualquer atividade laboral por parte do Sr. André Ribeiro da Silva até que a situação seja devidamente regularizada junto aos órgãos competentes.
+
+	Segurança e Conformidade: Ressalta-se que a empresa foi notificada de que a execução de serviços por colaboradores sem registro é uma prática que fere a legislação vigente, expondo a contratante a passivos jurídicos e impedindo a cobertura de seguro em caso de eventuais acidentes de trabalho.
+
+	Plano de Ação
+
+	Pendência
+
+	Ação Definida
+
+	Responsável
+
+	Status
+
+	Regularização Documental
+
+	Efetuar o registro imediato do colaborador André Ribeiro da Silva.
+
+	Gersy
+
+	Pendente
+
+	Controle de Acesso
+
+	Impedir o retorno do colaborador às atividades operacionais sem a devida comprovação de vínculo.
+
+	Gersy
+
+	Imediato
+
+	
+
+	CONCLUSÃO
+
+	A regularização documental do colaborador André Ribeiro da Silva, destacamos a postura proativa do Sr. Gersy, que atendeu prontamente à notificação técnica realizada pela equipe de segurança e procedeu com o devido registro do funcionário no dia subsequente à inspeção. Esta ação demonstra o compromisso da gestão em sanar 
+
+	as irregularidades apontadas e garantir a segurança jurídica da operação.
+
+	Quanto aos demais pontos de segurança, reforçamos que a manutenção do uso de EPIs por toda a equipe (incluindo o monitoramento do proprietário Gersy) permanece como prioridade para a continuidade das atividades sem interrupções. A empresa segue orientada a manter a documentação de todos os funcionários atualizada e disponível para conferência em futuras vistorias.
+
+	Boas Práticas e Pontos Positivos
+
+	Durante a visita técnica, destacaram-se os seguintes pontos positivos:
+
+	Evolução da Cultura de Segurança: A empresa migrou de uma postura reativa para um comportamento seguro. A observação dos colaboradores Felipe e Luiz Roberto utilizando todos os EPIs de forma sistemática atesta a eficácia das orientações pedagógicas. 
+
+	Gestão de Mudanças: O pronto atendimento às exigências de regularização trabalhista e documental demonstra que a gestão está comprometida com o processo de melhoria contínua. 
+
+	Padronização Operacional: A instalação de placas de sinalização e a organização do canteiro indicam que a construtora está adotando padrões profissionais de gestão, reduzindo riscos de acidentes para trabalhadores e visitantes. 
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bruno do Nascimento Miranda
+
+Téc. de Seg. do Trabalho
+
+
+
+Cássia Francine Zacarim
+
+Téc. de Seg. do Trabalho
+
+
+
+Gersy Gomes Ferreira Filho
+
+Responsável (Terceiro)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SESTR
+
+Santa Vergínia
+
+
+
+
+
+
+
+2

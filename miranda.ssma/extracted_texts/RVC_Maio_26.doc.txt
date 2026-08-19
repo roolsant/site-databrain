@@ -1,0 +1,512 @@
+Documento do Microsoft Word 97-2003
+Word.Document.8
+Marcos Araujo
+Microsoft Office Word
+[Content_Types].xml
+_rels/.rels
+theme/theme/themeManager.xml
+theme/theme/theme1.xml
+theme/theme/_rels/themeManager.xml.rels
+[Content_Types].xmlPK
+_rels/.relsPK
+theme/theme/themeManager.xmlPK
+theme/theme/theme1.xmlPK
+theme/theme/_rels/themeManager.xml.relsPK
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:clrMap xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" bg1="lt1" tx1="dk1" bg2="lt2" tx2="dk2" accent1="accent1" accent2="accent2" accent3="accent3" accent4="accent4" accent5="accent5" accent6="accent6" hlink="hlink" folHlink="folHlink"/>
+[Content_Types].xml
+_rels/.rels
+drs/e2oDoc.xml
+drs/downrev.xmlLO
+[Content_Types].xmlPK
+_rels/.relsPK
+drs/e2oDoc.xmlPK
+drs/downrev.xmlPK
+[Content_Types].xml
+_rels/.rels
+drs/e2oDoc.xml
+drs/downrev.xmlL
+[Content_Types].xmlPK
+_rels/.relsPK
+drs/e2oDoc.xmlPK
+drs/downrev.xmlPK
+/iCCPICC Profile
+XNYiZE[U[3
+!tEXtCreation Time
+2024:06:20 10:47:04
+mn%&&z}w|jj*lu
+!22222222222222222222222222222222222222222222222222
+#(
+lUOeWvTwuG
+.[O6r}SYRx`
+Q7R!w
+hCOJuGY=
+[1k1	HgG-c?
+b-itG)+Um:>#
+!22222222222222222222222222222222222222222222222222
+JIniD\g5Ob;
+McMG^FJ1S~7i
+$+++++++-wl
+Ac+P0|u/|YY
+2Cj\qt~cb-R
+!22222222222222222222222222222222222222222222222222
+VUjckL-xp{O
+qF9[q63UP+vg
+3Tb:!,3*D+
+Vsy%fYZ=gM/
+!22222222222222222222222222222222222222222222222222
+6*U(6/3o5E5
+LU(&G-q"2C|
+Hu{.'5)K4Mxuf
+Ov&QvPr$;Tm
+xUYh.?EuKf$
+7dq(grj4T@b
+:Rl?_Y!76r+7,
+!22222222222222222222222222222222222222222222222222
+Q_mu`]Pct,qbx
+=Jn8~lDYc:p
+l^U~p+pJ#']rb
+x"5^\%)+s-&
+%QN9Vg</ch
+2%'-C]a"A;NS
+!22222222222222222222222222222222222222222222222222
+EtKgxHI"}Hb
+?eI?DF"JhAB
+@(sN fUC!ZM
+-,fFffgB]Yq
+{i}af&!k."X
+!22222222222222222222222222222222222222222222222222
+Fi*LmI&%cM;
+?+S.G[>U$j\8F
+^af5au-o= ^
+*hb	UXjwV$He
+xey5>.
+(vj2
+!22222222222222222222222222222222222222222222222222
+!22222222222222222222222222222222222222222222222222
+!22222222222222222222222222222222222222222222222222
+5'GW7BQ$9pL
+!b.(GpA&
+.U
+!22222222222222222222222222222222222222222222222222
+!22222222222222222222222222222222222222222222222222
+cn%(/sq`4nc
+!22222222222222222222222222222222222222222222222222
+P\7@TTTTD*\S
+!22222222222222222222222222222222222222222222222222
+jgvZ$%(jESR
+!22222222222222222222222222222222222222222222222222
+!22222222222222222222222222222222222222222222222222
+eeIKW:7sGwP
+yb.0KvE-3f"
+7.k*{3L(4VP
+!22222222222222222222222222222222222222222222222222
+G r$m%eBr{
+!22222222222222222222222222222222222222222222222222
+wOes"i!"x	C
+*x4TTTTTT@,
+o FA4!****-
+!22222222222222222222222222222222222222222222222222
+G${NvJ%Aw4m{
+7iCCPsRGB IEC61966-2.1
+)d:bvAS*~Dc
+>rHUAx)HIA <
+dS1F}0'\,lL
+@u=J_2HQUEd>p
+Cg9G`V sLL%
+f
+R civ!8^Kfn
+hYE56o0&t<,=A
+VhbwDUh"F*#
+cqg8j^43sgp
+`B==?1(";K{
+#::A=_k7H1W
+Aw/tF*3K \#
+?;m!o-q1/k9
+k;3:`X
+t`m5N
+:m%^[GiUXKE
+C#jS6eS6eS6eS
+vLvw`~lx}yc
+KsH$g.	@haAkT,
+n|AQo#q9BdG
+'iX@[[+vnmDC
+afH2%J6mBnQ
+Dfq12
+
+0;=)
+@{{;*++Y9rE(N
+_9^b{<{Dk*&fID
+p
+I+#LtzUEi+
+=%::;DwGZ|4
+*CH&|1MV(uG<nS
+PqeWveWveO-
+UqeWveWveO=;???
+zCkv'\x=K07X?
+pZI*1e)sE5jj~
+8_]L	8a.Qts<
+<b:Sources SelectedStyle="\APA.XSL" StyleName="APA" xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"></b:Sources>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ds:datastoreItem ds:itemID="{746AFAB0-3A3B-4601-A172-5C39ADA640F0}" xmlns:ds="http://schemas.openxmlformats.org/officeDocument/2006/customXml"><ds:schemaRefs><ds:schemaRef ds:uri="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"/></ds:schemaRefs></ds:datastoreItem>
+RIO MENSAL DE SSMA
+ssia Francine Zacarim Lima
+Empresa: DS Carv
+o Black LtdaNome Fantasia:
+Referente:        maio 2026
+Logo da empresa
+VEIS DA EMPRESA
+Ronaldo Viana
+OEste relat
+rio apresenta a avalia
+o das condi
+es de seguran
+de ocupacional e aspectos ambientais das atividades desenvolvidas em campo pela equipe de opera
+o visa identificar conformidades, gerenciar riscos associados
+infraestrutura de viv
+ncia, seguran
+a alimentar e garantir o cumprimento das normas de SST.
+DIA DA SEMANA:
+OBJETIVO DA AUDITORIARealizar a avalia
+o presencial das condi
+es de seguran
+a do trabalho, higiene ocupacional, comportamento seguro e aspectos de infraestrutura na frente de trabalho em campo. BASE LEGAL E REFER
+NCIAS NORMATIVASNR-31: Seguran
+de no Trabalho na Agricultura, Pecu
+ria, Silvicultura, Explora
+o Florestal e Aquicultura (refer
+ncia para frentes de trabalho em campo,
+reas de viv
+ncia e uso de motosserras). NR-12: Seguran
+a no Trabalho em M
+quinas e Equipamentos (Opera
+o de tratores)METODOLOGIA DA AUDITORIAA auditoria foi realizada por meio de inspe
+o visual das instala
+es e do ambiente, entrevistas diretas com os colaboradores presentes e observa
+tica das rotinas operacionais executadas.  DESCRI
+O DAS ATIVIDADES AUDITADASFrente de Trabalho: RVCEfetivo Observado: 03 colaboradores atuantes na frente de trabalho. Atividades em Execu
+o: Corte de madeira/supress
+o com uso de motosserra e movimenta
+o de materiais com trator.Equipamentos Utilizados: Motosserra e Trator. CONDI
+ES OPERACIONAIS DAS M
+QUINAS E EQUIPAMENTOSMotosserra: Operada pelo colaborador Francisco Pereira.Trator: Identificou-se desvio operacional/comportamental onde ambos os colaboradores (Francisco e Elcio) realizam a opera
+o do trator. Ponto de Aten
+rio verificar e validar se ambos possuem o devido treinamento regulamentar e habilita
+o para a condu
+o segura do maquin
+rio. AVALIA
+O DOS EQUIPAMENTOS DE PROTE
+O INDIVIDUAL (EPIs)Colaboradores equipados para as fun
+es executadas (uso regular durante a inspe
+o visual). Registros formais de fichas de entrega e CA devem ser validados junto ao setor administrativo.DOCUMENTA
+O DE SEGURAN
+A DO TRABALHO1. Registro de Trabalho e Vencimentos (Situa
+o Documental)Matr
+cula 122 - Daguimar Vieira da Concei
+o (Gerente de Produ
+o): Admitido em 11/08/2025. Documenta
+o de registro regularizada, constando altera
+o salarial em 01/01/2026. Matr
+cula 135 - Elcio Nogueira de Jesus (Ajudante de Carvoaria): Admitido em 03/02/2026. Registro individual formalizado. Matr
+cula 144 - Francisco Pereira (Operador de Motosserra): Admitido em 27/03/2026. Registro individual formalizado. Matr
+cula 149 - David Juneo Veloso Peito (Ajudante de Carvoaria): Admitido em 07/05/2026. Registro individual formalizado. Matr
+cula 150 - Dergson Michel de Oliveira Chaves (Ajudante de Carvoaria): Admitido em 07/05/2026. Registro individual formalizado. 2. Ordens de Servi
+o de Seguran
+o Conforme)Aus
+ncia Total de Documento: Os colaboradores David Juneo (Matr
+cula 149) e Dergson Michel (Matr
+cula 150), ambos admitidos em 07/05/2026, n
+o possuem Ordem de Servi
+o de Seguran
+a emitida ou assinada no prontu
+rio. Inconsist
+ncia Cronol
+tica (Inconformidade): A Ordem de Servi
+o (OSS-86) do colaborador Francisco Pereira aponta como data de emiss
+o o dia 27/03/2026, por
+m, o campo de assinatura do termo de compromisso foi datado retroativamente com o ano de 2023 (27 de mar
+o de 2023). Isto gera uma desconformidade legal evidente, visto que ele s
+foi admitido em 2026. 3. Controle e Fichas de EPI (N
+o Conforme)Aus
+ncia de Ficha: N
+o foram apresentadas as fichas de controle de EPI e Uniforme dos colaboradores David Juneo (Matr
+cula 149) e Dergson Michel (Matr
+cula 150). Preenchimento Incompleto e Falha de Fornecimento:Na ficha de Francisco Pereira, o primeiro item da lista de controle foi entregue sem qualquer descri
+o textual (campo em branco), constando apenas a quantidade e assinatura. Al
+m disso, a sua OSS prev
+o uso obrigat
+rio de luva anticorte, camisa anticorte, cal
+a anticorte e protetor facial, mas a ficha de EPI registra a entrega de itens gen
+ricos como "luva", "botina", "capacete", "protetor de ouvido" e "perneira", omitindo as prote
+ficas para motosserra. Na ficha de Elcio Nogueira, os itens descritos manualmente possuem grafias incorretas ("dura", "Pemura") e faltam as assinaturas de recebimento nos campos espec
+ficos da listagem para as primeiras linhas entregues. 4. Treinamentos, Certificados e Validades (N
+o Conforme)Conformidade Localizada: Foram identificados Certificados de Conclus
+o de Treinamento v
+lidos de Operador de Trator (atendendo
+s NR-11, 12 e 31.12) com carga hor
+ria de 8 horas e emiss
+o em 11 de Abril de 2026 para os funcion
+rios Elcio Nogueira de Jesus e Francisco Pereira. Desvio de Fun
+o / Falha de Treinamento: O colaborador Elcio Nogueira de Jesus est
+registrado e possui OSS para o cargo de Ajudante de Carvoaria. No entanto, a empresa o submeteu a um treinamento espec
+fico para Operador de Trator. Se o colaborador estiver operando maquin
+rio sem a devida altera
+o contratual/funcional de cargo, h
+um desvio de fun
+o caracterizado e falta de treinamento focado na atividade real de carvoaria. 5. Pend
+ncias Gerais (Aus
+ncia de Documentos Base)PCMSO e PGR: Aus
+ncia total de comprova
+sica ou digital dos programas legais exigidos por lei para a atividade de carvoaria (riscos qu
+micos de mon
+xido de carbono, poeiras e calor extremo que constam nas OSS). ASOs: N
+documentos que comprovem a aptid
+sica e mental de nenhum dos cinco trabalhadores analisados. Integra
+es e PTs: Nenhuma evid
+ncia de que os colaboradores passaram por integra
+o de seguran
+a na empresa ou que possuam permiss
+es emitidas para frentes de trabalho isoladas. Recomenda
+o Direta:Emitir imediatamente as Ordens de Servi
+o e Fichas de EPI pendentes para os funcion
+rios matriculados sob os n
+meros 149 e 150. Corrigir o erro de digita
+o do ano no termo da OSS do funcion
+rio Francisco Pereira. Vincular os respectivos Atestados de Sa
+de Ocupacional (ASO) aos prontu
+rios para fins de fiscaliza
+o trabalhista.Tabela de Avalia
+o Documental Item Obrigat
+rio de SSTStatus GeralSitua
+ncia nos AutosRegistro de TrabalhoConformeLivros de Registro de Empregado presentes para as matr
+culas 122, 135, 149, 150 e 144. ASO (Atestado de Sa
+de Ocupacional)Aus
+ncia de DocumentoNenhum comprovante ou ficha de exame m
+dico (admissional ou peri
+dico) foi anexado. TreinamentosN
+o ConformeH
+certificados de Operador de Trator (NR-11/12/31) para os colaboradores Elcio e Francisco, por
+m faltam os treinamentos espec
+ficos das fun
+es (ex: NR-35 ou operacionais de carvoaria). Integra
+ncia de DocumentoN
+o foram apresentadas as atas ou registros de treinamento de integra
+o de seguran
+a institucional. Fichas de EPIN
+o ConformeExistem os controles de entrega de Daguimar, Elcio e Francisco, mas constam rasuras/campos em branco e falta a ficha dos colaboradores David e Dergson. Ordens de Servi
+o ConformeEmitidas para Daguimar (OSS-89), Elcio (OSS-85) e Francisco (OSS-86). Contudo, h
+erro material de data em uma delas e aus
+ncia total das ordens de David e Dergson. Programas Legais (PGR/PCMSO)Aus
+ncia de DocumentoN
+o constam no escopo os documentos base de programas de SST da empresa. Inspe
+ncia de DocumentoN
+registros de inspe
+es de campo ou de frentes de trabalho anexados. CertificadosConformeApresentados os certificados de conclus
+o de curso para os colaboradores que necessitavam de capacita
+quinas. Permiss
+es de Trabalho (PT)Aus
+ncia de DocumentoInexist
+ncia de registros de libera
+es de atividades perigosas/especificas nos autos. INFRAESTRUTURA E
+REAS DE VIV
+NCIALocal de Refei
+tico): A estrutura dispon
+vel de mesa e banco no campo foi classificada como inadequada, n
+o atendendo aos crit
+nimos de conforto, ergonomia e higiene exigidos. Condi
+es da Alimenta
+tico): A marmita dos trabalhadores
+s 05h00m da manh
+e retirada por eles
+s 06h30min. A aus
+ncia de equipamentos de conserva
+rmica adequada no campo (como por exemplo uma estufa) compromete a seguran
+a alimentar, podendo gerar riscos biol
+gicos e danos
+de do trabalhador. Instala
+rias: Pontos Positivos: O banheiro encontra-se limpo e h
+disponibilidade de
+gua encanada na pia para higieniza
+o Conformidades: Aus
+ncia total de insumos b
+sicos de higiene. Foram constatadas as faltas de papel toalha, sabonete l
+quido e papel higi
+nico. ASPECTOS AMBIENTAISOrganiza
+o e Limpeza: O ambiente geral da frente de trabalho encontra-se limpo e bem conservado. Armazenamento: O local de guarda de materiais e ferramentas est
+organizado. O gal
+o de insumos/combust
+armazenado de forma adequada, mitigando riscos de vazamentos ou contamina
+o de solo. COMPORTAMENTO E SEGURAN
+A DOS COLABORADORESA equipe demonstra uma postura proativa quanto
+limpeza do banheiro e
+o da organiza
+ncia e ferramentas. Como oportunidade de melhoria, deve-se alinhar rigidamente a restri
+o do trator apenas a pessoal formalmente autorizado e capacitado.CLASSIFICA
+O CONFORMIDADESM
+ncia InadequadosClassifica
+o: GraveRiscos: Ergon
+mico, desconforto t
+rmico e fadiga excessiva. Local:
+ncia da Turma do Viana.Recomenda
+o: Substituir o conjunto atual por mesas e assentos que atendam aos requisitos de SST para trabalho rural. Log
+stica e Armazenamento de MarmitasClassifica
+ticaRisco: Intoxica
+o alimentar devido ao longo tempo entre o preparo (05h00min) e o consumo, sem refrigera
+o/aquecimento correto.Local:
+ncia/CampoRecomenda
+o: Fornecer caixas ou recipientes t
+rmicos adequados para conserva
+o do alimento at
+o momento do consumo ou o respons
+vel levar marmita perto do hor
+rio de almo
+o.Falta de Insumos de Higiene no BanheiroClassifica
+o: ModeradaRisco: Prolifera
+o de agentes biol
+gicos, falta de higiene b
+sica ao colaborador. Local: Banheiro da frente de trabalho.Recomenda
+o: Repor imediatamente papel higi
+nico, sabonete l
+quido e papel toalha, criando um cronograma de abastecimento regular.  PLANO DE A
+o Conformidade A
+o Corretiva Respons
+vel Prazo Status Mesa e banco inadequados na viv
+ncia.Substituir mobili
+rio por padr
+o em conformidade com a NR-31.Daguimar[Data]PendenteRisco de degrada
+o das marmitas trazidas de manh
+.Fornecer caixas t
+rmicas apropriadas para armazenamento seguro das refei
+es.Daguimar[Data]PendenteBanheiro sem papel higi
+nico, papel toalha e sabonete l
+quido.Efetuar a reposi
+o imediata de todos os insumos de higiene e limpeza.DaguimarImediatoPendenteOpera
+tua de trator por ajudante e operador.Levantar e auditar os certificados de treinamento de NR-12 e CNH dos envolvidos.Daguimar[Data]Em andamentoCONCLUS
+O A frente de trabalho da RVC apresenta excelentes indicadores visuais no que tange
+o de ferramentas, acondicionamento de gal
+es e limpeza das instala
+rias. Contudo, foram observados desvios cr
+ncia (mobili
+rio inadequado) e nas condi
+es de conserva
+o alimentar que necessitam de interven
+o imediata para salvaguardar a integridade f
+sica e a sa
+de dos trabalhadores. Recomenda-se a execu
+pida do plano de a
+o proposto para elevar o grau de conformidade da empresa.
+REGISTRO FOTOGR
+12/05/2026- Local de material e ferramenta, organizado. Gal
+o guardado adequado.
+12/05/2026- Local de material e ferramenta, organizado. Gal
+o guardado adequado.
+12/05/2026- Banheiro tem
+gua na pia. N
+o tem: papel higi
+nico, papel toalha e sabonete l
+12/05/2026- Banheiro limpo, lixeira.
+12/05/2026- Banheiro limpo, lixeira.
+12/05/2026- Colaborador sem
+_______________________________C
+ssia Francine ZacarimT
+cnico de Seguran
+a doSRTE/MTE 1531/MSREGISTRO FOTOGR
+VISITAAUDIT
+RIADATA:26/05/2026DIA DA SEMANA:   TER
+A-FEIRADESCRI
+O DAS ATIVIDADES AUDITADAS / ESCOPO DA VISITANo dia 21/05/2026, foi realizada uma auditoria de acompanhamento e inspe
+o de SSMA nas instala
+es da Empresa DS Carv
+o Black Ltda. O escopo da visita contemplou a vistoria t
+brica de produ
+o de RVC, bem como a avalia
+o das estruturas fixas de suporte destinadas aos trabalhadores.INFRAESTRUTURA E
+REAS DE VIV
+NCIAFoi realizada uma inspe
+o minuciosa nas instala
+es internas de apoio aos colaboradores, incluindo a f
+brica de produ
+o do RVC, o refeit
+rio, os dormit
+rios e os m
+dulos sanit
+rios (banheiros).Diagn
+cnico: As estruturas f
+sicas de viv
+ncia avaliadas encontram-se adequadas, higienizadas e estruturadas de forma a atender plenamente
+s necessidades regulamentares de conforto, sa
+de e dignidade dos colaboradores (em conformidade com as diretrizes da NR 24 e NR 31).COMPORTAMENTO, LIDERAN
+O CONFORMIDADESDurante a inspe
+o, a equipe de SSMA reuniu-se com o encarregado da unidade, Sr. Daguimar.Alinhamento T
+cnico: Foram formalmente reportadas e revisadas as n
+o conformidades cr
+ticas identificadas na auditoria anterior, realizada em campo no dia 12/05/2026.Compromisso da Lideran
+a: O encarregado Daguimar demonstrou proatividade e compromisso com as normas de seguran
+a, informando oficialmente que a lideran
+mobilizada para regularizar todos os desvios apontados. Para garantir o cumprimento, foi estruturado um Plano de A
+o em conjunto.CRONOGRAMA E PLANO DE A
+O (Acompanhamento)Abaixo est
+o registro da tratativa realizada com a lideran
+a para o fechamento dos desvios anteriores:ItemDesvio Identificado (Em 12/05/26)A
+o Corretiva DefinidaRespons
+velPrazo de Adequa
+oStatus Atual01N
+o conformidades apontadas na frente de trabalho.Executar as adequa
+es em campo conforme plano de a
+o detalhado enviado
+o.Encarregado DaguimarPrimeira semana de Junho/2026
+ia interna dos oper
+rios.Quanto
+s irregularidades detectadas na frente de trabalho no dia 12/05/2026, valida-se a abertura do Plano de A
+o face ao compromisso formal assumido pelo encarregado Daguimar. O status das pend
+ncias rurais permanece sob monitoramento da equipe de SSMA, com reinspe
+o agendada para a primeira semana de junho de 2026 para a valida
+o das regulariza
+es informadas.
+_______________________________C
+ssia Francine ZacarimT
+cnico de Seguran
+vvvvvvveecNNN
+SRTE/MTE 1531/MS
+PAGE   \* MERGEFORMAT
+RIO MENSALMaio de 2026
+7iCCPsRGB IEC61966-2.1
++dM9LPVsa;D7
+JSq+	@+m{Q2
+i[E.[=R)X;|
+<fdfeeVuU5QE
+94< `YR}Q*3
+..xq1=OB`	+'
+YVYSo@Fl.Qw
+QiI'w[QLnoXIY
+!C9|0m"vw47.
+*t%	s70p* #
+[z!MOwt?(&F
+#Iy'oK05"Dz
+V~d1J@2#x9H
+],8ZqK3%DUW
+*$45y_L}9Hf
+0Ink]O:)(
+NCP
+DT5}0P	M?iy
+f]QcrZNOyL\
+qogO[pttuath
+@Bh9!	pgo?z
+7QlhP1#VL\	R
+2dw$
+![;:0z
+vpVh^\++0Ja
+To!~exVCS+:;{
+v]'es*n7K@|
+zpzvl!-Bss3
+ami%h?XWiOs
+PhkAyGOLl#7
+rEcMuu_nIv+/
+,FlEVTK'En:
+5oh-/),@cc=b
+BQ)1l=!9/d{B
+AaZ((.@Ms#r
+K{yAv(~{[Ha
+?DCPxiN ,9!s5
+F< x:7	)$Pm
+"vZ]<ED%Nu5a&

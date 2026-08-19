@@ -452,6 +452,89 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "16/07/2026",
+        "scores": {
+          "estrutural": 0,
+          "documental": 80,
+          "comportamental": 100,
+          "global": 60
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "pendente",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "pendente",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Implantação imediata de estrutura móvel ou fixa para área de vivência (NR-24/NR-31)",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Inspeção e verificação da proteção mecânica do cardan da furadeira",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          }
+        ]
       }
     ]
   },
@@ -781,6 +864,95 @@ const AUDIT_DATA = [
             "acao": "Adequar / Regularizar: Banheiro",
             "criticidade": "Moderado",
             "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "13/08/2026",
+        "scores": {
+          "estrutural": 20,
+          "documental": 60,
+          "comportamental": 80,
+          "global": 53
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "ASO vencido (07/07/2025)."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            },
+            "fichas_epi": {
+              "status": "nao_conforme",
+              "desc": "Falta comprovação documental."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Falta área de vivência."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Falta instalações sanitárias."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Trator aberto e sem perneira/óculos."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Trator Valtra A750 sem cabine fechada."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "Otavio sem perneira, abafador e óculos."
+            },
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Não avaliado na visita."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Fornecer perneira, abafador de ruído e óculos de segurança ao colaborador Otavio",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Renovar ASO do colaborador Otavio (vencido em 07/07/2025)",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Instalar área de vivência (abrigo ou módulo móvel - NR-24/NR-31)",
+            "criticidade": "Grave",
+            "prazo": "30 dias",
             "status": "Pendente"
           }
         ]
@@ -1577,6 +1749,89 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "29/07/2026",
+        "scores": {
+          "estrutural": 80,
+          "documental": 70,
+          "comportamental": 100,
+          "global": 83
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Regularizar registro e emitir ASO admissional da colaboradora Raquel Moreira",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Formalizar fichas de EPI das 5 colaboradoras com assinaturas",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Em andamento"
+          }
+        ]
       }
     ]
   },
@@ -1984,6 +2239,285 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "10/07/2026",
+        "scores": {
+          "estrutural": 30,
+          "documental": 60,
+          "comportamental": 70,
+          "global": 53
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Regularizar abastecimento de água no banheiro e repor insumos (papel, sabonete)",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Instalar placas de sinalização de segurança nas estradas dos talhões",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Higienizar e adequar mesa de refeição",
+            "criticidade": "Moderado",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Apresentar ASOs, PGR e PCMSO atualizados",
+            "criticidade": "Grave",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Atualizar fichas de entrega de EPI para 2026",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "16/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 60,
+          "comportamental": 70,
+          "global": 67
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Regularizar abastecimento de água no banheiro",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Instalar placas de sinalização de segurança",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Apresentar ASOs, PGR e PCMSO atualizados",
+            "criticidade": "Grave",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "21/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 60,
+          "comportamental": 70,
+          "global": 67
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "nao_conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Instalar placas de sinalização de segurança nas estradas dos talhões",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Apresentar ASOs, PGR e PCMSO atualizados",
+            "criticidade": "Grave",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Atualizar fichas de entrega de EPI para 2026",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
       }
     ]
   },
@@ -2284,6 +2818,101 @@ const AUDIT_DATA = [
             "acao": "Adequar / Regularizar: Registro",
             "criticidade": "Moderado",
             "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "06/07/2026",
+        "scores": {
+          "estrutural": 40,
+          "documental": 80,
+          "comportamental": 60,
+          "global": 60
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "pendente",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Adquirir, entregar e fiscalizar o uso de luvas para manutenção de cerca, com registro na ficha de EPI",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Disponibilizar calça, luvas, abafador, capacete e viseira para operador de motosserra",
+            "criticidade": "Grave",
+            "prazo": "Até agosto ou antes da retomada",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Registrar a inspeção do motosserra e corrigir qualquer condição insegura",
+            "criticidade": "Moderado",
+            "prazo": "Antes do uso",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Providenciar instalações sanitárias adequadas para a frente de trabalho",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
             "status": "Pendente"
           }
         ]
@@ -3157,6 +3786,267 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "10/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 80,
+          "comportamental": 100,
+          "global": 83
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Regularizar o abastecimento de água destinado ao banheiro da área de vivência",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Providenciar mesa e cadeira adequadas para refeições na área de vivência",
+            "criticidade": "Moderado",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "27/07/2026",
+        "scores": {
+          "estrutural": 50,
+          "documental": 80,
+          "comportamental": 50,
+          "global": 60
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Providenciar e instalar lixeira adequada no banheiro da área de vivência",
+            "criticidade": "Moderado",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Regularizar uso de óculos de proteção, abafador de ruído e viseira pelos operadores",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Providenciar tambores com tampas para armazenamento de resíduos",
+            "criticidade": "Moderado",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Verificar registro funcional de José Gouveia como operador de motosserra",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "29/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 80,
+          "comportamental": 80,
+          "global": 77
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Instalar lixeira no banheiro e manter organização da área de vivência",
+            "criticidade": "Moderado",
+            "prazo": "Imediato",
+            "status": "Em acompanhamento"
+          },
+          {
+            "acao": "Regularizar o abastecimento de água no banheiro",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          }
+        ]
       }
     ]
   },
@@ -3368,6 +4258,166 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "21/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 80,
+          "comportamental": 90,
+          "global": 80
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Adequar instalações sanitárias da área de vivência conforme NR-31",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Manter documentação atualizada e uso contínuo de EPIs",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Em andamento"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "27/07/2026",
+        "scores": {
+          "estrutural": 70,
+          "documental": 80,
+          "comportamental": 90,
+          "global": 80
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Manter atualização contínua da documentação e uso de EPIs",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Em andamento"
           }
         ]
       }
@@ -4203,12 +5253,179 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "02/07/2026",
+        "scores": {
+          "estrutural": 50,
+          "documental": 60,
+          "comportamental": 70,
+          "global": 60
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "aso": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "fichas_epi": {
+              "status": "pendente",
+              "desc": "Verificado no relatório."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Verificado no relatório."
+            }
+          },
+          "estrutural": {
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Inspeção estrutural."
+            },
+            "seguranca_geral": {
+              "status": "pendente",
+              "desc": "Inspeção estrutural."
+            }
+          },
+          "comportamento": {
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            },
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Inspeção comportamental."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Adequar instalações sanitárias e área de vivência nos setores auditados",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Regularizar documentação pendente nos setores: ASO, fichas EPI, treinamentos",
+            "criticidade": "Grave",
+            "prazo": "15 dias",
+            "status": "Pendente"
+          }
+        ]
       }
     ],
     "setores": [
       {
         "name": "Área de Vivência",
-        "visitas": []
+        "visitas": [
+          {
+            "dataAuditoria": "03/08/2026",
+            "scores": {
+              "estrutural": 60,
+              "documental": 70,
+              "comportamental": 80,
+              "global": 70
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "fichas_epi": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "banheiro": {
+                  "status": "nao_conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "seguranca_geral": {
+                  "status": "conforme",
+                  "desc": "Inspeção estrutural."
+                }
+              },
+              "comportamento": {
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Inspeção comportamental."
+                },
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Inspeção comportamental."
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Adequar instalações sanitárias da área de vivência",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Atualizar fichas de entrega de EPI para os colaboradores da área de vivência",
+                "criticidade": "Moderado",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Plantio",
@@ -6713,7 +7930,97 @@ const AUDIT_DATA = [
       },
       {
         "name": "Pecuária / Retiros / Currais",
-        "visitas": []
+        "visitas": [
+          {
+            "dataAuditoria": "30/06/2026",
+            "scores": {
+              "estrutural": 30,
+              "documental": 40,
+              "comportamental": 70,
+              "global": 47
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "aso": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "Verificado no relatório."
+                },
+                "treinamentos": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "fichas_epi": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "os": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                },
+                "integracao": {
+                  "status": "pendente",
+                  "desc": "Verificado no relatório."
+                }
+              },
+              "estrutural": {
+                "refeicao": {
+                  "status": "nao_conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "banheiro": {
+                  "status": "nao_conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "epi_fornecimento": {
+                  "status": "nao_conforme",
+                  "desc": "Inspeção estrutural."
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Inspeção estrutural."
+                }
+              },
+              "comportamento": {
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Inspeção comportamental."
+                },
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Inspeção comportamental."
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Implantar área de vivência adequada com banheiro, refeitório e abrigo nos retiros",
+                "criticidade": "Grave",
+                "prazo": "Imediato",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Fornecer EPIs completos e fiscalizar uso durante atividades de pecuária",
+                "criticidade": "Grave",
+                "prazo": "Imediato",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Regularizar documentação (ASO, fichas EPI, treinamentos NR-31) para todos os colaboradores dos retiros",
+                "criticidade": "Grave",
+                "prazo": "30 dias",
+                "status": "Pendente"
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Posto de Combustível",

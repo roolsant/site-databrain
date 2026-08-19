@@ -1,0 +1,483 @@
+RELATÓRIO MENSAL
+
+
+
+Maio de 2026
+
+RELATÓRIO MENSAL
+
+
+
+Maio de 2026
+
+
+
+
+
+
+
+RELATÓRIO MENSAL DE SSMA
+
+
+
+Responsável: Cássia Francine Zacarim Lima
+
+
+
+Empresa: Gomes e Gusmão Construtora Ltda
+
+Nome Fantasia: Nível Gomes Construtora
+
+Referente:        maio 2026
+
+Logo da empresa
+
+RESPONSÁVEIS DA EMPRESA
+
+Gersy Gomes Ferreira Filho
+
+
+
+
+
+INTRODUÇÃO
+
+Este relatório apresenta a avaliação das condições de Saúde, Segurança e Meio Ambiente (SSMA) referente às atividades de construção civil executadas pela contratada. O contexto da auditoria envolve a inspeção de campo programada para monitorar o cumprimento das Normas Regulamentadoras (NRs) e a utilização de Equipamentos de Proteção Individual (EPIs), visando garantir a integridade física dos trabalhadores e mitigar riscos de acidentes de trabalho graves na frente de serviço.
+
+
+
+1ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+12/05/2026
+
+DIA DA SEMANA:   
+
+TERÇA-FEIRA
+
+
+
+OBJETIVO DA AUDITORIA
+
+Realizar a avaliação das condições de segurança e comportamento seguro no trabalho durante a execução da obra de construção da nova sala de reunião, localizada ao lado do escritório da fazenda. A inspeção teve como foco principal verificar a aderência dos colaboradores às normas de proteção contra riscos de projeção de partículas, impactos contra estruturas e proteção de membros superiores/inferiores.
+
+
+
+BASE LEGAL E REFERÊNCIAS NORMATIVAS
+
+NR 01: Disposições Gerais e Gerenciamento de Riscos Ocupacionais (GRO).
+
+NR 06: Equipamentos de Proteção Individual (EPI).
+
+NR 18: Segurança e Saúde no Trabalho na Indústria da Construção.
+
+
+
+METODOLOGIA DA AUDITORIA
+
+A auditoria foi realizada por meio de:
+
+Inspeção visual direta no canteiro de obras (sala de reunião).
+
+Observação direta do comportamento e postura dos funcionários frente aos riscos ativos.
+
+Confronto da situação de campo com as diretrizes do Programa de Gerenciamento de Riscos (PGR) da empresa.
+
+
+
+ DESCRIÇÃO DAS ATIVIDADES AUDITADAS
+
+No momento da inspeção, foi constatada a atividade de alvenaria e estruturação da nova sala de reunião da fazenda. Estavam operando diretamente no local 03 (três) funcionários, identificados nominalmente no controle de registros como:
+
+João Carlos Mota
+
+Luiz Roberto da Silva Figueira (Registrado no cargo de Pedreiro) 
+
+Gersy Gomes Ferreira Filho (Proprietário/Executante em campo)
+
+
+
+
+
+
+
+AVALIAÇÃO DOS EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL (EPIs)
+
+Durante a execução das atividades de construção da sala de reunião, foi identificada uma falha crítica de segurança por descumprimento total do uso de EPIs básicos e obrigatórios por parte dos 3 funcionários expostos.
+
+Irregularidades constatadas: Os colaboradores realizavam atividades de obras sem o uso de Capacete de Segurança, sem Óculos de Proteção e sem Luvas de Segurança.
+
+
+
+DOCUMENTAÇÃO DE SEGURANÇA DO TRABALHO
+
+Conforme
+
+Programas Legais: A empresa possui o PGR (Programa de Gerenciamento de Riscos) elaborado em 27/04/2026 com validade até abril de 2028, e o PCMSO (Programa de Controle Médico de Saúde Ocupacional) elaborado em abril de 2026 com validade até abril de 2027. Ambos os programas estão assinados por profissionais habilitados e com as respectivas identificações técnicas. 
+
+Certificados: Consta o certificado de registro de especialidade em Medicina do Trabalho do médico coordenador do PCMSO junto ao Conselho Regional de Medicina de Mato Grosso do Sul (RQE nº 4818), conferindo legitimidade técnica à emissão do programa. 
+
+Modelos de Fichas de EPI, Ordens de Serviço (APR) e Permissões de Trabalho: O PGR traz em seus anexos os modelos oficiais estruturados que a empresa adota para o controle diário, incluindo o modelo do Recibo de Entrega de EPIs, o modelo de Análise Preliminar de Risco (APR) e os campos para a Autorização de Trabalho de Risco (ATR) / Permissão de Trabalho. 
+
+Não Conforme (Pendências e Necessidades de Atualização)
+
+Validades Vencidas / Prazos de Execução Expirados na ART: A ART estipulava a previsão de término das atividades de elaboração do PGR e LTCAT para o dia 28/05/2026. Como a data atual é 04/06/2026, o prazo informado ao conselho já expirou e o profissional responsável precisa proceder a baixa da referida ART, caso o serviço tenha sido concluído. 
+
+Ausência de Evidências Físicas de Cumprimento Prático: Embora os modelos existam nos anexos, não foram anexados os registros populados com dados reais que comprovem a execução do plano de ação, tais como: os comprovantes de realizações dos Treinamentos Iniciais da NR 18 (Carga horária de 8h) e NR 35 que estavam previstos para início imediato em Abril/Maio de 2026, as Fichas de EPI preenchidas e assinadas pelos 4 funcionários listados no RH, e os comprovantes de exames (ASO) clínicos e complementares (como a Audiometria obrigatória para o Pedreiro e o Motorista). 
+
+Tabela Resumo de Situação Documental de SST
+
+A tabela abaixo consolida a avaliação detalhada exigida para a verificação documental:
+
+Documento de SST Avaliado
+
+Status de Conformidade
+
+Situação Encontrada / Registro de Pendências e Atualizações
+
+Registro de trabalho
+
+Não Conforme
+
+Há divergências entre o RH e a Engenharia de Segurança. O cargo ativo de Analista de Recursos não possui mapeamento de riscos. Diversos cargos descritos nos programas de SST possuem "00" expostos e não constam no registro de empregados. 
+
+ASO (Atestado de Saúde Ocupacional)
+
+Não Conforme
+
+Ausência dos comprovantes de aptidão física dos funcionários contratados. O PCMSO exige exames específicos como Audiometria para Pedreiro e Motorista, e exames de Raio-X de Tórax/Espirometria para Pedreiro, mas as vias emitidas não foram apresentadas. 
+
+Treinamentos
+
+Não Conforme
+
+O cronograma do Plano de Ação previa a execução de treinamentos obrigatórios da NR 18 (8h), NR 06 (EPIs) e NR 35 (Trabalho em Altura) entre Abril e Maio de 2026. Não foram apresentadas as listas de presença ou certificados correspondentes. 
+
+Integrações
+
+Não Conforme
+
+Integrado ao item de treinamentos. O treinamento inicial de integração da NR 18 não possui registros de execução anexados para os colaboradores listados na folha. 
+
+Fichas de EPI
+
+Não Conforme
+
+A empresa possui o modelo do documento anexado ao PGR, porém não apresentou as fichas preenchidas com os números de Certificado de Aprovação (CA) válidos e assinadas pelos empregados ativos. 
+
+Ordens de serviço
+
+Parcialmente Conforme
+
+A empresa adota o preenchimento de análises de risco por atividade (modelo de APR presente no anexo do PGR), atendendo os quesitos estruturais, mas faltam os registros de execução das frentes de trabalho diárias. 
+
+Programas legais (PGR e PCMSO)
+
+Não Conforme
+
+Apesar de emitidos e vigentes (Validades: PCMSO até 04/2027; PGR até 04/2028), tornam-se irregularidades legais devido à incompatibilidade de cargos (Analista de Recursos sem mapeamento) e à omissão de riscos específicos na prática. 
+
+Inspeções
+
+Parcialmente Conforme
+
+Há previsão no plano de ação para que o Designado da CIPA realize e arquive relatórios de inspeções diárias no canteiro de obras a partir de Abril de 2026. Faltam os relatórios físicos armazenados em arquivo. 
+
+Certificados
+
+Não Conforme
+
+O certificado do CRM do médico está correto, mas a ART CREA-MS nº 1320260055936 está com o endereço da obra incorreto (Sarandi-PR), gerando vício formal nos laudos de Inocência-MS. Além disso, o prazo de previsão de término da ART expirou em 28/05/2026. 
+
+Permissões de trabalho
+
+Parcialmente Conforme
+
+O modelo de Autorização de Trabalho de Risco (ATR) está estruturado e anexo ao programa base, necessitando apenas garantir a correta abertura em campo para atividades acima de 2 metros ou elétricas. 
+
+
+
+
+
+COMPORTAMENTO E SEGURANÇA DOS COLABORADORES
+
+O cenário observado requer ações que vão além da mera entrega física dos equipamentos. Há uma necessidade urgente de realinhamento de postura e liderança em campo. Recomenda-se a imediata aplicação de Diálogos Diários de Segurança (DDS) focados nas consequências de acidentes com ferramentas e animais peçonhentos, além de reforçar o direito de recusa da equipe sempre que as frentes de trabalho carecerem de proteção individual ou de estrutura de vivência básica.
+
+
+
+CLASSIFICAÇÃO DAS NÃO CONFORMIDADES
+
+Foi identificada uma postura inadequada e de alto risco por parte dos trabalhadores. A execução de obras de alvenaria sem a devida proteção expõe os colaboradores a riscos severos de forma reativa e voluntária, configurando ato inseguro e descumprimento da Ordem de Serviço de SST da empresa.
+
+
+
+Item
+
+Não Conformidade
+
+Risco Ocupacional Relacionado
+
+Local
+
+Classificação
+
+Responsável
+
+Prazo
+
+01
+
+Execução de atividades de construção civil sem o uso de Capacete de Segurança.
+
+Traumatismo craniano por queda de objetos ou impactos contra estruturas.
+
+Obra da Sala de Reunião
+
+Crítica / Grave
+
+Gersy Gomes F. Filho 
+
+Imediato
+
+02
+
+Trabalho em canteiro de obras sem o uso de Óculos de Segurança.
+
+Lesões oculares graves por projeção de fragmentos, poeira de cimento/tijolo.
+
+Obra da Sala de Reunião
+
+Crítica / Grave
+
+Gersy Gomes F. Filho 
+
+Imediato
+
+03
+
+Manuseio de ferramentas e materiais abrasivos sem Luvas de Segurança.
+
+Cortes, escoriações e dermatite por contato com cimento e agregados.
+
+Obra da Sala de Reunião
+
+Moderada
+
+Gersy Gomes F. Filho 
+
+Imediato
+
+
+
+
+
+RECOMENDAÇÕES TÉCNICAS
+
+Paralisação Imediata: Interromper temporariamente as atividades sempre que um funcionário for flagrado sem os EPIs adequados até a regularização da situação.
+
+Fornecimento e Fiscalização: Garantir que todos os funcionários tenham recebido seus respectivos EPIs com Certificado de Aprovação (CA) válido e colher as assinaturas nas Fichas de Entrega. 
+
+Treinamento de Reciclagem (NR 06 e NR 18): Realizar um treinamento imediato com foco em conscientização sobre o uso, guarda e conservação dos EPIs. 
+
+Aplicação de Medidas Disciplinares: Adotar advertências verbais e escritas, conforme previsto na CLT (Art. 158) e NR 01 (item 1.8.1), visto que a recusa injustificada do uso de EPIs constitui ato faltoso.
+
+
+
+
+
+PLANO DE AÇÃO
+
+Não Conformidade
+
+Ação Corretiva
+
+Responsável
+
+Prazo
+
+Status
+
+Funcionários sem capacete, óculos e luvas na obra.
+
+Fornecer os EPIs necessários, fiscalizar o uso obrigatório em campo e aplicar treinamento da NR 06 e NR 18.
+
+Gersy Gomes Ferreira Filho 
+
+13/05/2026
+
+Pendente
+
+
+
+
+
+
+
+
+
+CONCLUSÃO
+
+A auditoria realizada no dia 12/05/2026 identificou uma situação de alto risco e desconformidade crítica na obra de construção da nova sala de reunião ao lado do escritório da fazenda. A ausência de capacetes, óculos e luvas coloca os três colaboradores expostos a acidentes de trabalho com potencial de gravidade elevado. É indispensável a intervenção imediata da gerência para o fornecimento, cobrança e fiscalização contínua do uso de EPIs, garantindo o alinhamento com a legislação vigente e a proteção à vida dos trabalhadores.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTRO FOTOGRÁFICO
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+
+_________                                                         _______________________
+
+                                                                             Cássia Francine Zacarim
+
+                                                                                 Técnico de Segurança do
+
+                                                                                    SRTE/MTE 1531/MS
+
+
+
+
+
+
+
+
+
+
+
+                                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+21/05/2026
+
+DIA DA SEMANA:   
+
+QUINTA-FEIRA
+
+DESCRIÇÃO DAS ATIVIDADES AUDITADAS / CONDIÇÕES OPERACIONAIS
+
+Colaborador: Luiz Roberto e João Carlos Mota
+
+Atividade / Equipamento: Construção Sala de Reunião
+
+Diagnóstico Técnico: Durante a inspeção realizada na frente de trabalho, o colaborador foi flagrado com todos os epis.
+
+
+
+ 
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+_______________________________
+
+Cássia Francine Zacarim
+
+Técnico de Segurança do
+
+SRTE/MTE 1531/MS
+
+
+
+
+
+
+
+
+
+2

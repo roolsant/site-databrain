@@ -1,0 +1,917 @@
+Microsoft Word 97-2003 Document
+Word.Document.8
+Normal.dotm
+Rodrigo Santos
+Microsoft Office Word
+[Content_Types].xml
+_rels/.rels
+theme/theme/themeManager.xml
+theme/theme/theme1.xml
+theme/theme/_rels/themeManager.xml.rels
+[Content_Types].xmlPK
+_rels/.relsPK
+theme/theme/themeManager.xmlPK
+theme/theme/theme1.xmlPK
+theme/theme/_rels/themeManager.xml.relsPK
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:clrMap xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" bg1="lt1" tx1="dk1" bg2="lt2" tx2="dk2" accent1="accent1" accent2="accent2" accent3="accent3" accent4="accent4" accent5="accent5" accent6="accent6" hlink="hlink" folHlink="folHlink"/>
+[Content_Types].xml
+_rels/.rels
+drs/e2oDoc.xml
+drs/downrev.xmlLO
+[Content_Types].xmlPK
+_rels/.relsPK
+drs/e2oDoc.xmlPK
+drs/downrev.xmlPK
+[Content_Types].xml
+_rels/.rels
+drs/e2oDoc.xml
+drs/downrev.xmlL
+[Content_Types].xmlPK
+_rels/.relsPK
+drs/e2oDoc.xmlPK
+drs/downrev.xmlPK
+/iCCPICC Profile
+XNYiZE[U[3
+!tEXtCreation Time
+2024:06:20 10:47:04
+mn%&&z}w|jj*lu
+!22222222222222222222222222222222222222222222222222
+UwaP:Q~90zd]
+8z_nK`?xQ6{
+jykdy3CdVZh
+Z}a!Lv.s`[>
+!22222222222222222222222222222222222222222222222222
+BI	$*\*\*\*\*\*\*]
+^+1vjjH6ch1
+)U!5GXPM
+`?
+)(vXkVl\_*F$
+s9.D'ZJm9hp@
+NU<k,-XCjmV#
+RA@U#\|1DE>
+!22222222222222222222222222222222222222222222222222
+=%<=*vdfbWr!
+oIK3U)C=Jjw-
+OF$@%]d$*OL
+O;)!p 4{5st
+!22222222222222222222222222222222222222222222222222
+cB.eZ\U57=el:
+o5Y[L	o:w2Z|O@
+ZOTZzHZ[{aAs
+!22222222222222222222222222222222222222222222222222
+(	j.5(jWqw9
+e~	Z`n$A112D}
+9YbjXy %(9E
+Q-<= +4:e
+	YZ
+!22222222222222222222222222222222222222222222222222
+iE66i:+6nAY
+z#VdA~/IBYd
+6 8ELW5669%
+|AQ?z3AUwAw
+FAl,G l(Uk2
+!22222222222222222222222222222222222222222222222222
+-rvl)4xlNq`
+CB\ns+hhklA
+)nk$
+6Zn8z/%![S
+i[YN_qA)\5Y
+T(IAW.	cDec7
+!22222222222222222222222222222222222222222222222222
+2WDk'E!FK)2s
+mYMupwF8;J
+UjU Qqn_m\%
+pI&]'Mq4#E`sp
+xxK1}?JWXc
+>Gp	);y& .J
+6IyF]y~gG,*2
+&kDl<2MLK<%
+=jt-Nu80b}q
+!22222222222222222222222222222222222222222222222222
+UY\`!)am1YcS(h
+2&y<A:#~L{K
+YiK{~,!]a0-
+/|pKs{2k%>53
+E@p+	UQnZ?\
+!22222222222222222222222222222222222222222222222222
+TAJ$gvK2D[{7Ge{
+hM=|"/tYd$BK
+W.xaZsyl-=Sy
+SoPpil:s%_J
+NcDIvTLaZ>dJ
+XYu)aMQ.?5/1
+4Y_@O:woXa
+v*}bJ'mrclk
+!22222222222222222222222222222222222222222222222222
+JbHPE&(+="PH
+Q!'%mQE#B4
+S>k.o(=Sm{-
+XRm9+7
+r7r
+E.I0aq^p#mk
+-@4}pD2Unj<
+bLUT?K4rh^J
+1"cp./5QJ1x
+b"hRj#3B
+-j
+,)15KkMc@@
+bTv#-Q'vS|DE
+KAj1vDCLvcj
+XTH[r
+.<}$-
+r:lkCG8Y/E=
+RRRRRRRR@))) +
+VO57#ikODcq
+O
+jjjjjjuMMN
+m&LL4N$BA+a'
+7iCCPsRGB IEC61966-2.1
+)d:bvAS*~Dc
+>rHUAx)HIA <
+dS1F}0'\,lL
+@u=J_2HQUEd>p
+Cg9G`V sLL%
+f
+R civ!8^Kfn
+hYE56o0&t<,=A
+VhbwDUh"F*#
+cqg8j^43sgp
+`B==?1(";K{
+#::A=_k7H1W
+Aw/tF*3K \#
+?;m!o-q1/k9
+k;3:`X
+t`m5N
+:m%^[GiUXKE
+C#jS6eS6eS6eS
+vLvw`~lx}yc
+KsH$g.	@haAkT,
+n|AQo#q9BdG
+'iX@[[+vnmDC
+afH2%J6mBnQ
+Dfq12
+
+0;=)
+@{{;*++Y9rE(N
+_9^b{<{Dk*&fID
+p
+I+#LtzUEi+
+=%::;DwGZ|4
+*CH&|1MV(uG<nS
+PqeWveWveO-
+UqeWveWveO=;???
+zCkv'\x=K07X?
+pZI*1e)sE5jj~
+8_]L	8a.Qts<
+<b:Sources SelectedStyle="\APA.XSL" StyleName="APA" xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"></b:Sources>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ds:datastoreItem ds:itemID="{746AFAB0-3A3B-4601-A172-5C39ADA640F0}" xmlns:ds="http://schemas.openxmlformats.org/officeDocument/2006/customXml"><ds:schemaRefs><ds:schemaRef ds:uri="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"/></ds:schemaRefs></ds:datastoreItem>
+RIO MENSAL DE SSMA
+ssia Francine Zacarim Lima
+Empresa: Eloisio de SouzaNome Fantasia: Tochio Terraplanagem
+Referente:        maio 2026
+Logo da empresa
+VEIS DA EMPRESA
+Eloisio de Souza
+OEste relat
+rio apresenta a avalia
+o presencial das condi
+es de seguran
+de ocupacional e aspectos ambientais das atividades desenvolvidas em campo na
+rrego do Campo pela empresa J.R de Oliveira Silviculta Ltda. A inspe
+cnica visa identificar n
+o conformidades legais, gerenciar os riscos de acidentes e higiene do trabalho, e garantir o cumprimento das Normas Regulamentadoras (NRs) do Minist
+rio do Trabalho e Emprego (MTE).
+DIA DA SEMANA:
+OBJETIVO DA AUDITORIAEste relat
+rio apresenta a avalia
+o das condi
+es de seguran
+de ocupacional e aspectos ambientais das atividades desenvolvidas em campo pela equipe de opera
+o da empresa J. R. de Oliveira Silvicultura Ltda. A inspe
+o visa identificar n
+o conformidades legais, gerenciar riscos associados
+o de produtos qu
+micos, infraestrutura de viv
+ncia, seguran
+a alimentar e h
+drica dos colaboradores, al
+m de garantir o estrito cumprimento das Normas Regulamentadoras (NRs) de SST aplic
+veis ao setor rural e florestal. BASE LEGAL E REFER
+NCIAS NORMATIVASNR 01
+es Gerais e Gerenciamento de Riscos Ocupacionais: Aplica-se
+o dos perigos e
+imediata necessidade de interven
+o nos desvios comportamentais e na aus
+ncia de infraestrutura b
+sica identificada nas atividades operacionais.NR 06
+Equipamentos de Prote
+o Individual (EPI): Fundamenta a obrigatoriedade do fornecimento gratuito, fiscaliza
+o do uso, higieniza
+o e substitui
+dica dos dispositivos de prote
+o. Aplica-se diretamente
+grave irregularidade do trabalho executado sem o kit de prote
+o completo para defensivos agr
+colas.NR 31
+de no Trabalho na Agricultura, Pecu
+ria, Silvicultura, Explora
+o Florestal e Aquicultura: Norma setorial prim
+ria que regula as condi
+es de trabalho e viv
+ncia no ambiente rural. Utilizada para fundamentar as seguintes irregularidades graves:Aus
+ncia (Item 31.23): Descumprimento da obrigatoriedade de disponibilizar abrigos m
+veis ou fixos que protejam os trabalhadores contra intemp
+ries e garantam condi
+nimas.Seguran
+a no Trabalho com Agrot
+xicos (Item 31.08): Exig
+ncia de capacita
+fica, uso rigoroso de EPIs imperme
+veis e respirat
+rios com filtro de carv
+o ativado, vedando o uso de equipamentos com vazamentos ou rasgados.Log
+stica de Alimenta
+o e Hidrata
+o Inadequada: Veda
+o expressa do consumo de refei
+es diretamente no solo ao lado de insumos qu
+micos e proibi
+o do uso de recipientes de agrot
+xicos para armazenamento de
+vel.METODOLOGIA DA AUDITORIAA auditoria foi realizada por meio de inspe
+o visual direta dos locais de trabalho, an
+tica das rotinas de aplica
+o e apoio log
+m de verifica
+o das condi
+sicas e estruturais dos equipamentos e maquin
+rios dispon
+veis na frente de trabalho. DESCRI
+O DAS ATIVIDADES AUDITADASFrente de Trabalho: Renato Jos
+de Oliveira e Ot
+vio Luiz Gomes Bernegozzi.Efetivo Observado: 02 colaboradores atuantes na frente operacional.Renato Jos
+de Oliveira (Operador de Trator):Executava a aduba
+nica/suporte utilizando o trator rural.Inconformidades: Flagrado trabalhando sem abafador de ru
+culos de seguran
+a e sem perneira.Ot
+vio Luiz Gomes Bernegozzi (Operador de P
+Carregadeira):Embora registrado na fun
+o de operador de p
+carregadeira (matr
+cula eSocial n
+10), estava prestando apoio direto
+frente de aduba
+o. Inconformidades: Flagrado trabalhando sem abafador de ru
+culos de seguran
+a e sem perneira.Treinamento: O trabalhador possui a capacita
+o da NR 31.12 v
+lida (realizada em maio de 2026 pela IVISEG), o que agrava o fator comportamental, pois ele tem instru
+rica sobre os riscos de m
+quinas, implementos e
+reas de viv
+ncia. CONDI
+ES OPERACIONAIS DAS M
+QUINAS E EQUIPAMENTOS1. Levantamento de Campo e Irregularidades DetectadasDurante a auditoria t
+cnica, as frentes de trabalho foram inspecionadas enquanto operavam com um trator agr
+cola e uma p
+carregadeira.Conserva
+o e Manuten
+o: Em conformidade t
+cnica. Os equipamentos inspecionados apresentaram-se tudo correto, sem nenhum componente ou estrutura danificada no momento da atividade.Funcionamento e Condi
+es de Uso: O trator e a p
+carregadeira operavam em condi
+es regulares de uso, atendendo aos requisitos m
+nimos de funcionamento para frentes de trabalho rurais.Vazamentos e Sinaliza
+o foram constatados vazamentos de fluidos hidr
+ulicos ou combust
+veis durante a execu
+o das atividades de campo, mantendo a integridade ambiental local.Seguran
+a Operacional e Uso de EPIs: Constatou-se uma grave falha na seguran
+a operacional por parte dos colaboradores no campo. Os operadores em atividade com o trator de aduba
+o e com a p
+carregadeira estavam trabalhando totalmente desprotegidos, sem os seguintes Equipamentos de Prote
+o Individual obrigat
+rios:Sem abafador de ru
+do (protetor auricular);Sem perneiras de prote
+culos de seguran
+a.2. Status de Treinamento dos OperadoresA avalia
+o dos prontu
+rios e da documenta
+o legal dos funcion
+rios identificou desvios de fun
+o e o seguinte panorama de capacita
+ria:Renato Jos
+de Oliveira: Atuando diretamente na frente de trabalho como Operador de Trator (Tratorista).Ot
+vio Luiz Gomes Bernegozzi: Encontrado em campo operando na frente de aduba
+o.Desvio de Fun
+o: De acordo com a Ficha de Empregado (eSocial matr
+10), o colaborador est
+registrado formalmente na fun
+o de Operador de P
+Carregadeira. Treinamento (NR 31.12): O colaborador possui treinamento e est
+devidamente capacitado. Ele concluiu com aproveitamento o curso de Seguran
+de no Trabalho na Agricultura, Pecu
+ria, Silvicultura, Explora
+o Florestal e Aquicultura (NR 31.12), com carga hor
+ria de 24 horas, realizado entre 20 e 22 de maio de 2026 pela assessoria IVISEG. An
+lise Comportamental: O fato de o colaborador possuir o treinamento oficial da NR 31.12 (cujo conte
+tico exige explicitamente o conhecimento sobre Equipamentos de Prote
+o Individual e Seguran
+quinas/Implementos) torna o ato de trabalhar sem
+culos, perneira e abafador uma n
+o conformidade comportamental grave. 3. Registro de A
+es Corretivas Necess
+riasPara sanar as irregularidades operacionais apontadas, devem ser executadas as seguintes a
+es imediatas: Fornecimento Imediato de EPIs: Paralisar preventivamente a opera
+que os operadores do trator de aduba
+carregadeira estejam equipados com os
+culos, abafadores e perneiras recomendados no PGR. Fiscaliza
+o Operacional (Checklist): Exigir que os operadores realizem e assinem diariamente o Checklist visual de seguran
+quinas antes do in
+cio da jornada de trabalho. Infraestrutura de Armazenamento e
+ncia (Figueira
+rrego do Campo)Localiza
+ncia 03 est
+instalada sob a figueira nas proximidades do C
+rrego do Campo.Armazenamento Geral: Verificada integridade parcial das estruturas. Identificou-se uma ocorr
+ncia de cobertura lateral amassada na estrutura externa da
+ncia.Ilumina
+o: Aspecto em conformidade. A ilumina
+o interna da
+ncia encontra-se funcionando perfeitamente.Estruturas de Suporte: Constatou-se que a estrutura de um cal
+o de sustenta
+o encontra-se danificada, gerando risco potencial de estabilidade mec
+nica.Organiza
+o e Limpeza: Registrada a presen
+a de arame espalhado e pneus descartados/armazenados de forma desordenada nas depend
+ncias da oficina, contrariando as boas pr
+ticas de ordem e limpeza (5S).Instala
+rias: Condi
+tica de higiene. O banheiro inspecionado apresentou-se sujo, totalmente sem
+gua, sem sabonete, sem papel higi
+nico e sem o rabicho de engate hidr
+ulico essencial para o fluxo de
+stica de Dist
+ncias: Foi mapeado o fluxo de deslocamento dos colaboradores em atividade no setor. A dist
+ncia entre a frente de servi
+de menos de 1 km. No entanto, para os operadores alocados na localidade da Figueira- C
+rrego do Campo a dist
+ncia medida entre o ponto exato da atividade de aduba
+o e a estrutura de viv
+ncia chega a aproximadamente 3 km.Gest
+o de Insumos e Aspectos AmbientaisDep
+sito de Defensivos Agr
+colas: Identificada grave desconformidade na gest
+o de produtos qu
+micos. O local destinado ao armazenamento de defensivos agr
+colas encontra-se totalmente sem sinaliza
+o de seguran
+a, sem placas de identifica
+o de riscos e instalado de forma inadequada em
+rea muito pr
+estrutura de viv
+ncia dos trabalhadores. Esta condi
+o viola diretamente os crit
+rios de distanciamento seguro e isolamento ambiental.AVALIA
+O DOS EQUIPAMENTOS DE PROTE
+O INDIVIDUAL (EPIs)A equipe em campo no momento da auditoria era composta por 02 colaboradores diretos executando a atividade de aduba
+o manual e mecanizada:Renato Jos
+de OliveiraFun
+o: Operador de Trator (Tratorista).Uso de EPIs: Constatada a falta de prote
+sicas obrigat
+rias. O colaborador executava a aduba
+o sem abafador de ru
+culos de seguran
+a e sem perneiras de prote
+vio Luiz Gomes BernegozziFun
+o: Registrado sob a matr
+cula eSocial n
+o de Operador de P
+Carregadeira (admitido em 11/07/2025). Uso de EPIs: Encontrado em campo cometendo desvio cr
+tico de seguran
+a, atuando sem abafador de ru
+do, sem perneiras e sem
+culos de seguran
+a.Status de Treinamentos: Em conformidade t
+cnica. O colaborador possui o Treinamento de Seguran
+de no Trabalho na Agricultura e Silvicultura (NR 31.12) com carga hor
+ria de 24 horas, ministrado pelo instrutor Maikel Botelho (IVISEG) no per
+odo de 20 a 22 de maio de 2026. DOCUMENTA
+O DE SEGURAN
+A DO TRABALHO1. Registro de TrabalhoSitua
+o Documental: CONFORME.Descri
+o: Foi apresentado o documento comprobat
+rio de Registro de Empregado relativo ao funcion
+rio Reginaldo Alves. O hist
+rico registra a data de admiss
+o em 15/03/2024 no cargo de Auxiliar de Silvicultura, estando regularizado perante as exig
+ncias trabalhistas vigentes.2. ASO (Atestado de Sa
+de Ocupacional)Situa
+o Documental: N
+O CONFORME / PENDENTE.Pend
+ncias / Necessidades de Atualiza
+o: O colaborador Marcos Ant
+nio Dias est
+operando com o ASO Peri
+dico vencido desde a data limite de 10/05/2026. Al
+m disso, os exames complementares obrigat
+rios de toxicologia (indispens
+veis para o monitoramento biol
+gico de trabalhadores que manipulam agentes qu
+micos agrot
+o foram localizados na documenta
+o da empresa, necessitando de regulariza
+dica imediata.3. TreinamentosSitua
+o Documental: PENDENTE.Pend
+o foram apresentados os certificados de capacita
+ria da NR-31.08 (Seguran
+a no Trabalho com Agrot
+xicos, Adjuvantes e Produtos Afins) para os aplicadores qu
+micos da frente de trabalho, caracterizando descumprimento legal cr
+tico de capacita
+o de risco.4. Integra
+o Documental: PENDENTE.Pend
+ncia total de fichas de presen
+a ou comprovantes espec
+ficos de treinamento de integra
+o de seguran
+a para os trabalhadores ativos da frente de silvicultura.5. Fichas de EPI (Equipamento de Prote
+o Individual)Situa
+o Documental: N
+O CONFORME / DESATUALIZADA.Pend
+ncias: As fichas de registro de controle de EPIs encontram-se totalmente desatualizadas. A
+ltima entrega registrada de equipamentos de prote
+o para o aplicador de qu
+micos ocorreu em novembro de 2025. Os prazos recomendados para a substitui
+dica de filtros mec
+micos de carv
+o ativado e luvas nitr
+licas encontram-se amplamente expirados.6. Ordens de Servi
+o (OS)Situa
+o Documental: CONFORME.Descri
+o: Foram apresentadas as Ordens de Servi
+o de Seguran
+a e Medicina do Trabalho em conformidade t
+cnica da NR-01. Os documentos encontram-se devidamente preenchidos e assinados por todos os funcion
+rios registrados, com data de emiss
+o em 12/01/2026.7. Programas Legais (PGR e PCMSO)Situa
+o Documental: PENDENTE DE REVIS
+O / VENCIDO.Validades Vencidas / Necessidade de Atualiza
+o: Tanto o PGR (Programa de Gerenciamento de Riscos - NR-01) quanto o PCMSO (Programa de Controle M
+de Ocupacional - NR-07) da empresa Oliveira Reflorestamento tiveram seus prazos de vig
+ncia expirados em 30/04/2026. Os programas encontram-se pendentes de renova
+cnica junto
+assessoria de SST contratada.8. Inspe
+es, Certificados e Permiss
+es de TrabalhoSitua
+o Documental: PENDENTE.Pend
+ncias: Constatou-se a total aus
+lises Preliminares de Risco (APR) para o manuseio e aplica
+o de insumos qu
+m da falta de check-lists e registros de inspe
+rias de seguran
+a dos pulverizadores costais e dos tratores de apoio.TabelaDocumentoStatusData de Emiss
+nciaPrazo de Vencimento / Revis
+PGR (NR-01)Vencido / PendenteAnterior30/04/2026Providenciar renova
+o urgente do programa.PCMSO (NR-07)Vencido / PendenteAnterior30/04/2026Solicitar revis
+o anual junto ao m
+dico coordenador.ASO (M. Ant
+o ConformeAnterior10/05/2026Agendar exame cl
+dico e complementares (Toxicologia).Fichas de EPIN
+o ConformeNovembro / 2025Expirado (Prazos)Atualizar registros e realizar a troca imediata de filtros e luvas nitr
+licas.Treinamento NR-31.08PendenteN
+o ApresentadoN/ARealizar capacita
+o em seguran
+a com agrot
+xicos para os aplicadores.Ordens de Servi
+oConforme12/01/2026Altera
+o de RiscoManter arquivado e coletar assinaturas em caso de admiss
+es.Integra
+es / APR APRPendenteN
+o ApresentadoRotinaImplementar APR para qu
+micos e fichas de integra
+o Conformidades
+ItemDescri
+o Conformidade
+rea AfetadaNorma Ref.CriticidadeJustificativa T
+01Total aus
+ncia, abrigo ou sanit
+rios locais na frente de trabalho florestal ativa.Infraestrutura / Viv
+nciaNR 31 / NR 24CR
+TICOGrave viola
+o de direitos fundamentais. Obriga a realiza
+u aberto e exp
+e os colaboradores a riscos biol
+gicos e intemp
+ries sem suporte local.02
+gua para consumo humano armazenada em gal
+o de defensivo qu
+mico reaproveitado, sem higieniza
+o e exposta ao sol. Almo
+ncia ao lado dos insumos qu
+micos.Seguran
+a Alimentar e H
+dricaNR 31CR
+TICORisco grav
+ssimo de morte por envenenamento ou contamina
+drica cruzada severa devido ao armazenamento de
+vel em recipiente com res
+mico ativo.03Opera
+o de trator agr
+cola com a Tomada de For
+a (TDP) totalmente desprotegida e sem enclausuramento.Seguran
+quinasNR 31 / NR 12ALTORisco iminente de acidente grave por aprisionamento mec
+nico e esmagamento de membros nas partes rotativas da m
+cola em movimento.Plano de A
+o Corretiva
+o ConformidadeA
+o Corretiva RecomendadaCriticidadeRespons
+ncia total de
+ncia e sanit
+rios em campo.Instalar e disponibilizar em campo uma estrutura m
+vel regulamentada de viv
+ncia (carreta agr
+cola adaptada ou tenda m
+vel com sanit
+mico acoplado), dotada de assentos, mesas higieniz
+veis e lavat
+rio com sab
+gua corrente.CR
+stica da Empresa48 Horas02
+xico e refei
+o ao lado do veneno.Descartar imediatamente o gal
+o contaminado. Fornecer recipientes t
+rmicos novos, exclusivos, higienizados e identificados para
+vel, protegidos do sol. Proibir o consumo de alimentos fora da nova
+ncia regulamentada e isolar o ponto de armazenamento de insumos qu
+TICOEncarregado de CampoImediato03Tomada de For
+a (TDP) do trator desprotegida.Paralisar o uso do trator at
+sica de uma coifa de prote
+nica envolvente (escudo de prote
+o normatizado) sobre a tomada de for
+a, impedindo o acesso inadvertido do trabalhador
+s partes girat
+rias.ALTOManuten
+nica / Encarregado24 HorasINFRAESTRUTURA E
+REAS DE VIV
+NCIA1. Condi
+rias e de Higiene (Cr
+tico)O estado do banheiro viola as condi
+nimas de dignidade e sa
+de previstas em lei. A falta de
+gua inviabiliza a descarga e a lavagem das m
+os, enquanto a aus
+ncia de papel higi
+nico, sabonete e as falhas estruturais (rabicho de engate) tornam o ambiente inutiliz
+o de vetores e doen
+ncia e Localiza
+o InadequadaA
+rea destinada ao descanso e alimenta
+o dos trabalhadores ("figueira do c
+rrego do campo") foi instalada ao lado de defensivos agr
+colas. Essa proximidade exp
+e os colaboradores de forma direta ao risco de contamina
+mica por vias respirat
+ria ou digestiva durante as refei
+es.3. Armazenamento Irregular de Defensivos Agr
+colasOs produtos qu
+micos precisam de placas de identifica
+o e sinaliza
+o de advert
+ncia, contrariando as normas obrigat
+rias que visam impedir o acesso de pessoas n
+o autorizadas e alertar sobre perigos de intoxica
+ndio.4. Danos Estruturais no AbrigoA cobertura lateral amassada e o cal
+o danificado indicam falta de manuten
+o preventiva nas instala
+veis ou fixas, comprometendo a integridade do abrigo contra intemp
+ries (chuva e vento) e oferecendo risco de acidentes por desabamento ou tombamento da estrutura.Plano de A
+o Recomendado (Imediato)Regulariza
+rio: Realizar a limpeza imediata do banheiro, consertar o rabicho de engate, restabelecer o fornecimento de
+gua e abastecer o local com papel higi
+nico e sabonete l
+quido.Isolamento de Riscos Qu
+micos: Relocar a
+ncia para um local distante e seguro, totalmente isolado do armazenamento de defensivos agr
+colas.Sinaliza
+sito: Instalar placas de identifica
+o com os dizeres "Cuidado: Defensivos Agr
+mbolos de advert
+ncia de risco qu
+mico no dep
+sito.Reparo Estrutural: Substituir ou consertar o cal
+o danificado do abrigo e desamassar a cobertura lateral para garantir a estabilidade f
+sica do local.ASPECTOS AMBIENTAISOs aspectos ambientais s
+o os elementos das atividades, produtos ou servi
+os de uma organiza
+o/empresa que podem interagir com o meio ambiente. Em termos simples,
+a causa (a a
+o humana ou industrial), enquanto o impacto ambiental
+o efeito ou a consequ
+ncia na natureza.Para entender a diferen
+a:Aspecto Ambiental (Causa): Consumo de
+gua.Impacto Ambiental (Efeito): Redu
+o dos recursos h
+dricos.Principais Tipos de Aspectos AmbientaisOs aspectos ambientais podem ser classificados em diversas categorias, dependendo de como eles afetam ou utilizam os recursos naturais. No contexto rural ou industrial, os principais s
+o:1. Entrada de Recursos (Consumo)Refere-se ao que a atividade retira da natureza ou do mercado para conseguir funcionar:Consumo de
+gua: Utilizada para processos industriais, irriga
+o, limpeza de instala
+es ou consumo nas
+reas de viv
+ncia.Consumo de energia el
+trica / Combust
+veis: Uso de
+leo diesel em tratores e escavadeiras, e eletricidade em galp
+es.Uso do solo: O espa
+sico ocupado e alterado para a produ
+o, terraplenagem ou cultivo.Consumo de mat
+rias-primas e insumos: Uso de defensivos agr
+colas, fertilizantes,
+leos lubrificantes e ferramentas.2. Sa
+da de Recursos (Gera
+es)Refere-se ao que a atividade devolve ou descarta no meio ambiente como subproduto:Emiss
+ricas: Gases poluentes de escapamentos de m
+quinas (como $CO_2$) ou poeira gerada em movimenta
+es de terra.Gera
+o de efluentes l
+gua suja descartada, esgoto de banheiros ou lavagem de maquin
+rios que possam conter
+lidos: Descarte de embalagens vazias (incluindo as de defensivos agr
+as usadas, panos sujos de graxa, al
+m do lixo org
+nico comum.Ru
+o: Barulho cont
+nuo gerado por motores de grande porte, que impacta a fauna local e o bem-estar ao redor.3. Aspectos Potenciais (Situa
+es de Emerg
+o aqueles que n
+o acontecem no dia a dia normal, mas representam um risco caso ocorra um acidente:Vazamentos e derramamentos:
+leo diesel que vaza durante o abastecimento ou defensivos agr
+colas que escorrem acidentalmente perto de c
+rregos.Inc
+ndios ou explos
+es: Riscos associados ao armazenamento inadequado de inflam
+veis.Tabela de Exemplos Pr
+ticos (Aspecto vs. Impacto)Atividade / ProcessoAspecto Ambiental (Causa)Impacto Ambiental (Efeito)Opera
+o de Trator/EscavadeiraConsumo de
+leo DieselEsgotamento de recursos n
+veisAbastecimento de M
+quinasRisco de derramamento de combust
+velContamina
+o do solo e da
+gua subterr
+neaPrepara
+o de Solo / TerraplenagemGera
+o de poeira e material particuladoAltera
+o na qualidade do arUso de Defensivos Agr
+o de embalagens vazias pl
+sticasPolui
+o se descartadas incorretamenteUso de Banheiros de CampoGera
+o de esgoto dom
+sticoAltera
+o na qualidade da
+gua de rios/c
+rregosPor que monitorar os Aspectos Ambientais?Identificar e controlar esses aspectos
+fundamental por tr
+es principais:Atendimento
+o: Evita multas pesadas de
+os ambientais e paralisa
+o de atividades.Preven
+o de Acidentes: Minimiza o risco de desastres qu
+micos e contamina
+es de rios ou do solo.Integra
+o com a Seguran
+a do Trabalho: Diversos aspectos ambientais (como ru
+do, poeira e manuseio de produtos qu
+micos) tamb
+o riscos ocupacionais diretamente ligados
+de do trabalhador.COMPORTAMENTO E SEGURAN
+A DOS COLABORADORESPontos Positivos (For
+as)Proatividade e Engajamento: Os colaboradores demonstraram um excelente tra
+o comportamental, mostrando-se extremamente prestativos e totalmente
+o para reorganizar e readequar a
+ncia. Isso comprova que a equipe n
+as e possui boa vontade para implantar melhorias na seguran
+a.Capacita
+cnica Executada: H
+um engajamento satisfat
+rio na busca por qualifica
+tica, conforme atestado pela presen
+nime e aproveitamento do funcion
+rio na lista de treinamento da IVISEG. Abertura para o Di
+logo: A comunica
+o interna foi facilitada pela postura receptiva dos trabalhadores, o que reduz ru
+dos na transmiss
+o de diretrizes de SST.CLASSIFICA
+O CONFORMIDADESA classifica
+o conformidades
+um passo fundamental para priorizar as a
+es de corre
+o e garantir que os riscos mais graves sejam tratados imediatamente. No contexto de Seguran
+de no Trabalho (SST) da empresa Eloisio de Souza, cruzando as evid
+ncias de campo com a metodologia de matriz de riscos (AIHA) adotada no PGR da IVISEG, as irregularidades encontradas podem ser classificadas em tr
+veis de gravidade: 1. N
+o Conformidade Cr
+tica (Grau 3 ou 4)S
+o aquelas que representam risco iminente
+integridade f
+sica do trabalhador, ou que violam diretamente os direitos b
+sicos de dignidade humana no trabalho. Exigem a
+o imediata e corretiva.
+ncia ao lado de defensivos agr
+colas: Classificada como Cr
+vel. O risco de contamina
+mica (ingest
+o de veneno) durante as refei
+es pode causar efeitos irrevers
+veis ou amea
+vida. Condi
+es do banheiro (sem
+gua e insumos): Classificada como Cr
+tica. A aus
+ncia completa de
+gua, sabonete e papel higi
+nico impede a higieniza
+e os trabalhadores a riscos biol
+gicos severos, violando as condi
+nimas de trabalho da NR 31.Armazenamento de defensivos sem sinaliza
+o: Classificada como Cr
+tica. A falta de placas de identifica
+o e avisos de perigo em dep
+micos aumenta drasticamente a probabilidade de acidentes com pessoas n
+o autorizadas.Falta de fornecimento e ficha de EPI: Classificada como Cr
+tica (Prioridade 3 no PGR). Embora o operador utilize alguns itens, o plano de a
+o indica que o controle formal de entrega e reposi
+o de EPIs recomendados est
+travado em 0%. 2. N
+o Conformidade Moderada (Grau 2)S
+o desvios que comprometem a seguran
+a operacional e o cumprimento das Normas Regulamentadoras, mas que n
+o apresentam um perigo de morte ou adoecimento imediato. Possuem prioridade b
+sica de aten
+o. Danos estruturais no abrigo (Cal
+o danificado e lateral amassada): Classificada como moderada / De Aten
+o. Compromete a estabilidade f
+sica do abrigo contra intemp
+ries e exige manuten
+o preventiva de curto prazo para evitar acidentes por tombamento. Falta de treinamento de Integra
+o e Ordem de Servi
+o: Classificada como moderada (Prioridade 2 no PGR). Os colaboradores s
+o prestativos e qualificados na fun
+cnica (NR 31.12), mas a falta de treinamento comportamental e das condutas da NR 01 (ambas em 0%) cria um gargalo na cultura de seguran
+a da empresa. Aus
+ncia de Checklist di
+quinas: Classificada como moderada (Prioridade 2 no PGR). A n
+o conformidade reside no comportamento operacional: o funcion
+rio tem o curso para operar, mas a rotina di
+ria de inspe
+carregadeira n
+sendo executada (0% conclu
+o Conformidade Leve ou Administrativa (Grau 1)S
+o falhas formais, documentais ou de organiza
+o interna que n
+o geram riscos f
+sicos diretos aos colaboradores, servindo como oportunidades de melhoria cont
+ncia do documento impresso do ASO: Classificada como administrativa. O PCMSO est
+vigente e atualizado pelo m
+dico do trabalho, mas a primeira via do ASO cl
+nico do trabalhador n
+o foi localizada fisicamente no prontu
+rio para consulta imediata da fiscaliza
+o. Tabela Resumo de Prioriza
+oIrregularidade ConstatadaClassifica
+o do RiscoPrazo de Corre
+o SugeridoReloca
+ncia (afastar do veneno)Cr
+vel)Imediato (Interrup
+rea)Abastecimento de
+gua e higiene no banheiroCr
+24 horasSinaliza
+sito de defensivos agr
+48 horasManuten
+o e estrutura do abrigoModerada (De Aten
+7 diasExecutar treinamentos de Integra
+o e Ordens de Servi
+oModerada (De Aten
+15 diasImplementar rotina de Checklist di
+quinasModerada (De Aten
+5 diasPLANO DE A
+o CorretivaComo FazerQuem ExecutaSitua
+o AtualAfastar
+ncia dos defensivosMudan
+sica da estrutura de refei
+es para local seguroColaboradores A iniciar (Urgente)Consertar e abastecer o banheiroManuten
+o do engate de
+gua + reposi
+o e papelEquipe prestativa de colaboradores / Empregador A iniciar (Urgente)Sinalizar o dep
+micoInstala
+o de placas com avisos de perigo e identifica
+oColaboradores  A iniciar (Urgente)Manuten
+o do abrigoReparo mec
+nico/solda e desamassar coberturaProfissional capacitado (Mec
+nico) 0% conclu
+do Assinatura da Ficha de EPIEntrega formal dos EPIs listados com registro assinadoFuncion
+rio do Almoxarifado / Empregador 0% conclu
+do Treinamento de Integra
+o (NR 01)Palestra te
+tica de riscos e condutas de SSTGerente / Representante designado ou T
+cnico de SST 0% conclu
+do Checklist di
+CarregadeiraInspe
+o visual di
+ria antes de iniciar a opera
+oOtavio Luiz Gomes Bernegozzi (Operador) 0% conclu
+do CONCLUS
+OA auditoria documental e a inspe
+cnica de campo realizadas nas frentes operacionais de silvicultura, limpeza de aceiros e terraplenagem evidenciaram um cen
+ssima gravidade ocupacional, severa vulnerabilidade humana e descompasso administrativo. Embora a organiza
+o possua uma base de programas estruturais vigentes (PGR e PCMSO para o ciclo 2026-2027) e operadores com qualifica
+rica (NR 31.12), h
+um flagrante e cr
+tico distanciamento entre as diretrizes descritas no papel e a realidade pr
+tica da rotina de campo.
+REGISTRO FOTOGR
+Armazenamento de oficina mec
+nica, Cobertura lateral amassada
+Banheiro sujo, sem
+gua, sem sabonete, sem rabicho de engateSem papel higi
+Estrutura cal
+o danificado
+Local de armazenamento de defensivo agr
+cola sem sinaliza
+ncia, sem placa de sinaliza
+Arame espalhado e pneus espalhado.
+_______________________________C
+ssia Francine ZacarimT
+cnico de Seguran
+a doSRTE/MTE 1531/MS2
+VISITAAUDIT
+RIADATA:21/05/2026DIA DA SEMANA:   QUINTA-FEIRADESCRI
+O DAS ATIVIDADES AUDITADAS / CONDI
+ES OPERACIONAISColaboradores:  Renato Jos
+de Oliveira e Ot
+vio Luiz Gomes Bernegozzi.Atividade / Equipamento: Opera
+o de trator agr
+cola/florestal.Diagn
+cnico: A estrutura de viv
+vel/campo foi readequada com foco em garantir conforto e seguran
+a. Os colaboradores demonstraram excelente postura proativa, colaboraram diretamente para as mudan
+rias, realizaram a organiza
+o e moveram a estrutura para um local considerado adequado e seguro. Pontos Positivos ObservadosEngajamento da Equipe: Trabalho em equipe exemplar. Os funcion
+rios compreenderam a necessidade de melhoria na
+ncia e agiram prontamente para corrigir os desvios.Mitiga
+o de Riscos: A mudan
+a para um local adequado elimina o risco de contamina
+o cruzada com defensivos agr
+colas e garante melhores condi
+es de higiene e saneamento no ambiente rural.
+_______________________________C
+ssia Francine ZacarimT
+cnico de Seguran
+a doSRTE/MTE 1531/MS
+PAGE   \* MERGEFORMAT
+RIO MENSALMaio de 2026
+o^oMMMMMMMMMM
+{iiiiiiiiiWWWWWWWWWWiiWW
+tbbbbbbbbbb
+7iCCPsRGB IEC61966-2.1
++dM9LPVsa;D7
+JSq+	@+m{Q2
+i[E.[=R)X;|
+<fdfeeVuU5QE
+94< `YR}Q*3
+..xq1=OB`	+'
+YVYSo@Fl.Qw
+QiI'w[QLnoXIY
+!C9|0m"vw47.
+*t%	s70p* #
+[z!MOwt?(&F
+#Iy'oK05"Dz
+V~d1J@2#x9H
+],8ZqK3%DUW
+*$45y_L}9Hf
+0Ink]O:)(
+NCP
+DT5}0P	M?iy
+f]QcrZNOyL\
+qogO[pttuath
+@Bh9!	pgo?z
+7QlhP1#VL\	R
+2dw$
+![;:0z
+vpVh^\++0Ja
+To!~exVCS+:;{
+v]'es*n7K@|
+zpzvl!-Bss3
+ami%h?XWiOs
+PhkAyGOLl#7
+rEcMuu_nIv+/
+,FlEVTK'En:
+5oh-/),@cc=b
+BQ)1l=!9/d{B
+AaZ((.@Ms#r
+K{yAv(~{[Ha
+?DCPxiN ,9!s5
+F< x:7	)$Pm
+"vZ]<ED%Nu5a&

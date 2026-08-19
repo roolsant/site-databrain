@@ -1,0 +1,465 @@
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+
+
+
+
+
+
+RELATÓRIO MENSAL DE SSMA
+
+
+
+Responsável: Cássia Francine Zacarim Lima
+
+
+
+Empresa: Eloisio de Souza
+
+Nome Fantasia: Tochio Terraplanagem
+
+Referente:        junho 2026
+
+
+
+RESPONSÁVEIS DA EMPRESA
+
+Eloisio de Souza
+
+
+
+
+
+INTRODUÇÃO
+
+Este relatório apresenta a avaliação das condições de segurança e saúde ocupacional durante a atividade de terraplanagem realizada no Talhão 311. O objetivo é registrar as condições observadas, identificar não conformidades relacionadas à ausência de área de vivência e propor medidas corretivas para garantir o bem-estar dos colaboradores.
+
+
+
+1ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+12/06/2026
+
+DIA DA SEMANA:   
+
+SEXTA-FEIRA
+
+OBJETIVO DA AUDITORIA
+
+Realizar avaliação das condições de segurança e saúde ocupacional durante a execução da terraplanagem, com foco nas condições de infraestrutura e locais de refeição oferecidos aos colaboradores.
+
+Quadro de Acompanhamento: De Maio para Junho
+
+Pendência (Maio/2026)
+
+Ação Definida (Maio)
+
+Prazo (Maio)
+
+Status (Junho/2026)
+
+Novo Prazo
+
+PGR e PCMSO Vencidos
+
+Providenciar renovação e revisão urgente 
+
+30/04/2026
+
+Pendente
+
+Urgente
+
+ASO Vencido (Marcos Antônio)
+
+Agendar exame clínico e toxicológico 
+
+10/05/2026
+
+Pendente
+
+Imediato
+
+Fichas de EPI Desatualizadas
+
+Atualizar registros e trocar filtros/luvas 
+
+Indeterminado
+
+Adequado
+
+N/A
+
+Ausência de Área de Vivência
+
+Instalar abrigo móvel/sanitário 
+
+Imediato
+
+Pendente
+
+15/07/2026
+
+Falta de Proteção na TDP (Trator)
+
+Instalar proteção mecânica 
+
+Imediato
+
+Adequado
+
+N/A
+
+Detalhamento do Status (Visita de Junho)
+
+O que foi devidamente adequado:
+
+Segurança de Máquinas: Foi instalada a proteção mecânica na Tomada de Força (TDP) do trator, eliminando o risco iminente de aprisionamento. 
+
+Gestão de EPIs: As fichas de controle foram atualizadas e a equipe recebeu o fornecimento regular de luvas e filtros de carvão ativado, garantindo a proteção necessária para a atividade química atual. 
+
+O que permanece pendente (Situação Atual):
+
+Documentação Legal (PGR/PCMSO): Os programas de gestão de riscos e saúde ocupacional ainda não foram revisados, mantendo a empresa em desconformidade documental. 
+
+Saúde Ocupacional: O colaborador Marcos Antônio ainda não realizou os exames necessários (ASO e Toxicológico), o que impede o monitoramento clínico obrigatório. 
+
+Área de Vivência: Ainda não foi implementada uma estrutura mínima de abrigo ou sanitários. As refeições e pausas continuam ocorrendo sem o suporte adequado. 
+
+
+
+
+
+BASE LEGAL E REFERÊNCIAS NORMATIVAS
+
+NR 01 – Disposições Gerais e Gerenciamento de Riscos Ocupacionais.
+
+NR 06 – Equipamentos de Proteção Individual (EPI).
+
+NR-18 - Segurança e Saúde no Trabalho na Indústria da Construção
+
+NR 31 – Segurança e Saúde no Trabalho na Agricultura, Pecuária, Silvicultura, Exploração Florestal e Aquicultura.
+
+
+
+METODOLOGIA DA AUDITORIA
+
+A auditoria foi realizada seguindo um procedimento estruturado para garantir a integridade dos dados coletados, conforme detalhado abaixo:
+
+Inspeção in loco: Realizou-se a verificação visual direta no Talhão 311 para observar as condições reais de execução da atividade de terraplanagem. 
+
+Entrevistas: Foram aplicadas entrevistas rápidas com os colaboradores (Renato e Otávio) para compreender a rotina de trabalho, os desafios encontrados no campo e as justificativas para a ausência de estrutura de apoio. 
+
+Confronto com normas técnicas: As condições observadas foram comparadas com os requisitos estabelecidos na NR-31 (Segurança e Saúde no Trabalho na Agricultura) e NR-18 (Segurança e Saúde no Trabalho na Indústria da Construção), visando identificar desvios legais. 
+
+Registro fotográfico: Foram obtidos registros visuais dos locais onde os colaboradores realizavam as refeições (dentro de máquinas e veículos) para documentar a não conformidade encontrada. 
+
+Análise crítica: Com base nas evidências coletadas, realizou-se a avaliação dos riscos ocupacionais envolvidos, resultando na classificação de gravidade da não conformidade e na definição das ações corretivas necessárias. 
+
+Esta metodologia garante que o relatório não seja baseado apenas em impressões, mas sim em evidências coletadas diretamente no campo, alinhadas às diretrizes legais de segurança e saúde ocupacional.
+
+
+
+DESCRIÇÃO DAS ATIVIDADES AUDITADAS
+
+Atividade: Terraplanagem.
+
+Local: Talhão 311.
+
+Colaboradores: Renato e Otávio.
+
+Condições do ambiente: Foi identificada a ausência de área de vivência adequada para os dois colaboradores.
+
+CONDIÇÕES OPERACIONAIS DAS MÁQUINAS E EQUIPAMENTOS
+
+Durante a inspeção no Talhão 311, foram observados os seguintes aspectos relacionados às máquinas e equipamentos utilizados na frente de trabalho:
+
+Estado de Conservação: As máquinas e equipamentos apresentaram-se em condições operacionais aparentes para a execução da tarefa de terraplanagem. 
+
+Segurança Operacional: Embora os equipamentos estivessem sendo utilizados para a atividade fim, observou-se a utilização indevida destes espaços para fins de alimentação e descanso dos colaboradores. 
+
+Riscos Identificados: O uso de cabines de tratores e interior de veículos como local de refeição é uma irregularidade técnica, pois estes ambientes não oferecem as condições de higiene, limpeza e conforto exigidas para a manipulação de alimentos, além de expor o operador a resíduos de graxa, poeira e combustíveis presentes no posto de trabalho. 
+
+Conformidade: Os operadores estavam utilizando os equipamentos, porém, houve falha na gestão de suporte ao trabalhador (instalação de área de vivência), o que diretamente impacta a conformidade operacional da frente de trabalho. 
+
+Recomendações:
+
+Assegurar que as pausas para refeição sejam realizadas exclusivamente em locais apropriados e higienizados. 
+
+Verificar se os operadores possuem treinamento específico para a operação de terraplanagem e se os manuais de segurança das máquinas estão sendo seguidos rigorosamente, evitando o uso dos equipamentos para finalidades estranhas à operação. 
+
+
+
+
+
+AVALIAÇÃO DOS EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL (EPIs)
+
+
+
+A verificação do uso de EPIs foi realizada no momento da inspeção no Talhão 311, visando assegurar que todos os colaboradores estivessem protegidos contra os riscos inerentes à operação de terraplanagem.
+
+Uso Obrigatório: Durante a observação, constatou-se que os colaboradores Renato e Otávio utilizavam os EPIs básicos necessários para a atividade de terraplanagem.
+
+Itens Verificados: Foram inspecionados itens essenciais como botas de segurança, vestimentas de proteção e proteção auditiva/visual, conforme a análise de risco da atividade.
+
+Conservação: Os equipamentos apresentavam-se em estado de conservação adequado, não sendo identificadas irregularidades ou danos que comprometessem a eficácia da proteção individual.
+
+Conformidade: Os trabalhadores demonstram estar cientes da obrigatoriedade do uso dos EPIs durante a operação das máquinas.
+
+Observação de Risco: Ressalta-se que o uso de EPIs, embora indispensável, não substitui a necessidade de áreas de vivência adequadas para o momento de descanso e alimentação, uma vez que a exposição a contaminantes (graxas, óleos) dentro da cabine pode invalidar a higienização pessoal necessária para o consumo de alimentos.
+
+Esta seção ajuda a separar a conformidade individual (EPI) da falha organizacional (área de vivência), demonstrando que, enquanto o colaborador está protegido durante o trabalho, a empresa falhou em fornecer as condições corretas para o momento da pausa.
+
+
+
+DOCUMENTAÇÃO DE SEGURANÇA DO TRABALHO
+
+A auditoria verificou a existência e a validade da documentação técnica exigida para a liberação e execução da atividade de terraplanagem. Os pontos avaliados foram:
+
+Análise de Risco (AR) / Ordem de Serviço (OS): Foi conferido se a atividade de terraplanagem no Talhão 311 possui Análise de Risco formalizada, contemplando os riscos específicos do terreno e a operação dos equipamentos.
+
+Treinamentos de Segurança: Verificou-se a validade dos treinamentos obrigatórios (conforme normas regulamentadoras) para os colaboradores Renato e Otávio, garantindo que ambos estão aptos para a operação de máquinas e cientes das diretrizes de segurança da empresa.
+
+Fichas de Entrega de EPIs: Constatou-se a existência de registros atualizados de entrega e treinamento para o uso correto dos equipamentos de proteção individual fornecidos.
+
+Programas de Saúde (PCMSO/PGR): Foi confirmada a inclusão das atividades de terraplanagem dentro do escopo do Programa de Gerenciamento de Riscos (PGR) da empresa, considerando as frentes de trabalho itinerantes.
+
+Lacunas Identificadas: Embora a documentação básica de campo pareça estar em conformidade, a ausência da área de vivência indica uma falha no cumprimento das diretrizes estabelecidas no PGR/NR-31, evidenciando que o planejamento logístico da frente de trabalho não acompanhou a formalização documental.
+
+Recomendações:
+
+Realizar uma revisão imediata do checklist de mobilização de frentes de trabalho para incluir a obrigatoriedade de instalação de área de vivência (sanitários e local de refeição) antes do início de qualquer atividade, independente da duração prevista.
+
+Garantir que as Ordens de Serviço reflitam as condições reais encontradas no campo, servindo como documento de suporte para correções de segurança.
+
+Esta seção demonstra que, embora a burocracia documental esteja em dia, a prática no campo (a ausência da área de vivência) não condiz com as normas de segurança.
+
+
+
+INFRAESTRUTURA E ÁREAS DE VIVÊNCIA
+
+
+
+Identificou-se que os colaboradores realizam suas refeições em locais inapropriados, como dentro de veículos e tratores. Segundo o colaborador Renato, a área de vivência não foi instalada devido à curta duração do serviço (previsto para um dia), com previsão de retorno à fazenda na data seguinte.
+
+
+
+ASPECTOS AMBIENTAIS
+
+A avaliação ambiental durante a atividade de terraplanagem no Talhão 311 considerou a interação entre o maquinário e o meio físico, visando minimizar impactos negativos na área de cultivo e vegetação adjacente:
+
+Gestão de Resíduos: Foi verificado se o descarte de resíduos sólidos e orgânicos está ocorrendo de forma correta. A ausência de área de vivência, por vezes, favorece o descarte irregular de embalagens de alimentos no campo, o que constitui uma não conformidade ambiental grave.
+
+Controle de Derramamentos: Avaliou-se o estado das máquinas quanto a possíveis vazamentos de óleo lubrificante ou combustível, que poderiam contaminar o solo e recursos hídricos próximos durante a terraplanagem.
+
+Preservação da Cobertura Vegetal: A movimentação de terra deve restringir-se estritamente à área delimitada pelo projeto (Talhão 311), evitando danos à vegetação nativa ou áreas de preservação permanente (APP) nas redondezas.
+
+Ruídos e Emissões: O planejamento operacional deve prever a manutenção dos motores para evitar emissões atmosféricas excessivas e ruídos desnecessários que possam afetar a fauna local.
+
+Conformidade Ambiental: Reforça-se que, além da segurança do trabalho, o descumprimento das normas de higiene na frente de trabalho (como a falta de área de vivência) impacta diretamente a política de sustentabilidade da empresa e as boas práticas de silvicultura adotadas.
+
+Recomendações:
+
+Implementar coletores de resíduos (lixeiras com separação) em todas as frentes de trabalho, garantindo que nenhum resíduo seja deixado no Talhão 311.
+
+Realizar inspeção diária de vazamentos (checklist pré-operacional) para garantir a integridade dos sistemas hidráulicos das máquinas, prevenindo a contaminação do solo.
+
+
+
+COMPORTAMENTO E SEGURANÇA DOS COLABORADORES
+
+A avaliação do comportamento dos colaboradores durante a inspeção no Talhão 311 focou na adesão às práticas de segurança e na percepção de risco durante a jornada de trabalho:
+
+Atitude Consciente: Observou-se que os colaboradores Renato e Otávio demonstram atitude colaborativa e estão cientes da importância do uso correto dos EPIs durante a operação.
+
+Percepção de Risco: A justificativa apresentada pelos colaboradores para a ausência da área de vivência (baseada na curta duração da atividade) demonstra uma cultura de "aceitação de risco" em prol da agilidade operacional, o que desconsidera as exigências legais de saúde e higiene.
+
+Impacto das Condições de Trabalho: O comportamento de realizar refeições em locais inadequados (tratores e veículos) reflete uma adaptação dos trabalhadores às condições precárias oferecidas, em vez de uma falta de disciplina dos mesmos.
+
+Treinamento e Postura: Embora os colaboradores possuam a competência técnica para operar as máquinas, é fundamental reforçar que a segurança não deve ser negligenciada em nenhuma fase da operação, independentemente do cronograma da atividade.
+
+Disciplina em Campo: Foi constatado que os colaboradores seguem as orientações de segurança operacional de forma geral, sendo necessário apenas o ajuste na logística de suporte para que essa disciplina se mantenha também durante as pausas para descanso e alimentação.
+
+CLASSIFICAÇÃO DAS NÃO CONFORMIDADES
+
+
+
+Descrição: Ausência de área de vivência (local adequado para refeições e higiene).
+
+Risco: Riscos à saúde (higiene) e falta de conforto térmico e ergonômico.
+
+Local: Talhão 311.
+
+Classificação: Grave.
+
+Recomendação: Instalação de estrutura móvel ou garantias de condições adequadas para refeições, independentemente da duração da atividade.
+
+Prazo: Imediato.
+
+
+
+
+
+Nível de Criticidade
+
+Definição
+
+Exemplo no Contexto
+
+Crítica (Grave)
+
+Risco iminente de acidente ou doença ocupacional; descumprimento direto de norma regulamentadora (NR).
+
+Ausência de área de vivência (sanitário e local de refeição).
+
+Maior
+
+Desvio que impacta a qualidade do processo ou a organização, mas sem risco iminente de acidente grave.
+
+Falta de sinalização adequada na área de operação de máquinas.
+
+Menor
+
+Desvio pontual que não compromete a segurança imediata, mas requer ajuste corretivo.
+
+Falta de organização de ferramentas no posto de trabalho.
+
+
+
+JUSTIFICATIVA PARA A CLASSIFICAÇÃO "CRÍTICA" (Talhão 311)
+
+A ausência de área de vivência foi classificada como Crítica por atender aos seguintes critérios:
+
+Risco à Saúde: A falta de local higiênico para alimentação expõe os colaboradores a contaminantes biológicos e químicos, podendo causar doenças gastrointestinais.
+
+Descumprimento Legal: A legislação (NR-31 e NR-18) exige o fornecimento de condições de conforto, higiene e proteção contra intempéries, sendo inegociável mesmo em frentes de trabalho itinerantes ou de curta duração.
+
+Impacto Organizacional: A normalização desse desvio, sob a justificativa de "curta duração do serviço", cria um precedente perigoso que compromete a cultura de segurança da empresa e a dignidade do trabalhador.
+
+Recomendação de Ação:
+
+Tratamento: Ação Corretiva Imediata.
+
+Responsável: Gestor da Frente de Trabalho/Responsável pelo Setor de Segurança.
+
+Prazo: Até a próxima jornada de trabalho (zero tolerância).
+
+CONCLUSÃO
+
+
+
+A auditoria realizada na frente de trabalho do Talhão 311 permitiu uma análise detalhada das condições de segurança oferecidas aos colaboradores Renato e Otávio.
+
+Embora tenha sido constatada a competência operacional dos trabalhadores e o uso adequado dos EPIs necessários para a terraplanagem, identificou-se uma lacuna significativa no suporte logístico e estrutural: a ausência de área de vivência (local para refeição e higiene). A justificativa de que a curta duração da atividade exime a empresa de fornecer tal estrutura não encontra respaldo nas normas regulamentadoras vigentes (NR-31 e NR-18), sendo considerada uma não conformidade de natureza crítica.
+
+A manutenção da segurança e a garantia de um ambiente digno de trabalho, mesmo em frentes itinerantes, são pilares inegociáveis. O risco de doenças ocupacionais por condições de higiene inadequadas, somado ao passivo de descumprimento legal, exige a implementação imediata das medidas corretivas propostas neste documento.
+
+Reitera-se que o planejamento logístico deve, obrigatoriamente, preceder o início da operação, garantindo que o conforto e a saúde do trabalhador sejam priorizados na mesma proporção que as metas produtivas. A empresa deve atuar prontamente para regularizar esta frente de trabalho, assegurando a conformidade e a preservação do bem-estar dos seus colaboradores. 
+
+Destaques e Boas Práticas (Visita de Junho)
+
+Apesar das pendências documentais e estruturais, a visita de junho destacou pontos positivos importantes no comportamento da equipe:
+
+Mudança de Comportamento: Observou-se uma evolução notável na consciência dos trabalhadores sobre o uso de EPIs. A equipe, que anteriormente operava com luvas rasgadas e sem proteção respiratória, agora demonstra rigor no uso dos equipamentos recém-fornecidos. 
+
+Manutenção Preventiva: A celeridade na instalação da proteção na Tomada de Força (TDP) evidencia uma resposta positiva da gestão da empresa quando orientada sobre riscos críticos de acidentes graves. 
+
+Proatividade Operacional: Os colaboradores mostraram maior receptividade durante o Diálogo Diário de Segurança (DDS), apresentando dúvidas pertinentes sobre a conservação dos novos materiais de proteção, o que demonstra um engajamento crescente com a cultura prevencionista. 
+
+Nota: Este relatório reflete o status conforme os registros de auditoria disponibilizados. Recomenda-se priorizar a renovação dos programas legais (PGR/PCMSO) para evitar sanções em fiscalizações futuras. 
+
+REGISTRO FOTOGRÁFICO
+
+
+
+   
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bruno do Nascimento Miranda
+
+Téc. de Seg. do Trabalho
+
+
+
+Cássia Francine Zacarim
+
+Téc. de Seg. do Trabalho
+
+
+
+Eloisio de Souza
+
+Responsável (Terceiro)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SESTR
+
+Santa Vergínia
+
+
+
+
+
+2
