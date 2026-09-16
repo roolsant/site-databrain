@@ -1,0 +1,783 @@
+RELATÓRIO MENSAL
+
+
+
+Agosto de 2026
+
+RELATÓRIO MENSAL
+
+
+
+Agosto de 2026
+
+
+
+
+
+
+
+RELATÓRIO MENSAL DE SSMA
+
+
+
+Responsável: Cássia Francine Zacarim Lima
+
+
+
+Empresa: Fazenda Santa Vergínia
+
+Referente:        agosto de 2026
+
+Logo da empresa
+
+RESPONSÁVEIS DA EMPRESA
+
+Anderson Henrique Zacarin
+
+
+
+
+
+1ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+19/08/2026
+
+DIA DA SEMANA:   
+
+QUARTA-FEIRA
+
+Atividade
+
+Aplicação de Defensivo – Talhão 413
+
+Funcionário
+
+João Lucas
+
+Máquina
+
+BM110 – Código de frota 3305
+
+Atividade
+
+Conceição
+
+1. OBJETIVO
+
+Registrar as condições observadas durante a atividade de aplicação de defensivo no Talhão 413, avaliando as condições de segurança da máquina BM110, código de frota 3305, os Equipamentos de Proteção Individual (EPIs) utilizados pelo operador e os controles necessários para reduzir a exposição a defensivos agrícolas.
+
+
+
+2. NÃO CONFORMIDADES E RISCOS IDENTIFICADOS (DESVIOS)
+
+Durante a inspeção foram identificados desvios relacionados às condições da máquina, ao uso dos EPIs e à proteção da cabine durante a aplicação de defensivos.
+
+• Ausência de retrovisor lateral na máquina.
+
+• Freio do lado direito atuando somente em uma roda.
+
+• Ausência de luz.
+
+• Alarme sonoro de ré sem funcionamento.
+
+• Colaborador operando o trator sem óculos de segurança e sem abafador de ruído.
+
+• Máscara disponível considerada inadequada para a atividade de exposição a agrotóxicos, sendo necessária máscara com carvão ativado.
+
+• Roupa de proteção para aplicação de defensivos apresentou rasgo durante a atividade; o colaborador informou que realizará a substituição.
+
+• Colaborador aguardando a chegada da máscara com carvão ativado no almoxarifado da Segurança.
+
+• Ausência de filtro com carvão ativado na cabine do trator.
+
+• Necessidade de instalação do filtro adequado para atividades de aplicação de defensivos.
+
+• Antes da instalação do filtro, é necessária a vedação total da cabine, evitando a entrada e propagação de ar contaminado.
+
+3. CONDIÇÕES DA MÁQUINA
+
+A máquina BM110, código de frota 3305, apresentou condições que requerem correção e verificação antes da continuidade ou liberação da atividade, especialmente quanto ao sistema de frenagem, sinalização/iluminação, alarme de ré e retrovisor lateral.
+
+• Retrovisor lateral: ausente.
+
+• Freio direito: atuando somente em uma roda.
+
+• Luz: ausente.
+
+• Alarme sonoro de ré: sem funcionamento.
+
+• Extintor: em condições adequadas.
+
+
+
+4. AVALIAÇÃO DOS EPIs E CONTROLES DE EXPOSIÇÃO
+
+Durante a atividade, foram observadas não conformidades no uso dos EPIs e nos controles de proteção contra exposição a defensivos agrícolas. O operador encontrava-se sem óculos de segurança e sem abafador de ruído. A máscara disponível foi considerada inadequada para a atividade, sendo necessária máscara com carvão ativado. Também foi identificado rasgo na roupa de proteção durante a aplicação, tendo o colaborador informado que realizará a substituição.
+
+• Óculos de segurança: não utilizado pelo colaborador no momento da inspeção.
+
+• Abafador de ruído: não utilizado pelo colaborador no momento da inspeção.
+
+• Máscara: modelo disponível considerado inadequado para exposição a agrotóxicos; necessária máscara com carvão ativado.
+
+• Máscara com carvão ativado: colaborador aguardando a chegada do equipamento no almoxarifado da Segurança.
+
+• Roupa de proteção: apresentou rasgo durante a atividade; substituição informada pelo colaborador.
+
+• Cabine: ausência de filtro com carvão ativado.
+
+• Controle da cabine: necessária vedação total antes da instalação do filtro, evitando entrada e propagação de ar contaminado.
+
+
+
+5. PLANO DE AÇÃO
+
+Ação recomendada
+
+Responsável sugerido
+
+Prioridade
+
+Corrigir a ausência do retrovisor lateral e realizar verificação da condição da máquina.
+
+Manutenção / Gestão
+
+Alta
+
+Corrigir o sistema de freio do lado direito, garantindo atuação adequada.
+
+Manutenção
+
+Imediata
+
+Regularizar a iluminação da máquina antes da liberação.
+
+Manutenção
+
+Alta
+
+Reparar o alarme sonoro de ré e testar seu funcionamento.
+
+Manutenção
+
+Imediata
+
+Disponibilizar e exigir o uso de óculos de segurança e abafador de ruído aplicáveis à atividade.
+
+Liderança / SST
+
+Imediata
+
+Providenciar máscara com carvão ativado adequada à exposição a agrotóxicos.
+
+Segurança / Almoxarifado
+
+Imediata
+
+Substituir a roupa de proteção que apresentou rasgo antes da continuidade da atividade.
+
+Operação / SST
+
+Imediata
+
+Instalar filtro com carvão ativado adequado na cabine do trator.
+
+Manutenção
+
+Alta
+
+Realizar a vedação total da cabine antes da instalação e uso do filtro.
+
+Manutenção
+
+Imediata
+
+Realizar checklist pré-operacional e confirmar as condições da máquina, cabine, EPIs e controles antes da liberação.
+
+Supervisor / Operador / SST
+
+Imediata
+
+
+
+6. MEDIDAS IMEDIATAS E PREVENTIVAS
+
+• Não permitir a continuidade da aplicação sem a correção dos desvios críticos relacionados à segurança da máquina e à proteção do operador, conforme avaliação do responsável competente.
+
+• Disponibilizar a máscara com carvão ativado adequada antes da atividade de exposição a agrotóxicos.
+
+• Substituir a roupa de proteção danificada.
+
+• Disponibilizar e exigir os EPIs necessários, incluindo óculos de segurança e proteção auditiva.
+
+• Realizar a vedação total da cabine antes da instalação do filtro com carvão ativado.
+
+• Instalar e verificar o funcionamento do filtro adequado para a atividade.
+
+• Após as correções, realizar nova inspeção e registrar formalmente a liberação da máquina.
+
+
+
+7. CONCLUSÃO
+
+A inspeção realizada em 19/08/2026, durante a atividade de aplicação de defensivo no Talhão 413, envolvendo o colaborador João Lucas e a máquina BM110, código de frota 3305, identificou não conformidades relacionadas às condições da máquina, ao uso dos EPIs e aos controles de proteção da cabine. Foram constatadas ausência de retrovisor lateral, atuação do freio direito somente em uma roda, ausência de luz e alarme sonoro de ré sem funcionamento. O extintor foi informado como estando em condições adequadas.
+
+Quanto à proteção do operador, foi constatado que o colaborador estava sem óculos de segurança e sem abafador de ruído. A máscara disponível foi considerada inadequada para exposição a agrotóxicos, sendo necessária máscara com carvão ativado. A roupa de proteção apresentou rasgo durante a atividade, com informação de que será substituída. Também foi identificada a ausência de filtro com carvão ativado na cabine. Antes da instalação do filtro adequado, deverá ser realizada a vedação total da cabine, evitando a entrada e propagação de ar contaminado.
+
+Recomenda-se a correção dos desvios identificados, a disponibilização dos EPIs adequados, a regularização dos sistemas de segurança da máquina e a verificação da cabine antes da continuidade da atividade. Após a implementação das medidas, deverá ser realizada nova conferência para registrar o encerramento das pendências e a liberação segura do equipamento.
+
+
+
+8. RESUMO DAS CONSTATAÇÕES
+
+Item
+
+Local / equipamento
+
+Constatação
+
+Status
+
+1
+
+BM110 / Talhão 413
+
+Ausência de retrovisor lateral.
+
+Pendente
+
+2
+
+BM110 / Talhão 413
+
+Freio direito atuando somente em uma roda.
+
+Pendente
+
+3
+
+BM110 / Talhão 413
+
+Ausência de luz e alarme sonoro de ré sem funcionamento.
+
+Pendente
+
+4
+
+Operador
+
+Sem óculos de segurança e sem abafador de ruído.
+
+Pendente
+
+5
+
+Operador
+
+Máscara inadequada; necessária máscara com carvão ativado.
+
+Pendente
+
+6
+
+Operador
+
+Roupa de proteção rasgada; substituição informada.
+
+Pendente
+
+7
+
+Cabine
+
+Ausência de filtro com carvão ativado; necessária vedação total antes da instalação.
+
+Pendente
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTRO FOTOGRÁFICO
+
+  
+
+
+
+  
+
+
+
+
+
+Local da inspeção
+
+Ponto de Abastecimento de Defensivos Agrícolas
+
+Atividade observada
+
+Preparo/abastecimento relacionado à aplicação de defensivos agrícolas
+
+Data da vistoria
+
+19/08/2026
+
+
+
+1. OBJETIVO
+
+Registrar as condições observadas no ponto de abastecimento e preparo de defensivos agrícolas, identificando situações que possam favorecer a exposição ocupacional, a contaminação ambiental e a contaminação da água e dos alimentos destinados aos animais, bem como estabelecer medidas corretivas e preventivas.
+
+
+
+2. NÃO CONFORMIDADES E RISCOS IDENTIFICADOS (DESVIOS)
+
+Durante a inspeção, foram identificados os seguintes pontos de atenção:
+
+• EPIs armazenados/misturados junto a produtos de agrotóxicos.
+
+• Produto agrotóxico/defensivo agrícola diretamente sobre o solo, fora de contenção adequada.
+
+• Necessidade de sinalização de segurança no ponto de abastecimento.
+
+• Reservatório utilizado para fornecimento de água aos animais localizado próximo ao ponto de preparo da calda.
+
+• Risco de contaminação da água destinada ao gado durante o preparo da calda, considerando a possibilidade de retorno de produto pela mangueira utilizada para captação de água.
+
+• Produtos e materiais relacionados aos defensivos localizados próximos à área de alimentação dos animais, inclusive junto aos cochos que posteriormente são distribuídos no pasto, representando risco de contato e possível contaminação da ração.
+
+
+
+3. RISCOS ASSOCIADOS
+
+• Possibilidade de exposição de trabalhadores a produtos químicos em razão do armazenamento inadequado dos EPIs junto aos agrotóxicos.
+
+• Possibilidade de contaminação do solo devido à disposição de produto diretamente sobre o piso/solo, sem contenção adequada.
+
+• Acesso ou aproximação indevida de pessoas ao ponto de abastecimento pela ausência de sinalização de segurança.
+
+• Possibilidade de contaminação da água destinada aos animais em razão da proximidade do reservatório com o ponto de preparo da calda e da possibilidade de retorno de produto pela mangueira.
+
+• Possibilidade de contato dos defensivos ou materiais contaminados com a alimentação dos animais, considerando a proximidade dos produtos com os cochos e materiais posteriormente distribuídos no pasto.
+
+
+
+4. PLANO DE AÇÃO
+
+Nº
+
+Ação corretiva/preventiva
+
+Prioridade
+
+Responsável sugerido
+
+1
+
+Separar imediatamente os EPIs dos produtos de agrotóxicos e armazená-los em local exclusivo, limpo e adequado.
+
+Imediata
+
+Responsável de campo / SST
+
+2
+
+Retirar o produto defensivo do contato direto com o solo e providenciar contenção adequada para armazenamento e preparo.
+
+Imediata
+
+Gestão / Responsável de campo
+
+3
+
+Instalar sinalização visível, legível e resistente, indicando o ponto de abastecimento e os riscos associados.
+
+Curto prazo
+
+SST / Responsável de campo
+
+4
+
+Avaliar e afastar o reservatório de água destinado aos animais do ponto de preparo da calda, mantendo distância segura.
+
+Imediata
+
+Gestão da operação
+
+5
+
+Revisar o sistema de captação de água e eliminar a possibilidade de retorno de produto pela mangueira durante o preparo da calda.
+
+Imediata
+
+Manutenção / Gestão
+
+6
+
+Retirar produtos e materiais relacionados aos defensivos da área próxima aos cochos e aos locais destinados à alimentação dos animais.
+
+Imediata
+
+Responsável de campo / Gestão
+
+
+
+5. MEDIDAS IMEDIATAS RECOMENDADAS
+
+• Manter os EPIs separados dos produtos de agrotóxicos, em local próprio e protegido.
+
+• Não manter produtos defensivos diretamente sobre o solo ou fora de contenção adequada.
+
+• Sinalizar e controlar o acesso ao ponto de abastecimento e preparo da calda.
+
+• Manter a fonte de água destinada ao gado afastada do ponto de preparo da calda.
+
+• Impedir qualquer possibilidade de retorno de produto pela mangueira utilizada para captação de água.
+
+• Manter produtos, embalagens, equipamentos e materiais de defensivos afastados das áreas de alimentação dos animais e dos cochos.
+
+• Realizar nova inspeção após a implementação das medidas para confirmar a regularização das condições.
+
+
+
+6. BOAS PRÁTICAS E PONTOS DE CONTROLE
+
+A inspeção permitiu identificar previamente situações com potencial de impacto sobre a segurança dos trabalhadores, a proteção ambiental e a segurança da alimentação e hidratação dos animais. O tratamento das condições identificadas deve ser acompanhado pela gestão e registrado após a correção.
+
+
+
+7. CONCLUSÃO
+
+A inspeção realizada no Ponto de Abastecimento de Defensivos Agrícolas da Fazenda Santa Vergínia identificou não conformidades relacionadas ao armazenamento de EPIs junto a produtos de agrotóxicos, à disposição de defensivo diretamente sobre o solo, à ausência de sinalização e à proximidade do ponto de preparo da calda com o reservatório de água destinado aos animais.
+
+Também foi identificada a possibilidade de contaminação da água destinada ao gado em razão da possibilidade de retorno de produto pela mangueira utilizada para captação de água. Adicionalmente, produtos e materiais relacionados aos defensivos estavam próximos à área de alimentação dos animais, inclusive junto aos cochos posteriormente distribuídos no pasto, representando risco de contato e possível contaminação da ração.
+
+Recomenda-se a correção imediata das condições apontadas, com segregação dos EPIs, contenção adequada dos produtos, sinalização do ponto de abastecimento, afastamento e proteção do reservatório de água e retirada dos produtos e materiais de defensivos das áreas de alimentação animal. Após as correções, deverá ser realizada nova verificação para confirmar a efetividade das medidas adotadas.
+
+
+
+8. RESUMO DAS CONSTATAÇÕES
+
+Item
+
+Local / condição
+
+Constatação
+
+Status
+
+1
+
+Armazenamento de EPIs
+
+EPIs armazenados/misturados junto a produtos de agrotóxicos.
+
+Pendente
+
+2
+
+Armazenamento de defensivos
+
+Produto diretamente sobre o solo, sem contenção adequada.
+
+Pendente
+
+3
+
+Ponto de abastecimento
+
+Necessidade de sinalização de segurança.
+
+Pendente
+
+4
+
+Reservatório de água
+
+Reservatório de água dos animais localizado próximo ao ponto de preparo da calda.
+
+Pendente
+
+5
+
+Captação de água
+
+Possibilidade de retorno de produto pela mangueira durante o preparo da calda.
+
+Pendente
+
+6
+
+Alimentação animal
+
+Produtos e materiais de defensivos próximos aos cochos e à área de alimentação.
+
+Pendente
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+Atividade
+
+Preparo de solo – subsolagem
+
+Local da atividade
+
+Talhão 414
+
+Colaborador
+
+Marcelo
+
+Máquina
+
+Trator TL5.100 – Código 3393 / TL5
+
+Data da vistoria
+
+19/08/2026
+
+
+
+1. OBJETIVO
+
+Registrar as condições observadas durante a atividade de preparo de solo por meio de subsolagem no Talhão 414, avaliando as condições de segurança da máquina, a proteção da cabine, os dispositivos de proteção do equipamento e as condições de apoio à equipe, com foco na identificação de desvios que possam comprometer a segurança dos trabalhadores.
+
+
+
+2. NÃO CONFORMIDADES E RISCOS IDENTIFICADOS (DESVIOS)
+
+Durante a inspeção foram identificados os seguintes pontos de atenção:
+
+• Ausência de Área de Vivência para a equipe.
+
+• Cabine do trator climatizada, porém sem filtro de carvão ativado.
+
+• Cardan sem capa de proteção.
+
+
+
+3. CONDIÇÕES DA MÁQUINA
+
+Foi avaliado o Trator TL5.100, código de frota 3393 / TL5, utilizado pelo colaborador Marcelo durante a atividade de preparo de solo – subsolagem no Talhão 414.
+
+• Cabine climatizada.
+
+• Ausência de filtro de carvão ativado.
+
+• Cardan sem capa de proteção.
+
+
+
+4. ÁREA DE VIVÊNCIA
+
+Foi identificada a ausência de Área de Vivência para a equipe durante a realização da atividade. A condição deve ser regularizada de forma a garantir estrutura adequada de apoio aos trabalhadores durante a jornada.
+
+
+
+5. RISCOS ASSOCIADOS
+
+• Ausência de Área de Vivência: condição inadequada de apoio para alimentação, hidratação, descanso e necessidades básicas durante a jornada.
+
+• Ausência de filtro de carvão ativado na cabine: necessidade de avaliação do controle de proteção da cabine para atividades em que esse recurso seja aplicável.
+
+• Cardan sem capa de proteção: possibilidade de contato acidental com partes móveis, aumentando o risco de acidente durante a operação e manutenção.
+
+
+
+6. PLANO DE AÇÃO
+
+Nº
+
+Ação corretiva/preventiva
+
+Prioridade
+
+Responsável sugerido
+
+1
+
+Disponibilizar Área de Vivência adequada para a equipe, garantindo condições mínimas de apoio, higiene, alimentação, hidratação e descanso.
+
+Imediata
+
+Gestão operacional
+
+2
+
+Avaliar e providenciar a instalação de filtro de carvão ativado adequado na cabine do trator, quando aplicável às atividades realizadas.
+
+Alta
+
+Manutenção / SST
+
+3
+
+Instalar capa de proteção adequada no cardan e realizar inspeção antes da liberação do equipamento para operação.
+
+Imediata
+
+Manutenção / Gestão
+
+7. MEDIDAS IMEDIATAS E PREVENTIVAS
+
+• Regularizar a disponibilização de Área de Vivência para a equipe.
+
+• Corrigir a ausência da capa de proteção do cardan antes da operação, conforme avaliação do responsável competente.
+
+• Avaliar as condições da cabine e providenciar o filtro de carvão ativado adequado.
+
+• Realizar checklist pré-operacional do trator antes do início das atividades.
+
+• Registrar as correções realizadas e efetuar nova verificação para confirmar a regularização.
+
+
+
+8. BOAS PRÁTICAS E PONTOS DE CONTROLE
+
+A vistoria possibilitou identificar previamente condições relacionadas à proteção do equipamento e à estrutura de apoio à equipe. Recomenda-se manter o acompanhamento das condições da máquina e das instalações de apoio, com registro das medidas corretivas adotadas.
+
+
+
+9. CONCLUSÃO
+
+A inspeção realizada, durante a atividade de preparo de solo – subsolagem no Talhão 414, envolvendo o colaborador Marcelo e o Trator TL5.100, código 3393 / TL5, identificou a ausência de Área de Vivência para a equipe, a ausência de filtro de carvão ativado na cabine e a inexistência de capa de proteção no cardan.
+
+A cabine do trator foi identificada como climatizada. Entretanto, os desvios registrados devem ser tratados de forma preventiva, especialmente a proteção do cardan e a estrutura de apoio aos trabalhadores. Recomenda-se a adoção das medidas previstas no plano de ação, com posterior verificação para confirmar a efetividade das correções.
+
+
+
+10. RESUMO DAS CONSTATAÇÕES
+
+Item
+
+Local / equipamento
+
+Constatação
+
+Status
+
+1
+
+Área de trabalho
+
+Ausência de Área de Vivência para a equipe.
+
+Pendente
+
+2
+
+Trator TL5.100 / cabine
+
+Cabine climatizada, porém sem filtro de carvão ativado.
+
+Pendente
+
+3
+
+Trator TL5.100 / cardan
+
+Cardan sem capa de proteção.
+
+Pendente
+
+
+
+  
+
+
+
+
+
+
+
+_________                                                         _______________________
+
+                                                                             Cássia Francine Zacarim
+
+                                                                                 Técnico de Segurança do
+
+                                                               SRTE/MTE 1531/MS
+
+
+
+
+
+2

@@ -1,583 +1,805 @@
-RELATÓRIO MENSAL DE SSMA | RELATÓRIO MENSAL DE SSMA | RELATÓRIO MENSAL DE SSMA | RELATÓRIO MENSAL DE SSMA
-Responsável: Cássia Francine Zacarim Lima | Responsável: Cássia Francine Zacarim Lima | Responsável: Cássia Francine Zacarim Lima | Responsável: Cássia Francine Zacarim Lima
-Empresa: Fazenda Santa Vergínia | Empresa: Fazenda Santa Vergínia | Empresa: Fazenda Santa Vergínia | Referente:        junho 2026
-RESPONSÁVEIS DA EMPRESA | RESPONSÁVEIS DA EMPRESA | Anderson Henrique Zacarin | Anderson Henrique Zacarin | Anderson Henrique Zacarin
-OFICINA MECÂNICA | OFICINA MECÂNICA | OFICINA MECÂNICA | OFICINA MECÂNICA | OFICINA MECÂNICA | OFICINA MECÂNICA | OFICINA MECÂNICA
-1ª VISITA | 1ª VISITA | 1ª VISITA | 1ª VISITA | AUDITÓRIA | AUDITÓRIA | AUDITÓRIA
-DATA: | 26/06/2026 | 26/06/2026 | 26/06/2026 | DIA DA SEMANA: | SEXTA-FEIRA | SEXTA-FEIRA
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+RELATÓRIO MENSAL
+
+
+
+Junho de 2026
+
+
+
+
+
+
+
+RELATÓRIO MENSAL DE SSMA
+
+
+
+Responsável: Cássia Francine Zacarim Lima
+
+
+
+Empresa: Fazenda Santa Vergínia
+
+Referente:        junho 2026
+
+
+
+RESPONSÁVEIS DA EMPRESA
+
+Anderson Henrique Zacarin
+
+
+
+OFICINA MECÂNICA
+
+
+
+1ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+26/06/2026
+
+DIA DA SEMANA:   
+
+SEXTA-FEIRA
+
+
+
 1. Identificação da Inspeção
+
+Item
+
+Descrição
+
+Item
+
+Descrição
+
+Data da Inspeção
+
+26/06/2026
+
+Setor
+
+Oficina Mecânica
+
+Elaborado por
+
+Técnico de Segurança do Trabalho
+
+Tipo
+
+Inspeção de Rotina
+
+Local
+
+Oficina
+
+Nº do Relatório
+
+REL-OFC-2026-0626
+
+
 2. Introdução
+
 Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
+
 A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
+
 3. Objetivo
+
 Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
+
 4. Metodologia
+
 A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
+
 5. Não Conformidades Identificadas
+
 A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
+Nº
+
+Área
+
+Não Conformidade
+
+Risco Potencial
+
+Severidade
+
+01
+
+Soldagem
+
+Jeferson realizando serviço de solda sem luvas de proteção e sem máscara.
+
+Queimaduras, inalação de fumos metálicos, lesões oculares
+
+Alto
+
+02
+
+Armazenamento de Gases
+
+Ausência de sinalização do local de armazenamento do cilindro de oxigênio e acetileno.
+
+Risco de explosão, incêndio, queda de cilindros
+
+Alto
+
+03
+
+Ar Comprimido
+
+Necessidade de revalidação do teste hidrostático do ar comprimido da oficina com a GDK.
+
+Explosão do reservatório, acidentes graves
+
+Alto
+
+04
+
+Acionamento de Emergência
+
+Acionamento do motor distante do operador, sem portão no local de armazenamento e sem sinalização.
+
+Dificuldade em desligar em emergência, não atendimento à NR-12
+
+Alto
+
+05
+
+Instalações Elétricas
+
+Fios eletrizados expostos na área da oficina.
+
+Choque elétrico, curto-circuito, incêndio
+
+Alto
+
+06
+
+Proteção de Máquinas
+
+Bomba d'água sem proteção e capa de correia sem proteção.
+
+Prensamento, arrasto, amputação
+
+Alto
+
+07
+
+Lavagem de Peças
+
+Local de lavar peças sem impermeabilização, possibilitando contaminação do solo com óleo.
+
+Contaminação ambiental, multas, acidente ambiental
+
+Médio
+
+08
+
+Caixa Separadora
+
+Caixa separadora de óleo e água cheia de água, não funcionando — necessário escoar toda a água do reservatório.
+
+Inundação, contaminação ambiental, não operação
+
+Médio
+
+09
+
+EPI Soldador 1
+
+Soldador sem máscara respiratória, usando luva de vaqueta (inadequada) — necessário luva de raspa, sem blusão de raspa.
+
+Queimaduras, projeção de partículas, exposição a calor
+
+Alto
+
+10
+
+EPI Soldador 2
+
+Pedro executando atividade sem luva de proteção.
+
+Lesões nas mãos, abrasão, cortes
+
+Médio
+
+
+
 
 6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
 6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
 Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
 Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
 Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
-6.2. NC-02 — Sinalização de Cilindros de Gases
-Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
-Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
-Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
-6.3. NC-03 — Revalidação do Teste Hidrostático
-Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
-Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
-Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
-6.4. NC-04 — Acionamento do Motor Distante
-Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
-Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.5. NC-05 — Fios Eletrizados Expostos
-Situação: Foram identificados fios eletrizados expostos na oficina.
-Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
-Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
-6.6. NC-06 — Falta de Proteções em Máquinas
-Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
-Risco: Prensamento, arrasto, esmagamento, amputação de membros.
-Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
-6.7. NC-07 — Lavador de Peças sem Impermeabilização
-Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
-Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
-Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
-6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
-Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
-Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
-6.9. NC-09 — EPI Inadequado em Soldagem
-Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
-Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
-Referência normativa: NR-6 (EPI) — Anexo I.
-6.10. NC-10 — Trabalhador sem Luva 
-Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
-Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
-Referência normativa: NR-6 (EPI).
-7. Plano de Ação Corretiva
-A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
-8. Conclusão
-A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
-Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
-É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por finalidade apresentar os resultados da inspeção de segurança do trabalho realizada na oficina mecânica em 26 de junho de 2026, identificando as condições observadas, as não conformidades detectadas em relação às Normas Regulamentadoras (NRs) e às boas práticas de segurança, bem como as medidas corretivas necessárias para eliminação ou minimização dos riscos identificados.
-A inspeção foi conduzida de forma visual e técnica, abrangendo as condições de trabalho, o uso de Equipamentos de Proteção Individual (EPI), as instalações elétricas, máquinas e equipamentos, movimentação e armazenamento de materiais, e as condições ambientais do local.
-3. Objetivo
-Identificar e registrar as não conformidades e os riscos presentes no ambiente da oficina, fornecendo subsídios à gestão para a tomada de decisões quanto às medidas de prevenção, correção e controle, em conformidade com as Normas Regulamentadoras aplicáveis, em especial NR-6 (EPI), NR-10 (Instalações Elétricas), NR-11 (Transporte e Armazenamento), NR-12 (Máquinas e Equipamentos) e NR-13 (Caldeiras e Vasos de Pressão).
-4. Metodologia
-A inspeção foi realizada mediante visita técnica às dependências da oficina, com observação direta das condições de trabalho, dos postos de serviço, das máquinas, equipamentos, instalações e do comportamento dos trabalhadores quanto ao uso de EPI. Os achados foram registrados, classificados quanto à severidade e relacionados às respectivas não conformidades e ações corretivas.
-5. Não Conformidades Identificadas
-A tabela a seguir apresenta o consolidado das não conformidades (NC) identificadas durante a inspeção, com a área afetada, descrição do desvio, riscos potenciais e classificação de severidade.
 
-6. Detalhamento das Não Conformidades
-6.1. NC-01 — Soldagem sem EPI
-Situação: O colaborador Jeferson foi identificado executando serviço de solda sem luvas de proteção e sem máscara de solda.
-Risco: Queimaduras de 2º e 3º grau, inalação de fumos metálicos, lesões oculares (arco elétrico), projeção de partículas incandescentes.
-Referência normativa: NR-6 (EPI) e NR-18 (Construção/Oficinas).
 6.2. NC-02 — Sinalização de Cilindros de Gases
+
 Situação: O local de armazenamento dos cilindros de oxigênio e acetileno não possui sinalização de segurança adequada.
+
 Risco: Risco de explosão, incêndio, queda de cilindros, contato acidental entre gases incompatíveis.
+
 Referência normativa: NR-26 (Sinalização de Segurança), NBR 7500 e NBR 12100.
+
 6.3. NC-03 — Revalidação do Teste Hidrostático
+
 Situação: Necessidade de revalidação do teste hidrostático do reservatório de ar comprimido da oficina, a ser realizado pela GDK (empresa habilitada).
+
 Risco: Explosão do reservatório, projeção de fragmentos, acidentes fatais.
+
 Referência normativa: NR-13 — Caldeiras e Vasos de Pressão.
+
 6.4. NC-04 — Acionamento do Motor Distante
+
 Situação: O acionamento do motor está distante do operador; não há portão no local de armazenamento nem sinalização.
+
 Risco: Dificuldade em desligar o equipamento em situação de emergência; risco de acidentes graves.
+
 Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
+
 6.5. NC-05 — Fios Eletrizados Expostos
+
 Situação: Foram identificados fios eletrizados expostos na oficina.
+
 Risco: Choque elétrico, queimaduras, curto-circuito, princípio de incêndio, risco de morte.
+
 Referência normativa: NR-10 — Segurança em Instalações e Serviços em Eletricidade.
+
 6.6. NC-06 — Falta de Proteções em Máquinas
+
 Situação: A bomba d'água opera sem proteção, e a capa de correia também está sem proteção.
+
 Risco: Prensamento, arrasto, esmagamento, amputação de membros.
+
 Referência normativa: NR-12 — Segurança no Trabalho em Máquinas e Equipamentos.
+
 6.7. NC-07 — Lavador de Peças sem Impermeabilização
+
 Situação: O local destinado à lavagem de peças não é impermeabilizado, possibilitando a contaminação do solo com óleo.
+
 Risco: Contaminação do solo e do lençol freático, autuações ambientais, passivo ambiental.
+
 Referência normativa: NR-25 (Resíduos) e legislação ambiental vigente (Política Nacional do Meio Ambiente).
+
 6.8. NC-08 — Caixa Separadora de Óleo e Água Inoperante
+
 Situação: A caixa separadora de óleo e água encontra-se cheia de água e não está em funcionamento. É necessário escoar toda a água do reservatório.
+
 Risco: Inundação, transbordamento de efluentes, contaminação ambiental, não atendimento às condicionantes ambientais.
+
 6.9. NC-09 — EPI Inadequado em Soldagem
+
 Situação: Soldador utilizando luva de vaqueta (inadequada), sem máscara respiratória e sem blusão de raspa. Necessário uso de luva de raspa, máscara respiratória com filtro adequado e blusão de raspa.
+
 Risco: Queimaduras, projeção de partículas, exposição a calor radiante, doenças pulmonares por inalação de fumos.
+
 Referência normativa: NR-6 (EPI) — Anexo I.
+
 6.10. NC-10 — Trabalhador sem Luva 
+
 Situação: O colaborador Pedro foi identificado executando atividade sem luva de proteção.
+
 Risco: Lesões nas mãos, abrasão, cortes, contato com agentes químicos ou térmicos.
+
 Referência normativa: NR-6 (EPI).
+
 7. Plano de Ação Corretiva
+
 A tabela a seguir apresenta o plano de ação sugerido para cada não conformidade, com ações, responsáveis e prazos recomendados.
+
+Não Conformidade
+
+Ação Corretiva Proposta
+
+Responsável
+
+Prazo
+
+NC-01 (Jeferson — Soldagem)
+
+Fornecer e exigir o uso de máscara de solda com filtro de luz, luvas de raspa, blusão de raspa, mangote e perneira. Treinamento de uso de EPI.
+
+SESMT / Encarregado
+
+Imediato
+
+NC-02 (Cilindros O₂ e Acetileno)
+
+Instalar placa de sinalização de "Gases Sob Pressão", "Risco de Explosão" e "Não Fume". Manter cilindros em carrinho apropriado, com corrente.
+
+Manutenção / SESMT
+
+3 dias
+
+NC-03 (Teste Hidrostático)
+
+Contratar empresa GDK (ou similar habilitada) para revalidação do teste hidrostático do reservatório de ar comprimido, conforme NR-13.
+
+Engenharia de Manutenção
+
+15 dias
+
+NC-04 (Acionamento do Motor)
+
+Instalar portão de acesso próximo ao acionamento, botão de parada de emergência e placa de sinalização. Reavaliar layout conforme NR-12.
+
+Engenharia / Manutenção
+
+7 dias
+
+NC-05 (Fios Expostos)
+
+Contratar eletricista para reisolamento de toda fiação exposta, uso de canaletas, eletrodutos e revisão do SPDA. Bloquear acesso à área até correção.
+
+Elétrica / SESMT
+
+2 dias
+
+NC-06 (Proteções de Máquinas)
+
+Instalar proteções fixas na bomba d'água e na capa de correia, conforme NR-12. Não permitir operação sem proteção.
+
+Manutenção Mecânica
+
+5 dias
+
+NC-07 (Impermeabilização Lavador)
+
+Impermeabilizar piso e canaletas do local de lavagem de peças; instalar caixa coletora. Destinar óleo usado a coletor licenciado.
+
+Manutenção / Meio Ambiente
+
+20 dias
+
+NC-08 (Caixa Separadora)
+
+Escoar toda a água da caixa separadora, limpar e verificar funcionamento. Implementar rotina periódica de manutenção.
+
+Manutenção / Meio Ambiente
+
+7 dias
+
+NC-09 (EPI Soldador)
+
+Fornecer conjunto completo de EPI para soldador: máscara com filtro, luvas de raspa, blusão de raspa, avental, perneira e calçado de segurança. Fiscalizar uso.
+
+SESMT / Almoxarifado
+
+Imediato
+
+NC-10 (Pedro sem luva)
+
+Orientar o colaborador Pedro, fornecer luva adequada à atividade e registrar entrega em ficha de EPI.
+
+Encarregado / SESMT
+
+Imediato
+
 8. Conclusão
+
 A inspeção realizada na oficina em 26/06/2026 identificou 10 (dez) não conformidades relevantes, sendo 7 (sete) de severidade alta, que exigem ação imediata por parte da gestão. As não conformidades estão relacionadas principalmente a: uso inadequado ou ausência de EPI em atividades de solda; falhas de proteção de máquinas; deficiências de sinalização e de instalações elétricas; necessidade de revalidação de vasos de pressão; e questões ambientais relativas à impermeabilização do lavador de peças e à caixa separadora de óleo e água.
+
 Recomenda-se a implementação imediata do plano de ação proposto, com priorização das não conformidades de severidade alta (NC-01, NC-02, NC-03, NC-04, NC-05, NC-06 e NC-09), bem como a realização de nova inspeção de acompanhamento para verificação da eficácia das medidas corretivas implementadas.
+
 É fundamental que a gestão promova treinamentos periódicos sobre o uso correto de EPI, procedimentos de trabalho seguro, sinalização de segurança e resposta a emergências, de modo a consolidar uma cultura organizacional voltada à prevenção de acidentes e doenças ocupacionais.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTRO FOTOGRÁFICO
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+2ª VISITA
+
+AUDITÓRIA
+
+DATA:
+
+26/06/2026
+
+DIA DA SEMANA:   
+
+SEXTA-FEIRA
+
+
+
+
+
 1. Identificação da Inspeção
+
+Campo
+
+Informação
+
+Data da inspeção
+
+26/06/2026
+
+Local inspecionado
+
+Posto de Combustível
+
+Setor
+
+Infraestrutura 
+
+Tipo de inspeção
+
+Rotineira - condições ambientais e de segurança
+
 2. Introdução
+
 Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
+
 3. Objetivo
+
 Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
+
 4. Metodologia
+
 A inspeção foi conduzida por meio de:
+
 - Observação visual direta das instalações;
+
 - Registro fotográfico dos pontos críticos;
+
 - Análise comparativa com requisitos normativos vigentes;
+
 - Entrevista informal com o responsável pelo local.
+
 5. Não Conformidades Identificadas
+
 5.1 Tabela consolidada das não conformidades
+
+N.
+
+Descrição resumida
+
+Severidade
+
+Prazo
+
+NC-01
+
+Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
+
+ALTA
+
+Limpeza imediata + adequações em 15 dias
+
+NC-02
+
+Ausência total de sinalização de segurança no Posto de Combustível
+
+ALTA
+
+7 dias
+
 6. Detalhamento das Não Conformidades
+
 6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
+
+Item
+
+Descrição
+
+Severidade
+
+ALTA
+
+Descrição
+
+O sistema separador de óleo/água (caixa separadora) encontra-se saturado, com presença significativa de terra acumulada no entorno e nível elevado de água em seu interior. A presença de terra no sistema compromete a eficiência da separação, permitindo que a água contaminada com hidrocarbonetos siga para a rede pluvial ou para o solo.
+
+Evidência fotográfica
+
+Fotos - caixa separadora com excesso de água e acúmulo de sujeira no entorno
+
+Risco
+
+Contaminação do solo e do lençol freático; passivo ambiental; autuação dos órgãos ambientais (CETESB / Órgão Estadual); risco de incêndio/explosão por vapores inflamáveis retidos.
+
+Norma de referência
+
+NBR 17505 (Armazenamento de líquidos inflamáveis e combustíveis); NR-20; Resolução CONAMA 357/2005
+
+Ação corretiva
+
+Contratar empresa especializada, licenciada e cadastrada para: (a) esgotamento imediato do SAO; (b) limpeza completa do entorno, com remoção de toda terra acumulada; (c) destinação adequada dos resíduos (óleo/água/lodo) conforme legislação; (d) inspeção da integridade estrutural da caixa; (e) reestabelecimento da operação normal com certificação.
+
+Responsável
+
+Manutenção / Meio Ambiente 
+
+Prazo
+
+Imediato para o isolamento e limpeza (15 dias)
+
 Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
+
 Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
+
 6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
+
+Item
+
+Descrição
+
+Severidade
+
+ALTA
+
+Descrição
+
+O Posto de Combustível não apresenta nenhuma placa ou sinalização de segurança visível nas áreas de abastecimento, entorno das bombas, ilhas, ou pontos de armazenamento. Faltam sinalizações obrigatórias como: "Proibido Fumar", "Perigo - Inflamáveis", "Desligar o Motor", "Proibido Uso de Celular", "Não acender fósforos/isqueiros", além de sinalização de rota de fuga e indicação de extintores.
+
+Evidência fotográfica
+
+Foto 2 - vista geral do posto, sem qualquer sinalização visível
+
+Risco
+
+Aumento significativo do risco de acidentes, incêndios e explosões; exposição a passivos trabalhistas e criminais; autuação por não conformidade com a NR-26 e exigência do Corpo de Bombeiros.
+
+Norma de referência
+
+NR-26 (Sinalização de Segurança); NBR 7195; Normas do Corpo de Bombeiros local
+
+Ação corretiva
+
+Instalar, em até 7 dias, o conjunto completo de sinalizações: "Perigo - Inflamáveis" próximo as bombas e tanques; "Proibido Fumar" em toda a área do posto; "Desligar o Motor" nas ilhas de abastecimento; "Proibido Uso de Celular" próximo as bombas; "Proibido Produzir Faísca/Chama"; identificação de produtos armazenados (Gasolina, Diesel, Etanol); rota de fuga e saída de emergência; sinalização dos extintores (quando instalados); placas de advertência sobre risco de explosão/inflamabilidade.
+
+Responsável
+
+SESMT / Manutenção
+
+Prazo
+
+7 dias
+
 Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
+
 7. Resumo por Urgência
+
+Prazo
+
+NC
+
+Descrição resumida
+
+Imediato (15 dias)
+
+NC-01
+
+Limpeza completa do SAO e do entorno
+
+7 dias
+
+NC-02
+
+Instalação de toda a sinalização de segurança
+
 8. Conclusão
+
 A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
+
 Recomenda-se:
+
 - Priorizar as ações corretivas nos prazos definidos;
+
 - Inspecionar o local após as intervenções para verificação de eficácia;
+
 - Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
-- Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva. | 1. Identificação da Inspeção
-2. Introdução
-Este relatório tem por objetivo registrar as não conformidades (NCs) identificadas durante inspeção de rotina realizada no Posto de Combustível em 26/06/2026. A vistoria contemplou a análise das condições do sistema separador de óleo/água (SAO), da limpeza do entorno, da sinalização de segurança e demais itens obrigatórios conforme NR-20 (Inflamáveis e Combustíveis), NR-26 (Sinalização de Segurança) e normas da ABNT aplicáveis, em especial NBR 17505 e NBR 7195.
-3. Objetivo
-Identificar, registrar e propor ações corretivas para as não conformidades observadas no Posto de Combustível, visando restabelecer condições seguras de operação, mitigar riscos ambientais (contaminação do solo por derivados de petróleo) e garantir conformidade legal junto aos órgãos fiscalizadores (ANP, Corpo de Bombeiros, Órgão Ambiental).
-4. Metodologia
-A inspeção foi conduzida por meio de:
-- Observação visual direta das instalações;
-- Registro fotográfico dos pontos críticos;
-- Análise comparativa com requisitos normativos vigentes;
-- Entrevista informal com o responsável pelo local.
-5. Não Conformidades Identificadas
-5.1 Tabela consolidada das não conformidades
-6. Detalhamento das Não Conformidades
-6.1 NC-01 - Sistema separador de óleo/água (SAO) saturado, com entrada de terra e excesso de água
-Foto 1: Caixa separadora de óleo/água (SAO) com excesso de água em seu interior.
-Foto 3: Entorno da caixa separadora, com acúmulo de terra e resíduos.
-6.2 NC-02 - Ausência total de sinalização de segurança no Posto de Combustível
-Foto 2: Vista geral do Posto de Combustível, sem qualquer sinalização de segurança visível.
-7. Resumo por Urgência
-8. Conclusão
-A inspeção identificou 2 (duas) não conformidades de severidade ALTA no Posto de Combustível, com destaque para o sistema separador de óleo/água, que requer ação imediata para evitar contaminação ambiental e passivos regulatórios, e para a completa ausência de sinalização, que expõe usuários e trabalhadores a riscos significativos de acidentes.
-Recomenda-se:
-- Priorizar as ações corretivas nos prazos definidos;
-- Inspecionar o local após as intervenções para verificação de eficácia;
-- Manter rotina periódica de inspeção e limpeza do SAO (mínimo trimestral);
+
 - Avaliar a contratação de empresa especializada em manutenção de postos para gestão preventiva.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REGISTRO FOTOGRÁFICO
+
+  
+
+
+
+
+
+                                
+
+______                                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+
+
+2

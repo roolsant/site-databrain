@@ -535,6 +535,95 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "11/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 20,
+          "comportamental": 60,
+          "global": 53
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registro dos colaboradores regularizado."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs dos colaboradores vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR e PCMSO atendidos."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Necessário registro formal de capacitação para novas frentes."
+            },
+            "fichas_epi": {
+              "status": "nao_conforme",
+              "desc": "Falta comprovante de entrega e reposição periódica de luvas de proteção."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Ordens de serviço emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "nao_conforme",
+              "desc": "Ausência de instalações sanitárias adequadas em campo."
+            },
+            "refeicao": {
+              "status": "nao_conforme",
+              "desc": "Ausência de área de vivência / abrigo para refeições (NR-24/NR-31)."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Falta fornecimento e reposição contínua de luvas de proteção adequadas."
+            },
+            "seguranca_geral": {
+              "status": "nao_conforme",
+              "desc": "Pendente confirmação da proteção do cardan da furadeira acoplada ao trator Massey Ferguson (NR-12)."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Adesão às normas de segurança em consolidação."
+            },
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "David e Edivaldo sem luvas durante perfuração e manuseio de mourões/estruturas metálicas."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Fornecer e fiscalizar uso obrigatório de luvas de proteção para David e Edivaldo durante o manuseio de materiais e perfuração",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Inspecionar e regularizar a proteção mecânica do cardan da furadeira acoplada ao trator Massey Ferguson (NR-12)",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Implantar estrutura móvel ou fixa de área de vivência com instalações sanitárias e abrigo (NR-24/NR-31)",
+            "criticidade": "Grave",
+            "prazo": "30 dias",
+            "status": "Pendente"
+          }
+        ]
       }
     ]
   },
@@ -1352,6 +1441,83 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "03/08/2026",
+        "scores": {
+          "documental": 100,
+          "estrutural": 100,
+          "comportamental": 100,
+          "global": 100
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Sem inconformidades documentais registradas."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR atualizado."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Treinamentos em dia."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI controladas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Sem frentes ativas de campo no período auditado."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Sem frentes ativas de campo no período auditado."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Fornecimento regularizado."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Sem inconformidades operacionais."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Funcionário não esteve em atividade laboral na fazenda em agosto/2026."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Sem desvios."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Manter alinhamento com a equipe de SSMA e comprovação documental antes do início de novas frentes de obra",
+            "criticidade": "Moderado",
+            "prazo": "No reinício",
+            "status": "Em andamento"
+          }
+        ]
       }
     ]
   },
@@ -1830,6 +1996,89 @@ const AUDIT_DATA = [
             "criticidade": "Moderado",
             "prazo": "15 dias",
             "status": "Em andamento"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "24/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 85,
+          "comportamental": 100,
+          "global": 88
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Colaboradoras Solange, Elenice e Raquel registradas."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR vigente."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Necessário formalizar lista de presença do treinamento de uso de EPIs."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI controladas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Instalações sanitárias limpas e com insumos."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Cozinha e refeitório limpos, higienizados e organizados."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Fornecimento de toucas, luvas e óculos de segurança regular."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Boas práticas de manipulação e segurança de alimentos plenamente atendidas."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Excelente comprometimento da equipe com as normas de higiene e segurança."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Uso correto e permanente de touca, luvas e óculos de segurança por todas as colaboradoras."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Formalizar lista de presença assinada e registro documental do treinamento sobre uso e conservação de EPIs",
+            "criticidade": "Moderado",
+            "prazo": "15 dias",
+            "status": "Em andamento"
+          },
+          {
+            "acao": "Manter inspeção visual periódica e reposição imediata de EPIs danificados ou desgastados",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Adequado"
           }
         ]
       }
@@ -2518,6 +2767,89 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "27/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 90,
+          "comportamental": 80,
+          "global": 83
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registros e ASOs regularizados."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs atualizados."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR vigente."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Manter controle de treinamentos periódicos."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI assinadas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Banheiro químico disponível e higienizado."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Área de vivência totalmente regularizada e em conformidade, com assentos/cadeiras adequados."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "EPIs fornecidos e disponíveis."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Sinalização e organização do pátio de carvoaria adequadas."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Equipes ausentes na fazenda no dia da vistoria; controle de presença mantido."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Sem desvios registrados."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Adequação da área de vivência e fornecimento de assentos adequados para os colaboradores",
+            "criticidade": "Moderado",
+            "prazo": "Concluído",
+            "status": "Concluído"
+          },
+          {
+            "acao": "Manter controle de presença e alinhamento das frentes de trabalho com o cronograma de SSMA",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Em andamento"
+          }
+        ]
       }
     ]
   },
@@ -2914,6 +3246,83 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "19/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 80,
+          "comportamental": 100,
+          "global": 87
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registro regularizado."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR atualizado."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Controle de capacitação periódica."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI assinadas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Instalações de apoio disponíveis."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Área de apoio para refeições disponível."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Fornecimento completo de EPIs comprovado."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Frente de trabalho no Talhão 541 organizada e sinalizada."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Colaborador Amarildo com postura e prática preventiva exemplar."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Uso 100% correto e completo de todos os EPIs na instalação de cercas."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Manter conferência diária e fiscalização do uso completo e permanente de EPIs na instalação de cercas",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Adequado"
           }
         ]
       }
@@ -3464,6 +3873,89 @@ const AUDIT_DATA = [
             "criticidade": "Grave",
             "prazo": "Imediato",
             "status": "Pendente"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "11/08/2026",
+        "scores": {
+          "documental": 90,
+          "estrutural": 80,
+          "comportamental": 95,
+          "global": 88
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Lista de funcionários atualizada e registros controlados."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs dos colaboradores vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR e PCMSO atendidos."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Capacitações de silvicultura e segurança em campo realizadas."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI controladas e assinadas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Ordens de serviço emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada para toda a equipe."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Banheiro móvel disponível."
+            },
+            "refeicao": {
+              "status": "pendente",
+              "desc": "Nova estrutura de Área de Vivência no Talhão 523 em fase de finalização da montagem."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "Fornecimento de EPIs completo e reposição disponível."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Organização da frente de trabalho e água potável/reidratação disponíveis."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Pausas regulares para reidratação realizadas como boa prática contra estresse térmico."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Miguel com uso correto na lavagem de mudas; Carlos Daniel corrigiu imediatamente óculos; demais 100% conformes."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Concluir a transferência e montagem completa da nova Área de Vivência no Talhão 523",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Em andamento"
+          },
+          {
+            "acao": "Manter fiscalização contínua do uso de óculos de proteção e garantir pausas regulares de hidratação térmica",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Adequado"
           }
         ]
       }
@@ -4047,6 +4539,89 @@ const AUDIT_DATA = [
             "status": "Pendente"
           }
         ]
+      },
+      {
+        "dataAuditoria": "03/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 80,
+          "comportamental": 90,
+          "global": 83
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Registros e ASOs regularizados."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs vigentes."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR e PCMSO vigentes."
+            },
+            "treinamentos": {
+              "status": "pendente",
+              "desc": "Controle de capacitação periódica."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI assinadas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "OS emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Banheiro químico disponível."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Área de vivência de apoio disponível."
+            },
+            "epi_fornecimento": {
+              "status": "conforme",
+              "desc": "EPIs completos fornecidos."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Sinalização e controle de acessos da frente de carvoaria no Talhão 49."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "conforme",
+              "desc": "Postura preventiva correta com paralisação das atividades e apoio a colaborador com mal-estar."
+            },
+            "uso_epi": {
+              "status": "conforme",
+              "desc": "Francisco, Márcio e José Gouveia utilizando todos os EPIs corretamente."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Manter protocolo de paralisação das atividades e encaminhamento médico imediato diante de ocorrências de saúde",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Adequado"
+          },
+          {
+            "acao": "Manter conservação e limpeza contínua da área de vivência e banheiros químicos nas frentes de fornos",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Em andamento"
+          }
+        ]
       }
     ]
   },
@@ -4415,6 +4990,95 @@ const AUDIT_DATA = [
         "planoAcao": [
           {
             "acao": "Manter atualização contínua da documentação e uso de EPIs",
+            "criticidade": "Moderado",
+            "prazo": "Contínuo",
+            "status": "Em andamento"
+          }
+        ]
+      },
+      {
+        "dataAuditoria": "11/08/2026",
+        "scores": {
+          "documental": 80,
+          "estrutural": 70,
+          "comportamental": 60,
+          "global": 70
+        },
+        "checklist": {
+          "documental": {
+            "registro": {
+              "status": "conforme",
+              "desc": "Colaboradores registrados."
+            },
+            "aso": {
+              "status": "conforme",
+              "desc": "ASOs de trabalho em altura atualizados."
+            },
+            "pgr": {
+              "status": "conforme",
+              "desc": "PGR vigente."
+            },
+            "treinamentos": {
+              "status": "conforme",
+              "desc": "Treinamento de trabalho em altura (NR-35) e corte realizados."
+            },
+            "fichas_epi": {
+              "status": "conforme",
+              "desc": "Fichas de EPI controladas."
+            },
+            "os": {
+              "status": "conforme",
+              "desc": "Ordens de serviço emitidas."
+            },
+            "integracao": {
+              "status": "conforme",
+              "desc": "Integração realizada."
+            }
+          },
+          "estrutural": {
+            "banheiro": {
+              "status": "conforme",
+              "desc": "Instalações sanitárias disponíveis."
+            },
+            "refeicao": {
+              "status": "conforme",
+              "desc": "Área de apoio para refeições disponível."
+            },
+            "epi_fornecimento": {
+              "status": "nao_conforme",
+              "desc": "Necessário repor par completo de luvas para Sebastião e óculos de proteção adequados."
+            },
+            "seguranca_geral": {
+              "status": "conforme",
+              "desc": "Sinalização e isolamento da área de corte e altura."
+            }
+          },
+          "comportamento": {
+            "comportamento_seguro": {
+              "status": "pendente",
+              "desc": "Necessário reforçar o diálogo diário de segurança (DDS) antes dos serviços."
+            },
+            "uso_epi": {
+              "status": "nao_conforme",
+              "desc": "Matheus executando atividade sem óculos de proteção; Sebastião utilizando apenas uma luva (par incompleto)."
+            }
+          }
+        },
+        "planoAcao": [
+          {
+            "acao": "Orientar Matheus quanto à obrigatoriedade do uso contínuo de óculos de proteção compatíveis com o risco da atividade",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Orientar Sebastião a utilizar as duas luvas, formando o par completo, e substituir o equipamento se danificado",
+            "criticidade": "Grave",
+            "prazo": "Imediato",
+            "status": "Pendente"
+          },
+          {
+            "acao": "Realizar conferência dos EPIs antes do início das atividades de trabalho em altura e reforçar DDS diário",
             "criticidade": "Moderado",
             "prazo": "Contínuo",
             "status": "Em andamento"
@@ -5424,16 +6088,195 @@ const AUDIT_DATA = [
                 "status": "Pendente"
               }
             ]
+          },
+          {
+            "dataAuditoria": "07/08/2026",
+            "scores": {
+              "documental": 80,
+              "estrutural": 60,
+              "comportamental": 80,
+              "global": 73
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Controle de colaboradores da fazenda."
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "ASOs vigentes."
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "PGR vigente."
+                },
+                "treinamentos": {
+                  "status": "pendente",
+                  "desc": "Treinamentos periódicos das equipes."
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Fichas de EPI controladas."
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "Ordens de serviço emitidas."
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Integração realizada."
+                }
+              },
+              "estrutural": {
+                "banheiro": {
+                  "status": "nao_conforme",
+                  "desc": "Área de Vivência 06 (Talhão 411) necessitando higienização, água e sabonete."
+                },
+                "refeicao": {
+                  "status": "conforme",
+                  "desc": "Área de Vivência 01 com iluminação funcionando e cobertura adequada."
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "Fornecimento de EPIs regular."
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Recolher embalagens de agrotóxicos descartadas próximo à Área de Vivência 06."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Uso adequado das áreas de apoio pelos trabalhadores."
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Uso correto de EPIs observado."
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Higienizar, reabastecer com água e sabonete e sinalizar o banheiro da Área de Vivência 06 (Talhão 411)",
+                "criticidade": "Grave",
+                "prazo": "Imediato",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Retirar imediatamente embalagens de defensivos e orientar trabalhadores sobre devolução e descarte correto",
+                "criticidade": "Grave",
+                "prazo": "Imediato",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Concluir manutenção e reparos das Áreas de Vivência 03 e Carreta 20 lugares na oficina mecânica",
+                "criticidade": "Moderado",
+                "prazo": "30 dias",
+                "status": "Em andamento"
+              }
+            ]
           }
-        ]
+        ],
+        "id": "area_vivencia",
+        "nome": "Área de Vivência"
       },
       {
         "name": "Plantio",
-        "visitas": []
+        "visitas": [],
+        "id": "plantio",
+        "nome": "Plantio"
       },
       {
         "name": "Aplicação Defensivo Agrícola",
-        "visitas": []
+        "visitas": [
+          {
+            "dataAuditoria": "19/08/2026",
+            "scores": {
+              "documental": 80,
+              "estrutural": 75,
+              "comportamental": 85,
+              "global": 80
+            },
+            "checklist": {
+              "documental": {
+                "registro": {
+                  "status": "conforme",
+                  "desc": "Operador devidamente registrado."
+                },
+                "aso": {
+                  "status": "conforme",
+                  "desc": "ASO com exames específicos para defensivos em dia."
+                },
+                "pgr": {
+                  "status": "conforme",
+                  "desc": "PGR e procedimentos operacionais vigentes."
+                },
+                "treinamentos": {
+                  "status": "conforme",
+                  "desc": "Treinamento NR-31.7 (Aplicação de Agrotóxicos) realizado."
+                },
+                "fichas_epi": {
+                  "status": "conforme",
+                  "desc": "Fichas de EPI controladas."
+                },
+                "os": {
+                  "status": "conforme",
+                  "desc": "OS de aplicação emitida."
+                },
+                "integracao": {
+                  "status": "conforme",
+                  "desc": "Integração realizada."
+                }
+              },
+              "estrutural": {
+                "banheiro": {
+                  "status": "conforme",
+                  "desc": "Instalações de apoio disponíveis."
+                },
+                "refeicao": {
+                  "status": "conforme",
+                  "desc": "Área de vivência de apoio disponível."
+                },
+                "epi_fornecimento": {
+                  "status": "conforme",
+                  "desc": "EPI hidrorrepelente completo fornecido."
+                },
+                "seguranca_geral": {
+                  "status": "nao_conforme",
+                  "desc": "Ponto de abastecimento requer adequação do sistema de lava-olhos/chuveiro e contenção."
+                }
+              },
+              "comportamento": {
+                "comportamento_seguro": {
+                  "status": "conforme",
+                  "desc": "Trator BM110 (frota 330) com cabine climatizada operando com segurança."
+                },
+                "uso_epi": {
+                  "status": "conforme",
+                  "desc": "Operador utilizando EPIs adequados no preparo e aplicação da calda."
+                }
+              }
+            },
+            "planoAcao": [
+              {
+                "acao": "Adequar e sinalizar o ponto de abastecimento e preparo de caldas com chuveiro de emergência e lava-olhos funcional",
+                "criticidade": "Grave",
+                "prazo": "15 dias",
+                "status": "Pendente"
+              },
+              {
+                "acao": "Manter manutenção preventiva periódica do sistema de climatização e filtros de carvão ativado da cabine do trator BM110",
+                "criticidade": "Moderado",
+                "prazo": "Contínuo",
+                "status": "Em andamento"
+              }
+            ]
+          }
+        ],
+        "id": "aplicacao_defensivo",
+        "nome": "Aplicação Defensivo Agrícola"
       },
       {
         "name": "Oficina Mecânica",
@@ -6260,19 +7103,27 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "oficina_mecanica",
+        "nome": "Oficina Mecânica"
       },
       {
         "name": "Fábrica de Sal",
-        "visitas": []
+        "visitas": [],
+        "id": "fabrica_sal",
+        "nome": "Fábrica de Sal"
       },
       {
         "name": "Borracharia",
-        "visitas": []
+        "visitas": [],
+        "id": "borracharia",
+        "nome": "Borracharia"
       },
       {
         "name": "Autoclave",
-        "visitas": []
+        "visitas": [],
+        "id": "autoclave",
+        "nome": "Autoclave"
       },
       {
         "name": "Lavador",
@@ -7099,7 +7950,9 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "lavador",
+        "nome": "Lavador"
       },
       {
         "name": "Corte",
@@ -7926,7 +8779,9 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "corte",
+        "nome": "Corte"
       },
       {
         "name": "Pecuária / Retiros / Currais",
@@ -8020,7 +8875,9 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "pecuaria_retiros",
+        "nome": "Pecuária / Retiros / Currais"
       },
       {
         "name": "Posto de Combustível",
@@ -8847,7 +9704,9 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "posto_combustivel",
+        "nome": "Posto de Combustível"
       },
       {
         "name": "TIP",
@@ -9674,7 +10533,9 @@ const AUDIT_DATA = [
               }
             ]
           }
-        ]
+        ],
+        "id": "tip",
+        "nome": "TIP"
       }
     ]
   }
